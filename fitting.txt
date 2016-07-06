@@ -1,0 +1,588 @@
+
+Title from email
+
+\vfill
+
+Jonathan Dushoff, McMaster University
+
+\url{http://lalashan.mcmaster.ca/DushoffLab}
+
+\vfill
+
+
+PRESENT 2016 Summer Course on Mathematical Modeling and Analysis of 
+Infectious Diseases
+
+PRESENT \vfill
+
+PRESENT National Taiwan University
+
+PRESENT \vfill
+
+----------------------------------------------------------------
+
+Measles data
+
+BC
+
+	COLFIG Disease_data/ewmeas.Rout-1.pdf
+
+NC
+
+	Reconstruct the number of susceptibles
+
+	Divide the data into generations
+
+	Fit \Ro
+
+	Predict
+
+EC
+
+----------------------------------------------------------------------
+
+Why did I get the wrong answer?
+
+FIG Disease_data/ewmeas.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Why did I get the wrong answer?
+
+	Model structure may be wrong
+
+	Population structure may be wrong
+
+	Stochasticity in disease observation and recording
+
+	Stochasticity in transmission
+
+	Multi-parameter estimation
+
+		Generation intervals
+
+----------------------------------------------------------------------
+
+TSEC Conceptual framework
+
+	How do we assume our data relate to our model world?
+
+		\textbf{No error:} We could attempt to model everything we see, in
+		exact detail
+
+		\textbf{Observation error:} we could assume that the world is
+		perfectly deterministic, but our \emph{observations} are imperfect
+
+		\textbf{Process error:} we could assume that we observe perfectly,
+		but that the world is stochastic
+
+		\textbf{Both kinds of error:} the world is stochastic, and our
+		observations are imperfect
+
+----------------------------------------------------------------------
+
+No error
+
+	Impossible
+
+	Even if possible, not clear what we would learn
+
+----------------------------------------------------------------------
+
+Observation error only
+
+BC
+
+	Point your model at the target
+	
+	Give it starting conditions and parameters
+	
+	Let it go
+
+	Compare final results to observations
+
+NC
+
+\textbf{Shooting}
+
+COLFIG figs/machine.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Shooting
+
+FIG Disease_data/cards.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Shooting
+
+FIG Disease_data/cards.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Shooting
+
+FIG Disease_data/cards.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Process error only
+
+BC
+
+	Look at each step separately.
+	
+	See how the model is doing for that step.
+
+	Reset based on observed data before taking the next step
+
+NC
+
+\textbf{Stepping}
+
+COLFIG figs/stepping.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Stepping
+
+FIG Disease_data/cards.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Stepping
+
+FIG Disease_data/cards.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+Stepping
+
+FIG Disease_data/cards.Rout-5.pdf
+
+----------------------------------------------------------------------
+
+Comparing approaches
+
+BC
+
+COLFIG Disease_data/cards.Rout-2.pdf
+
+NC
+
+COLFIG Disease_data/cards.Rout-5.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Observation and process error
+
+	Latent variable models
+
+		We need to keep track of, and integrate over, things that we don't observe
+
+FIG Disease_data/ewmeas.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+SEC Fitting 
+
+----------------------------------------------------------------------
+
+How to fit?
+
+	Solving an equation
+
+	By eye (fiddling with parameters)
+
+	\emph{Minimizing a distance function}
+
+	Likelihood
+
+----------------------------------------------------------------------
+
+Distance functions
+
+BC
+
+CFIG distance.Rout-0.png
+
+NC
+
+$$D = \sum_i{y_i - \hat y_i}$$
+
+CFIG figs/deer.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Distance functions
+
+BC
+
+CFIG distance.Rout-1.png
+
+NC
+
+$$D = \sum_i{|y_i - \hat y_i|}$$
+
+CFIG figs/mpaka.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Distance functions
+
+BC
+
+CFIG distance.Rout-2.png
+
+NC
+
+$$D = \sum_i{(y_i - \hat y_i)^2}$$
+
+CFIG images/elegant.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+TSEC Likelihoods
+
+	Assume that the difference between the estimate $\hat y_i$ and the
+	data point $y_i$ is normally distributed.  What is the log
+	likelihood?
+
+	$$L = \prod_i{\frac{1}{\sigma\sqrt{2\pi}}\exp\left(\frac{-(\hat
+	y_i-y_i)^2}{2\sigma^2}\right)}$$
+
+	$$\ell = \sum_i{-\log(\sigma\sqrt{2\pi}) - \sum_i{\frac{(\hat
+	y_i-y_i)^2}{2\sigma^2}}}$$
+
+	\emph{We minimize the likelihood by minimizing the sum of squares}
+
+		and then solving for $\sigma$
+
+----------------------------------------------------------------------
+
+Least squares $\to$ likelihood
+
+	Attaching your least squares fit to a likelihood means:
+
+		You can \emph{use it} for statistical inference (LRT)
+
+		You can \emph{challenge} the assumptions
+
+
+----------------------------------------------------------------------
+
+Mexican flu example
+
+BC
+
+CFIG  fitting_code/mexican_plots.Rout-0.pdf
+
+NC
+
+	How fast is it growing? $r$
+
+	How hard will it be to control? $\Ro$ 
+
+EC
+
+----------------------------------------------------------------------
+
+A different perspective
+
+BC
+
+CFIG fitting_code/mexican_plots.Rout-1.pdf
+
+NC
+
+	We could make the normal assumption on either scale
+
+	How much does it matter?
+
+EC
+
+----------------------------------------------------------------------
+
+Normal assumption
+
+BC
+
+CFIG fitting_code/mexican_plots.Rout-2.pdf
+
+NC
+
+	Least squares on the linear scale
+
+	10:50 :: 980:1020
+
+	Gives relatively too much weight to large observations
+
+EC
+
+----------------------------------------------------------------------
+
+
+BC
+
+CFIG fitting_code/mexican_plots.Rout-2.pdf
+
+NC
+
+CFIG fitting_code/mexican_plots.Rout-3.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Lognormal assumption
+
+BC
+
+CFIG fitting_code/mexican_plots.Rout-5.pdf
+
+NC
+
+	Least squares on the log scale
+
+	3:5 :: 300:500
+
+	Gives relatively too much weight to small observations
+
+EC
+
+----------------------------------------------------------------------
+
+BC
+
+CFIG fitting_code/mexican_plots.Rout-4.pdf
+
+NC
+
+CFIG fitting_code/mexican_plots.Rout-5.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+A more realistic error distribution
+
+	My case counts are \emph{individuals}
+
+	What distributions can I use to reflect that?
+
+	WRONG!
+
+	\emph{Sorry:}
+
+		OK, technically it's right, but you shouldn't do it.
+
+----------------------------------------------------------------------
+
+Reality is complicated
+
+BC
+
+COLFIG images/crowd.jpg
+
+NC
+
+	Poisson and binomial reflect \emph{only} individual-level variation
+
+		No temporal variation
+		
+		No clustered sampling
+		
+		\ldots
+
+EC
+
+----------------------------------------------------------------------
+
+Distribution diagram
+
+----------------------------------------------------------------------
+
+Negative binomial fits
+
+BC
+
+CFIG fitting_code/mexican_plots.Rout-8.pdf
+
+NC
+
+CFIG fitting_code/mexican_plots.Rout-9.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Comparison
+
+	Realistic error distribution provides (apparently) better fits
+
+	Confidence intervals
+
+		Normal: $r$ = 0.96--0.97/wk
+
+		Lognormal: $r$ = 0.64--1.29/wk
+
+		Negative binomial: $r$ = 0.90--1.14/wk
+
+	How would you test these methods?
+
+----------------------------------------------------------------------
+
+Identifiability
+
+BC
+
+CFIG  fitting_code/mexican_plots.Rout-0.pdf
+
+NC
+
+	What if we tried to estimate \Ro\ from data like these?
+
+EC
+
+----------------------------------------------------------------------
+
+TSEC Modern approaches
+
+	Why are people using model worlds with no observation error?
+
+		or no process error?
+
+	Sometimes they are good enough (model validation)
+
+	Combining both is \emph{hard}
+
+----------------------------------------------------------------------
+
+Filtering
+
+	Filtering is a little like shooting
+
+		Simulate from beginning to end, but use \emph{stochastic} simulations
+
+	You need a lot of simulations, and often ways of selecting and refining them
+
+	A popular, state-of-the-art method is implemented in the R package
+	pomp 
+
+----------------------------------------------------------------------
+
+Latent variable methods
+
+	Latent variable methods are a little like stepping
+
+		But we step to and from unknown values (our latent variables), so we need
+		a way of exploring many possibilities
+
+	Popular, state-of-the-art methods are available in the R packages rjags and
+	rstan
+
+----------------------------------------------------------------------
+
+Multi-parameter inference
+
+	Modern methods are already hard, and when you consider various sources of uncertainty, you're really on the bleeding edge
+
+	Many high-profile models for Ebola, for example failed to consider process error.
+
+	The biggest paper talking about process error neglected uncertainty in generation intervals
+
+	Once you do multi-parameter inference, you may find that confidence intervals are very large -- this may reflect the reality of knowledge, but may not make you look good
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+
+Assessing and reporting uncertainty
+
+FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-5.pdf
+
+----------------------------------------------------------------------
+
+SEC Maximum likelihood and Bayesian inference
+
+----------------------------------------------------------------------
+
+Likelihood
+
+	Maximum likelihood and likelihood are not the same thing
+
+	Bayesian approaches and frequentist approaches (including maximum likelihood) \emph{both} depend on calculating (or approximating) likelihood
+
+----------------------------------------------------------------------
+
+Frequentist inference
+
+	To do frequentist inference on these complicated likelihoods, we need to:
+
+		estimate likelihoods
+
+		find the maximum likelihood
+
+		use the likelihood ratio test to find confidence intervals
+
+	This is hard
+
+----------------------------------------------------------------------
+
+Bayesian inference
+
+	To do Bayesian inference on these complicated likelihoods, we need to:
+
+		construct prior distributions
+
+		estimate likelihoods
+
+		estimate the posterior
+
+	Also hard, but sometimes easier than the frequentist approach
+
+----------------------------------------------------------------------
+
+
