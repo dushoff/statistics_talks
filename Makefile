@@ -19,12 +19,21 @@ include $(ms)/newtalk.def
 Sources += local.txt.format
 
 ## Copyright not integrated into make system yet
+Sources += copy.tex
 
 Sources += $(wildcard *.txt)
 
+## Moved here direct from Dropbox. Developing for NTU.
+## To do: figure out what you want from which column
+philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
+philosophy.handouts.pdf: philosophy.txt
+Archive += philosophy.draft.pdf
 
+## Moved here from ICI3D/lectures -- clean up!
+fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
+fitting.handouts.pdf: fitting.txt
 
 ##################################################################
 

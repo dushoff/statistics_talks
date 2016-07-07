@@ -1,14 +1,14 @@
+PRESENT \vfill\begin{center} 
 
-Title from email
+Fitting dynamic models to data
 
-\vfill
+PRESENT \vfill
 
 Jonathan Dushoff, McMaster University
 
 \url{http://lalashan.mcmaster.ca/DushoffLab}
 
-\vfill
-
+PRESENT \vfill
 
 PRESENT 2016 Summer Course on Mathematical Modeling and Analysis of 
 Infectious Diseases
@@ -17,7 +17,7 @@ PRESENT \vfill
 
 PRESENT National Taiwan University
 
-PRESENT \vfill
+PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
 
@@ -25,7 +25,7 @@ Measles data
 
 BC
 
-	COLFIG Disease_data/ewmeas.Rout-1.pdf
+	SIDEFIG Disease_data/ewmeas.Rout-1.pdf
 
 NC
 
@@ -41,7 +41,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Why did I get the wrong answer?
+RHEAD Why did I get the wrong answer?
 
 FIG Disease_data/ewmeas.Rout-1.pdf
 
@@ -105,19 +105,19 @@ NC
 
 \textbf{Shooting}
 
-COLFIG figs/machine.jpg
+SIDEFIG talkfigs/machine.jpg
 
 EC
 
 ----------------------------------------------------------------------
 
-Shooting
+PSLIDE Shooting
 
 FIG Disease_data/cards.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Shooting
+PSLIDE Shooting
 
 FIG Disease_data/cards.Rout-1.pdf
 
@@ -126,6 +126,12 @@ FIG Disease_data/cards.Rout-1.pdf
 Shooting
 
 FIG Disease_data/cards.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Shooting
+
+FIG Disease_data/ewmeas.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
@@ -143,13 +149,20 @@ NC
 
 \textbf{Stepping}
 
-COLFIG figs/stepping.jpg
+SIDEFIG talkfigs/stepping.jpg
 
 EC
 
 ----------------------------------------------------------------------
 
-Stepping
+RSLIDE Stepping
+
+FIG Disease_data/ewmeas.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+
+PSLIDE Stepping
 
 FIG Disease_data/cards.Rout-3.pdf
 
@@ -161,23 +174,15 @@ FIG Disease_data/cards.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
-Stepping
+OTHER Stepping
 
 FIG Disease_data/cards.Rout-5.pdf
 
 ----------------------------------------------------------------------
 
-Comparing approaches
+OTHER Comparing approaches
 
-BC
-
-COLFIG Disease_data/cards.Rout-2.pdf
-
-NC
-
-COLFIG Disease_data/cards.Rout-5.pdf
-
-EC
+DOUBLEFIG Disease_data/cards.Rout-2.pdf Disease_data/cards.Rout-5.pdf
 
 ----------------------------------------------------------------------
 
@@ -187,7 +192,7 @@ Observation and process error
 
 		We need to keep track of, and integrate over, things that we don't observe
 
-FIG Disease_data/ewmeas.Rout-1.pdf
+PIC FIG Disease_data/ewmeas.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
@@ -211,13 +216,15 @@ Distance functions
 
 BC
 
-CFIG distance.Rout-0.png
+SIDEFIG ICI3D/distance.Rout-0.png
 
 NC
 
 $$D = \sum_i{y_i - \hat y_i}$$
 
-CFIG figs/deer.jpg
+SIDEFIG talkfigs/deer.jpg
+
+NOTES Doesn't work
 
 EC
 
@@ -227,13 +234,15 @@ Distance functions
 
 BC
 
-CFIG distance.Rout-1.png
+SIDEFIG ICI3D/distance.Rout-1.png
 
 NC
 
 $$D = \sum_i{|y_i - \hat y_i|}$$
 
-CFIG figs/mpaka.jpg
+NOTES Not elegant
+
+SIDEFIG talkfigs/mpaka.jpg
 
 EC
 
@@ -243,13 +252,15 @@ Distance functions
 
 BC
 
-CFIG distance.Rout-2.png
+SIDEFIG ICI3D/distance.Rout-2.png
 
 NC
 
 $$D = \sum_i{(y_i - \hat y_i)^2}$$
 
-CFIG images/elegant.jpg
+SIDEFIG Lecture_images/elegant.jpg
+
+NOTES Simplest smooth approach
 
 EC
 
@@ -288,7 +299,7 @@ Mexican flu example
 
 BC
 
-CFIG  fitting_code/mexican_plots.Rout-0.pdf
+SIDEFIG  fitting_code/mexican_plots.Rout-0.pdf
 
 NC
 
@@ -304,7 +315,9 @@ A different perspective
 
 BC
 
-CFIG fitting_code/mexican_plots.Rout-1.pdf
+SIDEFIG fitting_code/mexican_plots.Rout-1.pdf
+
+	NOTES Log scale shows multiplicative differences
 
 NC
 
@@ -320,7 +333,7 @@ Normal assumption
 
 BC
 
-CFIG fitting_code/mexican_plots.Rout-2.pdf
+PIC CFIG fitting_code/mexican_plots.Rout-2.pdf
 
 NC
 
@@ -334,16 +347,9 @@ EC
 
 ----------------------------------------------------------------------
 
+RHEAD Normal assumption
 
-BC
-
-CFIG fitting_code/mexican_plots.Rout-2.pdf
-
-NC
-
-CFIG fitting_code/mexican_plots.Rout-3.pdf
-
-EC
+DOUBLEFIG fitting_code/mexican_plots.Rout-2.pdf fitting_code/mexican_plots.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
@@ -351,7 +357,7 @@ Lognormal assumption
 
 BC
 
-CFIG fitting_code/mexican_plots.Rout-5.pdf
+PIC CFIG fitting_code/mexican_plots.Rout-5.pdf
 
 NC
 
@@ -365,15 +371,9 @@ EC
 
 ----------------------------------------------------------------------
 
-BC
+RHEAD Lognormal assumption
 
-CFIG fitting_code/mexican_plots.Rout-4.pdf
-
-NC
-
-CFIG fitting_code/mexican_plots.Rout-5.pdf
-
-EC
+DOUBLEFIG fitting_code/mexican_plots.Rout-4.pdf fitting_code/mexican_plots.Rout-5.pdf
 
 ----------------------------------------------------------------------
 
@@ -383,21 +383,19 @@ A more realistic error distribution
 
 	What distributions can I use to reflect that?
 
-	WRONG!
+	ANS Poisson or binomial
 
-	\emph{Sorry:}
+		ANS WRONG!
 
-		OK, technically it's right, but you shouldn't do it.
+		ANS \emph{Sorry:}
+
+			ANS OK, technically it's right, but you shouldn't do it.
 
 ----------------------------------------------------------------------
 
 Reality is complicated
 
 BC
-
-COLFIG images/crowd.jpg
-
-NC
 
 	Poisson and binomial reflect \emph{only} individual-level variation
 
@@ -406,6 +404,10 @@ NC
 		No clustered sampling
 		
 		\ldots
+
+NC
+
+SIDEFIG Lecture_images/crowd.jpg
 
 EC
 
@@ -417,15 +419,7 @@ Distribution diagram
 
 Negative binomial fits
 
-BC
-
-CFIG fitting_code/mexican_plots.Rout-8.pdf
-
-NC
-
-CFIG fitting_code/mexican_plots.Rout-9.pdf
-
-EC
+DOUBLEFIG fitting_code/mexican_plots.Rout-8.pdf fitting_code/mexican_plots.Rout-9.pdf
 
 ----------------------------------------------------------------------
 
@@ -443,6 +437,8 @@ Comparison
 
 	How would you test these methods?
 
+		ANS Validation: use simulated data to see if your method is reliable
+
 ----------------------------------------------------------------------
 
 Identifiability
@@ -454,6 +450,8 @@ CFIG  fitting_code/mexican_plots.Rout-0.pdf
 NC
 
 	What if we tried to estimate \Ro\ from data like these?
+
+		ANS Disease could be fast with low \Ro\ or slow with high \Ro.
 
 EC
 
@@ -508,13 +506,13 @@ Multi-parameter inference
 
 ----------------------------------------------------------------------
 
-Assessing and reporting uncertainty
+PSLIDE Assessing and reporting uncertainty
 
 FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Assessing and reporting uncertainty
+PSLIDE Assessing and reporting uncertainty
 
 FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-1.pdf
 
@@ -526,20 +524,19 @@ FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-Assessing and reporting uncertainty
+PSLIDE Assessing and reporting uncertainty
 
 FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
-
-Assessing and reporting uncertainty
+PSLIDE Assessing and reporting uncertainty
 
 FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
-Assessing and reporting uncertainty
+RHEAD Assessing and reporting uncertainty
 
 FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-5.pdf
 
@@ -581,8 +578,20 @@ Bayesian inference
 
 		estimate the posterior
 
-	Also hard, but sometimes easier than the frequentist approach
+	Usually \emph{a little} less hard
+
+		But still requires more assumptions
 
 ----------------------------------------------------------------------
 
+Conclusion
 
+	We need \textbf{dynamics} to understand links between processes and outcomes
+
+		How do things work?
+
+	We need \textbf{statistics} to understand uncertainty
+
+		What can we learn from \emph{data}
+
+	Combining these two is difficult, but progress is being made.

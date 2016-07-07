@@ -1,24 +1,24 @@
 
+PRESENT \vfill\begin{center} 
+
 Statistical philosophy
 
-\begin{center}
-
-\vfill
-\vfill
+PRESENT \vfill
 
 Jonathan Dushoff, McMaster University
 
 \url{http://lalashan.mcmaster.ca/DushoffLab}
 
-\vfill
+PRESENT \vfill
 
-MMED 2016
+PRESENT 2016 Summer Course on Mathematical Modeling and Analysis of 
+Infectious Diseases
 
-\url{http://www.ici3d.org/mmed/}
+PRESENT \vfill
 
-\vfill
+PRESENT National Taiwan University
 
-\end{center}
+PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
 
@@ -59,17 +59,17 @@ Raining in Cape Town
 
 BC
 
-SIDEFIG Philosophy_lecture/eight.jpg
-
-CREDIT Tessa Wessels, {\em Faces on a Train}
-
-NC
-
 	How we interpret data like this necessarily depends on assumptions:
 
 		Is it likely our observations occured by chance?
 
 		Is it likely they \emph{didn't}?
+
+NC
+
+PIC HFIG 0.8  Philosophy_lecture/eight.jpg
+
+PIC CREDIT Tessa Wessels, {\em Faces on a Train}
 
 EC
 
@@ -99,10 +99,10 @@ TSEC Estimation
 	We use \emph{confidence intervals} to say what we think is going on
 	(with a certain level of confidence)
 
-	\emph{P values are over-rated}
+	P values are \emph{over-rated}
 
-	\emph{Never use a P value as evidence that an effect is small, or
-	that two quantities are similar.}
+	\emph{Never} use a P value as evidence that an effect is small, or
+	that two quantities are similar.
 
 ----------------------------------------------------------------------
 
@@ -171,7 +171,7 @@ Confidence intervals and P values
 
 BC
 
-CFIG CI_diagrams/vitamins.Rout-1.pdf
+PRESENT CFIG CI_diagrams/vitamins.Rout-1.pdf
 
 NC
 
@@ -223,18 +223,16 @@ Experimental design
 		Useful, but can only be asked for a specific hypothetical effect
 		\emph{size}
 
-	This is basically power and validity analysis -- you should do these
-	hypothetical analyses \emph{before} you collect data, not after
+	These are useful to analyze \textbf{power} and \textbf{validity} of a
+	statistical design
+	
+		You should do these analyses \emph{before} you collect data, not after
 
 ----------------------------------------------------------------------
 
 A new view of error
 
 BC
-
-CFIG Philosophy_lecture/error.jpg
-
-NC
 
 	\emph{Sign error:} if I think an effect is positive, when it's really
 	negative (or vice versa)
@@ -244,6 +242,10 @@ NC
 
 	Confidence intervals clarify all of this
 
+NC
+
+SIDEFIG Philosophy_lecture/error.jpg
+
 EC
 
 ----------------------------------------------------------------------
@@ -252,13 +254,13 @@ Low P values
 
 BC
 
-CFIG Philosophy_lecture/clear.jpg
-
-NC
-
 	If I have a low P value I can see something clearly
 
 	But it's usually better to focus on what I see than the P value
+
+NC
+
+SIDEFIG Philosophy_lecture/clear.jpg
 
 EC
 
@@ -269,16 +271,16 @@ High P values
 
 BC
 
-CFIG Philosophy_lecture/fog.jpg
-
-NC
-
 	If I have a high P value, there is something I \emph{don't} see
 	clearly
 
 	It \emph{may be} because this effect is small
 
 	High P values should \emph{not} be used to advance your conclusion
+
+NC
+
+SIDEFIG Philosophy_lecture/fog.jpg
 
 EC
 
@@ -325,11 +327,11 @@ CFIG CI_diagrams/flu.Rout-1.pdf
 
 NC
 
-	Never say: A is significant and B isn't, so $A>B$
+	\textbf{Never} say: A is significant and B isn't, so $A>B$
 
-	Instead: Construct a statistic for the hypothesis $A>B$
+	\textbf{Instead:} Construct a statistic for the hypothesis $A>B$
 
-		Sometimes difficult, but you still have to do it
+		May be difficult
 
 EC
 
@@ -338,10 +340,6 @@ EC
 Syllogisms
 
 BC
-
-CFIG Philosophy_lecture/zuma.jpg
-
-NC
 
 	All men are mortal
 
@@ -349,6 +347,10 @@ NC
 
 	Therefore, Jacob Zuma is a man
 
+NC
+
+SIDEFIG Philosophy_lecture/zuma.jpg
+
 EC
 
 ----------------------------------------------------------------------
@@ -357,15 +359,15 @@ Syllogisms
 
 BC
 
-CFIG Philosophy_lecture/fanny.jpg
-
-NC
-
 	All men are mortal
 
 	Fanny the elephant is mortal
 
 	Therefore, Fanny is a man
+
+NC
+
+SIDEFIG Philosophy_lecture/fanny.jpg
 
 EC
 
@@ -397,7 +399,7 @@ Small effects
 
 ----------------------------------------------------------------------
 
-Flu masks 
+PSLIDE Flu masks 
 
 DBFIG 0.8 Philosophy_lecture/N95.jpg 0.7 Philosophy_lecture/surgical.jpg
 
@@ -426,11 +428,11 @@ FIG CI_diagrams/masks.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-Non-inferiority trial
+RHEAD Non-inferiority trial
 
 BC
 
-CFIG CI_diagrams/masks.Rout-0.pdf
+PRESENT CFIG CI_diagrams/masks.Rout-0.pdf
 
 NC
 
@@ -450,7 +452,7 @@ CFIG CI_diagrams/masks.Rout-1.pdf
 
 NC
 
-	We can even attach a P value by basing it on the "right" statistic.
+	We can even attach a P value by basing it on the ``right" statistic.
 
 	The right statistic is the thing whose sign we want to know:
 
@@ -461,7 +463,11 @@ EC
 
 ----------------------------------------------------------------------
 
-TSEC Frequentist paradigm
+SEC Paradigms for inference
+
+----------------------------------------------------------------------
+
+TSS Frequentist paradigm
 
 	Make a null model
 
@@ -489,19 +495,19 @@ FIG Philosophy_lecture/vitamins_plot.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Scrambled measurements
+RSLIDE Scrambled measurements
 
 FIG Philosophy_lecture/vitamins_plot.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-Scrambled measurements
+RSLIDE Scrambled measurements
 
 FIG Philosophy_lecture/vitamins_plot.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
-Scrambled measurements
+RSLIDE Scrambled measurements
 
 FIG Philosophy_lecture/vitamins_plot.Rout-4.pdf
 
@@ -513,17 +519,17 @@ FIG Philosophy_lecture/vitamins_scramble.Rout.pdf
 
 ----------------------------------------------------------------------
 
-TSEC Bayesian paradigm
+TSS Bayesian paradigm
 
 BC
-
-CFIG Philosophy_lecture/shanghai.jpg
-
-NC
 
 	Make a complete model world
 
 	Use conditional probability to calculate the probability you want
+
+NC
+
+SIDEFIG Philosophy_lecture/shanghai.jpg
 
 EC
 
@@ -539,7 +545,7 @@ BC
 
 NC
 
-CFIG Philosophy_lecture/spiderman.jpg
+SIDEFIG Philosophy_lecture/spiderman.jpg
 
 EC
 
@@ -562,14 +568,14 @@ Vitamin A study
 
 BC
 
-FIG Philosophy_lecture/vitamins_plot.Rout-0.pdf
-
-NC
-
 	A frequentist can do a clear analysis right away
 
 	A Bayesian needs a ton of assumptions -- will try to make
 	``uninformative'' assumptions
+
+NC
+
+SIDEFIG Philosophy_lecture/vitamins_plot.Rout-0.pdf
 
 EC
 
@@ -579,15 +585,17 @@ Cape Town weather
 
 BC
 
-CFIG Philosophy_lecture/eight.jpg
-
-NC
-
 	Frequentist: how unlikely is the observation, from a random
 	perspective?
 
 	Bayesian: what's my model world?  What is my prior belief about 
 	weather-weekday interactions.  
+
+NC
+
+PIC HFIG 0.8  Philosophy_lecture/eight.jpg
+
+PRESENT CREDIT Tessa Wessels, {\em Faces on a Train}
 
 EC
 
