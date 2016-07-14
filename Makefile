@@ -2,7 +2,7 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: fitting.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: philosophy.draft.pdf 
 
 ##################################################################
 
@@ -10,7 +10,7 @@ target pngtarget pdftarget vtarget acrtarget: fitting.draft.pdf
 
 Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
 include stuff.mk
-include $(ms)/newtalk.def
+-include $(ms)/newtalk.def
 
 ##################################################################
 
