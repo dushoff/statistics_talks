@@ -2,7 +2,7 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: philosophy.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: fitting.draft.pdf 
 
 ##################################################################
 
@@ -35,12 +35,27 @@ fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
 
+
+######################################################################
+
+# Simple R scripts moved from CI_diagrams and Philosophy Lecture; should be documented, and may need make rules
+
+Sources += $(wildcard *.R)
+
+flu.Rout: ciplots.Rout 
+masks.Rout: ciplots.Rout 
+vitamins.Rout: ciplots.Rout
+
+vitamins_plot.Rout: vitamins_data.Rout 
+
+vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
+
 ##################################################################
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 
-## newtalk should be first of these three; want to make stuff in other directories by going there.
+## newtalk should be first of these three; want to make stuff in other directories by going there using newtalk, not by trying to project rules from here
 -include $(ms)/newtalk.mk
 -include $(ms)/newlatex.mk
-# -include $(ms)/wrapR.mk
+-include $(ms)/wrapR.mk

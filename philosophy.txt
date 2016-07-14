@@ -24,7 +24,7 @@ PRESENT \vfill\end{center}
 
 OTHER Long pipe 
 
-	PIC HIGHFIG 0.5 Philosophy_lecture/pipe.jpg
+	PIC HIGHFIG 0.5 Lecture_images/pipe.jpg
 
 	Any piece of pipe longer than 30 feet shall be clearly labelled
 	``long pipe'' on each end
@@ -67,7 +67,7 @@ BC
 
 NC
 
-PIC HFIG 0.8  Philosophy_lecture/eight.jpg
+PIC HFIG 0.8  my_images/eight.jpg
 
 PIC CREDIT Tessa Wessels, {\em Faces on a Train}
 
@@ -155,7 +155,7 @@ Confidence intervals
 
 BC
 
-CFIG CI_diagrams/vitamins.Rout-0.pdf
+CFIG vitamins.Rout-0.pdf
 
 NC
 
@@ -171,7 +171,7 @@ Confidence intervals and P values
 
 BC
 
-PRESENT CFIG CI_diagrams/vitamins.Rout-1.pdf
+PRESENT CFIG vitamins.Rout-1.pdf
 
 NC
 
@@ -185,7 +185,7 @@ EC
 
 The meaning of P values
 
-PIC DBFIG 0.8 Philosophy_lecture/fog.jpg 1 Philosophy_lecture/clear.jpg
+PIC DBFIG 0.8 Lecture_images/fog.jpg 1 Lecture_images/clear.jpg
 
 	More broadly, a P value measures whether we are seeing
 	\emph{something} clearly
@@ -244,7 +244,7 @@ BC
 
 NC
 
-SIDEFIG Philosophy_lecture/error.jpg
+SIDEFIG Lecture_images/error.jpg
 
 EC
 
@@ -260,7 +260,7 @@ BC
 
 NC
 
-SIDEFIG Philosophy_lecture/clear.jpg
+SIDEFIG Lecture_images/clear.jpg
 
 EC
 
@@ -280,7 +280,7 @@ BC
 
 NC
 
-SIDEFIG Philosophy_lecture/fog.jpg
+SIDEFIG Lecture_images/fog.jpg
 
 EC
 
@@ -309,7 +309,7 @@ Annualized flu deaths
 
 BC
 
-CFIG CI_diagrams/flu.Rout-0.pdf
+CFIG flu.Rout-0.pdf
 
 NC
 
@@ -323,7 +323,7 @@ DEFHEAD ... with confidence intervals
 
 BC
 
-CFIG CI_diagrams/flu.Rout-1.pdf
+CFIG flu.Rout-1.pdf
 
 NC
 
@@ -349,7 +349,7 @@ BC
 
 NC
 
-SIDEFIG Philosophy_lecture/zuma.jpg
+SIDEFIG Lecture_images/zuma.jpg
 
 EC
 
@@ -367,7 +367,7 @@ BC
 
 NC
 
-SIDEFIG Philosophy_lecture/fanny.jpg
+SIDEFIG Lecture_images/fanny.jpg
 
 EC
 
@@ -401,7 +401,7 @@ Small effects
 
 PSLIDE Flu masks 
 
-DBFIG 0.8 Philosophy_lecture/N95.jpg 0.7 Philosophy_lecture/surgical.jpg
+DBFIG 0.8 Lecture_images/N95.jpg 0.7 Lecture_images/surgical.jpg
 
 ----------------------------------------------------------------------
 
@@ -424,7 +424,7 @@ Flu mask example
 
 Study results
 
-FIG CI_diagrams/masks.Rout-2.pdf
+FIG masks.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
@@ -432,7 +432,7 @@ RHEAD Non-inferiority trial
 
 BC
 
-PRESENT CFIG CI_diagrams/masks.Rout-0.pdf
+PRESENT CFIG masks.Rout-0.pdf
 
 NC
 
@@ -448,7 +448,7 @@ Non-inferiority trial
 
 BC
 
-CFIG CI_diagrams/masks.Rout-1.pdf
+CFIG masks.Rout-1.pdf
 
 NC
 
@@ -485,37 +485,37 @@ TSS Frequentist paradigm
 
 Height measurements
 
-FIG Philosophy_lecture/vitamins_plot.Rout-0.pdf
+FIG vitamins_plot.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
 Scrambled measurements
 
-FIG Philosophy_lecture/vitamins_plot.Rout-1.pdf
+FIG vitamins_plot.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
 RSLIDE Scrambled measurements
 
-FIG Philosophy_lecture/vitamins_plot.Rout-2.pdf
+FIG vitamins_plot.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
 RSLIDE Scrambled measurements
 
-FIG Philosophy_lecture/vitamins_plot.Rout-3.pdf
+FIG vitamins_plot.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
 RSLIDE Scrambled measurements
 
-FIG Philosophy_lecture/vitamins_plot.Rout-4.pdf
+FIG vitamins_plot.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
 The null distribution
 
-FIG Philosophy_lecture/vitamins_scramble.Rout.pdf
+FIG vitamins_scramble.Rout.pdf
 
 ----------------------------------------------------------------------
 
@@ -529,7 +529,7 @@ BC
 
 NC
 
-SIDEFIG Philosophy_lecture/shanghai.jpg
+SIDEFIG Lecture_images/shanghai.jpg
 
 EC
 
@@ -545,7 +545,7 @@ BC
 
 NC
 
-SIDEFIG Philosophy_lecture/spiderman.jpg
+SIDEFIG Lecture_images/spiderman.jpg
 
 EC
 
@@ -575,7 +575,7 @@ BC
 
 NC
 
-SIDEFIG Philosophy_lecture/vitamins_plot.Rout-0.pdf
+SIDEFIG vitamins_plot.Rout-0.pdf
 
 EC
 
@@ -593,7 +593,7 @@ BC
 
 NC
 
-PIC HFIG 0.8  Philosophy_lecture/eight.jpg
+PIC HFIG 0.8  my_images/eight.jpg
 
 PRESENT CREDIT Tessa Wessels, {\em Faces on a Train}
 
