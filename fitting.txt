@@ -216,7 +216,7 @@ Distance functions
 
 BC
 
-SIDEFIG ICI3D/distance.Rout-0.png
+SIDEFIG distance.Rout-0.png
 
 NC
 
@@ -234,7 +234,7 @@ Distance functions
 
 BC
 
-SIDEFIG ICI3D/distance.Rout-1.png
+SIDEFIG distance.Rout-1.png
 
 NC
 
@@ -252,7 +252,7 @@ Distance functions
 
 BC
 
-SIDEFIG ICI3D/distance.Rout-2.png
+SIDEFIG distance.Rout-2.png
 
 NC
 
