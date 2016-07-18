@@ -242,7 +242,7 @@ $$D = \sum_i{|y_i - \hat y_i|}$$
 
 NOTES Not elegant
 
-SIDEFIG talkfigs/mpaka.jpg
+SIDEFIG my_images/mpaka.jpg
 
 EC
 
