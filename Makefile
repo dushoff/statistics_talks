@@ -34,7 +34,7 @@ Archive += philosophy.draft.pdf
 fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
-
+Archive += fitting.draft.pdf
 
 ######################################################################
 
