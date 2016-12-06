@@ -2,13 +2,13 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: fitting.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: evaluation.draft.pdf 
 
 ##################################################################
 
 # make files
 
-Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
+Sources = Makefile .gitignore README.md stuff.mk LICENSE.md notes.txt
 include stuff.mk
 -include $(ms)/newtalk.def
 
@@ -28,13 +28,16 @@ Sources += $(wildcard *.txt)
 philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
-Archive += philosophy.draft.pdf
 
 ## Moved here from ICI3D/lectures -- clean up!
 fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
-Archive += fitting.draft.pdf
+
+## Now moving (maybe) during DAIDD 2016 (also from lectures)
+evaluation.final.pdf: evaluation.txt
+evaluation.draft.pdf: evaluation.txt
+evaluation.handouts.pdf: evaluation.txt
 
 ######################################################################
 

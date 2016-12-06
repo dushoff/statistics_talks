@@ -1,0 +1,428 @@
+
+EXTRA
+
+Fix EbolaFits
+
+----------------------------------------------------------------------
+
+Model evaluation
+
+\vfill
+
+Jonathan Dushoff, McMaster University
+
+\url{http://lalashan.mcmaster.ca/DushoffLab}
+
+\vfill
+
+DAIDD 2016
+
+\url{http://www.ici3d.org/mmed/}
+
+\vfill
+
+----------------------------------------------------------------------
+
+Do I have a good model?
+
+	What is my model trying to accomplish?
+
+		Generating hypotheses
+
+		Evaluating plausibility
+
+		Prediction
+
+		Extrapolation
+
+		Mechanistic understanding
+
+----------------------------------------------------------------------
+
+Statistical philosophy
+
+HIGHFIG Lecture_images/obey_kitties.png
+
+----------------------------------------------------------------------
+
+SECTION Conceptual models
+
+----------------------------------------------------------------------
+
+Disease thresholds
+
+WIDEFIG curves/propCurves.Rout-0.png
+
+----------------------------------------------------------------------
+
+Effects of clinical immunity
+
+HIGHFIG Lecture_images/keeganClinicalDiagram.jpg
+
+----------------------------------------------------------------------
+
+Bistability
+
+WIDEFIG Lecture_images/keeganPhaseDiagram.jpg
+
+----------------------------------------------------------------------
+
+SECTION Prediction
+
+----------------------------------------------------------------------
+
+Ptolemy v.\ Copernicus
+
+HIGHFIG Lecture_images/epicycles.jpg
+
+----------------------------------------------------------------------
+
+Ptolemy v.\ Copernicus
+
+HIGHFIG Lecture_images/heliocentric.jpg
+
+----------------------------------------------------------------------
+
+What causes cholera?
+
+WIDEFIG my_images/Farr.png
+
+----------------------------------------------------------------------
+
+What causes cholera?
+
+HIGHFIG Lecture_images/choleraMap.jpg
+
+----------------------------------------------------------------------
+
+TSEC Model Validation
+
+	Does your fitting algorithm match your _model world_?
+
+SCALEFIG 0.5 my_images/modelWorld.png
+
+	Coverage
+
+	Precision
+
+	Bias?
+
+	Accuracy?
+
+----------------------------------------------------------------------
+
+Coverage
+
+	If you use your fitting algorithm on simulations from your model
+	world, then you _know the right answer_!
+
+SIDEFIG Lecture_images/SierraLeoneValidation.jpg
+
+	The right answer should be inside your 95% confidence interval 95% of
+	the time
+
+		If more, your model is _too conservative_
+
+		If less, your model is _invalid_
+
+----------------------------------------------------------------------
+
+Precision
+
+	You should aim to make your confidence intervals as narrow as
+	possible
+
+		Provide as much information as possible
+
+	As data increases, your precision should increase
+
+		CIs should approach zero width
+
+----------------------------------------------------------------------
+
+Bias?
+
+	Nobody wants to be biased 
+
+	You _need_ to be _asymptotically_ unbiased
+
+		Good coverage and good precision assure this
+
+	Not so clear you need to be _absolutely_ unbiased
+
+		Bias is the difference between the _mean_ expected prediction and the
+		true value
+
+		Scale dependent: an unbiased estimate of $\gamma$ is
+		automatically a biased estimate of $D$ (but not
+		asymptotically biased)
+
+		Maybe the median would be a better measure
+
+----------------------------------------------------------------------
+
+Accuracy?
+
+	Nobody wants to be inaccurate
+
+	Good coverage and good precision should guarantee good accuracy
+
+----------------------------------------------------------------------
+
+TSEC Model Evaluation
+
+	Does your model match the _real world_?
+
+SIGHFIG 0.7 Lecture_images/Earth.jpg
+
+----------------------------------------------------------------------
+
+TSUB Goodness of fit
+
+	Goodness of fit \emph{statistics} describe how well a model prediction
+	matches observed data
+
+	Goodness of fit \emph{tests} attempt to determine whehter the observed
+	difference between model and data is statistically significant
+
+----------------------------------------------------------------------
+
+NOSLIDE A disease-incidence model
+
+COMMENT Do I like this? Am I thinking clearly about it?
+
+I like the picture at least.
+
+SUBH Good for almost any disease
+
+BC
+
+SIGHFIG 0.75 Lecture_images/godDice.jpg
+
+NC
+
+	The gods roll dice to pick a probability between 0.1% and 10%.
+
+	Each person on the planet gets the disease the next year with this
+	probability
+
+	$P>0.05$. My model is correct!
+
+EC
+
+----------------------------------------------------------------------
+
+Your model is false!
+
+BC
+
+	A goodness of fit test won't make it true
+
+	You can ``pass'' a goodness of fit test by:
+
+		having a good model
+
+		having bad data
+
+		choosing an inappropriate way to compare
+
+	So why do we use P values at all in biology?
+
+NC
+
+SIGHFIG 0.75 Lecture_images/godDice.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+NOSLIDE
+
+Vitamin study
+
+WIDEFIG vitamins.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Vitamin study
+
+WIDEFIG vitamins.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Low P values
+
+FIG Lecture_images/clear.jpg
+
+----------------------------------------------------------------------
+
+High P values
+
+FIG Lecture_images/fog.jpg
+
+----------------------------------------------------------------------
+
+Goodness of fit test
+
+	Your model is _not_ reality (null hypothesis is false)
+
+	Can we see the difference clearly?
+
+		If no, model may be good or bad. 
+		
+			We probably can't add any more complexity based on current
+			data
+
+		If yes, model may be good or bad. We _may_ be able to add more
+		complexity based on current data
+
+			But we may not need to
+
+----------------------------------------------------------------------
+
+TSUB Capturing patterns
+
+	You can ask:
+
+		Does your model do a reasonable job of capturing the data?
+
+			You can use a goodness of fit _statistic_ for this, and not
+			worry about the P value
+
+		Does your model capture patterns and relationships that you (or
+		other experts) think are important?
+
+----------------------------------------------------------------------
+
+SUB Going beyond
+
+----------------------------------------------------------------------
+
+Out-of-sample validation
+
+	Does your model make predictions _outside_ the range on which you
+	calibrated it?
+
+		Predicting gravitational shifts in star positions from
+		measurements in Earth laboratories
+
+		Predicting cholera outbreaks in Bangladesh from a model calibrated
+		to Haiti
+
+		Predicting influenza patterns in 2010 from a model calibrated from
+		2000--2009
+
+----------------------------------------------------------------------
+
+Test sets
+
+	What is \textbf{test set} spelled backwards?
+
+	Hold some data out while fitting your model
+
+	Or just _pretend_ to do this as an evaluation method
+
+		In other words, test what would happen under various withholding
+		scenarios
+
+----------------------------------------------------------------------
+
+Other model worlds
+
+	The model you're _fitting_ is probably pretty simple
+
+	But you can _simulate_ very complicated models, indeed
+
+WIDEFIG Lecture_images/legoland.jpg
+
+	How well can you do? Which details are important?
+
+----------------------------------------------------------------------
+
+Other model worlds
+
+FIG EbolaFits/T34.NIH3.compare.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Other model worlds
+
+FIG EbolaFits/T34.NIH3.compare.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Generating hypotheses
+
+FIG Lecture_images/EbolaBurial.jpg
+
+----------------------------------------------------------------------
+
+Generating hypotheses
+
+FIG Lecture_images/lembo_spp.jpg
+
+----------------------------------------------------------------------
+
+Testing hypotheses
+
+WIDEFIG my_images/Farr.png
+
+----------------------------------------------------------------------
+
+Testing hypotheses
+
+HIGHFIG Lecture_images/choleraMap.jpg
+
+----------------------------------------------------------------------
+
+Testing hypotheses
+
+HIGHFIG Lecture_images/BroadStreet.jpg
+
+----------------------------------------------------------------------
+
+Hard questions
+
+FIG Lecture_images/QuestionAnswers.jpg
+
+----------------------------------------------------------------------
+
+SEC Conclusion
+
+----------------------------------------------------------------------
+
+Dynamic models can help:
+
+	Think clearly
+
+	Understand outcomes
+
+	Predict outcomes
+
+	Find new mechanisms
+
+----------------------------------------------------------------------
+
+Evaluation
+
+	Validation (inside your model world)
+
+	Inspection (compare patterns)
+
+	Prediction (and other out-of-sample comparison)
+
+	Generate and test hypotheses
+
+----------------------------------------------------------------------
+
+Conclusion
+
+SIDEFIG Lecture_images/prometheus.jpg
+
+\vfill
+
+Essentially, all models are wrong, but some are useful.
+
+-- Box and Draper (1987), \emph{Empirical Model Building \ldots}
+
+\vfill
