@@ -7,19 +7,19 @@ Fix EbolaFits
 
 Model evaluation
 
-\vfill
+SPACE
 
 Jonathan Dushoff, McMaster University
 
 \url{http://lalashan.mcmaster.ca/DushoffLab}
 
-\vfill
+SPACE
 
 DAIDD 2016
 
-\url{http://www.ici3d.org/mmed/}
+\url{http://www.ici3d.org/daidd/}
 
-\vfill
+SPACE
 
 ----------------------------------------------------------------------
 
@@ -41,7 +41,9 @@ Do I have a good model?
 
 Statistical philosophy
 
-FIG Lecture_images/obey_kitties.png
+PIC FIG Lecture_images/obey_kitties.png
+
+NOTES You should develop your own statistical philosophy
 
 ----------------------------------------------------------------------
 
@@ -51,13 +53,13 @@ SEC Conceptual models
 
 Disease thresholds
 
-FIG curves/propCurves.Rout-0.png
+PIC FIG curves/propCurves.Rout-0.png
 
 ----------------------------------------------------------------------
 
 Effects of clinical immunity
 
-FIG Lecture_images/keeganClinicalDiagram.jpg
+PIC FIG Lecture_images/keeganClinicalDiagram.jpg
 
 ----------------------------------------------------------------------
 
@@ -73,23 +75,23 @@ SEC Prediction
 
 Ptolemy v.\ Copernicus
 
-FIG Lecture_images/epicycles.jpg
+PIC FIG Lecture_images/epicycles.jpg
 
 ----------------------------------------------------------------------
 
-Ptolemy v.\ Copernicus
+PSLIDE Ptolemy v.\ Copernicus
 
-FIG Lecture_images/heliocentric.jpg
-
-----------------------------------------------------------------------
-
-What causes cholera?
-
-WIDEFIG my_images/Farr.png
+PIC FIG Lecture_images/heliocentric.jpg
 
 ----------------------------------------------------------------------
 
-What causes cholera?
+Where will we see cholera cases?
+
+PIC WIDEFIG my_images/Farr.png
+
+----------------------------------------------------------------------
+
+PSLIDE Where will we see cholera cases?
 
 FIG Lecture_images/choleraMap.jpg
 
@@ -99,7 +101,7 @@ TSEC Model Validation
 
 	Does your fitting algorithm match your \emph{model world}?
 
-HFIG 0.4 my_images/modelWorld.png
+PIC HFIG 0.4 my_images/modelWorld.png
 
 	If you use your fitting algorithm on simulations from your model
 	world, then you \emph{know the right answer}!
@@ -120,7 +122,9 @@ Validation measures
 
 Coverage
 
-HFIG 0.5 Lecture_images/SierraLeoneValidation.jpg
+PRESENT HFIG 0.5 Lecture_images/SierraLeoneValidation.jpg
+
+NOTES HFIG 0.3 Lecture_images/SierraLeoneValidation.jpg
 
 	The right answer should be inside your 95% confidence interval 95% of
 	the time
@@ -240,7 +244,7 @@ BC
 
 NC
 
-CFIG Lecture_images/godDice.jpg
+SIDEFIG Lecture_images/godDice.jpg
 
 EC
 
@@ -252,21 +256,29 @@ FIG vitamins.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Vitamin study
+PSLIDE Vitamin study
 
 FIG vitamins.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Low P values
+PSLIDE Low P values
 
 FIG Lecture_images/clear.jpg
 
 ----------------------------------------------------------------------
 
-High P values
+PSLIDE High P values
 
 FIG Lecture_images/fog.jpg
+
+----------------------------------------------------------------------
+
+What does the P value mean?
+
+	Low: you are seeing something clearly
+
+	High: you are seeing something unclearly
 
 ----------------------------------------------------------------------
 
@@ -341,57 +353,78 @@ Other model worlds
 
 	But you can \emph{simulate} very complicated models, indeed
 
-HFIG 0.6 Lecture_images/legoland.jpg
+PIC HFIG 0.6 Lecture_images/legoland.jpg
 
 	How well can you do? Which details are important?
 
 ----------------------------------------------------------------------
 
-Other model worlds
+PSLIDE Other model worlds
 
 FIG EbolaFits/T34.NIH3.compare.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Other model worlds
+PSLIDE Other model worlds
 
 FIG EbolaFits/T34.NIH3.compare.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Generating hypotheses
+PSLIDE Generating hypotheses
 
 FIG Lecture_images/EbolaBurial.jpg
 
 ----------------------------------------------------------------------
 
-Generating hypotheses
+PSLIDE Generating hypotheses
 
 FIG Lecture_images/lembo_spp.jpg
 
 ----------------------------------------------------------------------
 
-Testing hypotheses
+NSLIDE Generating hypotheses
+
+For example:
+
+	Safe burial is key to interrupting Ebola transmission
+
+	Vaccinating domestic dogs can eliminate transmission of canine rabies
+
+----------------------------------------------------------------------
+
+PSLIDE Testing hypotheses
 
 WIDEFIG my_images/Farr.png
 
 ----------------------------------------------------------------------
 
-Testing hypotheses
+PSLIDE Testing hypotheses
 
 FIG Lecture_images/choleraMap.jpg
 
 ----------------------------------------------------------------------
 
-Testing hypotheses
+PSLIDE Testing hypotheses
 
 FIG Lecture_images/BroadStreet.jpg
 
 ----------------------------------------------------------------------
 
+NSLIDE Testing hypotheses
+
+	Both the Farr model and the Snow model made testable predictions about
+	cholera
+
+	Snow tested his hypotheses by removing the pump handle
+
+----------------------------------------------------------------------
+
 Hard questions
 
-FIG Lecture_images/QuestionAnswers.jpg
+PIC FIG Lecture_images/QuestionAnswers.jpg
+
+Answers are not always easy
 
 ----------------------------------------------------------------------
 
@@ -425,12 +458,14 @@ Evaluation
 
 Conclusion
 
-HFIG 0.7 Lecture_images/prometheus.jpg
+PIC HFIG 0.7 Lecture_images/prometheus.jpg
 
-\vfill
+NOTES Shepherd moons were predicted before they were seen
+
+SPACE
 
 Essentially, all models are wrong, but some are useful.
 
 -- Box and Draper (1987), \emph{Empirical Model Building \ldots}
 
-\vfill
+SPACE
