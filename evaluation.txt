@@ -41,23 +41,23 @@ Do I have a good model?
 
 Statistical philosophy
 
-HIGHFIG Lecture_images/obey_kitties.png
+FIG Lecture_images/obey_kitties.png
 
 ----------------------------------------------------------------------
 
-SECTION Conceptual models
+SEC Conceptual models
 
 ----------------------------------------------------------------------
 
 Disease thresholds
 
-WIDEFIG curves/propCurves.Rout-0.png
+FIG curves/propCurves.Rout-0.png
 
 ----------------------------------------------------------------------
 
 Effects of clinical immunity
 
-HIGHFIG Lecture_images/keeganClinicalDiagram.jpg
+FIG Lecture_images/keeganClinicalDiagram.jpg
 
 ----------------------------------------------------------------------
 
@@ -67,19 +67,19 @@ WIDEFIG Lecture_images/keeganPhaseDiagram.jpg
 
 ----------------------------------------------------------------------
 
-SECTION Prediction
+SEC Prediction
 
 ----------------------------------------------------------------------
 
 Ptolemy v.\ Copernicus
 
-HIGHFIG Lecture_images/epicycles.jpg
+FIG Lecture_images/epicycles.jpg
 
 ----------------------------------------------------------------------
 
 Ptolemy v.\ Copernicus
 
-HIGHFIG Lecture_images/heliocentric.jpg
+FIG Lecture_images/heliocentric.jpg
 
 ----------------------------------------------------------------------
 
@@ -91,15 +91,22 @@ WIDEFIG my_images/Farr.png
 
 What causes cholera?
 
-HIGHFIG Lecture_images/choleraMap.jpg
+FIG Lecture_images/choleraMap.jpg
 
 ----------------------------------------------------------------------
 
 TSEC Model Validation
 
-	Does your fitting algorithm match your _model world_?
+	Does your fitting algorithm match your \emph{model world}?
 
-SCALEFIG 0.5 my_images/modelWorld.png
+HFIG 0.4 my_images/modelWorld.png
+
+	If you use your fitting algorithm on simulations from your model
+	world, then you \emph{know the right answer}!
+
+----------------------------------------------------------------------
+
+Validation measures
 
 	Coverage
 
@@ -113,17 +120,18 @@ SCALEFIG 0.5 my_images/modelWorld.png
 
 Coverage
 
-	If you use your fitting algorithm on simulations from your model
-	world, then you _know the right answer_!
-
-SIDEFIG Lecture_images/SierraLeoneValidation.jpg
+HFIG 0.5 Lecture_images/SierraLeoneValidation.jpg
 
 	The right answer should be inside your 95% confidence interval 95% of
 	the time
 
-		If more, your model is _too conservative_
+		If more, your model is \emph{too conservative}
 
-		If less, your model is _invalid_
+		If less, your model is \emph{invalid}
+
+	In many cases it's good to look at the two tails separately:
+
+		How often do you overestimate? Underestimate?
 
 ----------------------------------------------------------------------
 
@@ -144,20 +152,20 @@ Bias?
 
 	Nobody wants to be biased 
 
-	You _need_ to be _asymptotically_ unbiased
+	You \emph{need} to be \emph{asymptotically} unbiased
 
 		Good coverage and good precision assure this
 
-	Not so clear you need to be _absolutely_ unbiased
+	Not so clear you need to be \emph{absolutely} unbiased
 
-		Bias is the difference between the _mean_ expected prediction and the
+		Bias is the difference between the \emph{mean} expected prediction and the
 		true value
 
 		Scale dependent: an unbiased estimate of $\gamma$ is
 		automatically a biased estimate of $D$ (but not
 		asymptotically biased)
 
-		Maybe the median would be a better measure
+	It may be better to evaluate using medians (instead of means)
 
 ----------------------------------------------------------------------
 
@@ -171,13 +179,13 @@ Accuracy?
 
 TSEC Model Evaluation
 
-	Does your model match the _real world_?
+	Does your model match the \emph{real world}?
 
-SIGHFIG 0.7 Lecture_images/Earth.jpg
+PIC HFIG 0.7 Lecture_images/Earth.jpg
 
 ----------------------------------------------------------------------
 
-TSUB Goodness of fit
+TSS Goodness of fit
 
 	Goodness of fit \emph{statistics} describe how well a model prediction
 	matches observed data
@@ -187,7 +195,7 @@ TSUB Goodness of fit
 
 ----------------------------------------------------------------------
 
-NOSLIDE A disease-incidence model
+EXTRA A disease-incidence model
 
 COMMENT Do I like this? Am I thinking clearly about it?
 
@@ -197,7 +205,7 @@ SUBH Good for almost any disease
 
 BC
 
-SIGHFIG 0.75 Lecture_images/godDice.jpg
+HFIG 0.75 Lecture_images/godDice.jpg
 
 NC
 
@@ -222,6 +230,8 @@ BC
 
 		having a good model
 
+		making very broad predictions
+
 		having bad data
 
 		choosing an inappropriate way to compare
@@ -230,23 +240,21 @@ BC
 
 NC
 
-SIGHFIG 0.75 Lecture_images/godDice.jpg
+CFIG Lecture_images/godDice.jpg
 
 EC
 
 ----------------------------------------------------------------------
 
-NOSLIDE
-
 Vitamin study
 
-WIDEFIG vitamins.Rout-0.pdf
+FIG vitamins.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
 Vitamin study
 
-WIDEFIG vitamins.Rout-1.pdf
+FIG vitamins.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
@@ -264,7 +272,7 @@ FIG Lecture_images/fog.jpg
 
 Goodness of fit test
 
-	Your model is _not_ reality (null hypothesis is false)
+	Your model is \emph{not} reality (null hypothesis is false)
 
 	Can we see the difference clearly?
 
@@ -273,20 +281,20 @@ Goodness of fit test
 			We probably can't add any more complexity based on current
 			data
 
-		If yes, model may be good or bad. We _may_ be able to add more
+		If yes, model may be good or bad. We \emph{may} be able to add more
 		complexity based on current data
 
 			But we may not need to
 
 ----------------------------------------------------------------------
 
-TSUB Capturing patterns
+TSS Capturing patterns
 
 	You can ask:
 
 		Does your model do a reasonable job of capturing the data?
 
-			You can use a goodness of fit _statistic_ for this, and not
+			You can use a goodness of fit \emph{statistic} for this, and not
 			worry about the P value
 
 		Does your model capture patterns and relationships that you (or
@@ -294,13 +302,13 @@ TSUB Capturing patterns
 
 ----------------------------------------------------------------------
 
-SUB Going beyond
+SS Going beyond
 
 ----------------------------------------------------------------------
 
 Out-of-sample validation
 
-	Does your model make predictions _outside_ the range on which you
+	Does your model make predictions \emph{outside} the range on which you
 	calibrated it?
 
 		Predicting gravitational shifts in star positions from
@@ -320,7 +328,7 @@ Test sets
 
 	Hold some data out while fitting your model
 
-	Or just _pretend_ to do this as an evaluation method
+	Or just \emph{pretend} to do this as an evaluation method
 
 		In other words, test what would happen under various withholding
 		scenarios
@@ -329,11 +337,11 @@ Test sets
 
 Other model worlds
 
-	The model you're _fitting_ is probably pretty simple
+	The model you're \emph{fitting} is probably pretty simple
 
-	But you can _simulate_ very complicated models, indeed
+	But you can \emph{simulate} very complicated models, indeed
 
-WIDEFIG Lecture_images/legoland.jpg
+HFIG 0.6 Lecture_images/legoland.jpg
 
 	How well can you do? Which details are important?
 
@@ -371,13 +379,13 @@ WIDEFIG my_images/Farr.png
 
 Testing hypotheses
 
-HIGHFIG Lecture_images/choleraMap.jpg
+FIG Lecture_images/choleraMap.jpg
 
 ----------------------------------------------------------------------
 
 Testing hypotheses
 
-HIGHFIG Lecture_images/BroadStreet.jpg
+FIG Lecture_images/BroadStreet.jpg
 
 ----------------------------------------------------------------------
 
@@ -417,7 +425,7 @@ Evaluation
 
 Conclusion
 
-SIDEFIG Lecture_images/prometheus.jpg
+HFIG 0.7 Lecture_images/prometheus.jpg
 
 \vfill
 

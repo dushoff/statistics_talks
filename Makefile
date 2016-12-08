@@ -2,7 +2,7 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: evaluation.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: evaluation.handouts.pdf 
 
 ##################################################################
 
@@ -34,7 +34,7 @@ fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
 
-## Now moving (maybe) during DAIDD 2016 (also from lectures)
+## Now moving (maybe) during DAIDD 2016 (also from ICI3D/lectures)
 evaluation.final.pdf: evaluation.txt
 evaluation.draft.pdf: evaluation.txt
 evaluation.handouts.pdf: evaluation.txt
