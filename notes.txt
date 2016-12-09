@@ -1,1 +1,3 @@
 Put this in a linkdirs framework (or even a newer directory framework?). Do the same for other new talks directories.
+
+What is up with talkdir? Where does it come from, and does it match?

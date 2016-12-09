@@ -262,6 +262,47 @@ FIG vitamins.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
+EXTRA
+
+Next two slides: not in MMED because I will have already given philosophy
+
+Not currently in notes because of space concerns
+
+----------------------------------------------------------------------
+
+
+DAIDD PSLIDE Annualized flu deaths
+
+BC
+
+CFIG flu.Rout-0.pdf
+
+NC
+
+	Why is weather not causing deaths at this time scale?
+
+EC
+
+----------------------------------------------------------------------
+
+DAIDD PSLIDE ... with confidence intervals
+
+BC
+
+CFIG flu.Rout-1.pdf
+
+NC
+
+	\textbf{Never} say: A is significant and B isn't, so $A>B$
+
+	\textbf{Instead:} Construct a statistic for the hypothesis $A>B$
+
+		May be difficult
+
+EC
+
+----------------------------------------------------------------------
+
 PSLIDE Low P values
 
 FIG Lecture_images/clear.jpg
