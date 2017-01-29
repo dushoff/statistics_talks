@@ -3,6 +3,8 @@ EXTRA
 
 Fix EbolaFits
 
+Add malaria model diagram to notes?
+
 ----------------------------------------------------------------------
 
 Model evaluation
