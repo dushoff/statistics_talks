@@ -1,8 +1,8 @@
 # statistics_lectures
-### Hooks for the editor to set the default target
+
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: evaluation.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: philosophy.handouts.pdf 
 
 ##################################################################
 
@@ -25,16 +25,19 @@ Sources += $(wildcard *.txt)
 
 ## Moved here direct from Dropbox. Developing for NTU.
 ## To do: figure out what you want from which column
+## Using OTHER to mark things that are currently suppressed
 philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 
 ## Moved here from ICI3D/lectures -- clean up!
+## Not all directories are installed everywhere. Serious work is needed on machinery for this repo. A good candidate for sub-modules.
 fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
 
-## Now moving (maybe) during DAIDD 2016 (also from ICI3D/lectures)
+## This talk originated at DAIDD 2015, and contains elements from the philosophy talk, as well as DAIDD-specific stuff.
+## It should maybe
 evaluation.final.pdf: evaluation.txt
 evaluation.draft.pdf: evaluation.txt
 evaluation.handouts.pdf: evaluation.txt
@@ -55,6 +58,18 @@ vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
 
 ##################################################################
 
+## Directories
+
+## Temp rules here if needed`
+
+Lecture_images:
+	ln -s ~/Dropbox/courses/$@/ .
+
+my_images:
+	ln -s ~/Dropbox/$@/ .
+
+##################################################################
+
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 
@@ -62,3 +77,4 @@ vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
 -include $(ms)/newtalk.mk
 -include $(ms)/newlatex.mk
 -include $(ms)/wrapR.mk
+-include $(ms)/pandoc.mk

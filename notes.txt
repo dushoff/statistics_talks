@@ -1,3 +1,7 @@
-Put this in a linkdirs framework (or even a newer directory framework?). Do the same for other new talks directories.
+* Put this in a linkdirs framework (better – a modular framework). Do the same for other new talks directories.
 
-What is up with talkdir? Where does it come from, and does it match?
+* Make a selection system for the Philosphy talk
+
+* Add HREFs and make a pipeline for web-based lecture notes .tex -> .md -> .html
+
+* investigate self-contained html

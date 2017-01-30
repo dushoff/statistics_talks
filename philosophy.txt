@@ -1,5 +1,5 @@
 
-PRESENT \vfill\begin{center} 
+OTHER PRESENT \vfill\begin{center} 
 
 Statistical philosophy
 
@@ -101,8 +101,11 @@ TSEC Estimation
 
 	P values are \emph{over-rated}
 
-	\emph{Never} use a P value as evidence that an effect is small, or
-	that two quantities are similar.
+	\emph{Never} use a high P value as evidence for anything, e.g.:
+	
+		that an effect is small
+
+		that two quantities are similar
 
 ----------------------------------------------------------------------
 
@@ -667,5 +670,3 @@ Honesty
 		Keep a data-analysis journal
 
 		Start \emph{before} you look at the data
-
-	Reference: ``Garden of forking paths"

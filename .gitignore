@@ -1,20 +1,13 @@
 commit.txt
 .*.sw*
 
-*.pdf
+*.draft.*
+*.handouts.*
+*.final.*
 
-*.log
-*.aux
-.*.aux
-*.blg
-*.bbl
-
-*out
-*.RData
+.*.RData
 *.Rlog
-*.r
 .Rhistory
-
 *.wrapR.*
 
 local.mk

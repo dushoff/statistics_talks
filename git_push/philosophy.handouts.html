@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p><span><strong>How do we use statistics</strong></span></p>
+<ul>
+<li><p>We use statistics to confirm effects, estimate parameters, and predict outcomes</p></li>
+<li><p>It usually rains when I’m in Cape Town, but mostly on Sunday</p>
+<ul>
+<li><p><em>Confirmation:</em> In Cape Town, it rains more on Sundays than other days</p></li>
+<li><p><em>Estimation:</em> In Cape Town, the <em>odds</em> of rain on Sunday are 1.6–2.2 times higher than on other days</p></li>
+<li><p><em>Prediction:</em> I am confident that it will rain at least one Sunday the next time I go</p></li>
+</ul></li>
+</ul>
+<p><span><strong>Raining in Cape Town</strong></span></p>
+<ul>
+<li><p>How we interpret data like this necessarily depends on assumptions:</p>
+<ul>
+<li><p>Is it likely our observations occured by chance?</p></li>
+<li><p>Is it likely they <em>didn’t</em>?</p></li>
+</ul></li>
+</ul>
+<p><span><strong>Vitamin A</strong></span></p>
+<ul>
+<li><p>We measure the average heights of children raised with and without vitamin A supplements</p>
+<ul>
+<li><p><em>Estimate:</em> how much taller (or shorter) are the treated children on average?</p></li>
+<li><p><em>Confirmation:</em> are we sure that the supplements are helping (or hurting)?</p></li>
+<li><p><em>Range of estimates:</em> how much do we think the supplement is helping?</p></li>
+</ul></li>
+</ul>
+<h1 id="estimation">Estimation</h1>
+<ul>
+<li><p>We use <em>P values</em> to say how sure we are that we have seen some effect</p></li>
+<li><p>We use <em>confidence intervals</em> to say what we think is going on (with a certain level of confidence)</p></li>
+<li><p>P values are <em>over-rated</em></p></li>
+<li><p><em>Never</em> use a high P value as evidence for anything, e.g.:</p>
+<ul>
+<li><p>* that an effect is small</p></li>
+<li><p>* that two quantities are similar.</p></li>
+</ul></li>
+</ul>
+<p><span><strong>Vitamin A example</strong></span></p>
+<ul>
+<li><p>We want to know if vitamin A supplements improve the health of village children</p>
+<ul>
+<li><p>Is height is a good measure of general health?</p></li>
+<li><p>How will we know height differences are due to our treatment?</p>
+<ul>
+<li><p>We want the two groups to start from the same point – independent randomization of each individual</p></li>
+<li><p>We may measure <em>changes</em> in height</p></li>
+<li><p>Or <em>control for</em> other factors</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><span><strong>What do we hope to learn?</strong></span></p>
+<ul>
+<li><p>Is vitamin A good for these children?</p></li>
+<li><p>How sure are we?</p></li>
+<li><p>How good do we think it is?</p></li>
+<li><p>How sure are we about that?</p></li>
+</ul>
+<p><span><strong>P values</strong></span></p>
+<ul>
+<li><p>What does it mean if I find a “significant P value” for some effect in this experiment?</p></li>
+<li><p>The difference is unlikely to be due to chance</p>
+<ul>
+<li>So what! I already know vitamin A has strong effects on metabolism</li>
+</ul></li>
+<li><p>If I’m certain that the true answer isn’t exactly zero, why do I want the P value anyway?</p></li>
+</ul>
+<p><span><strong>Confidence intervals</strong></span></p>
+<div class="figure">
+<embed src="vitamins.Rout-0.pdf" />
+<p class="caption">image</p>
+</div>
+<ul>
+<li><p>What do these results mean?</p></li>
+<li><p>Which are significant?</p></li>
+</ul>
+<p><span><strong>Confidence intervals and P values</strong></span></p>
+<ul>
+<li><p>A high P value means we can’t see the sign of the effect clearly</p></li>
+<li><p>A low P value means we can</p></li>
+</ul>
+<p><span><strong>The meaning of P values</strong></span></p>
+<ul>
+<li><p>More broadly, a P value measures whether we are seeing <em>something</em> clearly</p>
+<ul>
+<li>It’s usually the sign (<span class="math inline">±</span>) of some quantity, but doesn’t need to be</li>
+</ul></li>
+</ul>
+<p><span><strong>Types of Error</strong></span></p>
+<ul>
+<li><p>Type I (<em>False positive:</em>) concluding there is an effect when there isn’t one</p>
+<ul>
+<li>This doesn’t happen in biology. There is always an effect.</li>
+</ul></li>
+<li><p>Type II (<em>False negative:</em>) concluding there is no effect when there really is</p>
+<ul>
+<li>This <em>should</em> never happen, because we should never conclude there is no effect</li>
+</ul></li>
+</ul>
+<p><span><strong>Experimental design</strong></span></p>
+<ul>
+<li><p>Type I (<em>False positive:</em>) in the hypothetical case that the effect is exactly zero, what is the probability of falsely finding an effect</p>
+<ul>
+<li>Should be less than or equal to my significance value</li>
+</ul></li>
+<li><p>Type II (<em>False negative:</em>) what is the probability of failing to find an effect that is there?</p>
+<ul>
+<li>Useful, but can only be asked for a specific hypothetical effect <em>size</em></li>
+</ul></li>
+<li><p>These are useful to analyze <strong>power</strong> and <strong>validity</strong> of a statistical design</p>
+<ul>
+<li>You should do these analyses <em>before</em> you collect data, not after</li>
+</ul></li>
+</ul>
+<p><span><strong>A new view of error</strong></span></p>
+<ul>
+<li><p><em>Sign error:</em> if I think an effect is positive, when it’s really negative (or vice versa)</p></li>
+<li><p><em>Magnitude error:</em> if I think an effect is small, when it’s really large (or vice versa)</p></li>
+<li><p>Confidence intervals clarify all of this</p></li>
+</ul>
+<p><span><strong>Low P values</strong></span></p>
+<ul>
+<li><p>If I have a low P value I can see something clearly</p></li>
+<li><p>But it’s usually better to focus on what I see than the P value</p></li>
+</ul>
+<p><span><strong>High P values</strong></span></p>
+<ul>
+<li><p>If I have a high P value, there is something I <em>don’t</em> see clearly</p></li>
+<li><p>It <em>may be</em> because this effect is small</p></li>
+<li><p>High P values should <em>not</em> be used to advance your conclusion</p></li>
+</ul>
+<p><span><strong>What causes high P values?</strong></span></p>
+<ul>
+<li><p>Small differences</p></li>
+<li><p>Less data</p></li>
+<li><p>More noise</p></li>
+<li><p>An inappropriate model</p></li>
+<li><p>Less model resolution</p></li>
+<li><p>A lower P value means that your evidence for difference is better</p></li>
+<li><p>A higher P value means that your evidence for similarity is better – or worse!</p></li>
+</ul>
+<p><span><strong>Annualized flu deaths</strong></span></p>
+<div class="figure">
+<embed src="flu.Rout-0.pdf" />
+<p class="caption">image</p>
+</div>
+<ul>
+<li>Why is weather not causing deaths at this time scale?</li>
+</ul>
+<p><span><strong>… with confidence intervals</strong></span></p>
+<div class="figure">
+<embed src="flu.Rout-1.pdf" />
+<p class="caption">image</p>
+</div>
+<ul>
+<li><p><strong>Never</strong> say: A is significant and B isn’t, so <span class="math inline"><em>A</em> &gt; <em>B</em></span></p></li>
+<li><p><strong>Instead:</strong> Construct a statistic for the hypothesis <span class="math inline"><em>A</em> &gt; <em>B</em></span></p>
+<ul>
+<li>May be difficult</li>
+</ul></li>
+</ul>
+<p><span><strong>Syllogisms</strong></span></p>
+<ul>
+<li><p>All men are mortal</p></li>
+<li><p>Jacob Zuma is mortal</p></li>
+<li><p>Therefore, Jacob Zuma is a man</p></li>
+</ul>
+<p><span><strong>Syllogisms</strong></span></p>
+<ul>
+<li><p>All men are mortal</p></li>
+<li><p>Fanny the elephant is mortal</p></li>
+<li><p>Therefore, Fanny is a man</p></li>
+</ul>
+<p><span><strong>Bad logic</strong></span></p>
+<ul>
+<li><p>A lot of statistical practice works this way:</p>
+<ul>
+<li>bad logic in service of conclusions that are (usually) correct</li>
+</ul></li>
+<li><p>This sort of statistical practice leads in the aggregate to bad science</p></li>
+<li><p>The logic can be fixed:</p>
+<ul>
+<li>Estimate a difference, or an interaction</li>
+</ul></li>
+</ul>
+<p><span><strong>Small effects</strong></span></p>
+<ul>
+<li><p>We can’t build statistical confidence that something is small by failing to see it clearly</p></li>
+<li><p>We must instead see clearly that it is small</p></li>
+<li><p>This means we need a standard for what we mean by small</p></li>
+</ul>
+<p><span><strong>Flu mask example</strong></span></p>
+<ul>
+<li><p>People who work in respiratory clinics sometimes have to wear bulky, uncomfortable, expensive masks</p></li>
+<li><p>They would like to switch to simpler masks, if those will do the job</p></li>
+<li><p>How can this be tested statistically? We don’t want the masks to be “different”.</p>
+<ul>
+<li><p>Use a confidence interval</p></li>
+<li><p>Decide how big a level is acceptable, and construct a P value for the hypothesis that this level is excluded!</p></li>
+</ul></li>
+</ul>
+<p><span><strong>Study results</strong></span></p>
+<div class="figure">
+<embed src="masks.Rout-2.pdf" />
+<p class="caption">image</p>
+</div>
+<ul>
+<li><p>Is the new mask “good enough”?</p></li>
+<li><p>What’s our standard for that?</p></li>
+</ul>
+<p><span><strong>Non-inferiority trial</strong></span></p>
+<div class="figure">
+<embed src="masks.Rout-1.pdf" />
+<p class="caption">image</p>
+</div>
+<ul>
+<li><p>We can even attach a P value by basing it on the “right” statistic.</p></li>
+<li><p>The right statistic is the thing whose sign we want to know:</p>
+<ul>
+<li>The difference between the observed effect and the standard we chose</li>
+</ul></li>
+</ul>
+<h1 id="paradigms-for-inference">Paradigms for inference</h1>
+<h2 id="frequentist-paradigm">Frequentist paradigm</h2>
+<ul>
+<li><p>Make a null model</p></li>
+<li><p>Test whether the effect you see could be due to chance</p>
+<ul>
+<li>What is the probability of seeing exactly a 1.52 cm difference in average heights?</li>
+</ul></li>
+<li><p>Test whether the effect you see <span><em>or a larger effect</em></span> could be due to chance</p>
+<ul>
+<li>This probability is the P value</li>
+</ul></li>
+</ul>
+<p><span><strong>Height measurements</strong></span></p>
+<div class="figure">
+<embed src="vitamins_plot.Rout-0.pdf" />
+<p class="caption">image</p>
+</div>
+<p><span><strong>Scrambled measurements</strong></span></p>
+<div class="figure">
+<embed src="vitamins_plot.Rout-1.pdf" />
+<p class="caption">image</p>
+</div>
+<p><span><strong>The null distribution</strong></span></p>
+<div class="figure">
+<embed src="vitamins_scramble.Rout.pdf" />
+<p class="caption">image</p>
+</div>
+<h2 id="bayesian-paradigm">Bayesian paradigm</h2>
+<ul>
+<li><p>Make a complete model world</p></li>
+<li><p>Use conditional probability to calculate the probability you want</p></li>
+</ul>
+<p><span><strong>A powerful framework</strong></span></p>
+<ul>
+<li><p>More assumptions <span class="math inline">$\implies$</span> more power</p></li>
+<li><p>With great power comes great responsibility</p></li>
+</ul>
+<p><span><strong>Bayesian inference</strong></span></p>
+<ul>
+<li><p>We want to go from a <em>statistical model</em> of how our data are generated, to a probability model of parameter values</p>
+<ul>
+<li><p>Requires <em>prior</em> distributions describing the assumed likelihood of parameters before these observations are made</p></li>
+<li><p>Use Bayes theorem to calculate posterior distribution – likelihood after taking data into account</p></li>
+</ul></li>
+</ul>
+<p><span><strong>Vitamin A study</strong></span></p>
+<ul>
+<li><p>A frequentist can do a clear analysis right away</p></li>
+<li><p>A Bayesian needs a ton of assumptions – will try to make “uninformative” assumptions</p></li>
+</ul>
+<p><span><strong>Cape Town weather</strong></span></p>
+<ul>
+<li><p>Frequentist: how unlikely is the observation, from a random perspective?</p></li>
+<li><p>Bayesian: what’s my model world? What is my prior belief about weather-weekday interactions.</p></li>
+</ul>
+<h1 id="conclusion">Conclusion</h1>
+<p><span><strong>Your philosophy</strong></span></p>
+<ul>
+<li><p>Statistics are not a magic machine that gives you the right answer</p></li>
+<li><p>If you are to be a serious scientist in a noisy world, you should have your own philosophy of statistics</p>
+<ul>
+<li><p>Be pragmatic: your goal is to do science, not get caught by theoretical considerations</p></li>
+<li><p>Be honest: it’s harder than it sounds.</p></li>
+</ul></li>
+</ul>
+<p><span><strong>Honesty</strong></span></p>
+<ul>
+<li><p>You can always keep analyzing until you find a “significant” result</p>
+<ul>
+<li>If you do this you will make a lot of mistakes</li>
+</ul></li>
+<li><p>You may also keep analyzing until you find a result that you already “know” is true.</p>
+<ul>
+<li>This is confirmation bias; you’re probably right, but your project is not advancing science</li>
+</ul></li>
+<li><p>Good practice</p>
+<ul>
+<li><p>Keep a data-analysis journal</p></li>
+<li><p>Start <em>before</em> you look at the data</p></li>
+</ul></li>
+<li><p>Reference: “Garden of forking paths”</p></li>
+</ul>
+<p>**</p>
+<p>©2015–2016, Jonathan Dushoff and the ICI3D faculty. May be reproduced and distributed, with this notice, for non-commercial purposes only.</p>
+</body>
+</html>
