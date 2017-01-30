@@ -2,6 +2,4 @@
 
 * Make a selection system for the Philosphy talk
 
-* Add HREFs and make a pipeline for web-based lecture notes .tex -> .md -> .html
-
-* investigate self-contained html
+* Add Bio 708 references to notes
