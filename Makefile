@@ -14,6 +14,8 @@ include stuff.mk
 
 ##################################################################
 
+pushdir = $(gitroot)/notebook/materials
+
 ## Content
 
 Sources += local.txt.format

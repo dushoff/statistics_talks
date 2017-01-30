@@ -22,6 +22,16 @@ PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
 
+NOTES Statistical philosophy
+
+	Jonathan Dushoff, McMaster University
+
+	NOTES HREF http://dushoff.github.io/notebook/materials/philosophy.handouts.pdf Download pdf notes (should be this version)
+
+	NOTES HREF http://dushoff.github.io/notebook/materials/philosophy.draft.pdf Download pdf slides (from some recent version)
+
+----------------------------------------------------------------------
+
 OTHER Long pipe 
 
 	PIC HIGHFIG 0.5 Lecture_images/pipe.jpg
@@ -670,3 +680,4 @@ Honesty
 		Keep a data-analysis journal
 
 		Start \emph{before} you look at the data
+
