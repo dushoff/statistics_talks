@@ -22,13 +22,13 @@ PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
 
-NOTES Statistical philosophy
+NSLIDE Statistical philosophy
 
 	Jonathan Dushoff, McMaster University
 
-	NOTES HREF http://dushoff.github.io/notebook/materials/philosophy.handouts.pdf Download pdf notes (should be this version)
+	HREF http://dushoff.github.io/notebook/materials/philosophy.handouts.pdf Download pdf notes (should be this version)
 
-	NOTES HREF http://dushoff.github.io/notebook/materials/philosophy.draft.pdf Download pdf slides (from some recent version)
+	HREF http://dushoff.github.io/notebook/materials/philosophy.draft.pdf Download pdf slides (from some recent version)
 
 ----------------------------------------------------------------------
 

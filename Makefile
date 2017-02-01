@@ -2,7 +2,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: philosophy.handouts.pdf 
+target pngtarget pdftarget vtarget acrtarget: philosophy.draft.pdf 
 
 ##################################################################
 
