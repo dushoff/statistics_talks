@@ -19,6 +19,10 @@ pushdir = $(gitroot)/notebook/materials
 ## Content
 
 Sources += local.txt.format
+Sources += ici3d.tmp
+
+ici3d:
+	/bin/ln -fs ici3d.tmp beamer.tmp
 
 ## Copyright not integrated into make system yet
 Sources += copy.tex
