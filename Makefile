@@ -19,7 +19,7 @@ pushdir = $(gitroot)/notebook/materials
 ## Content
 
 Sources += local.txt.format
-Sources += ici3d.tmp
+Sources += ici3d.tmp ICI3D_logo.png
 
 ici3d:
 	/bin/ln -fs ici3d.tmp beamer.tmp
