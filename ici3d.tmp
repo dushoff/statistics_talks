@@ -1,16 +1,16 @@
 \documentclass{beamer}
 \usetheme{default}
 
-\logo{\includegraphics[width=1in]{distance.Rout-0.png}}
-% \setbeamertemplate{footline}[frame number]
+\logo{\includegraphics[width=1in]{ICI3D_logo.png}}
+\setbeamertemplate{footline}[frame number]
 \setbeamertemplate{navigation symbols}{}
 
 \makeatletter
 \setbeamertemplate{sidebar canvas right}{}
 \setbeamertemplate{sidebar right}{%
-  \vspace*{\fill}
-  \hspace{-20ex}\includegraphics[width=1.5cm,height=5cm]{distance.Rout-0.png}
-  \vspace*{\fill}
+	%\hspace{-35ex}\includegraphics[width=3.5cm]{ICI3D_logo.png}
+	\llap{\insertlogo\hskip0.1cm}%
+	\vspace*{\fill}
 }
 \makeatother
 
