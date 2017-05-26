@@ -1,5 +1,7 @@
-commit.txt
+commit.time
 .*.sw*
+talkdir
+txt.format
 
 *.draft.*
 *.handouts.*
@@ -9,6 +11,8 @@ commit.txt
 *.Rlog
 .Rhistory
 *.wrapR.*
+*.pdf
+*.Rout
 
 local.mk
 
