@@ -29,7 +29,7 @@ Sources += copy.tex
 
 Sources += $(wildcard *.txt)
 
-## Moved here direct from Dropbox. Developing for NTU.
+## Moved here direct from Dropbox (NTU 2016).
 ## To do: figure out what you want from which column
 ## Using OTHER to mark things that are currently suppressed
 philosophy.final.pdf: philosophy.txt

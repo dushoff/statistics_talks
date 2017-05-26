@@ -1,4 +1,6 @@
 commit.time
+target.mk
+
 .*.sw*
 talkdir
 txt.format
