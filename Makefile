@@ -8,8 +8,8 @@ target pngtarget pdftarget vtarget acrtarget gptarget: philosophy.draft.pdf
 
 # make files
 
-Sources = Makefile .gitignore README.md stuff.mk LICENSE.md notes.txt
-include stuff.mk
+Sources = Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
+include sub.mk
 -include $(ms)/newtalk.def
 
 ##################################################################
