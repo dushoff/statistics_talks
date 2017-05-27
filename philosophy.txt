@@ -1,4 +1,38 @@
 
+EXTRA
+
+beamer.tmp
+
+Links in notes? Elsewhere as well?
+
+Goals and summary
+
+Update Vitamin A data
+
+A bit more explanation of the link between Bayesian question and Bayesian philosophy?
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\title{Statistical philosophy}
+\author{Jonathan Dushoff}
+\date{MMED 2017} 
+\newcommand{\years}{2014--2017} 
+\newcommand{\figshare}{https://figshare.com/articles/NAME/NUMBER}
+
+----------------------------------------------------------------------
+
+PSLIDE NOFRAME
+
+{\topBar\maketitle}
+
+----------------------------------------------------------------------
+
+NSLIDE NOFRAME
+
+{\let\newpage\relax\maketitle}
+
 OTHER PRESENT \vfill\begin{center} 
 
 Statistical philosophy
@@ -22,7 +56,7 @@ PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
 
-NSLIDE Statistical philosophy
+OTHER NSLIDE Statistical philosophy
 
 	Jonathan Dushoff, McMaster University
 
@@ -32,9 +66,9 @@ NSLIDE Statistical philosophy
 
 ----------------------------------------------------------------------
 
-OTHER Long pipe 
+MMED Long pipe 
 
-	PIC HIGHFIG 0.5 Lecture_images/pipe.jpg
+PIC HFIG 0.5 web_drop/pipe.jpg
 
 	Any piece of pipe longer than 30 feet shall be clearly labelled
 	``long pipe'' on each end
@@ -198,7 +232,7 @@ EC
 
 The meaning of P values
 
-PIC DBFIG 0.8 Lecture_images/fog.jpg 1 Lecture_images/clear.jpg
+PIC DBFIG 0.8 web_drop/fog.jpg 1 web_drop/clear.jpg
 
 	More broadly, a P value measures whether we are seeing
 	\emph{something} clearly
@@ -257,7 +291,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/error.jpg
+SIDEFIG web_drop/error.jpg
 
 EC
 
@@ -273,7 +307,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/clear.jpg
+SIDEFIG web_drop/clear.jpg
 
 EC
 
@@ -293,7 +327,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/fog.jpg
+SIDEFIG web_drop/fog.jpg
 
 EC
 
@@ -362,7 +396,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/zuma.jpg
+SIDEFIG web_drop/zuma.jpg
 
 EC
 
@@ -380,7 +414,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/fanny.jpg
+SIDEFIG web_drop/fanny.jpg
 
 EC
 
@@ -414,7 +448,7 @@ Small effects
 
 PSLIDE Flu masks 
 
-DBFIG 0.8 Lecture_images/N95.jpg 0.7 Lecture_images/surgical.jpg
+DBFIG 0.8 web_drop/N95.jpg 0.7 web_drop/surgical.jpg
 
 ----------------------------------------------------------------------
 
@@ -542,7 +576,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/shanghai.jpg
+SIDEFIG web_drop/shanghai.jpg
 
 EC
 
@@ -558,7 +592,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/spiderman.jpg
+SIDEFIG web_drop/spiderman.jpg
 
 EC
 
@@ -614,12 +648,12 @@ EC
 
 ----------------------------------------------------------------------
 
-OTHER DEFHEAD Example: MMEV 
+MMED Example: MMEV 
 
 	MMEV is a viral infection that can cause a serious disease
 	(called MMED)
 	
-	MMED patients are unable to control their urge to fit models to data
+	LIT MMED patients are unable to control their urge to fit models to data
 
 	A certain population has a prevalence of 1% 
 
@@ -631,7 +665,7 @@ OTHER DEFHEAD Example: MMEV
 
 ----------------------------------------------------------------------
 
-OTHER MMEV questions
+MMED MMEV questions
 
 	You pick a person from this population at random, and test them, and
 	the test is positive.

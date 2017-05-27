@@ -43,7 +43,7 @@ Do I have a good model?
 
 Statistical philosophy
 
-PIC FIG Lecture_images/obey_kitties.png
+PIC FIG web_drop/obey_kitties.png
 
 NOTES You should develop your own statistical philosophy
 
@@ -61,13 +61,13 @@ PIC FIG curves/propCurves.Rout-0.png
 
 Effects of clinical immunity
 
-PIC FIG Lecture_images/keeganClinicalDiagram.jpg
+PIC FIG web_drop/keeganClinicalDiagram.jpg
 
 ----------------------------------------------------------------------
 
 Bistability
 
-WIDEFIG Lecture_images/keeganPhaseDiagram.jpg
+WIDEFIG web_drop/keeganPhaseDiagram.jpg
 
 ----------------------------------------------------------------------
 
@@ -77,13 +77,13 @@ SEC Prediction
 
 Ptolemy v.\ Copernicus
 
-PIC FIG Lecture_images/epicycles.jpg
+PIC FIG web_drop/epicycles.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Ptolemy v.\ Copernicus
 
-PIC FIG Lecture_images/heliocentric.jpg
+PIC FIG web_drop/heliocentric.jpg
 
 ----------------------------------------------------------------------
 
@@ -95,7 +95,7 @@ PIC WIDEFIG my_images/Farr.png
 
 PSLIDE Where will we see cholera cases?
 
-FIG Lecture_images/choleraMap.jpg
+FIG web_drop/choleraMap.jpg
 
 ----------------------------------------------------------------------
 
@@ -124,9 +124,9 @@ Validation measures
 
 Coverage
 
-PRESENT HFIG 0.5 Lecture_images/SierraLeoneValidation.jpg
+PRESENT HFIG 0.5 web_drop/SierraLeoneValidation.jpg
 
-NOTES HFIG 0.3 Lecture_images/SierraLeoneValidation.jpg
+NOTES HFIG 0.3 web_drop/SierraLeoneValidation.jpg
 
 	The right answer should be inside your 95% confidence interval 95% of
 	the time
@@ -187,7 +187,7 @@ TSEC Model Evaluation
 
 	Does your model match the \emph{real world}?
 
-PIC HFIG 0.7 Lecture_images/Earth.jpg
+PIC HFIG 0.7 web_drop/Earth.jpg
 
 ----------------------------------------------------------------------
 
@@ -211,7 +211,7 @@ SUBH Good for almost any disease
 
 BC
 
-HFIG 0.75 Lecture_images/godDice.jpg
+HFIG 0.75 web_drop/godDice.jpg
 
 NC
 
@@ -246,7 +246,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/godDice.jpg
+SIDEFIG web_drop/godDice.jpg
 
 EC
 
@@ -307,13 +307,13 @@ EC
 
 PSLIDE Low P values
 
-FIG Lecture_images/clear.jpg
+FIG web_drop/clear.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE High P values
 
-FIG Lecture_images/fog.jpg
+FIG web_drop/fog.jpg
 
 ----------------------------------------------------------------------
 
@@ -396,7 +396,7 @@ Other model worlds
 
 	But you can \emph{simulate} very complicated models, indeed
 
-PIC HFIG 0.6 Lecture_images/legoland.jpg
+PIC HFIG 0.6 web_drop/legoland.jpg
 
 	How well can you do? Which details are important?
 
@@ -416,13 +416,13 @@ FIG EbolaFits/T34.NIH3.compare.Rout-1.pdf
 
 PSLIDE Generating hypotheses
 
-FIG Lecture_images/EbolaBurial.jpg
+FIG web_drop/EbolaBurial.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Generating hypotheses
 
-FIG Lecture_images/lembo_spp.jpg
+FIG web_drop/lembo_spp.jpg
 
 ----------------------------------------------------------------------
 
@@ -444,13 +444,13 @@ WIDEFIG my_images/Farr.png
 
 PSLIDE Testing hypotheses
 
-FIG Lecture_images/choleraMap.jpg
+FIG web_drop/choleraMap.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Testing hypotheses
 
-FIG Lecture_images/BroadStreet.jpg
+FIG web_drop/BroadStreet.jpg
 
 ----------------------------------------------------------------------
 
@@ -465,7 +465,7 @@ NSLIDE Testing hypotheses
 
 Hard questions
 
-PIC FIG Lecture_images/QuestionAnswers.jpg
+PIC FIG web_drop/QuestionAnswers.jpg
 
 Answers are not always easy
 
@@ -501,7 +501,7 @@ Evaluation
 
 Conclusion
 
-PIC HFIG 0.7 Lecture_images/prometheus.jpg
+PIC HFIG 0.7 web_drop/prometheus.jpg
 
 NOTES Shepherd moons were predicted before they were seen
 

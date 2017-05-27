@@ -258,7 +258,7 @@ NC
 
 $$D = \sum_i{(y_i - \hat y_i)^2}$$
 
-SIDEFIG Lecture_images/elegant.jpg
+SIDEFIG web_drop/elegant.jpg
 
 NOTES Simplest smooth approach
 
@@ -407,7 +407,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/crowd.jpg
+SIDEFIG web_drop/crowd.jpg
 
 EC
 

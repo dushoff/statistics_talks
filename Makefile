@@ -10,6 +10,8 @@ target pngtarget pdftarget vtarget acrtarget gptarget: philosophy.draft.pdf
 
 Sources = Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
 include sub.mk
+Drop = ~/Dropbox
+
 -include $(ms)/newtalk.def
 
 ##################################################################
@@ -66,18 +68,24 @@ vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
 
 ## Directories
 
-## Temp rules here if needed`
-
-Lecture_images:
-	ln -s ~/Dropbox/courses/$@/ .
-
-my_images:
-	ln -s ~/Dropbox/$@/ .
-
 ##################################################################
+
+## Drop stuff (see disease_model_talks notea)s
+
+web_drop/%: web_drop ;
+web_drop:
+	$(LNF) $(Drop)/courses/Lecture_images $@
+
+my_images/%: my_images ;
+my_images:
+	$(LN) $(Drop)/$@ .
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
+
+######################################################################
+
+## Makestuff
 
 ## newtalk should be first of these three; want to make stuff in other directories by going there using newtalk, not by trying to project rules from here
 -include $(ms)/newtalk.mk
