@@ -23,9 +23,6 @@ pushdir = $(gitroot)/notebook/materials
 Sources += local.txt.format
 Sources += ici3d.tmp ICI3D_logo.png
 
-ici3d:
-	/bin/ln -fs ici3d.tmp beamer.tmp
-
 ## Copyright not integrated into make system yet
 Sources += copy.tex
 
@@ -83,11 +80,8 @@ my_images:
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 
-######################################################################
+-include $(ms)/modules.mk
 
-## Makestuff
-
-## newtalk should be first of these three; want to make stuff in other directories by going there using newtalk, not by trying to project rules from here
 -include $(ms)/newtalk.mk
 -include $(ms)/newlatex.mk
 -include $(ms)/wrapR.mk

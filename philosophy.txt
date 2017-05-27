@@ -1,15 +1,12 @@
-
 EXTRA
 
-beamer.tmp
+* Deleted a ton of notes!
 
-Links in notes? Elsewhere as well?
+* Goal/summary
 
-Goals and summary
+* Redo LatexTemplates (hacked)
 
-Update Vitamin A data
-
-A bit more explanation of the link between Bayesian question and Bayesian philosophy?
+* Link Bayesiann problem to philosophy
 
 ----------------------------------------------------------------------
 
