@@ -16,9 +16,15 @@ Drop = ~/Dropbox
 
 ##################################################################
 
-pushdir = $(gitroot)/notebook/materials
+## Submodules
+
+##################################################################
+
+# pushdir = $(gitroot)/notebook/materials
 
 ## Content
+
+Sources += LatexTemplates
 
 Sources += local.txt.format
 Sources += ici3d.tmp ICI3D_logo.png

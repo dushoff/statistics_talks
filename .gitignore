@@ -1,6 +1,10 @@
 commit.time
 target.mk
 
+beamer.tmp
+my_images
+web_drop
+ 
 .*.sw*
 talkdir
 txt.format
