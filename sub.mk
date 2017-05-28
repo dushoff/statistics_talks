@@ -8,7 +8,8 @@ Makefile: $(ms)
 $(ms):
 	git submodule add git@github.com:dushoff/$@.git
 
-$(ms)/%.mk: $(ms)
+$(ms)/%.mk:
+	$(MAKE) $(ms)
 	git submodule init $(ms) 
 	git submodule update $(ms) 
 	touch $@
