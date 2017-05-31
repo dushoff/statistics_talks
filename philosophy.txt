@@ -1,22 +1,11 @@
-EXTRA
-
-* Deleted a ton of notes!
-
-* Goal/summary
-
-* Redo LatexTemplates (hacked)
-
-* Link Bayesiann problem to philosophy
-
-----------------------------------------------------------------------
 
 NOFRAME
 
 \title{Statistical philosophy}
-\author{Jonathan Dushoff}
+\author{Jonathan Dushoff, McMaster University}
 \date{MMED 2017} 
-\newcommand{\years}{2014--2017} 
-\newcommand{\figshare}{https://figshare.com/articles/NAME/NUMBER}
+\newcommand{\years}{2012--2017} 
+\newcommand{\figshare}{http://tinyurl.com/ici3d-figshare}
 
 ----------------------------------------------------------------------
 
@@ -52,6 +41,18 @@ PRESENT National Taiwan University
 PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
+
+GOALS
+
+	Discuss what statistics are used for, and why they are needed
+
+	Explain what P values mean, and what they don't
+
+		Effect sizes and confidence intervals are usually better
+
+	Explain the fundamentals of the two basic paradigms of statistical philosophy
+
+----------------------------------------------------------------------
 
 OTHER NSLIDE Statistical philosophy
 
@@ -517,8 +518,8 @@ TSS Frequentist paradigm
 
 	Test whether the effect you see could be due to chance
 
-		What is the probability of seeing exactly a 1.52 cm difference in
-		average heights?
+		What is the probability of seeing a difference of exactly a 0.0048 in
+		proportional growth?
 
 	Test whether the effect you see {\em or a larger effect} could be
 	due to chance
@@ -712,3 +713,71 @@ Honesty
 
 		Start \emph{before} you look at the data
 
+----------------------------------------------------------------------
+
+PSLIDE Summary
+
+FIG web_drop/pipe.jpg
+
+----------------------------------------------------------------------
+
+Summary
+
+	P values are over-rated
+
+	High P values should not be used as evidence for anything ever.
+
+		They can provide indirect evidence. Wonderful. Find the direct evidence
+		and use that instead.
+
+	Use effect sizes and confidence intervals when you can
+
+	Otherwise, find ways to make significant P values do the work
+	
+		Non-inferiority tests, interactions
+
+----------------------------------------------------------------------
+
+RHEAD Summary
+
+	Frequentist statistics makes weak assumptions, and finds logically weak
+	formal conclusions:
+
+		These parameters are unlikely to produce a statistic this extreme by
+		chance
+
+	Bayesian statistics makes strong assumptions:
+	
+		prior distributions must be fully specified
+		
+	and finds logically strong 
+	formal conclusions:
+
+		The probability that the effect value is in this range is X
+
+----------------------------------------------------------------------
+
+RHEAD Summary
+
+	Statistics are a key component of data-based science
+
+		You should think about statistical analysis from the beginning of your
+		project
+
+	You need a basic understanding of statistical principles
+
+	You need your own statistical philosophy
+
+		If you're a scientist, it should be pragmatic and honest
+
+----------------------------------------------------------------------
+
+PSLIDE Philosophy
+
+	If you're a scientist, it should be pragmatic and honest
+
+	If you're a theoretician, it should be ideological and honest
+
+	If you're a capitalist, it should be pragmatic and dishonest
+
+	If you're a politician, it should be ideological and dishonest

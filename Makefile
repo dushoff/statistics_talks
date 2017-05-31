@@ -1,8 +1,9 @@
 # statistics_lectures
 
 current: target
-
-target pngtarget pdftarget vtarget acrtarget gptarget: philosophy.draft.pdf 
+target = Makefile
+-include target.mk
+target: $(target)
 
 ##################################################################
 
@@ -63,7 +64,8 @@ flu.Rout: ciplots.Rout
 masks.Rout: ciplots.Rout 
 vitamins.Rout: ciplots.Rout
 
-vitamins_plot.Rout: vitamins_data.Rout 
+vitamins_data.Rout: vitamins_data.R
+vitamins_plot.Rout: vitamins_data.Rout vitamins_plot.R
 
 vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
 

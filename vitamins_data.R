@@ -1,14 +1,14 @@
 groupSize <- 20
-baseMean <- 95
-logcv <- 0.04
-measDiff <- 1.52
+baseMean <- 0.03
+sd <- 0.012
+measDiff <- 0.0048
 
 set.seed(0601)
 
 treat <- rep(c("A", "B"), each=groupSize)
-height <- rlnorm(2*groupSize, meanlog=log(baseMean), sdlog=logcv)
+growth <- rnorm(2*groupSize, mean=baseMean, sd=sd)
 length(treat)
-length(height)
+length(growth)
 
-ranDiff <- mean(height[treat=="A"]) - mean(height[treat=="B"])
-height[treat=="A"] <- height[treat=="A"] - ranDiff + measDiff
+ranDiff <- mean(growth[treat=="A"]) - mean(growth[treat=="B"])
+growth[treat=="A"] <- growth[treat=="A"] - ranDiff + measDiff
