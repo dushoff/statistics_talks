@@ -119,8 +119,8 @@ EC
 
 Vitamin A
 
-	We measure the average heights of children raised with and without
-	vitamin A supplements
+	We compare health indicators of children treated or not treated with
+	vitamin A supplements 
 
 		\emph{Estimate:} how much taller (or shorter) are the treated
 		children on average?
@@ -135,7 +135,7 @@ Vitamin A
 
 TSEC Estimation 
 
-	We use \emph{P values} to say how sure we are that we have seen some
+	We use \emph{P values} to say how sure we are that we have seen a positive 
 	effect
 
 	We use \emph{confidence intervals} to say what we think is going on
