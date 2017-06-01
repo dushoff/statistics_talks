@@ -52,6 +52,8 @@ GOALS
 
 	Explain the fundamentals of the two basic paradigms of statistical philosophy
 
+	Discuss the role of statistics in science
+
 ----------------------------------------------------------------------
 
 OTHER NSLIDE Statistical philosophy
@@ -79,7 +81,7 @@ PIC HFIG 0.5 web_drop/pipe.jpg
 
 ----------------------------------------------------------------------
 
-How do we use statistics
+TSEC Statistical inference
 
 	We use statistics to confirm effects, estimate parameters, and
 	predict outcomes
@@ -133,7 +135,7 @@ Vitamin A
 
 ----------------------------------------------------------------------
 
-TSEC Estimation 
+TSS P values and confidence intervals
 
 	We use \emph{P values} to say how sure we are that we have seen a positive 
 	effect
@@ -254,19 +256,28 @@ Types of Error
 
 ----------------------------------------------------------------------
 
+RHEAD Types of Error
+
+	Type III Error is the error of using numerical codes for things that have perfectly good simple names
+
+	Just say ``false positive'' or ``false negative'' when possible
+
+----------------------------------------------------------------------
+
 Experimental design
 
-	Type I (\emph{False positive:}) in the hypothetical case that the
+	\emph{False positive:} in the hypothetical case that the
 	effect is exactly zero, what is the probability of falsely finding
 	an effect
 
 		Should be less than or equal to my significance value
 
-	Type II (\emph{False negative:}) what is the probability of failing
+	\emph{False negative:} what is the probability of failing
 	to find an effect that is there?
 
-		Useful, but can only be asked for a specific hypothetical effect
-		\emph{size}
+		Requires you specify a hypothetical effect \emph{size}
+
+		This is a scientific judgment
 
 	These are useful to analyze \textbf{power} and \textbf{validity} of a
 	statistical design
@@ -379,6 +390,10 @@ NC
 		May be difficult
 
 EC
+
+----------------------------------------------------------------------
+
+SS Statistics and science
 
 ----------------------------------------------------------------------
 
@@ -750,10 +765,13 @@ RHEAD Summary
 	
 		prior distributions must be fully specified
 		
-	and finds logically strong 
+	\ldots and finds logically strong 
 	formal conclusions:
 
 		The probability that the effect value is in this range is X
+
+		These strong conclusions can be used directly for prediction with
+		uncertainty
 
 ----------------------------------------------------------------------
 

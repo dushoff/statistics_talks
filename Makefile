@@ -75,11 +75,15 @@ vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
 
 ##################################################################
 
-## Drop stuff (see disease_model_talks notea)s
+## Drop stuff (see disease_model_talks notes
 
-web_drop/%: web_drop ;
+web_drop/%: 
+	$(MAKE) web_drop
+	cd Lecture_images && $(MAKE) files/$*
+
 web_drop:
-	$(LNF) $(Drop)/courses/Lecture_images $@
+	$(MAKE) Lecture_images
+	$(LNF) $(Drop)/Lecture_images $@
 
 my_images/%: my_images ;
 my_images:
