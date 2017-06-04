@@ -17,15 +17,9 @@ Drop = ~/Dropbox
 
 ##################################################################
 
-## Submodules
-
-##################################################################
-
-# pushdir = $(gitroot)/notebook/materials
-
 ## Content
 
-Sources += LatexTemplates
+Sources += LatexTemplates makestuff
 
 Sources += local.txt.format
 Sources += ici3d.tmp ICI3D_logo.png
@@ -42,8 +36,7 @@ philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 
-## Moved here from ICI3D/lectures -- clean up!
-## Not all directories are installed everywhere. Serious work is needed on machinery for this repo. A good candidate for sub-modules.
+## Still needs more cleaning; and I need to have an alternative to recloning
 fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt

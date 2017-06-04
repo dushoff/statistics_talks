@@ -1,3 +1,29 @@
+
+NOFRAME
+
+\title{Likelihood fitting and dynamic models II}
+\subtitle{Approaches to fitting}
+\author{Jonathan Dushoff, McMaster University}
+\date{MMED 2017} 
+\newcommand{\years}{2014--2017} 
+\newcommand{\figshare}{http://tinyurl.com/ici3d-figshare}
+
+----------------------------------------------------------------------
+
+PSLIDE NOFRAME
+
+{\topBar\maketitle}
+
+----------------------------------------------------------------------
+
+NSLIDE NOFRAME
+
+{\let\newpage\relax\maketitle}
+
+----------------------------------------------------------------------
+
+EXTRA
+
 PRESENT \vfill\begin{center} 
 
 Fitting dynamic models to data
@@ -20,6 +46,16 @@ PRESENT National Taiwan University
 PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
+
+Summary
+
+	Discuss theories and approaches behind fitting models to data
+
+	Explain relationship between least squares and likelihood
+
+	Discuss approaches to dealing with process error and observation error
+
+----------------------------------------------------------------------
 
 Measles data
 
@@ -59,8 +95,6 @@ Why did I get the wrong answer?
 
 	Multi-parameter estimation
 
-		Generation intervals
-
 ----------------------------------------------------------------------
 
 TSEC Conceptual framework
@@ -70,22 +104,22 @@ TSEC Conceptual framework
 		\textbf{No error:} We could attempt to model everything we see, in
 		exact detail
 
+			Impractical
+
 		\textbf{Observation error:} we could assume that the world is
 		perfectly deterministic, but our \emph{observations} are imperfect
+
+			Shooting
 
 		\textbf{Process error:} we could assume that we observe perfectly,
 		but that the world is stochastic
 
+			Stepping
+
 		\textbf{Both kinds of error:} the world is stochastic, and our
 		observations are imperfect
 
-----------------------------------------------------------------------
-
-No error
-
-	Impossible
-
-	Even if possible, not clear what we would learn
+			Modern methods
 
 ----------------------------------------------------------------------
 
@@ -105,7 +139,7 @@ NC
 
 \textbf{Shooting}
 
-SIDEFIG talkfigs/machine.jpg
+SIDEFIG web_drop/machine.jpg
 
 EC
 
@@ -149,7 +183,7 @@ NC
 
 \textbf{Stepping}
 
-SIDEFIG talkfigs/stepping.jpg
+SIDEFIG web_drop/stepping.jpg
 
 EC
 
@@ -222,7 +256,7 @@ NC
 
 $$D = \sum_i{y_i - \hat y_i}$$
 
-SIDEFIG talkfigs/deer.jpg
+SIDEFIG web_drop/deer.jpg
 
 NOTES Doesn't work
 
@@ -258,7 +292,7 @@ NC
 
 $$D = \sum_i{(y_i - \hat y_i)^2}$$
 
-SIDEFIG web_drop/elegant.jpg
+SIDEFIG my_images/elegant.jpg
 
 NOTES Simplest smooth approach
 
