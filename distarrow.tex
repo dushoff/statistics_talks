@@ -1,0 +1,93 @@
+% I need better structure and better tikz skills
+\documentclass{article}
+
+\usepackage[vcentering]{geometry}
+\geometry{papersize={6in,6.0in}, top=0.2in, bottom=0.2in}
+
+\pagestyle{empty}
+
+\usepackage{tikz}
+\usetikzlibrary{
+	arrows,decorations.pathmorphing,backgrounds,positioning,fit,calc,scopes
+}
+
+\tikzset{
+	auto,
+	compartment/.style={
+		rectangle, minimum size=9mm, rounded corners=2mm,
+		thick, draw=black!15, top color=white,bottom color=black!30
+	},
+	%
+	bigcompartment/.style={
+		rectangle, minimum size=24mm, rounded corners=2mm,
+		thick, draw=black!15, top color=white,bottom color=black!20
+	},
+	%
+	point/.style={
+		circle, inner sep=2pt, fill=black!5
+	},
+	%
+	mytextbox/.style={
+		rectangle, text=black!50, thin, 
+		draw=white, top color=white,bottom color=white, fill=white
+	}
+}
+
+\begin{document}
+
+\tikzstyle{line} = [draw, -latex']
+
+\newcommand{\Poisson}{
+	\node(P)[bigcompartment]{Poisson};
+}
+
+
+\newcommand{\Binomial}{
+	\node(PB)[right=of P]{};
+	\node(PBB)[right=of PB]{};
+	\node(B)[bigcompartment, right=of PBB]{Binomial};
+	\path[line] (P) -- node [text width=3cm, below, midway] {Finite pop} (B);
+}
+
+\newcommand{\Negative}{
+	\node(PN)[below=of P]{};
+	\node(PNN)[below=of PN]{};
+	\node(N)[bigcompartment, below=of PNN]{Negative Binomial};
+	\path[line] (P) -- node [text width=3cm, right, midway] {Pop-level variation} (N);
+}
+
+\newcommand{\Beta}{
+	\node(BB)[below=of B]{};
+	\node(BBB)[below=of BB]{};
+	\node(Beta)[bigcompartment, below=of BBB]{Beta binomial};
+	\path[line] (B) -- (Beta);
+	\path[line] (N) -- (Beta);
+}
+
+\begin{tikzpicture}[font=\LARGE]
+\Poisson
+\end{tikzpicture}
+
+\clearpage
+\begin{tikzpicture}[font=\LARGE]
+\Poisson
+\Binomial
+\end{tikzpicture}
+
+\clearpage
+\begin{tikzpicture}[font=\LARGE]
+\Poisson
+\Binomial
+\Negative
+\end{tikzpicture}
+
+\clearpage
+\begin{tikzpicture}[font=\LARGE]
+\Poisson
+\Binomial
+\Negative
+\Beta
+\end{tikzpicture}
+
+\end{document}
+

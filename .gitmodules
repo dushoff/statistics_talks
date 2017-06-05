@@ -13,3 +13,6 @@
 [submodule "hybrid_fitting"]
 	path = hybrid_fitting
 	url = git@github.com:Outbreak-analysis/hybrid_fitting.git
+[submodule "SIR_simulations"]
+	path = SIR_simulations
+	url = git@github.com:dushoff/SIR_simulations.git

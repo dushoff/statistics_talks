@@ -1,4 +1,14 @@
 
+EXTRA
+
+Use HIV stuff for shooting
+
+Use Mike's diagram
+
+Git clean
+
+----------------------------------------------------------------------
+
 NOFRAME
 
 \title{Likelihood fitting and dynamic models II}
@@ -95,6 +105,10 @@ Why did I get the wrong answer?
 
 	Multi-parameter estimation
 
+		There may be different parameter combinations that work equally well
+
+		ANS Parameters may not be ``identifiable''
+
 ----------------------------------------------------------------------
 
 TSEC Conceptual framework
@@ -137,7 +151,7 @@ BC
 
 NC
 
-\textbf{Shooting}
+PRESENT \textbf{Shooting}
 
 SIDEFIG web_drop/machine.jpg
 
@@ -145,21 +159,9 @@ EC
 
 ----------------------------------------------------------------------
 
-PSLIDE Shooting
-
-FIG Disease_data/cards.Rout-0.pdf
-
-----------------------------------------------------------------------
-
-PSLIDE Shooting
-
-FIG Disease_data/cards.Rout-1.pdf
-
-----------------------------------------------------------------------
-
 Shooting
 
-FIG Disease_data/cards.Rout-2.pdf
+FIG SIR_simulations/hiv_plot.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
@@ -181,7 +183,7 @@ BC
 
 NC
 
-\textbf{Stepping}
+PRESENT \textbf{Stepping}
 
 SIDEFIG web_drop/stepping.jpg
 
@@ -220,13 +222,22 @@ DOUBLEFIG Disease_data/cards.Rout-2.pdf Disease_data/cards.Rout-5.pdf
 
 ----------------------------------------------------------------------
 
-Observation and process error
+Modern methods
 
-	Latent variable models
+	Is it better to ignore process error, or observation error?
 
-		We need to keep track of, and integrate over, things that we don't observe
+	What if we have a small number of cases, and good reporting (Ebola in small
+	villages)
 
-PIC FIG Disease_data/ewmeas.Rout-1.pdf
+		ANS Ignore observation error?
+
+	What if we have a large number of cases, and poor reporting (HIV in Harare)?
+
+		ANS Ignore process error?
+
+	What if we have a new epidemic and poor reporting (West African Ebola)?
+
+		ANS Can't really ignore either kind
 
 ----------------------------------------------------------------------
 
@@ -447,7 +458,43 @@ EC
 
 ----------------------------------------------------------------------
 
+RSLIDE Distribution diagram
+
+HFIG 1.3 distarrow-0.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Distribution diagram
+
+HFIG 1.3 distarrow-1.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Distribution diagram
+
+HFIG 1.3 distarrow-2.pdf
+
+----------------------------------------------------------------------
+
 Distribution diagram
+
+PRESENT HFIG 1.3 distarrow-3.pdf
+
+NOTES FIG distarrow-3.pdf
+
+----------------------------------------------------------------------
+
+Discrete distributions
+
+	Negative binomial is a good general-purpose discrete distribution
+
+		Individual- and population-level variability
+
+	Beta binomial takes size into account
+
+		Good when denominator is clear and important
+
+		For exampling, when sampling
 
 ----------------------------------------------------------------------
 
@@ -483,7 +530,7 @@ CFIG  fitting_code/mexican_plots.Rout-0.pdf
 
 NC
 
-	What if we tried to estimate \Ro\ from data like these?
+	What if we tried to estimate \Ro\ instead of $r$ from Mexican flu data?
 
 		ANS Disease could be fast with low \Ro\ or slow with high \Ro.
 
@@ -516,6 +563,12 @@ Filtering
 
 ----------------------------------------------------------------------
 
+RSLIDE Filtering
+
+FIG Disease_data/ewmeas.Rout-1.pdf
+
+----------------------------------------------------------------------
+
 Latent variable methods
 
 	Latent variable methods are a little like stepping
@@ -525,6 +578,26 @@ Latent variable methods
 
 	Popular, state-of-the-art methods are available in the R packages rjags and
 	rstan
+
+----------------------------------------------------------------------
+
+RSLIDE Latent-variable methods
+
+FIG Disease_data/ewmeas.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Latent variables
+
+	We model \emph{observed} variables:
+
+		e.g., reported cases, estimated prevalence
+
+	Using \emph{unobserved} latent variables
+
+		true cases, true prevalence, true number of susceptibles
+
+Reauires a framework that can address the fact that our latent variables have many possible values
 
 ----------------------------------------------------------------------
 
@@ -576,7 +649,7 @@ FIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-5.pdf
 
 ----------------------------------------------------------------------
 
-SEC Maximum likelihood and Bayesian inference
+SEC Paradigms
 
 ----------------------------------------------------------------------
 
@@ -618,7 +691,7 @@ Bayesian inference
 
 ----------------------------------------------------------------------
 
-Conclusion
+Summary
 
 	We need \textbf{dynamics} to understand links between processes and outcomes
 
@@ -629,3 +702,22 @@ Conclusion
 		What can we learn from \emph{data}
 
 	Combining these two is difficult, but progress is being made.
+
+----------------------------------------------------------------------
+
+Summary
+
+	Making your fit into a likelihood clarifies assumptions and creates a
+	foundation for statistical inference
+
+	Accounting for both process and observation error is hard
+
+		and not always necessary
+
+	Stepping methods don't allow for observation error
+
+		filtering methods can address this
+
+	Shooting methods don't allow for process error
+
+		latent variable methods can address this

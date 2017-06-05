@@ -49,7 +49,7 @@ evaluation.handouts.pdf: evaluation.txt
 
 ######################################################################
 
-# Simple R scripts moved from CI_diagrams and Philosophy Lecture; should be documented, and may need make rules
+# Simple R scripts moved from CI_diagrams and Philosophy Lecture
 
 Sources += $(wildcard *.R)
 
@@ -64,7 +64,14 @@ vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
 
 ##################################################################
 
+## Diagrams
+
+######################################################################
+
 ## Directories
+
+Sources += distarrow.tex
+distarrow.pdf: distarrow.tex
 
 ##################################################################
 
