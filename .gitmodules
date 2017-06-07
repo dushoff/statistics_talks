@@ -16,3 +16,6 @@
 [submodule "SIR_simulations"]
 	path = SIR_simulations
 	url = git@github.com:dushoff/SIR_simulations.git
+[submodule "Endemic_curves"]
+	path = Endemic_curves
+	url = git@github.com:dushoff/Endemic_curves.git

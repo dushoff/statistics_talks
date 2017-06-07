@@ -27,4 +27,12 @@ testdir/
 .testdir/
 subclone_dir/
 
+.deps/
+*.aux
+copy.tex.deps
+*.Rout*.png
+*.log
+*.deps
+
+
 *.makestuff

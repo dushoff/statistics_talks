@@ -1,11 +1,33 @@
 
 EXTRA
 
-Fix EbolaFits
-
 Add malaria model diagram to notes?
 
 ----------------------------------------------------------------------
+
+NOFRAME
+
+\title{Model assessment}
+\author{Jonathan Dushoff, McMaster University}
+\date{MMED 2017} 
+\newcommand{\years}{2015--2017} 
+\newcommand{\figshare}{http://tinyurl.com/ici3d-figshare}
+
+----------------------------------------------------------------------
+
+PSLIDE NOFRAME
+
+{\topBar\maketitle}
+
+----------------------------------------------------------------------
+
+NSLIDE NOFRAME
+
+{\let\newpage\relax\maketitle}
+
+----------------------------------------------------------------------
+
+EXTRA
 
 Model evaluation
 
@@ -17,11 +39,23 @@ Jonathan Dushoff, McMaster University
 
 SPACE
 
-DAIDD 2016
+DAIDD DAIDD 2016
 
 \url{http://www.ici3d.org/daidd/}
 
 SPACE
+
+----------------------------------------------------------------------
+
+Goals
+
+	Discuss model types and model goals
+
+	Explain the value of simulation for validating models
+
+	Discuss metrics for evaluating fit
+
+	Put the Goodness of fit test in its place
 
 ----------------------------------------------------------------------
 
@@ -41,7 +75,7 @@ Do I have a good model?
 
 ----------------------------------------------------------------------
 
-Statistical philosophy
+DAIDD Statistical philosophy
 
 PIC FIG web_drop/obey_kitties.png
 
@@ -55,13 +89,13 @@ SEC Conceptual models
 
 Disease thresholds
 
-PIC FIG curves/propCurves.Rout-0.png
+PIC FIG Endemic_curves/propCurves.Rout-0.png
 
 ----------------------------------------------------------------------
 
 Effects of clinical immunity
 
-PIC FIG web_drop/keeganClinicalDiagram.jpg
+FIG web_drop/keeganClinicalDiagram.jpg
 
 ----------------------------------------------------------------------
 
@@ -252,7 +286,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Vitamin study
+MMEDREP Vitamin study
 
 FIG vitamins.Rout-0.pdf
 
@@ -404,13 +438,13 @@ PIC HFIG 0.6 web_drop/legoland.jpg
 
 PSLIDE Other model worlds
 
-FIG EbolaFits/T34.NIH3.compare.Rout-0.pdf
+FIG my_images/T34.NIH.compare-0.pdf
 
 ----------------------------------------------------------------------
 
 PSLIDE Other model worlds
 
-FIG EbolaFits/T34.NIH3.compare.Rout-1.pdf
+FIG my_images/T34.NIH.compare-1.pdf
 
 ----------------------------------------------------------------------
 
@@ -475,6 +509,8 @@ SEC Conclusion
 
 ----------------------------------------------------------------------
 
+Summary
+
 Dynamic models can help:
 
 	Think clearly
@@ -487,6 +523,8 @@ Dynamic models can help:
 
 ----------------------------------------------------------------------
 
+Summary
+
 Evaluation
 
 	Validation (inside your model world)
@@ -495,7 +533,7 @@ Evaluation
 
 	Prediction (and other out-of-sample comparison)
 
-	Generate and test hypotheses
+	Generate and test mechanistic hypotheses
 
 ----------------------------------------------------------------------
 
@@ -503,12 +541,9 @@ Conclusion
 
 PIC HFIG 0.7 web_drop/prometheus.jpg
 
-NOTES Shepherd moons were predicted before they were seen
-
-SPACE
+NOTES Saturn's shepherd moons were predicted before they were seen!
 
 Essentially, all models are wrong, but some are useful.
 
 -- Box and Draper (1987), \emph{Empirical Model Building \ldots}
 
-SPACE

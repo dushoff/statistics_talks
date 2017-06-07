@@ -42,7 +42,7 @@ fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
 
 ## This talk originated at DAIDD 2015, and contains elements from the philosophy talk, as well as DAIDD-specific stuff.
-## It should maybe
+## Called assessment now?
 evaluation.final.pdf: evaluation.txt
 evaluation.draft.pdf: evaluation.txt
 evaluation.handouts.pdf: evaluation.txt
@@ -85,7 +85,7 @@ web_drop:
 	$(MAKE) Lecture_images
 	$(LNF) $(Drop)/Lecture_images $@
 
-my_images/%: my_images ;
+# my_images/%: my_images ;
 my_images:
 	$(LN) $(Drop)/$@ .
 
