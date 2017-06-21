@@ -18,7 +18,7 @@ Sources += $(ms) $(dirs)
 
 # make files
 
-Sources = Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
+Sources += Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
 ## Change this in local.mk
 Drop = ~/Dropbox
 include sub.mk
