@@ -1,21 +1,21 @@
 [submodule "makestuff"]
 	path = makestuff
-	url = git@github.com:dushoff/makestuff.git
+	url = https://github.com/dushoff/makestuff.git
 [submodule "Lecture_images"]
 	path = Lecture_images
-	url = git@github.com:Bio3SS/Lecture_images.git
+	url = https://github.com/Bio3SS/Lecture_images.git
 [submodule "fitting_code"]
 	path = fitting_code
-	url = git@github.com:dushoff/fitting_code.git
+	url = https://github.com/dushoff/fitting_code.git
 [submodule "Disease_data"]
 	path = Disease_data
-	url = git@github.com:mac-theobio/Disease_data.git
+	url = https://github.com/mac-theobio/Disease_data.git
 [submodule "hybrid_fitting"]
 	path = hybrid_fitting
-	url = git@github.com:Outbreak-analysis/hybrid_fitting.git
+	url = https://github.com/Outbreak-analysis/hybrid_fitting.git
 [submodule "SIR_simulations"]
 	path = SIR_simulations
-	url = git@github.com:dushoff/SIR_simulations.git
+	url = https://github.com/dushoff/SIR_simulations.git
 [submodule "Endemic_curves"]
 	path = Endemic_curves
-	url = git@github.com:dushoff/Endemic_curves.git
+	url = https://github.com/dushoff/Endemic_curves.git

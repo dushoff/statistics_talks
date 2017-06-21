@@ -7,11 +7,21 @@ target: $(target)
 
 ##################################################################
 
+## MS 2 (Gamma approximations)
+dirs += Lecture_images fitting_code Disease_data hybrid_fitting SIR_simulations Endemic_curves
+
+dfiles: $(dirs:%=%/Makefile)
+Sources += $(ms) $(dirs)
+
+######################################################################
+
+
 # make files
 
 Sources = Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
-include sub.mk
+## Change this in local.mk
 Drop = ~/Dropbox
+include sub.mk
 
 -include $(ms)/newtalk.def
 
@@ -75,24 +85,28 @@ distarrow.pdf: distarrow.tex
 
 ##################################################################
 
-## Drop stuff (see disease_model_talks notes
+## Image drop
 
 web_drop/%: 
 	$(MAKE) web_drop
 	cd Lecture_images && $(MAKE) files/$*
 
-web_drop:
-	$(MAKE) Lecture_images
-	$(LNF) $(Drop)/Lecture_images $@
+web_drop: Lecture_images
+	$(MAKE) Lecture_images/Makefile
+	$(LNF) $</files $@
 
-# my_images/%: my_images ;
-my_images:
-	$(LN) $(Drop)/$@ .
+Sources += personal.txt
+my_images/%: my_images personal.txt.pdf
+	(cd $< && $(MAKE) $*) || convert $(word 2, $^) $@
+
+my_images: 
+	$(LN) $(Drop)/my_images . || $(mkdir)
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 
 -include $(ms)/modules.mk
+-include $(ms)/forms.mk
 
 -include $(ms)/newtalk.mk
 -include $(ms)/newlatex.mk
