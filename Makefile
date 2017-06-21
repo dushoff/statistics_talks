@@ -83,30 +83,11 @@ vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
 Sources += distarrow.tex
 distarrow.pdf: distarrow.tex
 
-##################################################################
-
-## Image drop
-
-web_drop/%: 
-	$(MAKE) web_drop
-	cd Lecture_images && $(MAKE) files/$*
-
-web_drop: Lecture_images
-	$(MAKE) Lecture_images/Makefile
-	$(LNF) $</files $@
-
-Sources += personal.txt
-my_images/%: my_images personal.txt.pdf
-	(cd $< && $(MAKE) $*) || convert $(word 2, $^) $@
-
-my_images: 
-	$(LN) $(Drop)/my_images . || $(mkdir)
-
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 
 -include $(ms)/modules.mk
--include $(ms)/forms.mk
+-include $(ms)/images.mk
 
 -include $(ms)/newtalk.mk
 -include $(ms)/newlatex.mk
