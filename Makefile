@@ -1,6 +1,6 @@
 # statistics_lectures
 
-current: target
+current: heterogeneity.draft.pdf
 target = Makefile
 -include target.mk
 target: $(target)
