@@ -21,6 +21,7 @@ Sources += Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
 ## Change this in local.mk
 Drop = ~/Dropbox
 include sub.mk
+my_images = $(Drop)/my_images
 
 -include $(ms)/newtalk.def
 
