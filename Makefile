@@ -15,7 +15,6 @@ Sources += $(ms) $(dirs)
 
 ######################################################################
 
-
 # make files
 
 Sources += Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
