@@ -19,3 +19,6 @@
 [submodule "Endemic_curves"]
 	path = Endemic_curves
 	url = https://github.com/dushoff/Endemic_curves.git
+[submodule "WA_Ebola_Outbreak"]
+	path = WA_Ebola_Outbreak
+	url = https://github.com/Outbreak-analysis/WA_Ebola_Outbreak.git
