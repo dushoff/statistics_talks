@@ -1,6 +1,6 @@
 # statistics_lectures
 
-current: philosophy.draft.pdf
+current: target
 target = Makefile
 -include target.mk
 target: $(target)
