@@ -29,9 +29,10 @@ my_images = $(Drop)/my_images
 
 ## Content
 
-Sources += LatexTemplates makestuff
+Sources += LatexTemplates makestuff Disease_data Endemic_curves fitting_code hybrid_fitting Lecture_images SIR_simulations WA_Ebola_Outbreak
 
-Sources += local.txt.format
+Sources += local.txt.format beamer.tmp
+
 Sources += ici3d.tmp ICI3D_logo.png
 
 ## Copyright not integrated into make system yet
