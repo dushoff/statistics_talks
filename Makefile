@@ -31,7 +31,8 @@ my_images = $(Drop)/my_images
 
 Sources += LatexTemplates makestuff Disease_data Endemic_curves fitting_code hybrid_fitting Lecture_images SIR_simulations WA_Ebola_Outbreak
 
-Sources += local.txt.format beamer.tmp
+## Local files (.tmp will be ephemeral unless you put it here)
+Sources += local.txt.format beamer.tmp notes.tmp
 
 Sources += ici3d.tmp ICI3D_logo.png
 
