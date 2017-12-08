@@ -1,5 +1,7 @@
 \documentclass[12pt]{article}
 
+\input{LatexTemplates/ici3dCurrent.tex}
+
 \usepackage{graphicx,grffile,xspace}
 \usepackage{amsmath}
 \usepackage{talkdir/slidecomm,talkdir/commands}

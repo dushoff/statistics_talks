@@ -7,21 +7,11 @@ target: $(target)
 
 ##################################################################
 
-## MS 2 (Gamma approximations)
-dirs += Lecture_images fitting_code Disease_data hybrid_fitting SIR_simulations Endemic_curves
-
-dfiles: $(dirs:%=%/Makefile)
-Sources += $(ms) $(dirs)
-
-######################################################################
-
 # make files
 
-Sources += Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
-## Change this in local.mk
-Drop = ~/Dropbox
+Sources = Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
 include sub.mk
-my_images = $(Drop)/my_images
+Drop = ~/Dropbox
 
 -include $(ms)/newtalk.def
 
@@ -29,15 +19,22 @@ my_images = $(Drop)/my_images
 
 ## Content
 
-Sources += LatexTemplates makestuff Disease_data Endemic_curves fitting_code hybrid_fitting Lecture_images SIR_simulations WA_Ebola_Outbreak
+mdirs += LatexTemplates makestuff Disease_data Endemic_curves fitting_code hybrid_fitting Lecture_images SIR_simulations WA_Ebola_Outbreak
+
+Sources += $(mdirs)
 
 ## Local files (.tmp will be ephemeral unless you put it here)
 Sources += local.txt.format beamer.tmp notes.tmp
 
+Sources += local.txt.format
 Sources += ici3d.tmp ICI3D_logo.png
 
 ## Copyright not integrated into make system yet
 Sources += copy.tex
+
+######################################################################
+
+## Lectures
 
 Sources += $(wildcard *.txt)
 
@@ -85,11 +82,26 @@ vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
 Sources += distarrow.tex
 distarrow.pdf: distarrow.tex
 
+##################################################################
+
+## Drop stuff (see disease_model_talks notes
+
+web_drop/%: 
+	$(MAKE) web_drop
+	cd Lecture_images && $(MAKE) files/$*
+
+web_drop:
+	$(MAKE) Lecture_images
+	$(LNF) $(Drop)/Lecture_images $@
+
+# my_images/%: my_images ;
+my_images:
+	$(LN) $(Drop)/$@ .
+
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 
 -include $(ms)/modules.mk
--include $(ms)/images.mk
 
 -include $(ms)/newtalk.mk
 -include $(ms)/newlatex.mk

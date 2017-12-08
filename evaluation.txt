@@ -1,49 +1,14 @@
 
-EXTRA
-
-Add malaria model diagram to notes?
-
-----------------------------------------------------------------------
-
 NOFRAME
 
-\title{Model assessment}
-\author{Jonathan Dushoff, McMaster University}
-\date{MMED 2017} 
-\newcommand{\years}{2015--2017} 
-\newcommand{\figshare}{http://tinyurl.com/ici3d-figshare}
+\newcommand{\jdtitle}{Model evaluation and comparison}
+\newcommand{\jdsub}{}
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\years}{2013--2017} 
 
 ----------------------------------------------------------------------
 
-PSLIDE NOFRAME
-
-{\topBar\maketitle}
-
-----------------------------------------------------------------------
-
-NSLIDE NOFRAME
-
-{\let\newpage\relax\maketitle}
-
-----------------------------------------------------------------------
-
-EXTRA
-
-Model evaluation
-
-SPACE
-
-Jonathan Dushoff, McMaster University
-
-\url{http://lalashan.mcmaster.ca/DushoffLab}
-
-SPACE
-
-DAIDD DAIDD 2016
-
-\url{http://www.ici3d.org/daidd/}
-
-SPACE
+ICI3D
 
 ----------------------------------------------------------------------
 
