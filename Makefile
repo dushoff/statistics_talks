@@ -19,7 +19,7 @@ Drop = ~/Dropbox
 
 ## Content
 
-mdirs += LatexTemplates makestuff Disease_data Endemic_curves fitting_code hybrid_fitting Lecture_images SIR_simulations WA_Ebola_Outbreak
+mdirs += LatexTemplates Disease_data Endemic_curves fitting_code hybrid_fitting Lecture_images SIR_simulations WA_Ebola_Outbreak
 
 Sources += $(mdirs)
 
