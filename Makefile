@@ -10,8 +10,9 @@ target: $(target)
 # make files
 
 Sources = Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
-include sub.mk
+
 Drop = ~/Dropbox
+include sub.mk
 
 -include $(ms)/newtalk.def
 
@@ -84,7 +85,12 @@ distarrow.pdf: distarrow.tex
 
 ##################################################################
 
-## Drop stuff (see disease_model_talks notes
+## Drop stuff (see disease_model_talks notes)
+
+## Point to Drop parent in local.mk
+Sources += jd.local
+jd:
+	$(CP) jd.local local.mk
 
 web_drop/%: 
 	$(MAKE) web_drop
@@ -97,6 +103,17 @@ web_drop:
 # my_images/%: my_images ;
 my_images:
 	$(LN) $(Drop)/$@ .
+
+######################################################################
+
+Sources += mmed.txt.format daidd.txt.format 
+mmedset:
+	$(CP) mmed.txt.format local.txt.format
+
+daiddset:
+	$(CP) daidd.txt.format local.txt.format
+
+######################################################################
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
