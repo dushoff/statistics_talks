@@ -7,6 +7,12 @@ Now given (optionally?) at MMED as well
 
 Working on distinguishing; we already have DAIDD-only slides
 
+Need to work on:
+
+	DAIDD vs. MMED ×
+
+	Note suppression
+
 ----------------------------------------------------------------------
 
 NOFRAME
@@ -30,7 +36,7 @@ Goals
 
 	Discuss metrics for evaluating fit
 
-	Put the Goodness of fit test in its place
+		Put the Goodness of fit test in its place
 
 ----------------------------------------------------------------------
 
@@ -282,14 +288,6 @@ EC
 
 ----------------------------------------------------------------------
 
-EXTRA
-
-Next two slides: not in MMED because I will have already given philosophy
-
-Not currently in notes because of space concerns
-
-----------------------------------------------------------------------
-
 DAIDD Vitamin A example
 
 	We want to know if vitamin A supplements improve the health of
@@ -297,12 +295,10 @@ DAIDD Vitamin A example
 
 		Outcome: height growth in 6 months
 
-			Or \emph{control for} other factors
-
 	What does it mean if I find a "significant P value" for some effect
 	in this experiment?
 
-	The difference is unlikely to be due to chance
+		ANS The difference is unlikely to be due to chance
 
 		So what!  I already know vitamin A has strong effects on
 		metabolism
@@ -369,25 +365,62 @@ EC
 
 ----------------------------------------------------------------------
 
-PSLIDE Low P values
+MMED PSLIDE Low P values
 
 FIG web_drop/clear.jpg
 
 ----------------------------------------------------------------------
 
-PSLIDE High P values
+MMED PSLIDE High P values
 
 FIG web_drop/fog.jpg
 
 ----------------------------------------------------------------------
 
-What does the P value mean?
+MMED What does the P value mean?
 
 	Low: you are seeing something clearly
 
 	High: you are seeing something unclearly
 
 ----------------------------------------------------------------------
+
+DAIDD Low P values
+
+BC
+
+	If I have a low P value I can see something clearly
+
+	But it's usually better to focus on what I see than the P value
+
+NC
+
+SIDEFIG web_drop/clear.jpg
+
+EC
+
+
+----------------------------------------------------------------------
+
+DAIDD High P values
+
+BC
+
+	If I have a high P value, there is something I \emph{don't} see
+	clearly
+
+	It \emph{may be} because this effect is small
+
+	High P values should \emph{not} be used to advance your conclusion
+
+NC
+
+SIDEFIG web_drop/fog.jpg
+
+EC
+
+----------------------------------------------------------------------
+
 
 Goodness of fit test
 
@@ -541,15 +574,18 @@ SEC Conclusion
 
 Summary
 
-Dynamic models can help:
+SUBH Dynamic models
 
-	Think clearly
+	Clarify thinking
 
 		What are our assumptions, what else do we need to know?
 
 	Understand outcomes
 
-		Which mechanisms can or cannot lead to which kinds of dynamic behaviour?
+		Can heterogeneity explain the time course of HIV epidemics?
+
+		Is it possible that MDA could break the cycle of malaria transmission in
+		some areas?
 
 	Predict outcomes
 
@@ -565,7 +601,7 @@ Dynamic models can help:
 
 Summary
 
-Evaluation
+SUBH Evaluation
 
 	Validation (inside your model world)
 
