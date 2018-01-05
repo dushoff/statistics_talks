@@ -1,6 +1,7 @@
 \documentclass{beamer}
 
 \input{LatexTemplates/ici3dTemplate.tex}
+\input{LatexTemplates/ici3dCurrent.tex}
 \input{LatexTemplates/bulletspace.tex}
 
 \usepackage{talkdir/slidecomm,talkdir/commands}
