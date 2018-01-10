@@ -9,7 +9,7 @@ target: $(target)
 
 # make files
 
-Sources = Makefile .gitignore README.md sub.mk LICENSE.md notes.txt
+Sources = Makefile .ignore README.md sub.mk LICENSE.md notes.txt
 
 Drop = ~/Dropbox
 include sub.mk
