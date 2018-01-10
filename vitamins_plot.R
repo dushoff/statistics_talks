@@ -1,21 +1,26 @@
 library(ggplot2)
 theme_set(theme_bw())
+
 set.seed(411)
 
-vitamins <- data.frame(treat=treat, height=height)
-summary(lm(height~treat, data=vitamins))
+vitamins <- data.frame(treat=treat, growth=growth)
+summary(lm(growth~treat, data=vitamins))
 
 samPlot <- function(scramble=FALSE){
-	vitamins$faketreat <- vitamins$treat
+	vitamins$treatment <- vitamins$treat
 	if(scramble){
-		vitamins$faketreat <- sample(treat)
+		vitamins$treatment <- sample(treat)
 	} 
 	with(vitamins, 
-		print(diff <- mean(height[faketreat=="A"]) - 
-			mean(height[faketreat=="B"]))
+		print(diff <- mean(growth[treatment=="A"]) - 
+			mean(growth[treatment=="B"]))
 	)
-	p <- ggplot(vitamins, aes(faketreat, height))
-	p + geom_point()+aes(colour=treat)
+	print(ggplot(vitamins, aes(x=treatment, y=growth, colour=treat))
+		+ geom_point(size=3.8)
+		+ theme(text = element_text(size=20))
+		+ xlab("Treatment")
+		+ ylab("Proportonal growth")
+	)
 }
 
 samPlot()

@@ -1,7 +1,7 @@
 
 means=c(0.013, 0.02, 0.0035)
-Pvals=c(0.22, 0.06, 0.01)
-xtags = c('Height', 'Fat fold', 'Iron')
+Pvals=c(0.18, 0.06, 0.01)
+xtags = c('Weight', 'Fat fold', 'Iron')
 ylab = 'Proportional increase'
 
 pcplot(

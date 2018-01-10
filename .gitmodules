@@ -1,0 +1,27 @@
+[submodule "makestuff"]
+	path = makestuff
+	url = https://github.com/dushoff/makestuff.git
+[submodule "Lecture_images"]
+	path = Lecture_images
+	url = https://github.com/Bio3SS/Lecture_images.git
+[submodule "fitting_code"]
+	path = fitting_code
+	url = https://github.com/dushoff/fitting_code.git
+[submodule "Disease_data"]
+	path = Disease_data
+	url = https://github.com/mac-theobio/Disease_data.git
+[submodule "hybrid_fitting"]
+	path = hybrid_fitting
+	url = https://github.com/Outbreak-analysis/hybrid_fitting.git
+[submodule "SIR_simulations"]
+	path = SIR_simulations
+	url = https://github.com/dushoff/SIR_simulations.git
+[submodule "Endemic_curves"]
+	path = Endemic_curves
+	url = https://github.com/dushoff/Endemic_curves.git
+[submodule "LatexTemplates"]
+	path = LatexTemplates
+	url = https://github.com/ICI3D/LatexTemplates.git
+[submodule "WA_Ebola_Outbreak"]
+	path = WA_Ebola_Outbreak
+	url = https://github.com/Outbreak-analysis/WA_Ebola_Outbreak.git

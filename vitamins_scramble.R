@@ -5,7 +5,7 @@ dFun <- function(scramble=FALSE){
 	if (scramble){
 		treat <- sample(treat)
 	}
-	return(mean(height[treat=="A"]) - mean(height[treat=="B"]))
+	return(mean(growth[treat=="A"]) - mean(growth[treat=="B"]))
 }
 
 diff <- dFun()

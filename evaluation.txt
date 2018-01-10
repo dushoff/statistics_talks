@@ -1,27 +1,42 @@
 
 EXTRA
 
-Fix EbolaFits
+Started at the second DAIDD, by request
 
-Add malaria model diagram to notes?
+Now given (optionally?) at MMED as well
+
+Working on distinguishing; we already have DAIDD-only slides
+
+Need to work on:
+
+	DAIDD vs. MMED ×
+
+	Note suppression
 
 ----------------------------------------------------------------------
 
-Model evaluation
+NOFRAME
 
-SPACE
+\newcommand{\jdtitle}{Model evaluation and comparison}
+\newcommand{\jdsub}{}
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\years}{2013--2017} 
 
-Jonathan Dushoff, McMaster University
+----------------------------------------------------------------------
 
-\url{http://lalashan.mcmaster.ca/DushoffLab}
+ICI3D
 
-SPACE
+----------------------------------------------------------------------
 
-DAIDD 2016
+Goals
 
-\url{http://www.ici3d.org/daidd/}
+	Discuss model types and model goals
 
-SPACE
+	Explain the value of simulation for validating models
+
+	Discuss metrics for evaluating fit
+
+		Put the Goodness of fit test in its place
 
 ----------------------------------------------------------------------
 
@@ -41,9 +56,9 @@ Do I have a good model?
 
 ----------------------------------------------------------------------
 
-Statistical philosophy
+DAIDD Statistical philosophy
 
-PIC FIG Lecture_images/obey_kitties.png
+PIC FIG web_drop/obey_kitties.png
 
 NOTES You should develop your own statistical philosophy
 
@@ -55,19 +70,19 @@ SEC Conceptual models
 
 Disease thresholds
 
-PIC FIG curves/propCurves.Rout-0.png
+PIC FIG Endemic_curves/propCurves.Rout-0.png
 
 ----------------------------------------------------------------------
 
 Effects of clinical immunity
 
-PIC FIG Lecture_images/keeganClinicalDiagram.jpg
+FIG web_drop/keeganClinicalDiagram.jpg
 
 ----------------------------------------------------------------------
 
 Bistability
 
-WIDEFIG Lecture_images/keeganPhaseDiagram.jpg
+WIDEFIG web_drop/keeganPhaseDiagram.jpg
 
 ----------------------------------------------------------------------
 
@@ -77,13 +92,13 @@ SEC Prediction
 
 Ptolemy v.\ Copernicus
 
-PIC FIG Lecture_images/epicycles.jpg
+PIC FIG web_drop/epicycles.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Ptolemy v.\ Copernicus
 
-PIC FIG Lecture_images/heliocentric.jpg
+PIC FIG web_drop/heliocentric.jpg
 
 ----------------------------------------------------------------------
 
@@ -95,7 +110,7 @@ PIC WIDEFIG my_images/Farr.png
 
 PSLIDE Where will we see cholera cases?
 
-FIG Lecture_images/choleraMap.jpg
+FIG web_drop/choleraMap.jpg
 
 ----------------------------------------------------------------------
 
@@ -124,9 +139,9 @@ Validation measures
 
 Coverage
 
-PRESENT HFIG 0.5 Lecture_images/SierraLeoneValidation.jpg
+PRESENT HFIG 0.5 web_drop/SierraLeoneValidation.jpg
 
-NOTES HFIG 0.3 Lecture_images/SierraLeoneValidation.jpg
+NOTES HFIG 0.3 web_drop/SierraLeoneValidation.jpg
 
 	The right answer should be inside your 95% confidence interval 95% of
 	the time
@@ -185,9 +200,19 @@ Accuracy?
 
 TSEC Model Evaluation
 
+BC
+
+CFIG web_drop/Earth.jpg
+
+NC
+
 	Does your model match the \emph{real world}?
 
-PIC HFIG 0.7 Lecture_images/Earth.jpg
+		ANS No!
+
+	How well does your model match the real world?
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -196,7 +221,7 @@ TSS Goodness of fit
 	Goodness of fit \emph{statistics} describe how well a model prediction
 	matches observed data
 
-	Goodness of fit \emph{tests} attempt to determine whehter the observed
+	Goodness of fit \emph{tests} attempt to determine whether the observed
 	difference between model and data is statistically significant
 
 ----------------------------------------------------------------------
@@ -211,7 +236,7 @@ SUBH Good for almost any disease
 
 BC
 
-HFIG 0.75 Lecture_images/godDice.jpg
+HFIG 0.75 web_drop/godDice.jpg
 
 NC
 
@@ -228,8 +253,6 @@ EC
 
 Your model is false!
 
-BC
-
 	A goodness of fit test won't make it true
 
 	You can ``pass'' a goodness of fit test by:
@@ -242,17 +265,63 @@ BC
 
 		choosing an inappropriate way to compare
 
-	So why do we use P values at all in biology?
+	So why would we do this?
+
+	For that matter, why do we use P values at all in biology?
+
+
+----------------------------------------------------------------------
+
+Passing goodness of fit tests
+
+BC
+
+CFIG web_drop/godDice.jpg
 
 NC
 
-SIDEFIG Lecture_images/godDice.jpg
+	I can make any model pass a goodness of fit test but broadening the uncertainty
+
+	That doesn't make it a good model
 
 EC
 
 ----------------------------------------------------------------------
 
-Vitamin study
+DAIDD Vitamin A example
+
+	We want to know if vitamin A supplements improve the health of
+	village children
+
+		Outcome: height growth in 6 months
+
+	What does it mean if I find a "significant P value" for some effect
+	in this experiment?
+
+		ANS The difference is unlikely to be due to chance
+
+		So what!  I already know vitamin A has strong effects on
+		metabolism
+
+	If I'm certain that the true answer isn't exactly zero, why do I
+	want the P value anyway?
+
+----------------------------------------------------------------------
+
+DAIDD Group activity
+
+	Do you agree that in biology we should assume that the answer to our
+	sensible question is not exactly zero?
+
+		Or at least have a philosophy consistent with that assumption?
+
+			Can we ever \emph{prove} that an effect is zero?
+
+	If we make that assumption (null hypothesis is false), why might we want a P value anyway?
+
+----------------------------------------------------------------------
+
+MMEDREP Vitamin study
 
 FIG vitamins.Rout-0.pdf
 
@@ -264,16 +333,7 @@ FIG vitamins.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-EXTRA
-
-Next two slides: not in MMED because I will have already given philosophy
-
-Not currently in notes because of space concerns
-
-----------------------------------------------------------------------
-
-
-DAIDD PSLIDE Annualized flu deaths
+DAIDD Annualized flu deaths
 
 BC
 
@@ -287,7 +347,7 @@ EC
 
 ----------------------------------------------------------------------
 
-DAIDD PSLIDE ... with confidence intervals
+DAIDDREP ... with confidence intervals
 
 BC
 
@@ -305,25 +365,62 @@ EC
 
 ----------------------------------------------------------------------
 
-PSLIDE Low P values
+MMED PSLIDE Low P values
 
-FIG Lecture_images/clear.jpg
-
-----------------------------------------------------------------------
-
-PSLIDE High P values
-
-FIG Lecture_images/fog.jpg
+FIG web_drop/clear.jpg
 
 ----------------------------------------------------------------------
 
-What does the P value mean?
+MMED PSLIDE High P values
+
+FIG web_drop/fog.jpg
+
+----------------------------------------------------------------------
+
+MMED What does the P value mean?
 
 	Low: you are seeing something clearly
 
 	High: you are seeing something unclearly
 
 ----------------------------------------------------------------------
+
+DAIDD Low P values
+
+BC
+
+	If I have a low P value I can see something clearly
+
+	But it's usually better to focus on what I see than the P value
+
+NC
+
+SIDEFIG web_drop/clear.jpg
+
+EC
+
+
+----------------------------------------------------------------------
+
+DAIDD High P values
+
+BC
+
+	If I have a high P value, there is something I \emph{don't} see
+	clearly
+
+	It \emph{may be} because this effect is small
+
+	High P values should \emph{not} be used to advance your conclusion
+
+NC
+
+SIDEFIG web_drop/fog.jpg
+
+EC
+
+----------------------------------------------------------------------
+
 
 Goodness of fit test
 
@@ -396,7 +493,7 @@ Other model worlds
 
 	But you can \emph{simulate} very complicated models, indeed
 
-PIC HFIG 0.6 Lecture_images/legoland.jpg
+PIC HFIG 0.6 web_drop/legoland.jpg
 
 	How well can you do? Which details are important?
 
@@ -404,25 +501,25 @@ PIC HFIG 0.6 Lecture_images/legoland.jpg
 
 PSLIDE Other model worlds
 
-FIG EbolaFits/T34.NIH3.compare.Rout-0.pdf
+FIG my_images/T34.NIH.compare-0.pdf
 
 ----------------------------------------------------------------------
 
 PSLIDE Other model worlds
 
-FIG EbolaFits/T34.NIH3.compare.Rout-1.pdf
+FIG my_images/T34.NIH.compare-1.pdf
 
 ----------------------------------------------------------------------
 
 PSLIDE Generating hypotheses
 
-FIG Lecture_images/EbolaBurial.jpg
+FIG web_drop/EbolaBurial.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Generating hypotheses
 
-FIG Lecture_images/lembo_spp.jpg
+FIG web_drop/lembo_spp.jpg
 
 ----------------------------------------------------------------------
 
@@ -444,13 +541,13 @@ WIDEFIG my_images/Farr.png
 
 PSLIDE Testing hypotheses
 
-FIG Lecture_images/choleraMap.jpg
+FIG web_drop/choleraMap.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Testing hypotheses
 
-FIG Lecture_images/BroadStreet.jpg
+FIG web_drop/BroadStreet.jpg
 
 ----------------------------------------------------------------------
 
@@ -465,7 +562,7 @@ NSLIDE Testing hypotheses
 
 Hard questions
 
-PIC FIG Lecture_images/QuestionAnswers.jpg
+PIC FIG web_drop/QuestionAnswers.jpg
 
 Answers are not always easy
 
@@ -475,40 +572,58 @@ SEC Conclusion
 
 ----------------------------------------------------------------------
 
-Dynamic models can help:
+Summary
 
-	Think clearly
+SUBH Dynamic models
+
+	Clarify thinking
+
+		What are our assumptions, what else do we need to know?
 
 	Understand outcomes
 
+		Can heterogeneity explain the time course of HIV epidemics?
+
+		Is it possible that MDA could break the cycle of malaria transmission in
+		some areas?
+
 	Predict outcomes
+
+		What is the potential for a hepatitis A outbreak in Cape Town?
+
+		What might happen if I improve testing-and-treatment outreach in Jamaica?
 
 	Find new mechanisms
 
+		Why can't I explain my data? What haven't I thought of?
+
 ----------------------------------------------------------------------
 
-Evaluation
+Summary
+
+SUBH Evaluation
 
 	Validation (inside your model world)
+
+		Does my fitting method work (assuming my model is right)?
 
 	Inspection (compare patterns)
 
 	Prediction (and other out-of-sample comparison)
 
-	Generate and test hypotheses
+		Can my model predict things I haven't told it yet?
+
+	Generate and test mechanistic hypotheses
 
 ----------------------------------------------------------------------
 
 Conclusion
 
-PIC HFIG 0.7 Lecture_images/prometheus.jpg
+PIC HFIG 0.7 web_drop/prometheus.jpg
 
-NOTES Shepherd moons were predicted before they were seen
-
-SPACE
+NOTES Saturn's shepherd moons were predicted before they were seen!
 
 Essentially, all models are wrong, but some are useful.
 
 -- Box and Draper (1987), \emph{Empirical Model Building \ldots}
 
-SPACE

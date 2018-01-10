@@ -1,4 +1,29 @@
 
+NOFRAME
+
+\title{Statistical philosophy}
+\author{Jonathan Dushoff, McMaster University}
+\date{MMED 2017} 
+\newcommand{\years}{2012--2017} 
+\newcommand{\figshare}{http://tinyurl.com/ici3d-figshare}
+
+
+----------------------------------------------------------------------
+
+PSLIDE NOFRAME
+
+{\topBar\maketitle}
+
+----------------------------------------------------------------------
+
+NSLIDE NOFRAME
+
+{\let\newpage\relax\maketitle}
+
+----------------------------------------------------------------------
+
+EXTRA
+
 OTHER PRESENT \vfill\begin{center} 
 
 Statistical philosophy
@@ -22,7 +47,21 @@ PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
 
-NSLIDE Statistical philosophy
+GOALS
+
+	Discuss what statistics are used for, and why they are needed
+
+	Explain what P values mean, and what they don't
+
+		Effect sizes and confidence intervals are usually better
+
+	Explain the fundamentals of the two basic paradigms of statistical philosophy
+
+	Discuss the role of statistics in science
+
+----------------------------------------------------------------------
+
+OTHER NSLIDE Statistical philosophy
 
 	Jonathan Dushoff, McMaster University
 
@@ -32,9 +71,9 @@ NSLIDE Statistical philosophy
 
 ----------------------------------------------------------------------
 
-OTHER Long pipe 
+MMED Long pipe 
 
-	PIC HIGHFIG 0.5 Lecture_images/pipe.jpg
+PIC HFIG 0.5 web_drop/pipe.jpg
 
 	Any piece of pipe longer than 30 feet shall be clearly labelled
 	``long pipe'' on each end
@@ -47,7 +86,7 @@ OTHER Long pipe
 
 ----------------------------------------------------------------------
 
-How do we use statistics
+TSEC Statistical inference
 
 	We use statistics to confirm effects, estimate parameters, and
 	predict outcomes
@@ -87,8 +126,8 @@ EC
 
 Vitamin A
 
-	We measure the average heights of children raised with and without
-	vitamin A supplements
+	We compare health indicators of children treated or not treated with
+	vitamin A supplements 
 
 		\emph{Estimate:} how much taller (or shorter) are the treated
 		children on average?
@@ -101,9 +140,9 @@ Vitamin A
 
 ----------------------------------------------------------------------
 
-TSEC Estimation 
+TSS P values and confidence intervals
 
-	We use \emph{P values} to say how sure we are that we have seen some
+	We use \emph{P values} to say how sure we are that we have seen a positive 
 	effect
 
 	We use \emph{confidence intervals} to say what we think is going on
@@ -198,7 +237,7 @@ EC
 
 The meaning of P values
 
-PIC DBFIG 0.8 Lecture_images/fog.jpg 1 Lecture_images/clear.jpg
+PIC DBFIG 0.8 web_drop/fog.jpg 1 web_drop/clear.jpg
 
 	More broadly, a P value measures whether we are seeing
 	\emph{something} clearly
@@ -222,19 +261,28 @@ Types of Error
 
 ----------------------------------------------------------------------
 
+RHEAD Types of Error
+
+	Type III Error is the error of using numerical codes for things that have perfectly good simple names
+
+	Just say ``false positive'' or ``false negative'' when possible
+
+----------------------------------------------------------------------
+
 Experimental design
 
-	Type I (\emph{False positive:}) in the hypothetical case that the
+	\emph{False positive:} in the hypothetical case that the
 	effect is exactly zero, what is the probability of falsely finding
 	an effect
 
 		Should be less than or equal to my significance value
 
-	Type II (\emph{False negative:}) what is the probability of failing
+	\emph{False negative:} what is the probability of failing
 	to find an effect that is there?
 
-		Useful, but can only be asked for a specific hypothetical effect
-		\emph{size}
+		Requires you specify a hypothetical effect \emph{size}
+
+		This is a scientific judgment
 
 	These are useful to analyze \textbf{power} and \textbf{validity} of a
 	statistical design
@@ -257,7 +305,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/error.jpg
+SIDEFIG web_drop/error.jpg
 
 EC
 
@@ -273,7 +321,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/clear.jpg
+SIDEFIG web_drop/clear.jpg
 
 EC
 
@@ -293,7 +341,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/fog.jpg
+SIDEFIG web_drop/fog.jpg
 
 EC
 
@@ -350,6 +398,10 @@ EC
 
 ----------------------------------------------------------------------
 
+SS Statistics and science
+
+----------------------------------------------------------------------
+
 Syllogisms
 
 BC
@@ -362,7 +414,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/zuma.jpg
+SIDEFIG web_drop/zuma.jpg
 
 EC
 
@@ -380,7 +432,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/fanny.jpg
+SIDEFIG web_drop/fanny.jpg
 
 EC
 
@@ -414,7 +466,7 @@ Small effects
 
 PSLIDE Flu masks 
 
-DBFIG 0.8 Lecture_images/N95.jpg 0.7 Lecture_images/surgical.jpg
+DBFIG 0.8 web_drop/N95.jpg 0.7 web_drop/surgical.jpg
 
 ----------------------------------------------------------------------
 
@@ -486,8 +538,8 @@ TSS Frequentist paradigm
 
 	Test whether the effect you see could be due to chance
 
-		What is the probability of seeing exactly a 1.52 cm difference in
-		average heights?
+		What is the probability of seeing a difference of exactly a 0.0048 in
+		proportional growth?
 
 	Test whether the effect you see {\em or a larger effect} could be
 	due to chance
@@ -542,7 +594,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/shanghai.jpg
+SIDEFIG web_drop/shanghai.jpg
 
 EC
 
@@ -558,7 +610,7 @@ BC
 
 NC
 
-SIDEFIG Lecture_images/spiderman.jpg
+SIDEFIG web_drop/spiderman.jpg
 
 EC
 
@@ -614,12 +666,12 @@ EC
 
 ----------------------------------------------------------------------
 
-OTHER DEFHEAD Example: MMEV 
+MMED Example: MMEV 
 
 	MMEV is a viral infection that can cause a serious disease
 	(called MMED)
 	
-	MMED patients are unable to control their urge to fit models to data
+	LIT MMED patients are unable to control their urge to fit models to data
 
 	A certain population has a prevalence of 1% 
 
@@ -631,7 +683,7 @@ OTHER DEFHEAD Example: MMEV
 
 ----------------------------------------------------------------------
 
-OTHER MMEV questions
+MMED MMEV questions
 
 	You pick a person from this population at random, and test them, and
 	the test is positive.
@@ -681,3 +733,74 @@ Honesty
 
 		Start \emph{before} you look at the data
 
+----------------------------------------------------------------------
+
+PSLIDE Summary
+
+FIG web_drop/pipe.jpg
+
+----------------------------------------------------------------------
+
+Summary
+
+	P values are over-rated
+
+	High P values should not be used as evidence for anything ever.
+
+		They can provide indirect evidence. Wonderful. Find the direct evidence
+		and use that instead.
+
+	Use effect sizes and confidence intervals when you can
+
+	Otherwise, find ways to make significant P values do the work
+	
+		Non-inferiority tests, interactions
+
+----------------------------------------------------------------------
+
+RHEAD Summary
+
+	Frequentist statistics makes weak assumptions, and finds logically weak
+	formal conclusions:
+
+		These parameters are unlikely to produce a statistic this extreme by
+		chance
+
+	Bayesian statistics makes strong assumptions:
+	
+		prior distributions must be fully specified
+		
+	\ldots and finds logically strong 
+	formal conclusions:
+
+		The probability that the effect value is in this range is X
+
+		These strong conclusions can be used directly for prediction with
+		uncertainty
+
+----------------------------------------------------------------------
+
+RHEAD Summary
+
+	Statistics are a key component of data-based science
+
+		You should think about statistical analysis from the beginning of your
+		project
+
+	You need a basic understanding of statistical principles
+
+	You need your own statistical philosophy
+
+		If you're a scientist, it should be pragmatic and honest
+
+----------------------------------------------------------------------
+
+PSLIDE Philosophy
+
+	If you're a scientist, it should be pragmatic and honest
+
+	If you're a theoretician, it should be ideological and honest
+
+	If you're a capitalist, it should be pragmatic and dishonest
+
+	If you're a politician, it should be ideological and dishonest
