@@ -1,6 +1,10 @@
 # statistics_lectures
 
+# 2018 Jan 10 (Wed)
+# Making this a working repo under the hybrid paradigm
+
 current: target
+
 target = Makefile
 -include target.mk
 target: $(target)

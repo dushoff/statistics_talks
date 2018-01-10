@@ -2,4 +2,6 @@
 local.mk
 target.mk
 .*.sw*
+.gitignore
+my_images
 
