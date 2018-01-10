@@ -121,6 +121,6 @@ daiddset:
 -include $(ms)/modules.mk
 
 -include $(ms)/newtalk.mk
--include $(ms)/newlatex.mk
+-include $(ms)/texdeps.mk
 -include $(ms)/wrapR.mk
 -include $(ms)/pandoc.mk
