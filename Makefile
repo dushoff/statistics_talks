@@ -48,6 +48,8 @@ philosophy.draft.pdf: philosophy.txt
 philosophy.draft.tex: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 
+philosophy.draft.tex: philosophy.txt
+
 ## Still needs more cleaning; and I need to have an alternative to recloning
 fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
