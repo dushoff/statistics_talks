@@ -1,19 +1,19 @@
-commit.txt
+## Content from .ignore
+local.mk
+target.mk
 .*.sw*
 
-*.draft.*
-*.handouts.*
-*.final.*
+## content from makestuff
+up.time
+commit.time
+commit.default
+dotdir/
+clonedir/
+.gitignore
+up.time
+commit.time
+commit.default
+dotdir/
+clonedir/
+.gitignore
 
-.*.RData
-*.Rlog
-.Rhistory
-*.wrapR.*
-
-local.mk
-
-testdir/
-.testdir/
-subclone_dir/
-
-*.makestuff
