@@ -1,9 +1,6 @@
 [submodule "makestuff"]
 	path = makestuff
 	url = https://github.com/dushoff/makestuff.git
-[submodule "Lecture_images"]
-	path = Lecture_images
-	url = https://github.com/Bio3SS/Lecture_images.git
 [submodule "fitting_code"]
 	path = fitting_code
 	url = https://github.com/dushoff/fitting_code.git

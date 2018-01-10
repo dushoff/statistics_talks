@@ -15,12 +15,13 @@ Drop = ~/Dropbox
 include sub.mk
 
 -include $(ms)/newtalk.def
+-include $(ms)/perl.def
 
 ##################################################################
 
 ## Content
 
-mdirs += LatexTemplates Disease_data Endemic_curves fitting_code hybrid_fitting Lecture_images SIR_simulations WA_Ebola_Outbreak
+mdirs += LatexTemplates Disease_data Endemic_curves fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak
 
 Sources += $(mdirs)
 
@@ -44,6 +45,7 @@ Sources += $(wildcard *.txt)
 ## Using OTHER to mark things that are currently suppressed
 philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
+philosophy.draft.tex: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 
 ## Still needs more cleaning; and I need to have an alternative to recloning
