@@ -4,6 +4,11 @@ Conversion (roughly):
 * make rup
 * git status
 
+Importing
+* make rum
+* make rup
+* Is update --init the problem?
+
 ----------------------------------------------------------------------
 
 This is a directory for stats-y talks, mostly developed with ICI3D or the somewhat-related NTU course.
