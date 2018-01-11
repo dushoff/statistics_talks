@@ -19,8 +19,10 @@ EXTRA To-do
 
 NOFRAME
 
-\newcommand{\jdtitle}{Statistical philosophy}
-\newcommand{\jdsub}{}
+\newcommand{\jdtitle}
+{Is Statistical ``Significance" a Thing?}
+\newcommand{\jdsub}
+{Bridging between science and statistical theory}
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 \newcommand{\years}{2012--2017} 
 
@@ -42,73 +44,21 @@ NSLIDE NOFRAME
 
 ----------------------------------------------------------------------
 
-EXTRA
+Topics
 
-OTHER PRESENT \vfill\begin{center} 
+	How statistics fits into science (statistical philosophy)
 
-Statistical philosophy
+	The role of P values (and the cult of P values)
 
-PRESENT \vfill
+	Theoretical vs applied perspectives on error
 
-Jonathan Dushoff, McMaster University
-
-\url{http://lalashan.mcmaster.ca/DushoffLab}
-
-PRESENT \vfill
-
-PRESENT 2016 Summer Course on Mathematical Modeling and Analysis of 
-Infectious Diseases
-
-PRESENT \vfill
-
-PRESENT National Taiwan University
-
-PRESENT \vfill\end{center}
-
-----------------------------------------------------------------
-
-GOALS
-
-	Discuss what statistics are used for, and why they are needed
-
-	Explain what P values mean, and what they don't
-
-		Effect sizes and confidence intervals are usually better
-
-	Explain the fundamentals of the two basic paradigms of statistical philosophy
-
-	Discuss the role of statistics in science
-
-----------------------------------------------------------------------
-
-OTHER NSLIDE Statistical philosophy
-
-	Jonathan Dushoff, McMaster University
-
-	HREF http://dushoff.github.io/notebook/materials/philosophy.handouts.pdf Download pdf notes (should be this version)
-
-	HREF http://dushoff.github.io/notebook/materials/philosophy.draft.pdf Download pdf slides (from some recent version)
-
-----------------------------------------------------------------------
-
-MMED Long pipe 
-
-PIC HFIG 0.5 webpix/pipe.jpg
-
-	Any piece of pipe longer than 30 feet shall be clearly labelled
-	``long pipe'' on each end
-
-	Any piece of pipe longer than 100 feet shall also be labelled
-	``long pipe'' in the middle, so the plumber doesn't have to walk all
-	the way to the end to find out whether it is long pipe or not.
-
-	\textbf{WARNING: Long Lecture}
+	What's significant about significance?
 
 ----------------------------------------------------------------------
 
 TSEC Statistical inference
 
-	We use statistics to confirm effects, estimate parameters, and
+	Scientists use statistics to confirm effects, estimate parameters, and
 	predict outcomes
 
 	It usually rains when I'm in Cape Town, but mostly on Sunday
@@ -178,25 +128,7 @@ TSS P values and confidence intervals
 
 ----------------------------------------------------------------------
 
-Vitamin A example
-
-	We want to know if vitamin A supplements improve the health of
-	village children
-
-		Is height is a good measure of general health?
-
-		How will we know height differences are due to our treatment?
-
-			We want the two groups to start from the same point --
-			independent randomization of each individual
-
-			We may measure \emph{changes} in height
-
-			Or \emph{control for} other factors
-
-----------------------------------------------------------------------
-
-What do we hope to learn?
+Vitamin A questions?
 
 	Is vitamin A good for these children?
 
@@ -210,7 +142,7 @@ What do we hope to learn?
 
 P values
 
-	What does it mean if I find a "significant P value" for some effect
+	What does it mean if I find a ``significant P value" for some effect
 	in this experiment?
 
 	The difference is unlikely to be due to chance
@@ -276,8 +208,10 @@ Types of Error
 	Type II (\emph{False negative:}) concluding there is no effect when
 	there really is
 
-		This \emph{should} never happen, because we should never conclude
+		This \emph{should} never happen in biology, because we should never conclude
 		there is no effect
+
+		In fact, it happens all the time
 
 ----------------------------------------------------------------------
 
@@ -289,7 +223,27 @@ RHEAD Types of Error
 
 ----------------------------------------------------------------------
 
-Experimental design
+Errors in applied studies
+
+BC
+
+	\emph{Sign error:} if I think an effect is positive, when it's really
+	negative (or vice versa)
+
+	\emph{Magnitude error:} if I think an effect is small, when it's
+	really large (or vice versa)
+
+	Confidence intervals clarify all of this
+
+NC
+
+SIDEFIG webpix/error.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Errors in theoretical stuides
 
 	\emph{False positive:} in the hypothetical case that the
 	effect is exactly zero, what is the probability of falsely finding
@@ -308,26 +262,6 @@ Experimental design
 	statistical design
 	
 		You should do these analyses \emph{before} you collect data, not after
-
-----------------------------------------------------------------------
-
-A new view of error
-
-BC
-
-	\emph{Sign error:} if I think an effect is positive, when it's really
-	negative (or vice versa)
-
-	\emph{Magnitude error:} if I think an effect is small, when it's
-	really large (or vice versa)
-
-	Confidence intervals clarify all of this
-
-NC
-
-SIDEFIG webpix/error.jpg
-
-EC
 
 ----------------------------------------------------------------------
 
@@ -498,7 +432,7 @@ Flu mask example
 	They would like to switch to simpler masks, if those will do the job
 
 	How can this be tested statistically?  We don't want the masks to be
-	"different".
+	``different".
 
 		Use a confidence interval
 
@@ -521,7 +455,7 @@ PRESENT CFIG masks.Rout-0.pdf
 
 NC
 
-	Is the new mask "good enough"?
+	Is the new mask ``good enough"?
 
 	What's our standard for that?
 
@@ -548,484 +482,6 @@ EC
 
 ----------------------------------------------------------------------
 
-SEC Paradigms for inference
-
-----------------------------------------------------------------------
-
-TSS Frequentist paradigm
-
-	Make a null model
-
-	Test whether the effect you see could be due to chance
-
-		What is the probability of seeing a difference of exactly a 0.0048 in
-		proportional growth?
-
-	Test whether the effect you see {\em or a larger effect} could be
-	due to chance
-
-		This probability is the P value
-
-----------------------------------------------------------------------
-
-Height measurements
-
-FIG vitamins_plot.Rout-0.pdf
-
-----------------------------------------------------------------------
-
-Scrambled measurements
-
-FIG vitamins_plot.Rout-1.pdf
-
-----------------------------------------------------------------------
-
-RSLIDE Scrambled measurements
-
-FIG vitamins_plot.Rout-2.pdf
-
-----------------------------------------------------------------------
-
-RSLIDE Scrambled measurements
-
-FIG vitamins_plot.Rout-3.pdf
-
-----------------------------------------------------------------------
-
-RSLIDE Scrambled measurements
-
-FIG vitamins_plot.Rout-4.pdf
-
-----------------------------------------------------------------------
-
-The null distribution
-
-FIG vitamins_scramble.Rout.pdf
-
-----------------------------------------------------------------------
-
-TSS Bayesian paradigm
-
-BC
-
-	Make a complete model world
-
-	Use conditional probability to calculate the probability you want
-
-NC
-
-SIDEFIG webpix/shanghai.jpg
-
-EC
-
-----------------------------------------------------------------------
-
-A powerful framework
-
-BC
-
-	More assumptions $\implies$ more power
-
-	With great power comes great responsibility
-
-NC
-
-SIDEFIG webpix/spiderman.jpg
-
-EC
-
-----------------------------------------------------------------------
-
-Bayesian inference
-
-	We want to go from a \emph{statistical model} of how our data are
-	generated, to a probability model of parameter values
-
-		Requires \emph{prior} distributions describing the assumed
-		likelihood of parameters before these observations are made
-
-		Use Bayes theorem to calculate posterior distribution --
-		likelihood after taking data into account
-
-----------------------------------------------------------------------
-
-Vitamin A study
-
-BC
-
-	A frequentist can do a clear analysis right away
-
-	A Bayesian needs a ton of assumptions -- will try to make
-	``uninformative'' assumptions
-
-NC
-
-SIDEFIG vitamins_plot.Rout-0.pdf
-
-EC
-
-----------------------------------------------------------------------
-
-Cape Town weather
-
-BC
-
-	Frequentist: how unlikely is the observation, from a random
-	perspective?
-
-	Bayesian: what's my model world?  What is my prior belief about 
-	weather-weekday interactions.  
-
-NC
-
-PIC HFIG 0.8  my_images/eight.jpg
-
-PRESENT CREDIT Tessa Wessels, {\em Faces on a Train}
-
-EC
-
-----------------------------------------------------------------------
-
-MMED Example: MMEV 
-
-	MMEV is a viral infection that can cause a serious disease
-	(called MMED)
-	
-	LIT MMED patients are unable to control their urge to fit models to data
-
-	A certain population has a prevalence of 1% 
-
-	The rapid MMEV test gives a positive result:
-
-		100% of the time for people with the virus
-		
-		5% of the time for people without the virus
-
-----------------------------------------------------------------------
-
-MMED MMEV questions
-
-	You pick a person from this population at random, and test them, and
-	the test is positive.
-
-		What is the probability that they have MMEV?
-
-	You learn that your friend has had a positive rapid test for MMEV
-
-		What do you tell them? 
-
-----------------------------------------------------------------------
-
-SEC Conclusion
-
-----------------------------------------------------------------------
-
-Your philosophy
-
-	Statistics are not a magic machine that gives you the right answer
-
-	If you are to be a serious scientist in a noisy world, you should
-	have your own philosophy of statistics
-
-		Be pragmatic: your goal is to do science, not get caught by
-		theoretical considerations
-
-		Be honest: it's harder than it sounds.  
-
-----------------------------------------------------------------------
-
-Honesty
-
-	You can always keep analyzing until you find a ``significant''
-	result
-
-		If you do this you will make a lot of mistakes
-
-	You may also keep analyzing until you find a result that you already
-	``know'' is true. 
-
-		This is confirmation bias; you're probably right, but your project is not
-		advancing science
-
-	Good practice
-
-		Keep a data-analysis journal
-
-		Start \emph{before} you look at the data
-
-----------------------------------------------------------------------
-
-PSLIDE Summary
-
-FIG webpix/pipe.jpg
-
-----------------------------------------------------------------------
-
-Summary
-
-	P values are over-rated
-
-	High P values should not be used as evidence for anything ever.
-
-		They can provide indirect evidence. Wonderful. Find the direct evidence
-		and use that instead.
-
-	Use effect sizes and confidence intervals when you can
-
-	Otherwise, find ways to make significant P values do the work
-	
-		Non-inferiority tests, interactions
-
-----------------------------------------------------------------------
-
-RHEAD Summary
-
-	Frequentist statistics makes weak assumptions, and finds logically weak
-	formal conclusions:
-
-		These parameters are unlikely to produce a statistic this extreme by
-		chance
-
-	Bayesian statistics makes strong assumptions:
-	
-		prior distributions must be fully specified
-		
-	\ldots and finds logically strong 
-	formal conclusions:
-
-		The probability that the effect value is in this range is X
-
-		These strong conclusions can be used directly for prediction with
-		uncertainty
-
-----------------------------------------------------------------------
-
-RHEAD Summary
-
-	Statistics are a key component of data-based science
-
-		You should think about statistical analysis from the beginning of your
-		project
-
-	You need a basic understanding of statistical principles
-
-	You need your own statistical philosophy
-
-		If you're a scientist, it should be pragmatic and honest
-
-----------------------------------------------------------------------
-
-PSLIDE Philosophy
-
-	If you're a scientist, it should be pragmatic and honest
-
-	If you're a theoretician, it should be ideological and honest
-
-	If you're a capitalist, it should be pragmatic and dishonest
-
-	If you're a politician, it should be ideological and dishonest
-
-----------------------------------------------------------------------
-
-
-EXTRA
-
-Started at the second DAIDD, by request
-
-Now given (optionally?) at MMED as well
-
-Working on distinguishing; we already have DAIDD-only slides
-
-Need to work on:
-
-	DAIDD vs. MMED ×
-
-	Note suppression
-
-----------------------------------------------------------------------
-
-NOFRAME
-
-\newcommand{\jdtitle}{Model evaluation and comparison}
-\newcommand{\jdsub}{}
-\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
-\newcommand{\years}{2013--2017} 
-
-----------------------------------------------------------------------
-
-ICI3D
-
-----------------------------------------------------------------------
-
-Goals
-
-	Discuss model types and model goals
-
-	Explain the value of simulation for validating models
-
-	Discuss metrics for evaluating fit
-
-		Put the Goodness of fit test in its place
-
-----------------------------------------------------------------------
-
-Do I have a good model?
-
-	What is my model trying to accomplish?
-
-		Generating hypotheses
-
-		Evaluating plausibility
-
-		Prediction
-
-		Extrapolation
-
-		Mechanistic understanding
-
-----------------------------------------------------------------------
-
-DAIDD Statistical philosophy
-
-PIC FIG webpix/obey_kitties.png
-
-NOTES You should develop your own statistical philosophy
-
-----------------------------------------------------------------------
-
-SEC Conceptual models
-
-----------------------------------------------------------------------
-
-Disease thresholds
-
-PIC FIG Endemic_curves/propCurves.Rout-0.png
-
-----------------------------------------------------------------------
-
-Effects of clinical immunity
-
-FIG webpix/keeganClinicalDiagram.jpg
-
-----------------------------------------------------------------------
-
-Bistability
-
-WIDEFIG webpix/keeganPhaseDiagram.jpg
-
-----------------------------------------------------------------------
-
-SEC Prediction
-
-----------------------------------------------------------------------
-
-Ptolemy v.\ Copernicus
-
-PIC FIG webpix/epicycles.jpg
-
-----------------------------------------------------------------------
-
-PSLIDE Ptolemy v.\ Copernicus
-
-PIC FIG webpix/heliocentric.jpg
-
-----------------------------------------------------------------------
-
-Where will we see cholera cases?
-
-PIC WIDEFIG my_images/Farr.png
-
-----------------------------------------------------------------------
-
-PSLIDE Where will we see cholera cases?
-
-FIG webpix/choleraMap.jpg
-
-----------------------------------------------------------------------
-
-TSEC Model Validation
-
-	Does your fitting algorithm match your \emph{model world}?
-
-PIC HFIG 0.4 my_images/modelWorld.png
-
-	If you use your fitting algorithm on simulations from your model
-	world, then you \emph{know the right answer}!
-
-----------------------------------------------------------------------
-
-Validation measures
-
-	Coverage
-
-	Precision
-
-	Bias?
-
-	Accuracy?
-
-----------------------------------------------------------------------
-
-Coverage
-
-PRESENT HFIG 0.5 webpix/SierraLeoneValidation.jpg
-
-NOTES HFIG 0.3 webpix/SierraLeoneValidation.jpg
-
-	The right answer should be inside your 95% confidence interval 95% of
-	the time
-
-		If more, your model is \emph{too conservative}
-
-		If less, your model is \emph{invalid}
-
-	In many cases it's good to look at the two tails separately:
-
-		How often do you overestimate? Underestimate?
-
-----------------------------------------------------------------------
-
-Precision
-
-	You should aim to make your confidence intervals as narrow as
-	possible
-
-		Provide as much information as possible
-
-	As data increases, your precision should increase
-
-		CIs should approach zero width
-
-----------------------------------------------------------------------
-
-Bias?
-
-	Nobody wants to be biased 
-
-	You \emph{need} to be \emph{asymptotically} unbiased
-
-		Good coverage and good precision assure this
-
-	Not so clear you need to be \emph{absolutely} unbiased
-
-		Bias is the difference between the \emph{mean} expected prediction and the
-		true value
-
-		Scale dependent: an unbiased estimate of $\gamma$ is
-		automatically a biased estimate of $D$ (but not
-		asymptotically biased)
-
-	It may be better to evaluate using medians (instead of means)
-
-----------------------------------------------------------------------
-
-Accuracy?
-
-	Nobody wants to be inaccurate
-
-	Good coverage and good precision should guarantee good accuracy
-
-----------------------------------------------------------------------
 
 TSEC Model Evaluation
 
@@ -1124,7 +580,7 @@ DAIDD Vitamin A example
 
 		Outcome: height growth in 6 months
 
-	What does it mean if I find a "significant P value" for some effect
+	What does it mean if I find a ``significant P value" for some effect
 	in this experiment?
 
 		ANS The difference is unlikely to be due to chance
@@ -1455,4 +911,116 @@ NOTES Saturn's shepherd moons were predicted before they were seen!
 Essentially, all models are wrong, but some are useful.
 
 -- Box and Draper (1987), \emph{Empirical Model Building \ldots}
+
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Your philosophy
+
+	Statistics are not a magic machine that gives you the right answer
+
+	If you are to be a serious scientist in a noisy world, you should
+	have your own philosophy of statistics
+
+		Be pragmatic: your goal is to do science, not get caught by
+		theoretical considerations
+
+		Be honest: it's harder than it sounds.  
+
+----------------------------------------------------------------------
+
+Honesty
+
+	You can always keep analyzing until you find a ``significant''
+	result
+
+		If you do this you will make a lot of mistakes
+
+	You may also keep analyzing until you find a result that you already
+	``know'' is true. 
+
+		This is confirmation bias; you're probably right, but your project is not
+		advancing science
+
+	Good practice
+
+		Keep a data-analysis journal
+
+		Start \emph{before} you look at the data
+
+----------------------------------------------------------------------
+
+PSLIDE Summary
+
+FIG webpix/pipe.jpg
+
+----------------------------------------------------------------------
+
+Summary
+
+	P values are over-rated
+
+	High P values should not be used as evidence for anything ever.
+
+		They can provide indirect evidence. Wonderful. Find the direct evidence
+		and use that instead.
+
+	Use effect sizes and confidence intervals when you can
+
+	Otherwise, find ways to make significant P values do the work
+	
+		Non-inferiority tests, interactions
+
+----------------------------------------------------------------------
+
+RHEAD Summary
+
+	Frequentist statistics makes weak assumptions, and finds logically weak
+	formal conclusions:
+
+		These parameters are unlikely to produce a statistic this extreme by
+		chance
+
+	Bayesian statistics makes strong assumptions:
+	
+		prior distributions must be fully specified
+		
+	\ldots and finds logically strong 
+	formal conclusions:
+
+		The probability that the effect value is in this range is X
+
+		These strong conclusions can be used directly for prediction with
+		uncertainty
+
+----------------------------------------------------------------------
+
+RHEAD Summary
+
+	Statistics are a key component of data-based science
+
+		You should think about statistical analysis from the beginning of your
+		project
+
+	You need a basic understanding of statistical principles
+
+	You need your own statistical philosophy
+
+		If you're a scientist, it should be pragmatic and honest
+
+----------------------------------------------------------------------
+
+PSLIDE Philosophy
+
+	If you're a scientist, it should be pragmatic and honest
+
+	If you're a theoretician, it should be ideological and honest
+
+	If you're a capitalist, it should be pragmatic and dishonest
+
+	If you're a politician, it should be ideological and dishonest
+
+----------------------------------------------------------------------
 

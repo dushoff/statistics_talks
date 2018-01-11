@@ -21,6 +21,7 @@ include sub.mk
 
 -include $(ms)/newtalk.def
 -include $(ms)/perl.def
+-include $(ms)/repos.def
 
 ##################################################################
 
@@ -85,6 +86,9 @@ clarity.draft.pdf: clarity.txt
 clarity.draft.tex: clarity.txt
 clarity.handouts.pdf: clarity.txt
 
+repodirs:
+	@echo $(repodirs)
+
 ######################################################################
 
 # Simple R scripts moved from CI_diagrams and Philosophy Lecture
@@ -112,6 +116,9 @@ Sources += distarrow.tex
 distarrow.pdf: distarrow.tex
 
 ##################################################################
+
+## Venues
+## Rules under development; need to look at beamer.tmp (manually, for now)
 
 Sources += mmed.txt.format daidd.txt.format 
 mmedset:
