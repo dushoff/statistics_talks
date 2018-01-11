@@ -28,15 +28,6 @@ include sub.mk
 
 ## webpix not tested for gaps after transition
 
-%.webtrans:
-	perl -pi -e 's|web_drop/|webpix/|g' $*
-
-webpix/%: ~/Dropbox/courses/Lecture_images/%
-	$(copy)
-
-my_images/%: ~/Dropbox/my_images/%
-	$(copy)
-
 ##################################################################
 
 ## Content
@@ -65,9 +56,6 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 ## To do: figure out what you want from which column
 ## Using OTHER to mark things that are currently suppressed
 
-## Translating
-philosophy.txt.webtrans:
-
 ## Talk
 philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
@@ -76,7 +64,9 @@ philosophy.handouts.pdf: philosophy.txt
 
 philosophy.html: philosophy.step
 
+#### Fitting
 ## Still needs more cleaning; and I need to have an alternative to recloning
+## Likelihood fitting and dynamic models II; a long history at MMED, I guess
 fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
@@ -86,6 +76,14 @@ fitting.handouts.pdf: fitting.txt
 evaluation.final.pdf: evaluation.txt
 evaluation.draft.pdf: evaluation.txt
 evaluation.handouts.pdf: evaluation.txt
+
+## Clarity
+## First spun for the Mac Stats group January 2018
+
+clarity.final.pdf: clarity.txt
+clarity.draft.pdf: clarity.txt
+clarity.draft.tex: clarity.txt
+clarity.handouts.pdf: clarity.txt
 
 ######################################################################
 

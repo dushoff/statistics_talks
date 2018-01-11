@@ -12,6 +12,9 @@ Importing
 
 * Need to work on auto-makestuff weird commits. I made a note.
 
+Dotdir
+* Does not work out of the box because modules don't get initialized or updated – fix in modules.mk?
+
 ----------------------------------------------------------------------
 
 This is a directory for stats-y talks, mostly developed with ICI3D or the somewhat-related NTU course.
