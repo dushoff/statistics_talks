@@ -8,6 +8,7 @@ Importing
 * make rum
 * make rup
 * Is update --init the problem?
+	* Not according to documentation
 
 ----------------------------------------------------------------------
 
