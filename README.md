@@ -6,7 +6,6 @@ Conversion (roughly):
 
 ----------------------------------------------------------------------
 
-
 This is a directory for stats-y talks, mostly developed with ICI3D or the somewhat-related NTU course.
 
 
