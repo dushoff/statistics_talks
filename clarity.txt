@@ -824,3 +824,635 @@ PSLIDE Philosophy
 	If you're a capitalist, it should be pragmatic and dishonest
 
 	If you're a politician, it should be ideological and dishonest
+
+----------------------------------------------------------------------
+
+
+EXTRA
+
+Started at the second DAIDD, by request
+
+Now given (optionally?) at MMED as well
+
+Working on distinguishing; we already have DAIDD-only slides
+
+Need to work on:
+
+	DAIDD vs. MMED ×
+
+	Note suppression
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdtitle}{Model evaluation and comparison}
+\newcommand{\jdsub}{}
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\years}{2013--2017} 
+
+----------------------------------------------------------------------
+
+ICI3D
+
+----------------------------------------------------------------------
+
+Goals
+
+	Discuss model types and model goals
+
+	Explain the value of simulation for validating models
+
+	Discuss metrics for evaluating fit
+
+		Put the Goodness of fit test in its place
+
+----------------------------------------------------------------------
+
+Do I have a good model?
+
+	What is my model trying to accomplish?
+
+		Generating hypotheses
+
+		Evaluating plausibility
+
+		Prediction
+
+		Extrapolation
+
+		Mechanistic understanding
+
+----------------------------------------------------------------------
+
+DAIDD Statistical philosophy
+
+PIC FIG webpix/obey_kitties.png
+
+NOTES You should develop your own statistical philosophy
+
+----------------------------------------------------------------------
+
+SEC Conceptual models
+
+----------------------------------------------------------------------
+
+Disease thresholds
+
+PIC FIG Endemic_curves/propCurves.Rout-0.png
+
+----------------------------------------------------------------------
+
+Effects of clinical immunity
+
+FIG webpix/keeganClinicalDiagram.jpg
+
+----------------------------------------------------------------------
+
+Bistability
+
+WIDEFIG webpix/keeganPhaseDiagram.jpg
+
+----------------------------------------------------------------------
+
+SEC Prediction
+
+----------------------------------------------------------------------
+
+Ptolemy v.\ Copernicus
+
+PIC FIG webpix/epicycles.jpg
+
+----------------------------------------------------------------------
+
+PSLIDE Ptolemy v.\ Copernicus
+
+PIC FIG webpix/heliocentric.jpg
+
+----------------------------------------------------------------------
+
+Where will we see cholera cases?
+
+PIC WIDEFIG my_images/Farr.png
+
+----------------------------------------------------------------------
+
+PSLIDE Where will we see cholera cases?
+
+FIG webpix/choleraMap.jpg
+
+----------------------------------------------------------------------
+
+TSEC Model Validation
+
+	Does your fitting algorithm match your \emph{model world}?
+
+PIC HFIG 0.4 my_images/modelWorld.png
+
+	If you use your fitting algorithm on simulations from your model
+	world, then you \emph{know the right answer}!
+
+----------------------------------------------------------------------
+
+Validation measures
+
+	Coverage
+
+	Precision
+
+	Bias?
+
+	Accuracy?
+
+----------------------------------------------------------------------
+
+Coverage
+
+PRESENT HFIG 0.5 webpix/SierraLeoneValidation.jpg
+
+NOTES HFIG 0.3 webpix/SierraLeoneValidation.jpg
+
+	The right answer should be inside your 95% confidence interval 95% of
+	the time
+
+		If more, your model is \emph{too conservative}
+
+		If less, your model is \emph{invalid}
+
+	In many cases it's good to look at the two tails separately:
+
+		How often do you overestimate? Underestimate?
+
+----------------------------------------------------------------------
+
+Precision
+
+	You should aim to make your confidence intervals as narrow as
+	possible
+
+		Provide as much information as possible
+
+	As data increases, your precision should increase
+
+		CIs should approach zero width
+
+----------------------------------------------------------------------
+
+Bias?
+
+	Nobody wants to be biased 
+
+	You \emph{need} to be \emph{asymptotically} unbiased
+
+		Good coverage and good precision assure this
+
+	Not so clear you need to be \emph{absolutely} unbiased
+
+		Bias is the difference between the \emph{mean} expected prediction and the
+		true value
+
+		Scale dependent: an unbiased estimate of $\gamma$ is
+		automatically a biased estimate of $D$ (but not
+		asymptotically biased)
+
+	It may be better to evaluate using medians (instead of means)
+
+----------------------------------------------------------------------
+
+Accuracy?
+
+	Nobody wants to be inaccurate
+
+	Good coverage and good precision should guarantee good accuracy
+
+----------------------------------------------------------------------
+
+TSEC Model Evaluation
+
+BC
+
+CFIG webpix/Earth.jpg
+
+NC
+
+	Does your model match the \emph{real world}?
+
+		ANS No!
+
+	How well does your model match the real world?
+
+EC
+
+----------------------------------------------------------------------
+
+TSS Goodness of fit
+
+	Goodness of fit \emph{statistics} describe how well a model prediction
+	matches observed data
+
+	Goodness of fit \emph{tests} attempt to determine whether the observed
+	difference between model and data is statistically significant
+
+----------------------------------------------------------------------
+
+EXTRA A disease-incidence model
+
+COMMENT Do I like this? Am I thinking clearly about it?
+
+I like the picture at least.
+
+SUBH Good for almost any disease
+
+BC
+
+HFIG 0.75 webpix/godDice.jpg
+
+NC
+
+	The gods roll dice to pick a probability between 0.1% and 10%.
+
+	Each person on the planet gets the disease the next year with this
+	probability
+
+	$P>0.05$. My model is correct!
+
+EC
+
+----------------------------------------------------------------------
+
+Your model is false!
+
+	A goodness of fit test won't make it true
+
+	You can ``pass'' a goodness of fit test by:
+
+		having a good model
+
+		making very broad predictions
+
+		having bad data
+
+		choosing an inappropriate way to compare
+
+	So why would we do this?
+
+	For that matter, why do we use P values at all in biology?
+
+
+----------------------------------------------------------------------
+
+Passing goodness of fit tests
+
+BC
+
+CFIG webpix/godDice.jpg
+
+NC
+
+	I can make any model pass a goodness of fit test but broadening the uncertainty
+
+	That doesn't make it a good model
+
+EC
+
+----------------------------------------------------------------------
+
+DAIDD Vitamin A example
+
+	We want to know if vitamin A supplements improve the health of
+	village children
+
+		Outcome: height growth in 6 months
+
+	What does it mean if I find a "significant P value" for some effect
+	in this experiment?
+
+		ANS The difference is unlikely to be due to chance
+
+		So what!  I already know vitamin A has strong effects on
+		metabolism
+
+	If I'm certain that the true answer isn't exactly zero, why do I
+	want the P value anyway?
+
+----------------------------------------------------------------------
+
+DAIDD Group activity
+
+	Do you agree that in biology we should assume that the answer to our
+	sensible question is not exactly zero?
+
+		Or at least have a philosophy consistent with that assumption?
+
+			Can we ever \emph{prove} that an effect is zero?
+
+	If we make that assumption (null hypothesis is false), why might we want a P value anyway?
+
+----------------------------------------------------------------------
+
+MMEDREP Vitamin study
+
+FIG vitamins.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Vitamin study
+
+FIG vitamins.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+DAIDD Annualized flu deaths
+
+BC
+
+CFIG flu.Rout-0.pdf
+
+NC
+
+	Why is weather not causing deaths at this time scale?
+
+EC
+
+----------------------------------------------------------------------
+
+DAIDDREP ... with confidence intervals
+
+BC
+
+CFIG flu.Rout-1.pdf
+
+NC
+
+	\textbf{Never} say: A is significant and B isn't, so $A>B$
+
+	\textbf{Instead:} Construct a statistic for the hypothesis $A>B$
+
+		May be difficult
+
+EC
+
+----------------------------------------------------------------------
+
+MMED PSLIDE Low P values
+
+FIG webpix/clear.jpg
+
+----------------------------------------------------------------------
+
+MMED PSLIDE High P values
+
+FIG webpix/fog.jpg
+
+----------------------------------------------------------------------
+
+MMED What does the P value mean?
+
+	Low: you are seeing something clearly
+
+	High: you are seeing something unclearly
+
+----------------------------------------------------------------------
+
+DAIDD Low P values
+
+BC
+
+	If I have a low P value I can see something clearly
+
+	But it's usually better to focus on what I see than the P value
+
+NC
+
+SIDEFIG webpix/clear.jpg
+
+EC
+
+
+----------------------------------------------------------------------
+
+DAIDD High P values
+
+BC
+
+	If I have a high P value, there is something I \emph{don't} see
+	clearly
+
+	It \emph{may be} because this effect is small
+
+	High P values should \emph{not} be used to advance your conclusion
+
+NC
+
+SIDEFIG webpix/fog.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+
+Goodness of fit test
+
+	Your model is \emph{not} reality (null hypothesis is false)
+
+	Can we see the difference clearly?
+
+		If no, model may be good or bad. 
+		
+			We probably can't add any more complexity based on current
+			data
+
+		If yes, model may be good or bad. We \emph{may} be able to add more
+		complexity based on current data
+
+			But we may not need to
+
+----------------------------------------------------------------------
+
+TSS Capturing patterns
+
+	You can ask:
+
+		Does your model do a reasonable job of capturing the data?
+
+			You can use a goodness of fit \emph{statistic} for this, and not
+			worry about the P value
+
+		Does your model capture patterns and relationships that you (or
+		other experts) think are important?
+
+----------------------------------------------------------------------
+
+SS Going beyond
+
+----------------------------------------------------------------------
+
+Out-of-sample validation
+
+	Does your model make predictions \emph{outside} the range on which you
+	calibrated it?
+
+		Predicting gravitational shifts in star positions from
+		measurements in Earth laboratories
+
+		Predicting cholera outbreaks in Bangladesh from a model calibrated
+		to Haiti
+
+		Predicting influenza patterns in 2010 from a model calibrated from
+		2000--2009
+
+----------------------------------------------------------------------
+
+Test sets
+
+	What is \textbf{test set} spelled backwards?
+
+	Hold some data out while fitting your model
+
+	Or just \emph{pretend} to do this as an evaluation method
+
+		In other words, test what would happen under various withholding
+		scenarios
+
+----------------------------------------------------------------------
+
+Other model worlds
+
+	The model you're \emph{fitting} is probably pretty simple
+
+	But you can \emph{simulate} very complicated models, indeed
+
+PIC HFIG 0.6 webpix/legoland.jpg
+
+	How well can you do? Which details are important?
+
+----------------------------------------------------------------------
+
+PSLIDE Other model worlds
+
+FIG my_images/T34.NIH.compare-0.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Other model worlds
+
+FIG my_images/T34.NIH.compare-1.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Generating hypotheses
+
+FIG webpix/EbolaBurial.jpg
+
+----------------------------------------------------------------------
+
+PSLIDE Generating hypotheses
+
+FIG webpix/lembo_spp.jpg
+
+----------------------------------------------------------------------
+
+NSLIDE Generating hypotheses
+
+For example:
+
+	Safe burial is key to interrupting Ebola transmission
+
+	Vaccinating domestic dogs can eliminate transmission of canine rabies
+
+----------------------------------------------------------------------
+
+PSLIDE Testing hypotheses
+
+WIDEFIG my_images/Farr.png
+
+----------------------------------------------------------------------
+
+PSLIDE Testing hypotheses
+
+FIG webpix/choleraMap.jpg
+
+----------------------------------------------------------------------
+
+PSLIDE Testing hypotheses
+
+FIG webpix/BroadStreet.jpg
+
+----------------------------------------------------------------------
+
+NSLIDE Testing hypotheses
+
+	Both the Farr model and the Snow model made testable predictions about
+	cholera
+
+	Snow tested his hypotheses by removing the pump handle
+
+----------------------------------------------------------------------
+
+Hard questions
+
+PIC FIG webpix/QuestionAnswers.jpg
+
+Answers are not always easy
+
+----------------------------------------------------------------------
+
+SEC Conclusion
+
+----------------------------------------------------------------------
+
+Summary
+
+SUBH Dynamic models
+
+	Clarify thinking
+
+		What are our assumptions, what else do we need to know?
+
+	Understand outcomes
+
+		Can heterogeneity explain the time course of HIV epidemics?
+
+		Is it possible that MDA could break the cycle of malaria transmission in
+		some areas?
+
+	Predict outcomes
+
+		What is the potential for a hepatitis A outbreak in Cape Town?
+
+		What might happen if I improve testing-and-treatment outreach in Jamaica?
+
+	Find new mechanisms
+
+		Why can't I explain my data? What haven't I thought of?
+
+----------------------------------------------------------------------
+
+Summary
+
+SUBH Evaluation
+
+	Validation (inside your model world)
+
+		Does my fitting method work (assuming my model is right)?
+
+	Inspection (compare patterns)
+
+	Prediction (and other out-of-sample comparison)
+
+		Can my model predict things I haven't told it yet?
+
+	Generate and test mechanistic hypotheses
+
+----------------------------------------------------------------------
+
+Conclusion
+
+PIC HFIG 0.7 webpix/prometheus.jpg
+
+NOTES Saturn's shepherd moons were predicted before they were seen!
+
+Essentially, all models are wrong, but some are useful.
+
+-- Box and Draper (1987), \emph{Empirical Model Building \ldots}
+
