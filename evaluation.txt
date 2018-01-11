@@ -58,7 +58,7 @@ Do I have a good model?
 
 DAIDD Statistical philosophy
 
-PIC FIG web_drop/obey_kitties.png
+PIC FIG webpix/obey_kitties.png
 
 NOTES You should develop your own statistical philosophy
 
@@ -76,13 +76,13 @@ PIC FIG Endemic_curves/propCurves.Rout-0.png
 
 Effects of clinical immunity
 
-FIG web_drop/keeganClinicalDiagram.jpg
+FIG webpix/keeganClinicalDiagram.jpg
 
 ----------------------------------------------------------------------
 
 Bistability
 
-WIDEFIG web_drop/keeganPhaseDiagram.jpg
+WIDEFIG webpix/keeganPhaseDiagram.jpg
 
 ----------------------------------------------------------------------
 
@@ -92,13 +92,13 @@ SEC Prediction
 
 Ptolemy v.\ Copernicus
 
-PIC FIG web_drop/epicycles.jpg
+PIC FIG webpix/epicycles.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Ptolemy v.\ Copernicus
 
-PIC FIG web_drop/heliocentric.jpg
+PIC FIG webpix/heliocentric.jpg
 
 ----------------------------------------------------------------------
 
@@ -110,7 +110,7 @@ PIC WIDEFIG my_images/Farr.png
 
 PSLIDE Where will we see cholera cases?
 
-FIG web_drop/choleraMap.jpg
+FIG webpix/choleraMap.jpg
 
 ----------------------------------------------------------------------
 
@@ -139,9 +139,9 @@ Validation measures
 
 Coverage
 
-PRESENT HFIG 0.5 web_drop/SierraLeoneValidation.jpg
+PRESENT HFIG 0.5 webpix/SierraLeoneValidation.jpg
 
-NOTES HFIG 0.3 web_drop/SierraLeoneValidation.jpg
+NOTES HFIG 0.3 webpix/SierraLeoneValidation.jpg
 
 	The right answer should be inside your 95% confidence interval 95% of
 	the time
@@ -202,7 +202,7 @@ TSEC Model Evaluation
 
 BC
 
-CFIG web_drop/Earth.jpg
+CFIG webpix/Earth.jpg
 
 NC
 
@@ -236,7 +236,7 @@ SUBH Good for almost any disease
 
 BC
 
-HFIG 0.75 web_drop/godDice.jpg
+HFIG 0.75 webpix/godDice.jpg
 
 NC
 
@@ -276,7 +276,7 @@ Passing goodness of fit tests
 
 BC
 
-CFIG web_drop/godDice.jpg
+CFIG webpix/godDice.jpg
 
 NC
 
@@ -367,13 +367,13 @@ EC
 
 MMED PSLIDE Low P values
 
-FIG web_drop/clear.jpg
+FIG webpix/clear.jpg
 
 ----------------------------------------------------------------------
 
 MMED PSLIDE High P values
 
-FIG web_drop/fog.jpg
+FIG webpix/fog.jpg
 
 ----------------------------------------------------------------------
 
@@ -395,7 +395,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/clear.jpg
+SIDEFIG webpix/clear.jpg
 
 EC
 
@@ -415,7 +415,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/fog.jpg
+SIDEFIG webpix/fog.jpg
 
 EC
 
@@ -493,7 +493,7 @@ Other model worlds
 
 	But you can \emph{simulate} very complicated models, indeed
 
-PIC HFIG 0.6 web_drop/legoland.jpg
+PIC HFIG 0.6 webpix/legoland.jpg
 
 	How well can you do? Which details are important?
 
@@ -513,13 +513,13 @@ FIG my_images/T34.NIH.compare-1.pdf
 
 PSLIDE Generating hypotheses
 
-FIG web_drop/EbolaBurial.jpg
+FIG webpix/EbolaBurial.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Generating hypotheses
 
-FIG web_drop/lembo_spp.jpg
+FIG webpix/lembo_spp.jpg
 
 ----------------------------------------------------------------------
 
@@ -541,13 +541,13 @@ WIDEFIG my_images/Farr.png
 
 PSLIDE Testing hypotheses
 
-FIG web_drop/choleraMap.jpg
+FIG webpix/choleraMap.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Testing hypotheses
 
-FIG web_drop/BroadStreet.jpg
+FIG webpix/BroadStreet.jpg
 
 ----------------------------------------------------------------------
 
@@ -562,7 +562,7 @@ NSLIDE Testing hypotheses
 
 Hard questions
 
-PIC FIG web_drop/QuestionAnswers.jpg
+PIC FIG webpix/QuestionAnswers.jpg
 
 Answers are not always easy
 
@@ -619,7 +619,7 @@ SUBH Evaluation
 
 Conclusion
 
-PIC HFIG 0.7 web_drop/prometheus.jpg
+PIC HFIG 0.7 webpix/prometheus.jpg
 
 NOTES Saturn's shepherd moons were predicted before they were seen!
 

@@ -153,7 +153,7 @@ NC
 
 PRESENT \textbf{Shooting}
 
-SIDEFIG web_drop/machine.jpg
+SIDEFIG webpix/machine.jpg
 
 EC
 
@@ -185,7 +185,7 @@ NC
 
 PRESENT \textbf{Stepping}
 
-SIDEFIG web_drop/stepping.jpg
+SIDEFIG webpix/stepping.jpg
 
 EC
 
@@ -267,7 +267,7 @@ NC
 
 $$D = \sum_i{y_i - \hat y_i}$$
 
-SIDEFIG web_drop/deer.jpg
+SIDEFIG webpix/deer.jpg
 
 NOTES Doesn't work
 
@@ -452,7 +452,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/crowd.jpg
+SIDEFIG webpix/crowd.jpg
 
 EC
 

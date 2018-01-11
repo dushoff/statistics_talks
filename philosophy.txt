@@ -7,7 +7,6 @@ NOFRAME
 \newcommand{\years}{2012--2017} 
 \newcommand{\figshare}{http://tinyurl.com/ici3d-figshare}
 
-
 ----------------------------------------------------------------------
 
 PSLIDE NOFRAME
@@ -73,7 +72,7 @@ OTHER NSLIDE Statistical philosophy
 
 MMED Long pipe 
 
-PIC HFIG 0.5 web_drop/pipe.jpg
+PIC HFIG 0.5 webpix/pipe.jpg
 
 	Any piece of pipe longer than 30 feet shall be clearly labelled
 	``long pipe'' on each end
@@ -237,7 +236,7 @@ EC
 
 The meaning of P values
 
-PIC DBFIG 0.8 web_drop/fog.jpg 1 web_drop/clear.jpg
+PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
 
 	More broadly, a P value measures whether we are seeing
 	\emph{something} clearly
@@ -305,7 +304,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/error.jpg
+SIDEFIG webpix/error.jpg
 
 EC
 
@@ -321,7 +320,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/clear.jpg
+SIDEFIG webpix/clear.jpg
 
 EC
 
@@ -341,7 +340,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/fog.jpg
+SIDEFIG webpix/fog.jpg
 
 EC
 
@@ -414,7 +413,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/zuma.jpg
+SIDEFIG webpix/zuma.jpg
 
 EC
 
@@ -432,7 +431,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/fanny.jpg
+SIDEFIG webpix/fanny.jpg
 
 EC
 
@@ -466,7 +465,7 @@ Small effects
 
 PSLIDE Flu masks 
 
-DBFIG 0.8 web_drop/N95.jpg 0.7 web_drop/surgical.jpg
+DBFIG 0.8 webpix/N95.jpg 0.7 webpix/surgical.jpg
 
 ----------------------------------------------------------------------
 
@@ -594,7 +593,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/shanghai.jpg
+SIDEFIG webpix/shanghai.jpg
 
 EC
 
@@ -610,7 +609,7 @@ BC
 
 NC
 
-SIDEFIG web_drop/spiderman.jpg
+SIDEFIG webpix/spiderman.jpg
 
 EC
 
@@ -737,7 +736,7 @@ Honesty
 
 PSLIDE Summary
 
-FIG web_drop/pipe.jpg
+FIG webpix/pipe.jpg
 
 ----------------------------------------------------------------------
 

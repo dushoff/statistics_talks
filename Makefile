@@ -1,4 +1,4 @@
-# statistics_lectures
+# statistics_talks
 
 # 2018 Jan 10 (Wed)
 # Making this a working repo under the hybrid paradigm
@@ -15,11 +15,27 @@ target: $(target)
 
 Sources = Makefile .ignore README.md sub.mk LICENSE.md notes.txt
 
-Drop = ~/Dropbox
+## Change this in local.mk if you want
+Drop = ~/Dropbox/Workshops/statistics_talks
 include sub.mk
 
 -include $(ms)/newtalk.def
 -include $(ms)/perl.def
+
+##################################################################
+
+## Transition
+
+## webpix not tested for gaps after transition
+
+%.webtrans:
+	perl -pi -e 's|web_drop/|webpix/|g' $*
+
+webpix/%: ~/Dropbox/courses/Lecture_images/%
+	$(copy)
+
+my_images/%: ~/Dropbox/my_images/%
+	$(copy)
 
 ##################################################################
 
@@ -42,17 +58,23 @@ Sources += copy.tex
 
 ## Lectures
 
-Sources += $(wildcard *.txt)
+Sources += $(wildcard *.txt) $(wildcard *.step)
 
+#### Philosophay
 ## Moved here direct from Dropbox (NTU 2016).
 ## To do: figure out what you want from which column
 ## Using OTHER to mark things that are currently suppressed
+
+## Translating
+philosophy.txt.webtrans:
+
+## Talk
 philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
 philosophy.draft.tex: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 
-philosophy.draft.tex: philosophy.txt
+philosophy.html: philosophy.step
 
 ## Still needs more cleaning; and I need to have an alternative to recloning
 fitting.final.pdf: fitting.txt
@@ -93,27 +115,6 @@ distarrow.pdf: distarrow.tex
 
 ##################################################################
 
-## Drop stuff (see disease_model_talks notes)
-
-## Point to Drop parent in local.mk
-Sources += jd.local
-jd:
-	$(CP) jd.local local.mk
-
-web_drop/%: 
-	$(MAKE) web_drop
-	cd Lecture_images && $(MAKE) files/$*
-
-web_drop:
-	$(MAKE) Lecture_images
-	$(LNF) $(Drop)/Lecture_images $@
-
-# my_images/%: my_images ;
-my_images:
-	$(LN) $(Drop)/$@ .
-
-######################################################################
-
 Sources += mmed.txt.format daidd.txt.format 
 mmedset:
 	$(CP) mmed.txt.format local.txt.format
@@ -123,12 +124,14 @@ daiddset:
 
 ######################################################################
 
--include $(ms)/git.mk
 -include $(ms)/visual.mk
 
 -include $(ms)/modules.mk
+-include $(ms)/webpix.mk
 
 -include $(ms)/newtalk.mk
 -include $(ms)/texdeps.mk
 -include $(ms)/wrapR.mk
 -include $(ms)/pandoc.mk
+
+-include $(ms)/git.mk
