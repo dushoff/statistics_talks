@@ -1,9 +1,7 @@
 
-EXTRA FRONT
+EXTRA Abstract
 
-There is no such thing as statistical "significance": bridging gaps between applied science and theoretical statistics
-
-I will discuss why I think statistical philosophy is important for quantitative scientists, and some lessons I have learned while transitioning as a scientist from a mathematical orientation to a more statistical orientation scientists. I will argue that people who apply statistics to scientific problems need a different view of error than theoreticians who develop statistical methods, and that statistical "significance" is not a thing.
+I will discuss statistical philosophy for scientists, and how it should differ from the approach of theoretical statisticians. I will talk about some uses and misuses of P values, and theoretical vs. practical approaches to inferential errors. I will argue that statistical "significance" is not a thing, and discuss some practical and some aspirational ideas for improving the language we use to discuss statistics.
 
 ----------------------------------------------------------------------
 
@@ -29,18 +27,6 @@ NOFRAME
 ----------------------------------------------------------------------
 
 ICI3D
-
-----------------------------------------------------------------------
-
-PSLIDE NOFRAME
-
-{\topBar\maketitle}
-
-----------------------------------------------------------------------
-
-NSLIDE NOFRAME
-
-{\let\newpage\relax\maketitle}
 
 ----------------------------------------------------------------------
 
@@ -128,7 +114,7 @@ TSS P values and confidence intervals
 
 ----------------------------------------------------------------------
 
-Vitamin A questions?
+Vitamin A questions
 
 	Is vitamin A good for these children?
 
