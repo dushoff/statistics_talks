@@ -83,7 +83,6 @@ evaluation.handouts.pdf: evaluation.txt
 
 clarity.final.pdf: clarity.txt
 clarity.draft.pdf: clarity.txt
-clarity.draft.tex: clarity.txt
 clarity.handouts.pdf: clarity.txt
 
 repodirs:
