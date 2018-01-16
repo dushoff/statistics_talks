@@ -72,7 +72,7 @@ Vitamin A
 
 ----------------------------------------------------------------------
 
-TSS P values and confidence intervals
+P values and confidence intervals
 
 	We use \emph{P values} to say how sure we are that we have seen a positive 
 	effect
@@ -205,13 +205,15 @@ EC
 
 ----------------------------------------------------------------------
 
-Errors in theoretical stuides
+Errors in theoretical studies
 
 	\emph{False positive:} in the hypothetical case that the
 	effect is exactly zero, what is the probability of falsely finding
 	an effect
 
-		Should be less than or equal to my significance value
+		Should be less than or equal to my nominal significance value
+
+		This is the gold standard for statistical validity
 
 	\emph{False negative:} what is the probability of failing
 	to find an effect that is there?
@@ -220,10 +222,9 @@ Errors in theoretical stuides
 
 		This is a scientific judgment
 
-	These are useful to analyze \textbf{power} and \textbf{validity} of a
-	statistical design
+		This is a good way to analyze power
 	
-		You should do these analyses \emph{before} you collect data, not after
+	You should do these analyses \emph{before} you collect data, not after
 
 ----------------------------------------------------------------------
 
@@ -320,13 +321,13 @@ BC
 
 	All men are mortal
 
-	Jacob Zuma is mortal
+	Justin Trudeau is mortal
 
-	Therefore, Jacob Zuma is a man
+	Therefore, Justin Trudeau is a man
 
 NC
 
-SIDEFIG webpix/zuma.jpg
+SIDEFIG webpix/trudeau.jpg
 
 EC
 
@@ -359,20 +360,21 @@ Bad logic
 	This sort of statistical practice leads in the aggregate to bad
 	science
 
-	The logic can be fixed:
-
-		Estimate a difference, or an interaction
+	The logic can be fixed
 
 ----------------------------------------------------------------------
 
 Small effects
 
-	We can't build statistical confidence that something is small by
-	failing to see it clearly
+	To say an effect is small, we could:
 
-	We must instead see clearly that it is small
+		Say that we can't even tell the sign, so it must be small
 
-	This means we need a standard for what we mean by small
+		See whether it looks small
+
+		Say that we are confident that it's small (reverse the P value)
+
+			For this, we need a standard for what we mean by small
 
 ----------------------------------------------------------------------
 
@@ -440,11 +442,123 @@ EC
 
 ----------------------------------------------------------------------
 
+Differences
+
 	\textbf{Never} say: A is significant and B isn't, so $A>B$
 
 	\textbf{Instead:} Construct a statistic for the hypothesis $A>B$
 
-		May be difficult
+		Reparameterize, study interactions
+
+	The Difference Between ``Significant" and ``Not Significant" is not Itself
+	Statistically Significant
+
+		CREDIT Gelman and Stern
+
+----------------------------------------------------------------------
+
+Model simplification
+
+	It's not OK to use high P values as a standard for simplifying models
+
+	So how do we simplify?
+
+		For prediction: information criteria
+
+		For inference: ???
+
+			A priori approaches (including Bayesian priors)
+
+----------------------------------------------------------------------
+
+Language
+
+WIDEFIG my_images/null.png
+
+----------------------------------------------------------------------
+
+Bad language
+
+	Null effects of boot camps
+
+		ANS Wrong!
+
+	Lung capacity in deer-mouse populations is not correlated with elevation
+
+		ANS Yes, it is!
+
+	Brower and Brower showed that there is no statistically significant
+	difference in sexual risk behaviour between men with and without clinic
+	access in Zambia
+
+		ANS No, they didn't
+
+----------------------------------------------------------------------
+
+Improving language
+
+	\textbf{Wrong:} There is no statistically significant difference in overall
+	health between the treatment and control groups
+
+	\textbf{OK:} We found no statistically significant difference in overall
+	health between the treatment and control groups
+
+	\textbf{Better:} We did not find a statistically significant difference in
+	overall health between the treatment and control groups
+
+	\textbf{Best} ??
+
+----------------------------------------------------------------------
+
+Is statistical ``significance'' a thing?
+
+WIDEFIG my_images/significance.png
+
+	ANS Well, it's not significance!
+
+----------------------------------------------------------------------
+
+What do P values measure?
+
+PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
+
+	ANS Clarity!
+
+	ANS We should call it that
+
+----------------------------------------------------------------------
+
+Another way to talk
+
+	The Difference Between a clear effect and an unclear effect is not
+	necessarily statistically clear
+
+	If the experiment is done well, the sign of the effect in the placebo group
+	should be unclear
+
+	Unclear effects of boot camps
+
+	The direction of correlation between lung capacity and elevation in
+	deer-mouse populations is unclear
+
+	Brower and Brower showed that there is an unclear difference in sexual risk
+	behaviour between men with and without clinic access in Zambia
+
+----------------------------------------------------------------------
+
+Improving language
+
+	\textbf{Wrong:} There is no statistically significant difference in overall
+	health between the treatment and control groups
+
+	\textbf{OK:} We found no statistically significant difference in overall
+	health between the treatment and control groups
+
+	\textbf{Better:} We did not find a statistically significant difference in
+	overall health between the treatment and control groups
+
+	\textbf{Best:} We did not find a statistically \emph{clear} difference in
+	overall health between the treatment and control groups
 
 ----------------------------------------------------------------------
 
@@ -452,7 +566,7 @@ Hard questions
 
 PIC FIG webpix/QuestionAnswers.jpg
 
-Answers are not always easy
+	Answers are not always easy
 
 ----------------------------------------------------------------------
 
@@ -502,31 +616,11 @@ Summary
 
 	Use effect sizes and confidence intervals when you can
 
-	Otherwise, find ways to make significant P values do the work
+	Otherwise, find ways to make low P values do the work
 	
 		Non-inferiority tests, interactions
 
-----------------------------------------------------------------------
-
-RHEAD Summary
-
-	Frequentist statistics makes weak assumptions, and finds logically weak
-	formal conclusions:
-
-		These parameters are unlikely to produce a statistic this extreme by
-		chance
-
-	Bayesian statistics makes strong assumptions:
-	
-		prior distributions must be fully specified
-		
-	\ldots and finds logically strong 
-	formal conclusions:
-
-		The probability that the effect value is in this range is X
-
-		These strong conclusions can be used directly for prediction with
-		uncertainty
+		Don't rely on unclear information
 
 ----------------------------------------------------------------------
 
@@ -541,19 +635,15 @@ RHEAD Summary
 
 	You need your own statistical philosophy
 
-		If you're a scientist, it should be pragmatic and honest
-
 ----------------------------------------------------------------------
 
 PSLIDE Philosophy
 
-	If you're a scientist, it should be pragmatic and honest
+	If you're a scientist, your statistical philosophy should be pragmatic and
+	honest
 
 	If you're a theoretician, it should be ideological and honest
 
 	If you're a capitalist, it should be pragmatic and dishonest
 
 	If you're a politician, it should be ideological and dishonest
-
-----------------------------------------------------------------------
-
