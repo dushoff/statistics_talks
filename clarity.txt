@@ -493,6 +493,9 @@ Bad language
 
 		ANS No, they didn't
 
+		ANS Statistical significance is a property of the \emph{study} (and the
+		sample population), never of real groups (or a universal population)
+
 ----------------------------------------------------------------------
 
 Improving language
