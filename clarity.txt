@@ -30,6 +30,8 @@ ICI3D
 
 ----------------------------------------------------------------------
 
+EXTRA
+
 Topics
 
 	How statistics fits into science (statistical philosophy)
@@ -42,41 +44,13 @@ Topics
 
 ----------------------------------------------------------------------
 
-TSEC Statistical inference
+Statistical philosophy
 
-	Scientists use statistics to confirm effects, estimate parameters, and
-	predict outcomes
+	Statistics is not a black box that you plug results in and get an answer
 
-	It usually rains when I'm in Cape Town, but mostly on Sunday
+	You should make statistics part of your science
 
-		\emph{Confirmation:} In Cape Town, it rains more on Sundays than
-		other days
-
-		\emph{Estimation:} In Cape Town, the \emph{odds} of rain on
-		Sunday are 1.6--2.2 times higher than on other days
-
-		\emph{Prediction:} I am confident that it will rain at least one
-		Sunday the next time I go
-
-----------------------------------------------------------------------
-
-Raining in Cape Town
-
-BC
-
-	How we interpret data like this necessarily depends on assumptions:
-
-		Is it likely our observations occured by chance?
-
-		Is it likely they \emph{didn't}?
-
-NC
-
-PIC HFIG 0.8  my_images/eight.jpg
-
-PIC CREDIT Tessa Wessels, {\em Faces on a Train}
-
-EC
+	You need your own philosophy
 
 ----------------------------------------------------------------------
 
@@ -84,6 +58,8 @@ Vitamin A
 
 	We compare health indicators of children treated or not treated with
 	vitamin A supplements 
+
+	Possible goals
 
 		\emph{Estimate:} how much taller (or shorter) are the treated
 		children on average?
@@ -131,9 +107,9 @@ P values
 	What does it mean if I find a ``significant P value" for some effect
 	in this experiment?
 
-	The difference is unlikely to be due to chance
+		ANS The difference is unlikely to be due to chance
 
-		So what!  I already know vitamin A has strong effects on
+		ANS So what!  I already know vitamin A has strong effects on
 		metabolism
 
 	If I'm certain that the true answer isn't exactly zero, why do I
@@ -194,8 +170,8 @@ Types of Error
 	Type II (\emph{False negative:}) concluding there is no effect when
 	there really is
 
-		This \emph{should} never happen in biology, because we should never conclude
-		there is no effect
+		This \emph{should} never happen in biology, because we should never
+		conclude there is no effect
 
 		In fact, it happens all the time
 
@@ -338,10 +314,6 @@ EC
 
 ----------------------------------------------------------------------
 
-SS Statistics and science
-
-----------------------------------------------------------------------
-
 Syllogisms
 
 BC
@@ -468,366 +440,11 @@ EC
 
 ----------------------------------------------------------------------
 
-
-TSEC Model Evaluation
-
-BC
-
-CFIG webpix/Earth.jpg
-
-NC
-
-	Does your model match the \emph{real world}?
-
-		ANS No!
-
-	How well does your model match the real world?
-
-EC
-
-----------------------------------------------------------------------
-
-TSS Goodness of fit
-
-	Goodness of fit \emph{statistics} describe how well a model prediction
-	matches observed data
-
-	Goodness of fit \emph{tests} attempt to determine whether the observed
-	difference between model and data is statistically significant
-
-----------------------------------------------------------------------
-
-EXTRA A disease-incidence model
-
-COMMENT Do I like this? Am I thinking clearly about it?
-
-I like the picture at least.
-
-SUBH Good for almost any disease
-
-BC
-
-HFIG 0.75 webpix/godDice.jpg
-
-NC
-
-	The gods roll dice to pick a probability between 0.1% and 10%.
-
-	Each person on the planet gets the disease the next year with this
-	probability
-
-	$P>0.05$. My model is correct!
-
-EC
-
-----------------------------------------------------------------------
-
-Your model is false!
-
-	A goodness of fit test won't make it true
-
-	You can ``pass'' a goodness of fit test by:
-
-		having a good model
-
-		making very broad predictions
-
-		having bad data
-
-		choosing an inappropriate way to compare
-
-	So why would we do this?
-
-	For that matter, why do we use P values at all in biology?
-
-
-----------------------------------------------------------------------
-
-Passing goodness of fit tests
-
-BC
-
-CFIG webpix/godDice.jpg
-
-NC
-
-	I can make any model pass a goodness of fit test but broadening the uncertainty
-
-	That doesn't make it a good model
-
-EC
-
-----------------------------------------------------------------------
-
-DAIDD Vitamin A example
-
-	We want to know if vitamin A supplements improve the health of
-	village children
-
-		Outcome: height growth in 6 months
-
-	What does it mean if I find a ``significant P value" for some effect
-	in this experiment?
-
-		ANS The difference is unlikely to be due to chance
-
-		So what!  I already know vitamin A has strong effects on
-		metabolism
-
-	If I'm certain that the true answer isn't exactly zero, why do I
-	want the P value anyway?
-
-----------------------------------------------------------------------
-
-DAIDD Group activity
-
-	Do you agree that in biology we should assume that the answer to our
-	sensible question is not exactly zero?
-
-		Or at least have a philosophy consistent with that assumption?
-
-			Can we ever \emph{prove} that an effect is zero?
-
-	If we make that assumption (null hypothesis is false), why might we want a P value anyway?
-
-----------------------------------------------------------------------
-
-MMEDREP Vitamin study
-
-FIG vitamins.Rout-0.pdf
-
-----------------------------------------------------------------------
-
-PSLIDE Vitamin study
-
-FIG vitamins.Rout-1.pdf
-
-----------------------------------------------------------------------
-
-DAIDD Annualized flu deaths
-
-BC
-
-CFIG flu.Rout-0.pdf
-
-NC
-
-	Why is weather not causing deaths at this time scale?
-
-EC
-
-----------------------------------------------------------------------
-
-DAIDDREP ... with confidence intervals
-
-BC
-
-CFIG flu.Rout-1.pdf
-
-NC
-
 	\textbf{Never} say: A is significant and B isn't, so $A>B$
 
 	\textbf{Instead:} Construct a statistic for the hypothesis $A>B$
 
 		May be difficult
-
-EC
-
-----------------------------------------------------------------------
-
-MMED PSLIDE Low P values
-
-FIG webpix/clear.jpg
-
-----------------------------------------------------------------------
-
-MMED PSLIDE High P values
-
-FIG webpix/fog.jpg
-
-----------------------------------------------------------------------
-
-MMED What does the P value mean?
-
-	Low: you are seeing something clearly
-
-	High: you are seeing something unclearly
-
-----------------------------------------------------------------------
-
-DAIDD Low P values
-
-BC
-
-	If I have a low P value I can see something clearly
-
-	But it's usually better to focus on what I see than the P value
-
-NC
-
-SIDEFIG webpix/clear.jpg
-
-EC
-
-
-----------------------------------------------------------------------
-
-DAIDD High P values
-
-BC
-
-	If I have a high P value, there is something I \emph{don't} see
-	clearly
-
-	It \emph{may be} because this effect is small
-
-	High P values should \emph{not} be used to advance your conclusion
-
-NC
-
-SIDEFIG webpix/fog.jpg
-
-EC
-
-----------------------------------------------------------------------
-
-
-Goodness of fit test
-
-	Your model is \emph{not} reality (null hypothesis is false)
-
-	Can we see the difference clearly?
-
-		If no, model may be good or bad. 
-		
-			We probably can't add any more complexity based on current
-			data
-
-		If yes, model may be good or bad. We \emph{may} be able to add more
-		complexity based on current data
-
-			But we may not need to
-
-----------------------------------------------------------------------
-
-TSS Capturing patterns
-
-	You can ask:
-
-		Does your model do a reasonable job of capturing the data?
-
-			You can use a goodness of fit \emph{statistic} for this, and not
-			worry about the P value
-
-		Does your model capture patterns and relationships that you (or
-		other experts) think are important?
-
-----------------------------------------------------------------------
-
-SS Going beyond
-
-----------------------------------------------------------------------
-
-Out-of-sample validation
-
-	Does your model make predictions \emph{outside} the range on which you
-	calibrated it?
-
-		Predicting gravitational shifts in star positions from
-		measurements in Earth laboratories
-
-		Predicting cholera outbreaks in Bangladesh from a model calibrated
-		to Haiti
-
-		Predicting influenza patterns in 2010 from a model calibrated from
-		2000--2009
-
-----------------------------------------------------------------------
-
-Test sets
-
-	What is \textbf{test set} spelled backwards?
-
-	Hold some data out while fitting your model
-
-	Or just \emph{pretend} to do this as an evaluation method
-
-		In other words, test what would happen under various withholding
-		scenarios
-
-----------------------------------------------------------------------
-
-Other model worlds
-
-	The model you're \emph{fitting} is probably pretty simple
-
-	But you can \emph{simulate} very complicated models, indeed
-
-PIC HFIG 0.6 webpix/legoland.jpg
-
-	How well can you do? Which details are important?
-
-----------------------------------------------------------------------
-
-PSLIDE Other model worlds
-
-FIG my_images/T34.NIH.compare-0.pdf
-
-----------------------------------------------------------------------
-
-PSLIDE Other model worlds
-
-FIG my_images/T34.NIH.compare-1.pdf
-
-----------------------------------------------------------------------
-
-PSLIDE Generating hypotheses
-
-FIG webpix/EbolaBurial.jpg
-
-----------------------------------------------------------------------
-
-PSLIDE Generating hypotheses
-
-FIG webpix/lembo_spp.jpg
-
-----------------------------------------------------------------------
-
-NSLIDE Generating hypotheses
-
-For example:
-
-	Safe burial is key to interrupting Ebola transmission
-
-	Vaccinating domestic dogs can eliminate transmission of canine rabies
-
-----------------------------------------------------------------------
-
-PSLIDE Testing hypotheses
-
-WIDEFIG my_images/Farr.png
-
-----------------------------------------------------------------------
-
-PSLIDE Testing hypotheses
-
-FIG webpix/choleraMap.jpg
-
-----------------------------------------------------------------------
-
-PSLIDE Testing hypotheses
-
-FIG webpix/BroadStreet.jpg
-
-----------------------------------------------------------------------
-
-NSLIDE Testing hypotheses
-
-	Both the Farr model and the Snow model made testable predictions about
-	cholera
-
-	Snow tested his hypotheses by removing the pump handle
 
 ----------------------------------------------------------------------
 
@@ -836,70 +453,6 @@ Hard questions
 PIC FIG webpix/QuestionAnswers.jpg
 
 Answers are not always easy
-
-----------------------------------------------------------------------
-
-SEC Conclusion
-
-----------------------------------------------------------------------
-
-Summary
-
-SUBH Dynamic models
-
-	Clarify thinking
-
-		What are our assumptions, what else do we need to know?
-
-	Understand outcomes
-
-		Can heterogeneity explain the time course of HIV epidemics?
-
-		Is it possible that MDA could break the cycle of malaria transmission in
-		some areas?
-
-	Predict outcomes
-
-		What is the potential for a hepatitis A outbreak in Cape Town?
-
-		What might happen if I improve testing-and-treatment outreach in Jamaica?
-
-	Find new mechanisms
-
-		Why can't I explain my data? What haven't I thought of?
-
-----------------------------------------------------------------------
-
-Summary
-
-SUBH Evaluation
-
-	Validation (inside your model world)
-
-		Does my fitting method work (assuming my model is right)?
-
-	Inspection (compare patterns)
-
-	Prediction (and other out-of-sample comparison)
-
-		Can my model predict things I haven't told it yet?
-
-	Generate and test mechanistic hypotheses
-
-----------------------------------------------------------------------
-
-Conclusion
-
-PIC HFIG 0.7 webpix/prometheus.jpg
-
-NOTES Saturn's shepherd moons were predicted before they were seen!
-
-Essentially, all models are wrong, but some are useful.
-
--- Box and Draper (1987), \emph{Empirical Model Building \ldots}
-
-
-----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
 
@@ -935,12 +488,6 @@ Honesty
 		Keep a data-analysis journal
 
 		Start \emph{before} you look at the data
-
-----------------------------------------------------------------------
-
-PSLIDE Summary
-
-FIG webpix/pipe.jpg
 
 ----------------------------------------------------------------------
 
