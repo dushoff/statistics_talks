@@ -21,7 +21,7 @@ NOFRAME
 {Is Statistical ``Significance" a Thing?}
 \newcommand{\jdsub}
 {Bridging between science and statistical theory}
-\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\jdauth}{Jonathan Dushoff, Department of Biology}
 \newcommand{\years}{2012--2017} 
 
 ----------------------------------------------------------------------
@@ -431,6 +431,12 @@ NC
 		chose
 
 EC
+
+----------------------------------------------------------------------
+
+Making decisions
+
+FIG webpix/squint.jpg
 
 ----------------------------------------------------------------------
 
