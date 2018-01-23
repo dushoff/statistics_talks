@@ -21,7 +21,7 @@ NOFRAME
 {Is Statistical ``Significance" a Thing?}
 \newcommand{\jdsub}
 {Bridging between science and statistical theory}
-\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\jdauth}{Jonathan Dushoff, Department of Biology}
 \newcommand{\years}{2012--2017} 
 
 ----------------------------------------------------------------------
@@ -41,16 +41,6 @@ Topics
 	Theoretical vs applied perspectives on error
 
 	What's significant about significance?
-
-----------------------------------------------------------------------
-
-Statistical philosophy
-
-	Statistics is not a black box that you plug results in and get an answer
-
-	You should make statistics part of your science
-
-	You need your own philosophy
 
 ----------------------------------------------------------------------
 
@@ -264,17 +254,17 @@ EC
 
 ----------------------------------------------------------------------
 
-What causes high P values?
+Are high P values evidence?
 
-	Small differences
+	What causes them?
 
-	Less data
+		\textbf{Small differences}
 
-	More noise
+		Less data
 
-	An inappropriate model
+		More noise
 
-	Less model resolution
+		An inappropriate model
 
 	A lower P value means that your evidence for difference is better
 
@@ -315,6 +305,22 @@ EC
 
 ----------------------------------------------------------------------
 
+Small effects
+
+	To say an effect is small, we could:
+
+		Say that we can't even tell the sign, so it must be small
+
+		See whether it looks small
+
+		Say that we are confident that it's small (reverse the P value)
+
+			For this, we need a standard for what we mean by small
+
+	The one that is the most commonly done is the worst approach
+
+----------------------------------------------------------------------
+
 Syllogisms
 
 BC
@@ -341,7 +347,7 @@ BC
 
 	Fanny the elephant is mortal
 
-	Therefore, Fanny is a man
+	Therefore, Fanny the elephant is a man
 
 NC
 
@@ -361,20 +367,6 @@ Bad logic
 	science
 
 	The logic can be fixed
-
-----------------------------------------------------------------------
-
-Small effects
-
-	To say an effect is small, we could:
-
-		Say that we can't even tell the sign, so it must be small
-
-		See whether it looks small
-
-		Say that we are confident that it's small (reverse the P value)
-
-			For this, we need a standard for what we mean by small
 
 ----------------------------------------------------------------------
 
@@ -442,6 +434,12 @@ EC
 
 ----------------------------------------------------------------------
 
+Making decisions
+
+FIG webpix/squint.jpg
+
+----------------------------------------------------------------------
+
 Differences
 
 	\textbf{Never} say: A is significant and B isn't, so $A>B$
@@ -459,6 +457,8 @@ Differences
 
 Model simplification
 
+BC
+
 	It's not OK to use high P values as a standard for simplifying models
 
 	So how do we simplify?
@@ -468,6 +468,28 @@ Model simplification
 		For inference: ???
 
 			A priori approaches (including Bayesian priors)
+
+			Experiments
+
+NC
+
+HFIG 0.5 webpix/lunch.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Big data
+
+	P values are rarely good for filtering
+
+		We usually want to know what's big or biologically important
+
+		Not what we've seen clearly
+
+	Beware of approaches that calculate many P values in parallel
+
+	This is the cult of the P value (all statistics must be based on P values)
 
 ----------------------------------------------------------------------
 
@@ -487,14 +509,25 @@ Bad language
 
 		ANS Yes, it is!
 
-	Brower and Brower showed that there is no statistically significant
+	As expected, the placebo group did not differ significantly from the control
+	group
+
+		ANS Why would that be good?
+
+	B and B showed that there is no statistically significant
 	difference in sexual risk behaviour between men with and without clinic
 	access in Zambia
 
 		ANS No, they didn't
 
 		ANS Statistical significance is a property of the \emph{study} (and the
-		sample population), never of real groups (or a universal population)
+		sample population), never of real groups (or the idealized population)
+
+----------------------------------------------------------------------
+
+Confusion
+
+WIDEFIG my_images/jelly_beans.png
 
 ----------------------------------------------------------------------
 
@@ -503,11 +536,11 @@ Improving language
 	\textbf{Wrong:} There is no statistically significant difference in overall
 	health between the treatment and control groups
 
-	\textbf{OK:} We found no statistically significant difference in overall
-	health between the treatment and control groups
+	\textbf{Standard:} We found no statistically significant difference in
+	overall mortality between the treatment and control groups
 
 	\textbf{Better:} We did not find a statistically significant difference in
-	overall health between the treatment and control groups
+	overall mortality between the treatment and control groups
 
 	\textbf{Best} ??
 
@@ -521,6 +554,27 @@ WIDEFIG my_images/significance.png
 
 ----------------------------------------------------------------------
 
+Fish hormones
+
+BC
+
+	Male fish subject to polluted water have more female hormones than controls
+
+		P$<$0.05
+
+	How many more?
+
+	Does it affect them?
+
+NC
+
+HFIG 0.5 webpix/deer_island.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+
 What do P values measure?
 
 PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
@@ -533,18 +587,18 @@ PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
 
 Another way to talk
 
-	The Difference Between a clear effect and an unclear effect is not
+	The difference between a clear effect and an unclear effect is not
 	necessarily statistically clear
 
-	If the experiment is done well, the sign of the effect in the placebo group
-	should be unclear
+	As expected, the sign of the difference between the placebo group and
+	controls was unclear
 
 	Unclear effects of boot camps
 
 	The direction of correlation between lung capacity and elevation in
 	deer-mouse populations is unclear
 
-	Brower and Brower showed that there is an unclear difference in sexual risk
+	B and B showed that there is an unclear difference in sexual risk
 	behaviour between men with and without clinic access in Zambia
 
 ----------------------------------------------------------------------
@@ -554,14 +608,35 @@ Improving language
 	\textbf{Wrong:} There is no statistically significant difference in overall
 	health between the treatment and control groups
 
-	\textbf{OK:} We found no statistically significant difference in overall
-	health between the treatment and control groups
+	\textbf{Standard:} We found no statistically significant difference in
+	overall mortality between the treatment and control groups
 
 	\textbf{Better:} We did not find a statistically significant difference in
-	overall health between the treatment and control groups
+	overall mortality between the treatment and control groups
 
-	\textbf{Best:} We did not find a statistically \emph{clear} difference in
-	overall health between the treatment and control groups
+	\textbf{New:} We did not find a statistically \emph{clear} difference in
+	overall mortality between the treatment and control groups
+
+		The difference in overall mortality between the treatment and control
+		groups was not statistically \emph{clear} in this study
+
+----------------------------------------------------------------------
+
+Is this possible?
+
+SUBH Slide added this morning
+
+Maybe! \pause \ldots if combined with P values
+
+	We found a statistically clear increase (P=0.02) in blood iron in the
+	vitamin-supplement group
+
+	The direction of association between lung capacity and elevation was not
+	statistically clear (P=0.43)
+
+	B and B did not find a statistically clear
+	difference in sexual risk behaviour between men with and without clinic
+	access in Zambia (P=0.1)
 
 ----------------------------------------------------------------------
 
@@ -573,7 +648,9 @@ PIC FIG webpix/QuestionAnswers.jpg
 
 ----------------------------------------------------------------------
 
-Your philosophy
+Statistical philosophy
+
+SUBH Advice for scientists
 
 	Statistics are not a magic machine that gives you the right answer
 
