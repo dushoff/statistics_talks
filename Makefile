@@ -1,8 +1,5 @@
 # statistics_talks
 
-# 2018 Jan 10 (Wed)
-# Making this a working repo under the hybrid paradigm
-
 current: target
 
 target = Makefile
@@ -52,7 +49,7 @@ Sources += copy.tex
 
 Sources += $(wildcard *.txt) $(wildcard *.step)
 
-#### Philosophay
+#### Philosophy
 ## Moved here direct from Dropbox (NTU 2016).
 ## To do: figure out what you want from which column
 ## Using OTHER to mark things that are currently suppressed

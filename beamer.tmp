@@ -1,7 +1,9 @@
 \documentclass{beamer}
 
-% \input{LatexTemplates/ici3dTemplate.tex}
-% \input{LatexTemplates/ici3dCurrent.tex}
+%% ICI3D only
+\input{LatexTemplates/ici3dTemplate.tex}
+\input{LatexTemplates/ici3dCurrent.tex}
+
 \input{LatexTemplates/bulletspace.tex}
 
 \usepackage{talkdir/slidecomm,talkdir/commands}
@@ -17,6 +19,7 @@
 
 ----------------------------------------------------------------------
 
-% \input{LatexTemplates/ici3dClose.tex}
+%% ICI3D only
+\input{LatexTemplates/ici3dClose.tex}
 
 \end{document}
