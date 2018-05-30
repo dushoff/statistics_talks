@@ -23,10 +23,13 @@ include sub.mk
 ##################################################################
 
 ## Transition
-
 ## webpix not tested for gaps after transition
 
 ##################################################################
+
+## Exporting
+
+%.push: %.handouts.pdf.gp %.draft.pdf.gp ;
 
 ## Content
 
@@ -59,6 +62,7 @@ philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
 philosophy.draft.tex: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
+philosophy.push:
 
 philosophy.html: philosophy.step
 

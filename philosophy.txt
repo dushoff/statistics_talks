@@ -1,4 +1,18 @@
 
+EXTRA 2017 notes
+
+* https://twitter.com/mlipsitch/status/838494026726789125. Dangers of under-powered studies. Outside the scope
+
+* https://twitter.com/ken_rothman/status/862016511724183553 Debates about a JAMA that accepted the null hypothesis. Fun but not necessary.
+
+* http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124 Why most published research findings are false. Good, but a null-hypothesis believer. Outside the scope.
+
+* Non-inferiority trial example’s great but probably went to fast for most of the audience
+* MMEV: Need to have 1 slide with all the relevant info (ie, add the Question you’ve posed to the Example slide!)
+
+* for pred value positive, give extreme where there’s 0% prevalence to make it clear
+
+
 ----------------------------------------------------------------------
 
 NOFRAME
@@ -10,12 +24,6 @@ NOFRAME
 ----------------------------------------------------------------------
 
 ICI3D
-
-----------------------------------------------------------------------
-
-NSLIDE NOFRAME
-
-{\let\newpage\relax\maketitle}
 
 ----------------------------------------------------------------------
 
@@ -405,13 +413,13 @@ BC
 
 	All men are mortal
 
-	Jacob Zuma is mortal
+	Mohamed Salah is mortal
 
-	Therefore, Jacob Zuma is a man
+	Therefore, Mohamed Salah is a man
 
 NC
 
-SIDEFIG webpix/zuma.jpg
+SIDEFIG webpix/salah.jpg
 
 EC
 
@@ -477,20 +485,19 @@ Flu mask example
 	How can this be tested statistically?  We don't want the masks to be
 	"different".
 
-		Use a confidence interval
+		We need to decide what we mean by different in this case!
 
-		Decide how big a level is acceptable, and construct a P value for
-		the hypothesis that this level is excluded!
+		They're not the same, so how close is close enough?
 
 ----------------------------------------------------------------------
 
-Study results
+Tradiitonal approach
 
 FIG masks.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-RHEAD Non-inferiority trial
+Non-inferiority approach
 
 BC
 
@@ -498,15 +505,15 @@ PRESENT CFIG masks.Rout-0.pdf
 
 NC
 
-	Is the new mask "good enough"?
+	Are we confident the new mask is ``good enough''?
 
-	What's our standard for that?
+	There is no substitute for picking a standard
 
 EC
 
 ----------------------------------------------------------------------
 
-Non-inferiority trial
+Non-inferiority approach
 
 BC
 
@@ -651,7 +658,7 @@ BC
 	perspective?
 
 	Bayesian: what's my model world?  What is my prior belief about 
-	weather-weekday interactions.  
+	weather-weekday interactions?
 
 NC
 
@@ -670,8 +677,6 @@ MMED Example: MMEV
 	
 	LIT MMED patients are unable to control their urge to fit models to data
 
-	A certain population has a prevalence of 1% 
-
 	The rapid MMEV test gives a positive result:
 
 		100% of the time for people with the virus
@@ -682,14 +687,31 @@ MMED Example: MMEV
 
 MMED MMEV questions
 
+	The rapid MMEV test gives a positive result:
+
+		100% of the time for people with the virus
+		
+		5% of the time for people without the virus
+
+	The population prevalence of MMEV is 1% 
+
 	You pick a person from this population at random, and test them, and
 	the test is positive.
 
 		What is the probability that they have MMEV?
 
+	This calculation is the core of Bayes theorem
+
+----------------------------------------------------------------------
+
+MMED MMEV questions
+
 	You learn that your friend has had a positive rapid test for MMEV
 
 		What do you tell them? 
+
+	This is what Bayesian philosophy is about: combining information from
+	different sources
 
 ----------------------------------------------------------------------
 
