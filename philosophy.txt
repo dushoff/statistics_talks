@@ -292,7 +292,7 @@ Experimental design
 	These are useful to analyze \textbf{power} and \textbf{validity} of a
 	statistical design
 	
-		You should do these analyses \emph{before} you collect data, not after
+		You should do these analyses \emph{before} you collect data
 
 ----------------------------------------------------------------------
 
@@ -625,11 +625,18 @@ Bayesian inference
 	We want to go from a \emph{statistical model} of how our data are
 	generated, to a probability model of parameter values
 
-		Requires \emph{prior} distributions describing the assumed
-		likelihood of parameters before these observations are made
+		Requires \emph{prior} distributions:
+		
+			the assumed likelihood of parameters before these observations are
+			made
 
-		Use Bayes theorem to calculate posterior distribution --
-		likelihood after taking data into account
+		Use Bayes theorem to calculate \emph{posterior} distributions:
+
+			the inferred likelihood of parameters after taking the data into
+			account
+
+	Provides a strong framework for combining information from different sources
+	and for propagating uncertainty
 
 ----------------------------------------------------------------------
 
