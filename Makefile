@@ -69,6 +69,8 @@ philosophy.html: philosophy.step
 #### Fitting
 ## Still needs more cleaning; and I need to have an alternative to recloning
 ## Likelihood fitting and dynamic models II; a long history at MMED, I guess
+## Taught by Pearson (verbatim slides) 2018
+## Not rescued yet. Check NOFIG problems *******************
 fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
