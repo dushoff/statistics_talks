@@ -110,10 +110,6 @@ vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
 
 ## Diagrams
 
-######################################################################
-
-## Directories
-
 Ignore += distarrow*.pdf
 Sources += distarrow.tex
 distarrow.pdf: distarrow.tex
