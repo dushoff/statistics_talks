@@ -80,6 +80,7 @@ fitting.handouts.pdf: fitting.txt
 evaluation.final.pdf: evaluation.txt
 evaluation.draft.pdf: evaluation.txt
 evaluation.handouts.pdf: evaluation.txt
+evaluation.push: evaluation.txt
 
 ## Clarity
 ## First spun for the Mac Stats group January 2018
@@ -118,6 +119,7 @@ distarrow.pdf: distarrow.tex
 
 ## Venues
 ## Rules under development; need to look at beamer.tmp (manually, for now)
+## Oops, forgot about this. Redo.
 
 Sources += mmed.txt.format daidd.txt.format 
 mmedset:

@@ -19,8 +19,7 @@ NOFRAME
 
 \newcommand{\jdtitle}{Model evaluation and comparison}
 \newcommand{\jdsub}{}
-\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
-\newcommand{\years}{2013--2017} 
+\newcommand{\years}{2013--\thisyear} 
 
 ----------------------------------------------------------------------
 
@@ -99,6 +98,20 @@ PIC FIG webpix/epicycles.jpg
 PSLIDE Ptolemy v.\ Copernicus
 
 PIC FIG webpix/heliocentric.jpg
+
+----------------------------------------------------------------------
+
+PSLIDE Ptolemy v.\ Copernicus
+
+BCC
+
+WFIG 0.89 webpix/heliocentric.jpg
+
+NCC
+
+WFIG 0.94 webpix/epicycles.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -202,7 +215,7 @@ TSEC Model Evaluation
 
 BC
 
-CFIG webpix/Earth.jpg
+PIC CFIG webpix/Earth.jpg
 
 NC
 
@@ -276,7 +289,7 @@ Passing goodness of fit tests
 
 BC
 
-CFIG webpix/godDice.jpg
+PIC CFIG webpix/godDice.jpg
 
 NC
 
@@ -321,13 +334,7 @@ DAIDD Group activity
 
 ----------------------------------------------------------------------
 
-MMEDREP Vitamin study
-
-FIG vitamins.Rout-0.pdf
-
-----------------------------------------------------------------------
-
-PSLIDE Vitamin study
+DAIDDREP Vitamin study
 
 FIG vitamins.Rout-1.pdf
 
@@ -365,13 +372,13 @@ EC
 
 ----------------------------------------------------------------------
 
-MMED PSLIDE Low P values
+MMEDREP Low P values
 
 FIG webpix/clear.jpg
 
 ----------------------------------------------------------------------
 
-MMED PSLIDE High P values
+MMEDREP High P values
 
 FIG webpix/fog.jpg
 
