@@ -35,8 +35,8 @@ Sources += $(ms)
 
 ## Content
 
-mdirs += LatexTemplates Disease_data Endemic_curves fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak
-
+resting += Disease_data Endemic_curves fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak
+mdirs += LatexTemplates
 Sources += $(mdirs)
 
 ## Local files (.tmp will be ephemeral unless you put it here)
@@ -134,7 +134,7 @@ daiddset:
 
 -include $(ms)/visual.mk
 
--include $(ms)/modules.mk
+# -include $(ms)/modules.mk
 -include $(ms)/webpix.mk
 
 -include $(ms)/newtalk.mk
