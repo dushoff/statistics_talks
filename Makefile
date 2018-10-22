@@ -20,6 +20,7 @@ ms = makestuff
 -include $(ms)/newtalk.def
 -include $(ms)/perl.def
 -include $(ms)/repos.def
+Sources += $(ms)
 
 ##################################################################
 
