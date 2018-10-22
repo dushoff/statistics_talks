@@ -4,6 +4,3 @@
 [submodule "LatexTemplates"]
 	path = LatexTemplates
 	url = https://github.com/ICI3D/LatexTemplates.git
-[submodule "WA_Ebola_Outbreak"]
-	path = WA_Ebola_Outbreak
-	url = https://github.com/Outbreak-analysis/WA_Ebola_Outbreak.git
