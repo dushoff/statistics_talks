@@ -14,8 +14,9 @@ Sources = Makefile .ignore README.md sub.mk LICENSE.md notes.txt
 
 ## Change this in local.mk if you want
 Drop = ~/Dropbox/Workshops/statistics_talks
-include sub.mk
 
+ms = makestuff
+-include $(ms)/os.mk
 -include $(ms)/newtalk.def
 -include $(ms)/perl.def
 -include $(ms)/repos.def
