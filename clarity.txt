@@ -21,12 +21,19 @@ NOFRAME
 {Is Statistical ``Significance" a Thing?}
 \newcommand{\jdsub}
 {Bridging between science and statistical theory}
-\newcommand{\jdauth}{Jonathan Dushoff, Department of Biology}
-\newcommand{\years}{2012--2017} 
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\years}{2012--2018} 
+\newcommand{\wdate}{U. Chicago, Oct 2018}
 
 ----------------------------------------------------------------------
 
+EXTRA
+
 ICI3D
+
+----------------------------------------------------------------------
+
+WORKSHOP
 
 ----------------------------------------------------------------------
 
@@ -471,9 +478,11 @@ BC
 
 			Experiments
 
+	REMARK This lunch is not free
+
 NC
 
-HFIG 0.5 webpix/lunch.jpg
+CFIG webpix/lunch.jpg
 
 EC
 
