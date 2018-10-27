@@ -10,7 +10,7 @@ target: $(target)
 
 # make files
 
-Sources = Makefile .ignore README.md sub.mk LICENSE.md notes.txt
+Sources = Makefile README.md sub.mk LICENSE.md notes.txt
 
 ## Change this in local.mk if you want
 Drop = ~/Dropbox/Workshops/statistics_talks
@@ -21,11 +21,6 @@ ms = makestuff
 -include $(ms)/perl.def
 -include $(ms)/repos.def
 Sources += $(ms)
-
-##################################################################
-
-## Transition
-## webpix not tested for gaps after transition
 
 ##################################################################
 
@@ -87,6 +82,7 @@ evaluation.push: evaluation.txt
 
 ## Clarity
 ## First spun for the Mac Stats group January 2018
+## Now trying for Chicago!
 
 clarity.final.pdf: clarity.txt
 clarity.draft.pdf: clarity.txt
