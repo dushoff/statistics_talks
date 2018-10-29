@@ -82,7 +82,7 @@ evaluation.push: evaluation.txt
 
 ## Clarity
 ## First spun for the Mac Stats group January 2018
-## Now trying for Chicago!
+## Now trying for Chicago! October 2018
 
 clarity.final.pdf: clarity.txt
 clarity.draft.pdf: clarity.txt
