@@ -239,7 +239,7 @@ Errors in theoretical studies
 
 		Requires you specify a hypothetical effect \emph{size}
 
-		This is a scientific judgment
+			This is a \emph{scientific} judgment
 
 		This is a good way to analyze power
 	
@@ -342,7 +342,9 @@ Small effects
 
 		We are confident that it's small
 
-	The first is most common -- and the worst
+	The first is most common
+	
+		-- and the worst
 
 ----------------------------------------------------------------------
 
@@ -468,6 +470,8 @@ EC
 Making decisions
 
 FIG webpix/squint.jpg
+
+REMARK How much should I squint?
 
 ----------------------------------------------------------------------
 
@@ -597,13 +601,13 @@ BC
 
 		P$<$0.05
 
-	How many more?
+		A significant effect!
 
-	Does it affect them?
+	Is it a significant amount of hormone? How much hormone is it?
 
 NC
 
-HFIG 0.5 webpix/deer_island.jpg
+HFIG 0.4 webpix/deer_island.jpg
 
 EC
 
@@ -621,9 +625,6 @@ PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
 ----------------------------------------------------------------------
 
 Another way to talk
-
-	The difference between a clear effect and an unclear effect is not
-	necessarily statistically clear
 
 	As expected, the sign of the difference between the placebo group and
 	controls was unclear
@@ -649,17 +650,19 @@ Improving language
 	\textbf{Better:} We did not find a statistically significant effect of this
 	treatment
 
-	\textbf{New:} We did not find a statistically \emph{clear}  effect of this
-	treatment
+	\textbf{New:} We did not \emph{see} a statistically \emph{clear}  effect of
+	this treatment
 
 		The effect of this treatment 
 		was not statistically \emph{clear} in this study
 
 ----------------------------------------------------------------------
 
-Is this possible?
+Is it possible?
 
-	Maybe! \ldots if combined with P values
+	It's hard to get people to change language
+
+	But you can probably change your language (if you keep the P values)
 
 		We found a statistically clear increase (P=0.02) in blood iron in the
 		vitamin-supplement group
@@ -667,15 +670,14 @@ Is this possible?
 		The direction of association between lung capacity and elevation was not
 		statistically clear (P=0.43)
 
-		B and B did not find a statistically clear
-		difference in sexual risk behaviour between men with and without clinic
-		access in Zambia (P=0.1)
+		B and B did not see a statistically clear difference in sexual risk
+		behaviour between men with and without clinic access in Zambia (P=0.1)
 
 	Confidence intervals are still better, when possible
 
 ----------------------------------------------------------------------
 
-Hard questions
+STATS Hard questions
 
 PIC FIG webpix/QuestionAnswers.jpg
 
@@ -702,7 +704,7 @@ SUBH Advice for scientists
 Honesty
 
 	You can always keep analyzing until you find a ``significant''
-	result
+	(or ``clear'') result
 
 		If you do this you will make a lot of mistakes
 
@@ -739,7 +741,7 @@ Summary
 
 ----------------------------------------------------------------------
 
-RHEAD Summary
+STATS RHEAD Summary
 
 	Statistics are a key component of data-based science
 
@@ -749,3 +751,21 @@ RHEAD Summary
 	You need a basic understanding of statistical principles
 
 	You need your own statistical philosophy
+
+----------------------------------------------------------------------
+
+Language
+
+	Language is important and feeds misunderstanding
+
+	Even if you are not misled, others will be
+
+	Use language clearly:
+
+		We found no difference
+
+		⇒ We did not see a clear difference 
+
+	Consider abandoning the language of statistical ``significance''
+
+	\emph{Definitely} abandon the language of statistical ``equivalence''
