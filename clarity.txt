@@ -1,7 +1,16 @@
 
 EXTRA Abstract
 
-I will discuss statistical philosophy for scientists, and how it should differ from the approach of theoretical statisticians. I will talk about some uses and misuses of P values, and theoretical vs. practical approaches to inferential errors. I will argue that statistical "significance" is not a thing, and discuss some practical and some aspirational ideas for improving the language we use to discuss statistics.
+## Statistical philosophy and the language of significance
+
+Chicago abstract: Fuzzy thinking about statistical inference is common not only
+in science, but even among statisticians. I will give some thoughts about a
+simple statistical philosophy, and argue that a change in language may help, or
+at least not hurt.
+
+## Is Statistical ``Significance" a Thing?}
+
+Stats seminar abstract: I will discuss statistical philosophy for scientists, and how it should differ from the approach of theoretical statisticians. I will talk about some uses and misuses of P values, and theoretical vs. practical approaches to inferential errors. I will argue that statistical "significance" is not a thing, and discuss some practical and some aspirational ideas for improving the language we use to discuss statistics.
 
 ----------------------------------------------------------------------
 
@@ -18,9 +27,11 @@ EXTRA To-do
 NOFRAME
 
 \newcommand{\jdtitle}
-{Is Statistical ``Significance" a Thing?}
-\newcommand{\jdsub}
+{Statistical philosophy and the language of significance}
+
+RESTING \newcommand{\jdsub}
 {Bridging between science and statistical theory}
+
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 \newcommand{\years}{2012--2018} 
 \newcommand{\wdate}{U. Chicago, Oct 2018}
@@ -51,6 +62,8 @@ Topics
 
 ----------------------------------------------------------------------
 
+STATS
+
 Vitamin A
 
 	We compare health indicators of children treated or not treated with
@@ -68,6 +81,8 @@ Vitamin A
 		helping?
 
 ----------------------------------------------------------------------
+
+STATS
 
 P values and confidence intervals
 
@@ -87,6 +102,8 @@ P values and confidence intervals
 
 ----------------------------------------------------------------------
 
+STATS
+
 Vitamin A questions
 
 	Is vitamin A good for these children?
@@ -100,6 +117,9 @@ Vitamin A questions
 ----------------------------------------------------------------------
 
 P values
+
+	We compare health indicators of children treated or not treated with
+	vitamin A supplements 
 
 	What does it mean if I find a ``significant P value" for some effect
 	in this experiment?
@@ -138,7 +158,7 @@ PRESENT CFIG vitamins.Rout-1.pdf
 
 NC
 
-	A high P value means we can't see the sign of the effect clearly
+	A high P value means we can't see the \emph{sign} of the effect clearly
 
 	A low P value means we can
 
@@ -163,6 +183,8 @@ Types of Error
 	there isn't one
 
 		This doesn't happen in biology.  There is always an effect.
+
+		This is a defensible belief, and also an unfalsifiable one
 
 	Type II (\emph{False negative:}) concluding there is no effect when
 	there really is
@@ -206,7 +228,7 @@ Errors in theoretical studies
 
 	\emph{False positive:} in the hypothetical case that the
 	effect is exactly zero, what is the probability of falsely finding
-	an effect
+	an effect?
 
 		Should be less than or equal to my nominal significance value
 
@@ -217,7 +239,7 @@ Errors in theoretical studies
 
 		Requires you specify a hypothetical effect \emph{size}
 
-		This is a scientific judgment
+			This is a \emph{scientific} judgment
 
 		This is a good way to analyze power
 	
@@ -306,27 +328,27 @@ NC
 
 	\textbf{Instead:} Construct a statistic for the hypothesis $A>B$
 
-		May be difficult
-
 EC
 
 ----------------------------------------------------------------------
 
 Small effects
 
-	To say an effect is small, we could:
+	Evidence that an effect is small:
 
-		Say that we can't even tell the sign, so it must be small
+		We can't even tell the sign!
 
-		See whether it looks small
+		It looks small
 
-		Say that we are confident that it's small (reverse the P value)
+		We are confident that it's small
 
-			For this, we need a standard for what we mean by small
-
-	The one that is the most commonly done is the worst approach
+	The first is most common
+	
+		-- and the worst
 
 ----------------------------------------------------------------------
+
+STATS
 
 Syllogisms
 
@@ -346,6 +368,8 @@ EC
 
 ----------------------------------------------------------------------
 
+STATS
+
 Syllogisms
 
 BC
@@ -363,6 +387,8 @@ SIDEFIG webpix/fanny.jpg
 EC
 
 ----------------------------------------------------------------------
+
+STATS
 
 Bad logic
 
@@ -444,6 +470,8 @@ EC
 Making decisions
 
 FIG webpix/squint.jpg
+
+REMARK How much should I squint?
 
 ----------------------------------------------------------------------
 
@@ -542,14 +570,14 @@ WIDEFIG my_images/jelly_beans.png
 
 Improving language
 
-	\textbf{Wrong:} There is no statistically significant difference in overall
-	health between the treatment and control groups
+	\textbf{Wrong:} This treatment does not have a statistically significant
+	effect
 
-	\textbf{Standard:} We found no statistically significant difference in
-	overall mortality between the treatment and control groups
+	\textbf{Standard:} We found that this treatment has no statistically
+	significant effect
 
-	\textbf{Better:} We did not find a statistically significant difference in
-	overall mortality between the treatment and control groups
+	\textbf{Better:} We did not find a statistically significant effect of this
+	treatment
 
 	\textbf{Best} ??
 
@@ -559,7 +587,9 @@ Is statistical ``significance'' a thing?
 
 WIDEFIG my_images/significance.png
 
-	ANS Well, it's not significance!
+	ANS It may be a thing
+
+	ANS But it's not much to do with the normal meaning of significance
 
 ----------------------------------------------------------------------
 
@@ -571,13 +601,13 @@ BC
 
 		P$<$0.05
 
-	How many more?
+		A significant effect!
 
-	Does it affect them?
+	Is it a significant amount of hormone? How much hormone is it?
 
 NC
 
-HFIG 0.5 webpix/deer_island.jpg
+HFIG 0.4 webpix/deer_island.jpg
 
 EC
 
@@ -596,9 +626,6 @@ PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
 
 Another way to talk
 
-	The difference between a clear effect and an unclear effect is not
-	necessarily statistically clear
-
 	As expected, the sign of the difference between the placebo group and
 	controls was unclear
 
@@ -614,42 +641,43 @@ Another way to talk
 
 Improving language
 
-	\textbf{Wrong:} There is no statistically significant difference in overall
-	health between the treatment and control groups
+	\textbf{Wrong:} This treatment does not have a statistically significant
+	effect
 
-	\textbf{Standard:} We found no statistically significant difference in
-	overall mortality between the treatment and control groups
+	\textbf{Standard:} We found that this treatment has no statistically
+	significant effect
 
-	\textbf{Better:} We did not find a statistically significant difference in
-	overall mortality between the treatment and control groups
+	\textbf{Better:} We did not find a statistically significant effect of this
+	treatment
 
-	\textbf{New:} We did not find a statistically \emph{clear} difference in
-	overall mortality between the treatment and control groups
+	\textbf{New:} We did not \emph{see} a statistically \emph{clear}  effect of
+	this treatment
 
-		The difference in overall mortality between the treatment and control
-		groups was not statistically \emph{clear} in this study
-
-----------------------------------------------------------------------
-
-Is this possible?
-
-SUBH Slide added this morning
-
-Maybe! \pause \ldots if combined with P values
-
-	We found a statistically clear increase (P=0.02) in blood iron in the
-	vitamin-supplement group
-
-	The direction of association between lung capacity and elevation was not
-	statistically clear (P=0.43)
-
-	B and B did not find a statistically clear
-	difference in sexual risk behaviour between men with and without clinic
-	access in Zambia (P=0.1)
+		The effect of this treatment 
+		was not statistically \emph{clear} in this study
 
 ----------------------------------------------------------------------
 
-Hard questions
+Is it possible?
+
+	It's hard to get people to change language
+
+	But you can probably change your language (if you keep the P values)
+
+		We found a statistically clear increase (P=0.02) in blood iron in the
+		vitamin-supplement group
+
+		The direction of association between lung capacity and elevation was not
+		statistically clear (P=0.43)
+
+		B and B did not see a statistically clear difference in sexual risk
+		behaviour between men with and without clinic access in Zambia (P=0.1)
+
+	Confidence intervals are still better, when possible
+
+----------------------------------------------------------------------
+
+STATS Hard questions
 
 PIC FIG webpix/QuestionAnswers.jpg
 
@@ -676,7 +704,7 @@ SUBH Advice for scientists
 Honesty
 
 	You can always keep analyzing until you find a ``significant''
-	result
+	(or ``clear'') result
 
 		If you do this you will make a lot of mistakes
 
@@ -713,7 +741,7 @@ Summary
 
 ----------------------------------------------------------------------
 
-RHEAD Summary
+STATS RHEAD Summary
 
 	Statistics are a key component of data-based science
 
@@ -726,13 +754,18 @@ RHEAD Summary
 
 ----------------------------------------------------------------------
 
-PSLIDE Philosophy
+Language
 
-	If you're a scientist, your statistical philosophy should be pragmatic and
-	honest
+	Language is important and feeds misunderstanding
 
-	If you're a theoretician, it should be ideological and honest
+	Even if you are not misled, others will be
 
-	If you're a capitalist, it should be pragmatic and dishonest
+	Use language clearly:
 
-	If you're a politician, it should be ideological and dishonest
+		We found no difference
+
+		⇒ We did not see a clear difference 
+
+	Consider abandoning the language of statistical ``significance''
+
+	\emph{Definitely} abandon the language of statistical ``equivalence''
