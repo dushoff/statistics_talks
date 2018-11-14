@@ -613,7 +613,6 @@ EC
 
 ----------------------------------------------------------------------
 
-
 What do P values measure?
 
 PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg

@@ -64,6 +64,13 @@ philosophy.push:
 
 philosophy.html: philosophy.step
 
+## Talk
+birs_rant.final.pdf: birs_rant.txt
+birs_rant.draft.pdf: birs_rant.txt
+birs_rant.draft.tex: birs_rant.txt
+birs_rant.handouts.pdf: birs_rant.txt
+birs_rant.push:
+
 #### Fitting
 ## Still needs more cleaning; and I need to have an alternative to recloning
 ## Likelihood fitting and dynamic models II; a long history at MMED, I guess
