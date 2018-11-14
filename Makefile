@@ -27,6 +27,14 @@ $(ms)/Makefile:
 
 ##################################################################
 
+## Can this be temporary?
+
+~/Dropbox/Permutation_tests/%:
+	$(makethere)
+
+######################################################################
+
+
 ## Exporting
 
 %.push: %.handouts.pdf.gp %.draft.pdf.gp ;
@@ -68,6 +76,7 @@ philosophy.push:
 philosophy.html: philosophy.step
 
 ## Talk
+birs_rant.outline.pdf: birs_rant.txt
 birs_rant.final.pdf: birs_rant.txt
 birs_rant.draft.pdf: birs_rant.txt
 birs_rant.draft.tex: birs_rant.txt

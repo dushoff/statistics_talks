@@ -45,7 +45,7 @@ Conference suggestions
 
 Who the heck am I?
 
-ADD Glass house
+WIDEFIG webpix/glass_house.jpg
 
 ----------------------------------------------------------------------
 
@@ -75,7 +75,7 @@ Statistical paradigms
 
 ----------------------------------------------------------------------
 
-Hypothesis testing
+TSEC Hypothesis testing
 
 	We compare health indicators of children treated or not treated with
 	vitamin A supplements 
@@ -122,7 +122,7 @@ PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
 
 ----------------------------------------------------------------------
 
-A statisticians view of error
+A statistician's view of error
 
 	\emph{False positive:} in the hypothetical case that the
 	effect is exactly zero, what is the probability of falsely finding
@@ -139,7 +139,7 @@ A statisticians view of error
 
 ----------------------------------------------------------------------
 
-A scientist's view of error
+A biologist's view of error
 
 	\emph{False positive:} there are no false positives because
 	there are no zero effects
@@ -174,7 +174,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Validation
+TSEC Validation
 
 	Frequentist
 
@@ -204,19 +204,39 @@ Check plots
 
 ----------------------------------------------------------------------
 
-Histogram examples
+One-sample mean
 
-	Discuss CBS
+SUBH 8 samples from a Cauchy
+
+FIG ~/Dropbox/Permutation_tests/cauchy.big.panels.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RHEAD One-sample mean
+
+SUBH 8 samples from a Cauchy
+
+FIG ~/Dropbox/Permutation_tests/cauchy.big.panels.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Example from Talts et al.
+
+WIDEFIG ~/Dropbox/Permutation_tests/check.png
 
 ----------------------------------------------------------------------
 
 Measure twice, cut once
+
+WFIG 0.6 webpix/tape.jpg
 
 	Evaluate analysis plans before you waste valuable data on them
 
 	Keep a data-analysis journal
 
 	Listening to youthful music makes you younger
+
+		\url{https://journals.sagepub.com/doi/abs/10.1177/0956797611417632}
 
 ----------------------------------------------------------------------
 
@@ -226,7 +246,7 @@ Model worlds
 
 	Model your statistical assumptions and test your statistical model
 
-		It should work!
+		If it doesn't work, fix at the fake-data stage
 
 ----------------------------------------------------------------------
 
@@ -238,7 +258,13 @@ Robustness
 
 ----------------------------------------------------------------------
 
-Accepting the null hypothesis
+Validation
+
+PIC WIDEFIG my_images/compare2.pdf
+
+----------------------------------------------------------------------
+
+TSEC Accepting the null hypothesis
 
 	Don't do it, ever!
 
@@ -321,11 +347,13 @@ Specific examples
 		Bootstrap, or use skew-normal or lognormal and see whether the observed
 		amount of non-normality is likely to hurt you
 
-		My other talk has a really good warning lesson about this
+		My other talk has a nice warning lesson about this
 
 			If I had time to put it in
 
-	
+----------------------------------------------------------------------
+
+SEC Language
 
 ----------------------------------------------------------------------
 
@@ -351,7 +379,7 @@ PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
 
 ----------------------------------------------------------------------
 
-Another way to talk
+EXTRA Another way to talk
 
 	As expected, the sign of the difference between the placebo group and
 	controls was unclear
@@ -409,6 +437,28 @@ STATS Hard questions
 PIC FIG webpix/QuestionAnswers.jpg
 
 	Answers are not always easy
+
+----------------------------------------------------------------------
+
+Language
+
+	Language is important and feeds misunderstanding
+
+	Even if you are not misled, others will be
+
+	Use language clearly:
+
+		We found no difference
+
+		⇒ We did not see a clear difference 
+
+	Consider abandoning the language of statistical ``significance''
+
+		\url{https://arxiv.org/abs/1810.06387}
+
+		\url{#StatisticalClarity}
+
+	_Definitely_ abandon the language of statistical ``equivalence''
 
 ----------------------------------------------------------------------
 
