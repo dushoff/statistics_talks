@@ -135,7 +135,9 @@ A statistician's view of error
 	\emph{False negative:} what is the probability of failing
 	to find an effect that is there?
 
-		Only makes sense with reference to a hypothesized effect size
+		Power \ldots
+
+			with reference to hypothesized effect size
 
 ----------------------------------------------------------------------
 
@@ -152,7 +154,7 @@ A biologist's view of error
 		This \emph{should} never happen in biology, because we should never
 		conclude there is no effect
 
-		In fact, it happens all the time
+		REMARK In fact, it happens all the time. Suppressed for now
 
 ----------------------------------------------------------------------
 
@@ -174,7 +176,12 @@ EC
 
 ----------------------------------------------------------------------
 
-TSEC Validation
+SEC Validation
+
+
+----------------------------------------------------------------------
+
+Coverage
 
 	Frequentist
 
@@ -242,6 +249,8 @@ WFIG 0.6 webpix/tape.jpg
 
 Model worlds
 
+PIC HFIG 0.4 my_images/modelWorld.png
+
 	Simulated data is cheap compared to experimental data
 
 	Model your statistical assumptions and test your statistical model
@@ -252,7 +261,8 @@ Model worlds
 
 Robustness
 
-	Create a model world where you relax some of your statistical assumptions
+	Create a more complex model world where you relax some of your statistical
+	assumptions
 
 	How well does your fitting procedure work now?
 
@@ -274,7 +284,7 @@ TSEC Accepting the null hypothesis
 
 		Usually unnecessary
 
-		Badly mislead others
+		Can badly mislead others
 
 ----------------------------------------------------------------------
 
@@ -307,7 +317,7 @@ Are high P values evidence?
 
 		More noise
 
-		An inappropriate model
+		Hidden correlations
 
 	A lower P value means that your evidence for difference is better
 
@@ -365,7 +375,7 @@ WIDEFIG my_images/significance.png
 
 	ANS But it's not much to do with the normal meaning of significance
 
-	ANS I have stories!
+	ANS I have stories! Flu, fish
 
 ----------------------------------------------------------------------
 
@@ -481,6 +491,52 @@ PICSLIDE WFIG 0.8 ../Generation_talks/notebook/pythagoras.Rout.pdf
 
 ----------------------------------------------------------------------
 
+Annualized flu deaths
+
+BC
+
+CFIG flu.Rout-0.pdf
+
+NC
+
+	Why is weather not causing deaths at this time scale?
+
+EC
 
 ----------------------------------------------------------------------
 
+DEFHEAD ... with confidence intervals
+
+BC
+
+CFIG flu.Rout-1.pdf
+
+NC
+
+	\textbf{Never} say: A is significant and B isn't, so $A>B$
+
+	\textbf{Instead:} Construct a statistic for the hypothesis $A>B$
+
+EC
+
+----------------------------------------------------------------------
+
+Fish hormones
+
+BC
+
+	Male fish subject to polluted water have more female hormones than controls
+
+		P$<$0.05
+
+		A significant effect ($4\times$)
+
+	Is it a significant amount of hormone? How much hormone is it?
+
+NC
+
+HFIG 0.4 webpix/deer_island.jpg
+
+EC
+
+----------------------------------------------------------------------
