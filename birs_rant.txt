@@ -1,0 +1,542 @@
+
+EXTRA Contentious talk
+
+Go through philosophy and stats and see what you want to add
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdtitle}
+	{Bridging between statistics and science}
+\newcommand{\jdsub}
+	{Some philosophical claptrap}
+\newcommand{\jdauth}
+	{Jonathan Dushoff, McMaster University}
+\newcommand{\years}
+	{2012--2018} 
+\newcommand{\wdate}
+	{BIRS, Nov 2018}
+
+----------------------------------------------------------------------
+
+WORKSHOP
+
+----------------------------------------------------------------------
+
+Conference suggestions
+
+	Philosophy
+
+		Measure twice, cut once
+
+			Simulate your assumptions
+
+			Simulate your analysis
+
+			Keep a data journal \ldots
+
+	Burning question
+		
+		How do we communicate to policy makers and the
+		public about uncertainty?
+
+----------------------------------------------------------------------
+
+Who the heck am I?
+
+WIDEFIG webpix/glass_house.jpg
+
+----------------------------------------------------------------------
+
+Approaches
+
+	Statistician: how does my model work in an ideal world?
+
+	Scientist: what does my fit tell me about the real world?
+
+	These are different approaches, and that's as it should be!
+
+	Those of us who are bridging should _modularize_ these functions
+
+----------------------------------------------------------------------
+
+Statistical paradigms
+
+	Bayesian
+
+	Frequentist
+
+	Pragmatist
+
+		For Bayesians nothing is simple
+
+		For frequentists nothing is quite actionable
+
+----------------------------------------------------------------------
+
+TSEC Hypothesis testing
+
+	We compare health indicators of children treated or not treated with
+	vitamin A supplements 
+
+	What does it mean if I find a ``significant P value" for some effect
+	in this experiment?
+
+		ANS The difference is unlikely to be due to chance
+
+		ANS So what!  I already know vitamin A has strong effects on
+		metabolism
+
+	If I'm certain that the true answer isn't exactly zero, why do I
+	want the P value anyway?
+
+----------------------------------------------------------------------
+
+Confidence intervals and P values
+
+BC
+
+PRESENT CFIG vitamins.Rout-1.pdf
+
+NC
+
+	A high P value means we can't see the \emph{sign} of the effect clearly
+
+	A low P value means we can
+
+EC
+
+----------------------------------------------------------------------
+
+
+Null hypotheses in science
+
+PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
+
+	A P value measures whether we are seeing
+	\emph{something} clearly
+
+		It's usually the sign ($\pm$) of some quantity, but doesn't need
+		to be
+
+----------------------------------------------------------------------
+
+A statistician's view of error
+
+	\emph{False positive:} in the hypothetical case that the
+	effect is exactly zero, what is the probability of falsely finding
+	an effect?
+
+		Should be less than or equal to my nominal significance value
+
+		This is the gold standard for statistical validity
+
+	\emph{False negative:} what is the probability of failing
+	to find an effect that is there?
+
+		Power \ldots
+
+			with reference to hypothesized effect size
+
+----------------------------------------------------------------------
+
+A biologist's view of error
+
+	\emph{False positive:} there are no false positives because
+	there are no zero effects
+
+		This is a defensible belief, and also an unfalsifiable one
+
+	\emph{False negative:} concluding there is no effect when
+	there really is
+
+		This \emph{should} never happen in biology, because we should never
+		conclude there is no effect
+
+		REMARK In fact, it happens all the time. Suppressed for now
+
+----------------------------------------------------------------------
+
+Scientific errors
+
+BC
+
+	\emph{Sign error:} if I think an effect is positive, when it's really
+	negative (or vice versa)
+
+	\emph{Magnitude error:} if I think an effect is small, when it's
+	really large (or vice versa)
+
+NC
+
+SIDEFIG webpix/error.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+SEC Validation
+
+
+----------------------------------------------------------------------
+
+Coverage
+
+	Frequentist
+
+		The CIs should contain the true value $1-\alpha$ of the
+		time
+
+	Bayesian
+
+		There should be a $1 - \alpha$ probability that the true value is inside
+		the CIs
+
+----------------------------------------------------------------------
+
+Check plots
+
+	Does your fitting method meet assumptions?
+
+	Frequentist
+
+		P values under the null
+
+	Bayesian
+
+		Quantiles of the true parameter with respect to the posterior
+
+		\url{https://andrewgelman.com/2018/04/18/better-check-yo-self-wreck-yo-self/}
+
+----------------------------------------------------------------------
+
+One-sample mean
+
+SUBH 8 samples from a Cauchy
+
+FIG ~/Dropbox/Permutation_tests/cauchy.big.panels.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RHEAD One-sample mean
+
+SUBH 8 samples from a Cauchy
+
+FIG ~/Dropbox/Permutation_tests/cauchy.big.panels.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Example from Talts et al.
+
+WIDEFIG ~/Dropbox/Permutation_tests/check.png
+
+----------------------------------------------------------------------
+
+Measure twice, cut once
+
+WFIG 0.6 webpix/tape.jpg
+
+	Evaluate analysis plans before you waste valuable data on them
+
+	Keep a data-analysis journal
+
+	Listening to youthful music makes you younger
+
+		\url{https://journals.sagepub.com/doi/abs/10.1177/0956797611417632}
+
+----------------------------------------------------------------------
+
+Model worlds
+
+PIC HFIG 0.4 my_images/modelWorld.png
+
+	Simulated data is cheap compared to experimental data
+
+	Model your statistical assumptions and test your statistical model
+
+		If it doesn't work, fix at the fake-data stage
+
+----------------------------------------------------------------------
+
+Robustness
+
+	Create a more complex model world where you relax some of your statistical
+	assumptions
+
+	How well does your fitting procedure work now?
+
+----------------------------------------------------------------------
+
+Validation
+
+PIC WIDEFIG my_images/compare2.pdf
+
+----------------------------------------------------------------------
+
+TSEC Accepting the null hypothesis
+
+	Don't do it, ever!
+
+	It requires logical contortions
+
+		Generally work out OK
+
+		Usually unnecessary
+
+		Can badly mislead others
+
+----------------------------------------------------------------------
+
+High P values
+
+BC
+
+	If I have a high P value, there is something I \emph{don't} see
+	clearly
+
+	It \emph{may be} because this effect is small
+
+	High P values should \emph{not} be used to advance your conclusion
+
+NC
+
+SIDEFIG webpix/fog.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Are high P values evidence?
+
+	What causes them?
+
+		\textbf{Small differences}
+
+		Less data
+
+		More noise
+
+		Hidden correlations
+
+	A lower P value means that your evidence for difference is better
+
+	A higher P value means that your evidence for similarity is
+	better -- or worse!
+
+----------------------------------------------------------------------
+
+How much to squint
+
+FIG webpix/squint.jpg
+
+----------------------------------------------------------------------
+
+But the Joneses do it!
+
+	When you do it the worse way because of the culture, you are:
+
+		making your own work more difficult, less clear, or both
+
+		reinforcing the culture!
+
+----------------------------------------------------------------------
+
+Specific examples
+
+	Identifiability
+
+		Measure how _much_ the different priors are drawn together
+
+		You're already picking priors, pick a standard
+
+	Distributional assumptions
+
+		Check plots!
+
+		Bootstrap, or use skew-normal or lognormal and see whether the observed
+		amount of non-normality is likely to hurt you
+
+		My other talk has a nice warning lesson about this
+
+			If I had time to put it in
+
+----------------------------------------------------------------------
+
+SEC Language
+
+----------------------------------------------------------------------
+
+Is statistical ``significance'' a thing?
+
+WIDEFIG my_images/significance.png
+
+	ANS It may be a thing
+
+	ANS But it's not much to do with the normal meaning of significance
+
+	ANS I have stories! Flu, fish
+
+----------------------------------------------------------------------
+
+What do P values measure?
+
+PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
+
+	ANS Clarity!
+
+	ANS We should call it that
+
+----------------------------------------------------------------------
+
+EXTRA Another way to talk
+
+	As expected, the sign of the difference between the placebo group and
+	controls was unclear
+
+	Unclear effects of boot camps
+
+	The direction of correlation between lung capacity and elevation in
+	deer-mouse populations is unclear
+
+	B and B showed that there is an unclear difference in sexual risk
+	behaviour between men with and without clinic access in Zambia
+
+----------------------------------------------------------------------
+
+Improving language
+
+	\textbf{Wrong:} This treatment does not have a statistically significant
+	effect
+
+	\textbf{Standard:} We found that this treatment has no statistically
+	significant effect
+
+	\textbf{Better:} We did not find a statistically significant effect of this
+	treatment
+
+	\textbf{New:} We did not \emph{see} a statistically \emph{clear}  effect of
+	this treatment
+
+		The effect of this treatment 
+		was not statistically \emph{clear} in this study
+
+----------------------------------------------------------------------
+
+Is it possible?
+
+	It's hard to get people to change language
+
+	But you can probably change your language (if you keep the P values)
+
+		We found a statistically clear increase (P=0.02) in blood iron in the
+		vitamin-supplement group
+
+		The direction of association between lung capacity and elevation was not
+		statistically clear (P=0.43)
+
+		B and B did not see a statistically clear difference in sexual risk
+		behaviour between men with and without clinic access in Zambia (P=0.1)
+
+	Confidence intervals are still better, when possible
+
+----------------------------------------------------------------------
+
+STATS Hard questions
+
+PIC FIG webpix/QuestionAnswers.jpg
+
+	Answers are not always easy
+
+----------------------------------------------------------------------
+
+Language
+
+	Language is important and feeds misunderstanding
+
+	Even if you are not misled, others will be
+
+	Use language clearly:
+
+		We found no difference
+
+		⇒ We did not see a clear difference 
+
+	Consider abandoning the language of statistical ``significance''
+
+		\url{https://arxiv.org/abs/1810.06387}
+
+		\url{#StatisticalClarity}
+
+	_Definitely_ abandon the language of statistical ``equivalence''
+
+----------------------------------------------------------------------
+
+Thanks
+
+	Organizers and BIRS
+
+	Collaborators
+
+	Funders: NSERC, CIHR
+
+	Audience
+
+----------------------------------------------------------------------
+
+
+PICSLIDE WFIG 0.8 ../Generation_talks/notebook/pythagoras.Rout.pdf
+
+\vspace{-5ex} What is the pattern of Pythagorean triples of integers $a^2 + b^2 = c^2$?
+
+----------------------------------------------------------------------
+
+Annualized flu deaths
+
+BC
+
+CFIG flu.Rout-0.pdf
+
+NC
+
+	Why is weather not causing deaths at this time scale?
+
+EC
+
+----------------------------------------------------------------------
+
+DEFHEAD ... with confidence intervals
+
+BC
+
+CFIG flu.Rout-1.pdf
+
+NC
+
+	\textbf{Never} say: A is significant and B isn't, so $A>B$
+
+	\textbf{Instead:} Construct a statistic for the hypothesis $A>B$
+
+EC
+
+----------------------------------------------------------------------
+
+Fish hormones
+
+BC
+
+	Male fish subject to polluted water have more female hormones than controls
+
+		P$<$0.05
+
+		A significant effect ($4\times$)
+
+	Is it a significant amount of hormone? How much hormone is it?
+
+NC
+
+HFIG 0.4 webpix/deer_island.jpg
+
+EC
+
+----------------------------------------------------------------------
