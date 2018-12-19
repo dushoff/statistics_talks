@@ -34,7 +34,6 @@ $(ms)/Makefile:
 
 ######################################################################
 
-
 ## Exporting
 
 %.push: %.handouts.pdf.gp %.draft.pdf.gp ;
@@ -48,6 +47,7 @@ mdirs += LatexTemplates
 pardirs += Disease_data fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak Endemic_curves
 
 Sources += $(mdirs)
+Ignore += $(pardirs)
 
 ######################################################################
 
