@@ -69,7 +69,7 @@ SEC Conceptual models
 
 Disease thresholds
 
-PIC FIG Endemic_curves/propCurves.Rout-0.png
+PIC FIG Endemic_curves/propCurves.Rout-0.pdf
 
 ----------------------------------------------------------------------
 

@@ -1,8 +1,8 @@
 \documentclass{beamer}
 
 %% ICI3D only
-%% \input{LatexTemplates/ici3dTemplate.tex}
-%% \input{LatexTemplates/ici3dCurrent.tex}
+\input{LatexTemplates/ici3dTemplate.tex}
+\input{LatexTemplates/ici3dCurrent.tex}
 
 \input{LatexTemplates/bulletspace.tex}
 
@@ -20,6 +20,6 @@
 ----------------------------------------------------------------------
 
 %% ICI3D only
-%% \input{LatexTemplates/ici3dClose.tex}
+\input{LatexTemplates/ici3dClose.tex}
 
 \end{document}

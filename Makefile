@@ -49,8 +49,6 @@ pardirs += Disease_data fitting_code hybrid_fitting SIR_simulations WA_Ebola_Out
 
 Sources += $(mdirs)
 
-## Parall
-
 ######################################################################
 
 ## Local files (.tmp will be ephemeral unless you put it here)
@@ -163,3 +161,8 @@ daiddset:
 -include $(ms)/pandoc.mk
 
 -include $(ms)/git.mk
+
+######################################################################
+
+%.pdf:
+	$(makethere)
