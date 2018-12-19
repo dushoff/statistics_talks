@@ -41,10 +41,17 @@ $(ms)/Makefile:
 
 ## Content
 
-resting += Disease_data Endemic_curves fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak
+## New paradigm 2018 Dec 19 (Wed):
+## Lots of pardirs: mdirs only for serious production (like what, even?)
+
 mdirs += LatexTemplates
+pardirs += Disease_data fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak Endemic_curves
 
 Sources += $(mdirs)
+
+## Parall
+
+######################################################################
 
 ## Local files (.tmp will be ephemeral unless you put it here)
 Sources += local.txt.format beamer.tmp notes.tmp
@@ -106,9 +113,6 @@ evaluation.push: evaluation.txt
 clarity.final.pdf: clarity.txt
 clarity.draft.pdf: clarity.txt
 clarity.handouts.pdf: clarity.txt
-
-repodirs:
-	@echo $(repodirs)
 
 ######################################################################
 
