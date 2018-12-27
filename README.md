@@ -27,3 +27,7 @@ Themes (move to Workshops, currently in disease_talks)
 
 Selection (same)
 
+
+----------------------------------------------------------------------
+
+Some sort of makethere problem. Tried to solve by making %.pdf "there" but had priority problems (it was overriding some of the talk products).
