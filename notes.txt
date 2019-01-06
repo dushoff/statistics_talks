@@ -1,5 +1,0 @@
-* Put this in a linkdirs framework (better – a modular framework). Do the same for other new talks directories.
-
-* Make a selection system for the Philosphy talk
-
-* Add Bio 708 references to notes

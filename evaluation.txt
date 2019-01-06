@@ -69,7 +69,7 @@ SEC Conceptual models
 
 Disease thresholds
 
-PIC FIG Endemic_curves/propCurves.Rout-0.png
+PIC FIG Endemic_curves/propCurves.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
@@ -289,13 +289,14 @@ Passing goodness of fit tests
 
 BC
 
-PIC CFIG webpix/godDice.jpg
+	I can make any model pass a goodness of fit test by broadening the
+	uncertainty
+
+	That doesn't make it a good model
 
 NC
 
-	I can make any model pass a goodness of fit test but broadening the uncertainty
-
-	That doesn't make it a good model
+PIC CFIG webpix/godDice.jpg
 
 EC
 
@@ -321,7 +322,21 @@ DAIDD Vitamin A example
 
 ----------------------------------------------------------------------
 
-DAIDD Group activity
+DAIDD Vitamin study
+
+FIG vitamins.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+
+DAIDD Vitamin study
+
+FIG vitamins.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+
+DAIDD Discussion
 
 	Do you agree that in biology we should assume that the answer to our
 	sensible question is not exactly zero?

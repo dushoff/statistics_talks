@@ -20,3 +20,14 @@ Dotdir
 This is a directory for stats-y talks, mostly developed with ICI3D or the somewhat-related NTU course.
 
 It is meant to find its own resources on github and link them, but it has not yet been set up in a systematic way.
+
+----------------------------------------------------------------------
+
+Themes (move to Workshops, currently in disease_talks)
+
+Selection (same)
+
+
+----------------------------------------------------------------------
+
+Some sort of makethere problem. Tried to solve by making %.pdf "there" but had priority problems (it was overriding some of the talk products).
