@@ -12,8 +12,9 @@ target: $(target)
 
 Sources = Makefile README.md LICENSE.md notes.txt
 
-## Change this in local.mk if you want
 Drop = ~/Dropbox/Workshops/statistics_talks
+Ignore += local.mk
+-include local.mk
 
 ms = makestuff
 -include $(ms)/os.mk
@@ -28,6 +29,7 @@ $(ms)/Makefile:
 ##################################################################
 
 ## Can this be temporary?
+## 2019 Jan 23 (Wed): don't even remember when I made the above note ☺.
 
 ~/Dropbox/Permutation_tests/%:
 	$(makethere)
@@ -45,8 +47,8 @@ $(ms)/Makefile:
 
 mdirs += LatexTemplates
 pardirs += Disease_data fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak Endemic_curves
+subdirs += visualization
 
-Sources += $(mdirs)
 Ignore += $(pardirs)
 
 ######################################################################
