@@ -8,11 +8,6 @@ current: target
 
 ##################################################################
 
-Sources += $(wildcard *.R)
-
-
-##################################################################
-
 ## Defs
 
 Sources += Makefile
@@ -28,9 +23,17 @@ $(ms)/Makefile:
 
 ######################################################################
 
+Sources += $(wildcard *.R)
+
+cache/fev.csv: 
+	wget -O $@ "http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/FEV.csv"
+
+## smoke.Rout: smoke.R
+
 ### Makestuff
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 -include $(ms)/stepR.mk
+-include makestuff/cache.mk
 
