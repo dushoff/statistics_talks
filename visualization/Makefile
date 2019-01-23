@@ -20,6 +20,7 @@ $(ms)/Makefile:
 	ls ../makestuff/Makefile && /bin/ln -s ../makestuff 
 
 -include $(ms)/os.mk
+-include local.mk
 
 ######################################################################
 
@@ -29,11 +30,12 @@ cache/fev.csv:
 	wget -O $@ "http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/FEV.csv"
 
 ## smoke.Rout: smoke.R
+## smoke_levels.Rout.pdf: smoke_levels.R
 
 ### Makestuff
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
--include $(ms)/stepR.mk
+-include makestuff/stepR.mk
 -include makestuff/cache.mk
 
