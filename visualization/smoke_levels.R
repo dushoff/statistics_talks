@@ -1,6 +1,8 @@
 library(ggplot2)
 theme_set(theme_bw(base_size=18))
 
+load("smoke.RData")
+
 colorA <- 0.7
 lLev <- 0.01
 hLev <- 0.01

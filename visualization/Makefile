@@ -1,7 +1,7 @@
 
 ## Code moved from clunky stat744_0 repo
 ## Haven't moved talk here yet
-## Trying to step
+## Trying to step!
 
 current: target
 -include target.mk
@@ -26,6 +26,7 @@ $(ms)/Makefile:
 
 Sources += $(wildcard *.R)
 
+Ignore += cache
 cache/fev.csv: 
 	wget -O $@ "http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/FEV.csv"
 
