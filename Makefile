@@ -74,6 +74,7 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 ## Moved here direct from Dropbox (NTU 2016).
 ## To do: figure out what you want from which column
 ## Using OTHER to mark things that are currently suppressed
+## Currently versions for DAIDD, MMED, QMEE …
 
 ## Talk
 philosophy.final.pdf: philosophy.txt
@@ -110,6 +111,7 @@ evaluation.push: evaluation.txt
 ## Clarity
 ## First spun for the Mac Stats group January 2018
 ## Now trying for Chicago! October 2018
+## Overlaps with philosophy, evaluation
 
 clarity.final.pdf: clarity.txt
 clarity.draft.pdf: clarity.txt

@@ -756,7 +756,7 @@ Honesty
 
 ----------------------------------------------------------------------
 
-PSLIDE Summary
+PIPE PSLIDE Summary
 
 FIG webpix/pipe.jpg
 
