@@ -76,7 +76,6 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 ## Talk
 philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
-philosophy.draft.tex: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 philosophy.push:
 
