@@ -49,6 +49,8 @@ mdirs += LatexTemplates
 pardirs += Disease_data fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak Endemic_curves
 subdirs += visualization
 
+Ignore += visualization/*
+
 Ignore += $(pardirs)
 
 ######################################################################
