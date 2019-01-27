@@ -23,30 +23,25 @@ NOFRAME
 
 ----------------------------------------------------------------------
 
-ICI3D
+THEMETITLE
 
 ----------------------------------------------------------------------
 
-EXTRA
+PLAIN Statistical philosophy
 
-OTHER PRESENT \vfill\begin{center} 
-
-Statistical philosophy
-
-PRESENT \vfill
+PRESENT \vfill\begin{center} 
 
 Jonathan Dushoff, McMaster University
 
-\url{http://lalashan.mcmaster.ca/DushoffLab}
+RESTING \url{http://lalashan.mcmaster.ca/DushoffLab}
 
 PRESENT \vfill
 
-PRESENT 2016 Summer Course on Mathematical Modeling and Analysis of 
-Infectious Diseases
+PRESENT 2019 QMEE version
 
-PRESENT \vfill
+RESTING \vfill
 
-PRESENT National Taiwan University
+RESTING National Taiwan University
 
 PRESENT \vfill\end{center}
 
@@ -76,7 +71,7 @@ OTHER NSLIDE Statistical philosophy
 
 ----------------------------------------------------------------------
 
-MMED Long pipe 
+PIPE Long pipe 
 
 PIC HFIG 0.5 webpix/pipe.jpg
 
@@ -564,19 +559,19 @@ FIG vitamins_plot.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-RSLIDE Scrambled measurements
+PSLIDE Scrambled measurements
 
 FIG vitamins_plot.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-RSLIDE Scrambled measurements
+PSLIDE Scrambled measurements
 
 FIG vitamins_plot.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
-RSLIDE Scrambled measurements
+PSLIDE Scrambled measurements
 
 FIG vitamins_plot.Rout-4.pdf
 
@@ -677,7 +672,7 @@ EC
 
 ----------------------------------------------------------------------
 
-MMED Example: MMEV 
+BAYESCALC Example: MMEV 
 
 	MMEV is a viral infection that can cause a serious disease
 	(called MMED)
@@ -810,23 +805,13 @@ RHEAD Summary
 
 	Statistics are a key component of data-based science
 
-		You should think about statistical analysis from the beginning of your
-		project
+		You should think about statistical analysis from the beginning of
+		your project
 
 	You need a basic understanding of statistical principles
 
 	You need your own statistical philosophy
 
+		If you're a theoretician, it should be ideological and honest
+
 		If you're a scientist, it should be pragmatic and honest
-
-----------------------------------------------------------------------
-
-PSLIDE Philosophy
-
-	If you're a scientist, it should be pragmatic and honest
-
-	If you're a theoretician, it should be ideological and honest
-
-	If you're a capitalist, it should be pragmatic and dishonest
-
-	If you're a politician, it should be ideological and dishonest

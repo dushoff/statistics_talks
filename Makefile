@@ -10,7 +10,7 @@ target: $(target)
 
 # make files
 
-Sources += Makefile README.md LICENSE.md
+Sources += Makefile README.md 
 
 Drop = ~/Dropbox/Workshops/statistics_talks
 Ignore += local.mk
@@ -144,12 +144,10 @@ distarrow.pdf: distarrow.tex
 ## Rules under development; need to look at beamer.tmp (manually, for now)
 ## Oops, forgot about this. Redo.
 
-Sources += mmed.txt.format daidd.txt.format 
-mmedset:
-	$(CP) mmed.txt.format local.txt.format
-
-daiddset:
-	$(CP) daidd.txt.format local.txt.format
+## qmee.set
+Sources += mmed.txt.format daidd.txt.format qmee.txt.format
+%.set: %.txt.format
+	$(LNF) $< local.txt.format
 
 ######################################################################
 
