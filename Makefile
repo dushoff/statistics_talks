@@ -10,7 +10,7 @@ target: $(target)
 
 # make files
 
-Sources = Makefile README.md LICENSE.md notes.txt
+Sources += Makefile README.md LICENSE.md
 
 Drop = ~/Dropbox/Workshops/statistics_talks
 Ignore += local.mk
