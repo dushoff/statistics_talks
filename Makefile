@@ -117,6 +117,14 @@ clarity.final.pdf: clarity.txt
 clarity.draft.pdf: clarity.txt
 clarity.handouts.pdf: clarity.txt
 
+## Overview
+## Cobbled together viz thoughts (based on material from stat744)
+## Actually, still living there
+
+viz.final.pdf: viz.txt
+viz.draft.pdf: viz.txt
+viz.handouts.pdf: viz.txt
+
 ######################################################################
 
 # Simple R scripts moved from CI_diagrams and Philosophy Lecture
