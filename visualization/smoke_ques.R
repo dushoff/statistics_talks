@@ -1,6 +1,8 @@
 library(ggplot2)
 theme_set(theme_bw(base_size=18))
 
+load("smoke.RData")
+
 ## What is the relationship between smoking and lung capacity
 ## Why doesn't varwidth play nicely with dodge?
 print(ggplot(smoke, aes(x=smoking, y=fev, color=sex))

@@ -1,5 +1,5 @@
 
-## Code moved from clunky stat744_0 repo
+## Code moved from clunky stat744 repo
 ## Haven't moved talk here yet
 ## Trying to step!
 
@@ -30,8 +30,45 @@ Ignore += cache
 cache/fev.csv: 
 	wget -O $@ "http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/FEV.csv"
 
+######################################################################
+
+## Stuff is being brought from stat744
+## More to be done, and link to viz lecture in ../
+
+## Bikes
+
+## Crib
+.PRECIOUS: %.R
+%.R: /home/dushoff/gitroot/stat744/lectures/%.R
+	$(copy)
+
+cache/bikes.zip:
+	wget -O $@ https://archive.ics.uci.edu/ml/machine-learning-databases/00275/Bike-Sharing-Dataset.zip
+
+Ignore += day.csv hour.csv bikes.zip
+hour.csv: bikes.zip
+	unzip $< $@
+	touch $@
+
+Sources += bike_weather.csv
+## bikes.Rout: bikes.R
+## bike_plots.Rout: bike_plots.R
+
+######################################################################
+
+## Smoking example
+
+## Read in data
 ## smoke.Rout: smoke.R
-## smoke_levels.Rout.pdf: smoke_levels.R
+
+## Conflation plots (no unconflation, just capacity and then age)
+## smoke_ques.Rout: smoke_ques.R
+
+## fits (with area example)
+## smoke_plots.Rout: smoke_plots.R
+
+## Level plots (example of color choices)
+## smoke_levels.Rout: smoke_levels.R
 
 ### Makestuff
 

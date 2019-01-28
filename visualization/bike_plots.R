@@ -1,6 +1,8 @@
 library(ggplot2)
 theme_set(theme_bw(base_size=18))
 
+load("bikes.RData")
+
 base <- ggplot(bikes,aes(x=weather,y=rentals))
 lbase <- base +  scale_y_log10()
 
