@@ -1,8 +1,6 @@
 library(ggplot2)
 theme_set(theme_bw(base_size=18))
 
-load("smoke.RData")
-
 colorA <- 0.7
 lLev <- 0.01
 hLev <- 0.01
@@ -43,3 +41,4 @@ library(hexbin)
 
 print(afh <- af + geom_hex(binwidth=c(1,0.4)))
 print (afh + scale_fill_gradient(low="#F0F0FF", high="#131393"))
+

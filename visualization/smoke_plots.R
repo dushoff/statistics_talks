@@ -1,8 +1,6 @@
 library(ggplot2)
 theme_set(theme_bw(base_size=18))
 
-load("smoke.RData")
-
 point_alpha <- 0.4
 
 ## Age vs fev

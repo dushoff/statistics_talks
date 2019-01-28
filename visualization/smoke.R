@@ -1,7 +1,4 @@
 library(readr)
 library(dplyr)
 
-smoke <- (read_csv("fev.csv")
-	%>% rename(smoking=smoke)
-	%>% print()
-)
+smoke <- read_csv(input_files[[1]]) %>% rename(smoking=smoke)
