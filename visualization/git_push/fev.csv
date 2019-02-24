@@ -1,4 +1,3 @@
-# https://archive.ics.uci.edu/ml/machine-learning-databases/00275/Bike-Sharing-Dataset.zip
 "id","age","fev","height","sex","smoke"
 301,9,1.708,57,"female","non-current smoker"
 451,8,1.724,67.5,"female","non-current smoker"
