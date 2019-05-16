@@ -150,6 +150,14 @@ distarrow.pdf: distarrow.tex
 
 ##################################################################
 
+## rmd lectures
+## Try to make it so other people can build
+
+Sources += cleaning.rmd $(wildcard cleaning_data/*)
+
+######################################################################
+
+
 ## Venues
 ## Rules under development; need to look at beamer.tmp (manually, for now)
 ## Oops, forgot about this. Redo.
