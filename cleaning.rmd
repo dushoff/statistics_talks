@@ -1,12 +1,8 @@
 ---
 title: Data management and cleaning
 author: Jonathan Dushoff
+output: ioslides_presentation
 ---
-
-<!--- COMMENT
-2019 May 16 (Thu)
-Now making a separate version is statistics_talks repo
--->
 
 ## Goals
 
@@ -265,15 +261,17 @@ print(parasiteTable
 
 ## Explore ranges
 
-```{r pophist.R}
-print(ggplot(villageTable, aes(x=population))
+```{r}
+pophist <- (ggplot(villageTable, aes(x=population))
 	+ geom_histogram()
 )
 ```
 
 ## Explore ranges
 
-![Population histogram](figure/pophist.R-1.png)
+```{r echo=FALSE}
+print(pophist)
+```
 
 # Correction tables
 
