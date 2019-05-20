@@ -152,6 +152,9 @@ distarrow.pdf: distarrow.tex
 
 ## rmd lectures
 ## Try to make it so other people can build
+## Still need to work on rules for this (see QMEE?)
+
+Ignore += cleaning.html
 
 Sources += cleaning.rmd $(wildcard cleaning_data/*)
 
