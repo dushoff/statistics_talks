@@ -165,7 +165,7 @@ Sources += cleaning.rmd $(wildcard cleaning_data/*)
 ## Rules under development; need to look at beamer.tmp (manually, for now)
 ## Oops, forgot about this. Redo.
 
-## qmee.set
+## mmed.set:
 Sources += mmed.txt.format daidd.txt.format qmee.txt.format
 %.set: %.txt.format
 	$(LNF) $< local.txt.format
