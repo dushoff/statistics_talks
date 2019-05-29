@@ -46,7 +46,7 @@ $(ms)/Makefile:
 ## Lots of pardirs: mdirs only for serious production (like what, even?)
 
 mdirs += LatexTemplates
-pardirs += Disease_data fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak Endemic_curves
+pardirs += Disease_data fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria
 subdirs += visualization
 
 Ignore += visualization/*
@@ -107,6 +107,8 @@ evaluation.final.pdf: evaluation.txt
 evaluation.draft.pdf: evaluation.txt
 evaluation.handouts.pdf: evaluation.txt
 evaluation.push: evaluation.txt
+
+garki.draft.pdf: garki.txt
 
 ## Clarity
 ## First spun for the Mac Stats group January 2018

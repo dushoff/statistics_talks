@@ -1,0 +1,16 @@
+
+Clinical immunity in malaria
+
+FIG webpix/keeganClinicalDiagram.jpg
+
+----------------------------------------------------------------------
+
+Bistability
+
+WIDEFIG webpix/keeganPhaseDiagram.jpg
+
+----------------------------------------------------------------------
+
+Garki data
+
+FIG Malaria/villages.Rout-0.pdf
