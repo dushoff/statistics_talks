@@ -162,9 +162,14 @@ Sources += cleaning.rmd $(wildcard cleaning_data/*)
 
 
 ## Venues
-## Rules under development; need to look at beamer.tmp (manually, for now)
-## Oops, forgot about this. Redo.
 
+## Rules under development; need to look at beamer.tmp (manually, for now)
+
+## Oops, forgot about this. Redo.
+## 2019 May 29 (Wed) That's an alarming note probably from long ago.
+
+## Automatically change the format rules (but not the template)
+## for different venues.
 ## mmed.set:
 Sources += mmed.txt.format daidd.txt.format qmee.txt.format
 %.set: %.txt.format

@@ -12,7 +12,6 @@ EXTRA 2017 notes
 
 * for pred value positive, give extreme where there’s 0% prevalence to make it clear
 
-
 ----------------------------------------------------------------------
 
 NOFRAME
@@ -37,7 +36,7 @@ RESTING \url{http://lalashan.mcmaster.ca/DushoffLab}
 
 PRESENT \vfill
 
-PRESENT 2019 QMEE version
+RESTING 2019 QMEE version
 
 RESTING \vfill
 
@@ -337,7 +336,7 @@ BC
 
 	It \emph{may be} because this effect is small
 
-	High P values should \emph{not} be used to advance your conclusion
+	High P values should \emph{not} be used to advance \emph{any} conclusion
 
 NC
 
@@ -428,7 +427,7 @@ BC
 
 	Fanny the elephant is mortal
 
-	Therefore, Fanny is a man
+	Therefore, Fanny the elephant is a man
 
 NC
 
@@ -641,7 +640,7 @@ BC
 
 	A frequentist can do a clear analysis right away
 
-	A Bayesian needs a ton of assumptions -- will try to make
+	A Bayesian needs a ton of assumptions -- will often try to make
 	``uninformative'' assumptions
 
 NC
