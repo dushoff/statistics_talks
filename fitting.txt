@@ -260,7 +260,7 @@ Distance functions
 
 BC
 
-SIDEFIG distance.Rout-0.png
+SIDEFIG distance.Rout-0.pdf
 
 NC
 
@@ -278,7 +278,7 @@ Distance functions
 
 BC
 
-SIDEFIG distance.Rout-1.png
+SIDEFIG distance.Rout-1.pdf
 
 NC
 
@@ -296,7 +296,7 @@ Distance functions
 
 BC
 
-SIDEFIG distance.Rout-2.png
+SIDEFIG distance.Rout-2.pdf
 
 NC
 

@@ -36,6 +36,13 @@ $(ms)/Makefile:
 
 ######################################################################
 
+## Why don't I use makethere more? Are there supposed to be aliases for it? I shouldn't be so deep
+
+Disease_data/% fitting_code/%:
+	$(makethere)
+
+######################################################################
+
 ## Exporting
 
 %.push: %.handouts.pdf.gp %.draft.pdf.gp ;
@@ -46,7 +53,7 @@ $(ms)/Makefile:
 ## Lots of pardirs: mdirs only for serious production (like what, even?)
 
 mdirs += LatexTemplates
-pardirs += Disease_data fitting_code hybrid_fitting SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria
+pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting
 subdirs += visualization
 
 Ignore += visualization/*
