@@ -316,13 +316,13 @@ TSEC Likelihoods
 	data point $y_i$ is normally distributed.  What is the log
 	likelihood?
 
-	$$L = \prod_i{\frac{1}{\sigma\sqrt{2\pi}}\exp\left(\frac{-(\hat
-	y_i-y_i)^2}{2\sigma^2}\right)}$$
+	$$L = \prod_i{\frac{1}{\sigma\sqrt{2\pi}}\exp\left(\frac{-(
+	y_i-\hat y_i)^2}{2\sigma^2}\right)}$$
 
-	$$\ell = \sum_i{-\log(\sigma\sqrt{2\pi}) - \sum_i{\frac{(\hat
-	y_i-y_i)^2}{2\sigma^2}}}$$
+	$$\ell = \sum_i{-\log(\sigma\sqrt{2\pi}) - \sum_i{\frac{(
+	y_i-\hat y_i)^2}{2\sigma^2}}}$$
 
-	\emph{We minimize the likelihood by minimizing the sum of squares}
+	\emph{We maximize the likelihood by minimizing the sum of squares}
 
 		and then solving for $\sigma$
 
