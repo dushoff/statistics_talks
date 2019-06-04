@@ -27,11 +27,27 @@ ICI3D
 
 ----------------------------------------------------------------------
 
+DAIDD
+
 Goals
 
 	Discuss model types and model goals
 
 	Explain the value of simulation for validating models
+
+	Discuss metrics for evaluating fit
+
+		Put the Goodness of fit test in its place
+
+----------------------------------------------------------------------
+
+MMED
+
+Goals
+
+	Discuss model types and model goals
+
+	Discuss the value of simulation for validating models
 
 	Discuss metrics for evaluating fit
 
@@ -186,20 +202,22 @@ Bias?
 
 	Nobody wants to be biased 
 
-	You \emph{need} to be \emph{asymptotically} unbiased
+		You shouldn't ignore sources of bias (confounders)
 
-		Good coverage and good precision assure this
+		Estimators with good coverage and good precision are
+		\emph{asymptotically} unbiased
 
 	Not so clear you need to be \emph{absolutely} unbiased
 
 		Bias is the difference between the \emph{mean} expected prediction and the
 		true value
 
-		Scale dependent: an unbiased estimate of $\gamma$ is
-		automatically a biased estimate of $D$ (but not
-		asymptotically biased)
+	Scale dependence
+	
+		an unbiased estimate of $\gamma$ is automatically a biased estimate of
+		$D$ (but not asymptotically biased)
 
-	It may be better to evaluate using medians (instead of means)
+		Medians (instead of means) can get avoid scale problems
 
 ----------------------------------------------------------------------
 
@@ -450,15 +468,18 @@ Goodness of fit test
 
 	Can we see the difference clearly?
 
-		If no, model may be good or bad. 
-		
+		If \emph{no}, model may be \emph{good} or \emph{bad}. 
+
 			We probably can't add any more complexity based on current
 			data
 
-		If yes, model may be good or bad. We \emph{may} be able to add more
-		complexity based on current data
+		If \emph{yes}, model may be \emph{good} or \emph{bad}. 
+
+			We \emph{may} be able to add more complexity based on current data
 
 			But we may not need to
+
+	Reward and punishment
 
 ----------------------------------------------------------------------
 
@@ -496,6 +517,18 @@ Out-of-sample validation
 
 ----------------------------------------------------------------------
 
+Predicting way out of sample
+
+PIC HFIG 0.7 webpix/prometheus.jpg
+
+NOTES Saturn's shepherd moons were predicted before they were seen!
+
+Essentially, all models are wrong, but some are useful.
+
+-- Box and Draper (1987), \emph{Empirical Model Building \ldots}
+
+----------------------------------------------------------------------
+
 Test sets
 
 	What is \textbf{test set} spelled backwards?
@@ -506,6 +539,8 @@ Test sets
 
 		In other words, test what would happen under various withholding
 		scenarios
+
+		This can get very elaborate, and we should probably do it more
 
 ----------------------------------------------------------------------
 
@@ -636,16 +671,3 @@ SUBH Evaluation
 		Can my model predict things I haven't told it yet?
 
 	Generate and test mechanistic hypotheses
-
-----------------------------------------------------------------------
-
-Conclusion
-
-PIC HFIG 0.7 webpix/prometheus.jpg
-
-NOTES Saturn's shepherd moons were predicted before they were seen!
-
-Essentially, all models are wrong, but some are useful.
-
--- Box and Draper (1987), \emph{Empirical Model Building \ldots}
-
