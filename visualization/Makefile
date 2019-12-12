@@ -71,9 +71,9 @@ Sources += bike_weather.csv
 ## smoke_levels.Rout: smoke_levels.R
 
 ### Makestuff
+-include makestuff/stepR.mk
+-include makestuff/cache.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
--include makestuff/stepR.mk
--include makestuff/cache.mk
 
