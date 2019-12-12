@@ -5,6 +5,8 @@ current: target
 target = Makefile
 -include target.mk
 target: $(target)
+-include makestuff/perl.def
+-include makestuff/newtalk.def
 
 ##################################################################
 
@@ -43,7 +45,9 @@ Disease_data/% fitting_code/%:
 ## New paradigm 2018 Dec 19 (Wed):
 ## Lots of pardirs: mdirs only for serious production (like what, even?)
 
-## mdirs += LatexTemplates
+## Debugging: was this necessary?
+## Makefile: LatexTemplates
+pardirs += LatexTemplates
 pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting
 subdirs += visualization
 
@@ -180,9 +184,6 @@ Sources += mmed.txt.format daidd.txt.format qmee.txt.format
 ### Makestuff
 
 Sources += Makefile
-
-## Sources += content.mk
-## include content.mk
 
 Ignore += makestuff
 msrepo = https://github.com/dushoff
