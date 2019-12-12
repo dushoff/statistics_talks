@@ -72,7 +72,7 @@ Sources += bike_weather.csv
 
 ### Makestuff
 -include makestuff/stepR.mk
--include makestuff/cache.mk
+## -include makestuff/cache.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
