@@ -13,14 +13,14 @@ current: target
 Sources += Makefile
 
 ms = makestuff
-Ignore += $(ms)
-Makefile: $(ms)/Makefile
+Ignore += makestuff
+
+Makefile: makestuff
 	touch $@
-$(ms)/Makefile:
+makestuff:
 	ls ../makestuff/Makefile && /bin/ln -s ../makestuff 
 
--include $(ms)/os.mk
--include local.mk
+-include makestuff/os.mk
 
 ######################################################################
 
@@ -72,8 +72,8 @@ Sources += bike_weather.csv
 
 ### Makestuff
 
--include $(ms)/git.mk
--include $(ms)/visual.mk
+-include makestuff/git.mk
+-include makestuff/visual.mk
 -include makestuff/stepR.mk
 -include makestuff/cache.mk
 

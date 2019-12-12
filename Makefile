@@ -1,4 +1,4 @@
-# statistics_talks
+## This is statistics_talks, a rescued screens project directory
 
 current: target
 
@@ -8,23 +8,14 @@ target: $(target)
 
 ##################################################################
 
-# make files
+vim_session:
+	bash -cl "vmt"
 
 Sources += Makefile README.md 
 
 Drop = ~/Dropbox/Workshops/statistics_talks
 Ignore += local.mk
 -include local.mk
-
-ms = makestuff
--include $(ms)/os.mk
--include $(ms)/newtalk.def
--include $(ms)/perl.def
-Sources += $(ms)
-
-$(ms)/%.mk: $(ms)/Makefile ;
-$(ms)/Makefile: 
-	git submodule update -i
 
 ##################################################################
 
@@ -52,7 +43,7 @@ Disease_data/% fitting_code/%:
 ## New paradigm 2018 Dec 19 (Wed):
 ## Lots of pardirs: mdirs only for serious production (like what, even?)
 
-mdirs += LatexTemplates
+## mdirs += LatexTemplates
 pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting
 subdirs += visualization
 
@@ -186,16 +177,28 @@ Sources += mmed.txt.format daidd.txt.format qmee.txt.format
 
 ######################################################################
 
--include $(ms)/visual.mk
+### Makestuff
 
-# -include $(ms)/modules.mk
--include $(ms)/webpix.mk
+Sources += Makefile
 
--include $(ms)/newtalk.mk
--include $(ms)/texdeps.mk
--include $(ms)/wrapR.mk
--include $(ms)/pandoc.mk
+## Sources += content.mk
+## include content.mk
 
--include $(ms)/git.mk
+Ignore += makestuff
+msrepo = https://github.com/dushoff
+Makefile: makestuff/Makefile
+makestuff/Makefile:
+	git clone $(msrepo)/makestuff
+	ls $@
 
-######################################################################
+-include makestuff/os.mk
+
+-include makestuff/wrapR.mk
+-include makestuff/newtalk.mk
+-include makestuff/pandoc.mk
+-include makestuff/texdeps.mk
+-include makestuff/webpix.mk
+
+-include makestuff/git.mk
+-include makestuff/visual.mk
+-include makestuff/projdir.mk

@@ -1,6 +1,0 @@
-[submodule "makestuff"]
-	path = makestuff
-	url = https://github.com/dushoff/makestuff.git
-[submodule "LatexTemplates"]
-	path = LatexTemplates
-	url = https://github.com/ICI3D/LatexTemplates.git
