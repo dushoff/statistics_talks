@@ -40,7 +40,7 @@ RESTING \newcommand{\jdsub}
 
 EXTRA
 
-ICI3D
+ICI3DTHEME
 
 ----------------------------------------------------------------------
 
