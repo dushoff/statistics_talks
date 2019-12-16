@@ -195,8 +195,8 @@ makestuff/Makefile:
 
 -include makestuff/wrapR.mk
 -include makestuff/newtalk.mk
--include makestuff/pandoc.mk
 -include makestuff/texdeps.mk
+-include makestuff/pandoc.mk
 -include makestuff/webpix.mk
 
 -include makestuff/git.mk
