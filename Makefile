@@ -106,6 +106,7 @@ fitting.handouts.pdf: fitting.txt
 ## This talk originated at DAIDD 2015, and contains elements from the philosophy talk, as well as DAIDD-specific stuff.
 ## Called assessment now?
 evaluation.final.pdf: evaluation.txt
+evaluation.slides.pdf: evaluation.txt
 evaluation.draft.pdf: evaluation.txt
 evaluation.handouts.pdf: evaluation.txt
 evaluation.push: evaluation.txt

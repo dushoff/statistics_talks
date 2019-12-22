@@ -29,9 +29,7 @@ ICI3DTHEME
 
 ----------------------------------------------------------------------
 
-DAIDD
-
-Goals
+DAIDD Goals
 
 	Discuss model types and model goals
 
@@ -200,7 +198,7 @@ Precision
 
 ----------------------------------------------------------------------
 
-Bias?
+EXTRA Bias?
 
 	Nobody wants to be biased 
 
@@ -223,11 +221,21 @@ Bias?
 
 ----------------------------------------------------------------------
 
-Accuracy?
+EXTRA Accuracy?
 
 	Nobody wants to be inaccurate
 
 	Good coverage and good precision should guarantee good accuracy
+
+----------------------------------------------------------------------
+
+Bias and accuracy
+
+	Good coverage and high precision should ensure high accuracy and low bias
+
+	Don't worry about ``unbiased estimators''
+
+		Your bias needs to be low, not theoretically zero
 
 ----------------------------------------------------------------------
 
