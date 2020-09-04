@@ -42,10 +42,6 @@ Disease_data/% fitting_code/%:
 
 ## Content
 
-## New paradigm 2018 Dec 19 (Wed):
-## Lots of pardirs: mdirs only for serious production (like what, even?)
-
-## Debugging: was this necessary?
 ## Makefile: LatexTemplates
 pardirs += LatexTemplates
 pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting
