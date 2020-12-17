@@ -38,7 +38,7 @@ Disease_data/% fitting_code/%:
 
 ## Exporting
 
-%.push: %.handouts.pdf.gp %.draft.pdf.gp ;
+%.lecture: %.handouts.pdf.op %.draft.pdf.op %.handouts.pdf.tod %.draft.pdf.tod ;
 
 ## Content
 
@@ -101,11 +101,11 @@ fitting.handouts.pdf: fitting.txt
 
 ## This talk originated at DAIDD 2015, and contains elements from the philosophy talk, as well as DAIDD-specific stuff.
 ## Called assessment now?
-evaluation.final.pdf: evaluation.txt
-evaluation.slides.pdf: evaluation.txt
-evaluation.draft.pdf: evaluation.txt
-evaluation.handouts.pdf: evaluation.txt
-evaluation.push: evaluation.txt
+## evaluation.final.pdf: evaluation.txt
+## evaluation.slides.pdf: evaluation.txt
+## evaluation.draft.pdf: evaluation.txt
+## evaluation.handouts.pdf: evaluation.txt
+## evaluation.lecture:
 
 garki.draft.pdf: garki.txt
 
@@ -172,8 +172,10 @@ Sources += cleaning.rmd $(wildcard cleaning_data/*)
 ## Automatically change the format rules (but not the template)
 ## for different venues.
 ## mmed.set:
+## daidd.set:
 Sources += mmed.txt.format daidd.txt.format qmee.txt.format
 %.set: %.txt.format
+	touch $<
 	$(LNF) $< local.txt.format
 
 ######################################################################

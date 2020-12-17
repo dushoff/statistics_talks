@@ -20,7 +20,7 @@ Need to work on:
 NOFRAME
 
 \newcommand{\jdtitle}{Model evaluation and comparison}
-\newcommand{\jdsub}{}
+\newcommand{\jdsub}{\mbox{}}
 \newcommand{\years}{2013--\thisyear} 
 
 ----------------------------------------------------------------------
@@ -38,6 +38,8 @@ DAIDD Goals
 	Discuss metrics for evaluating fit
 
 		Put the Goodness of fit test in its place
+
+		Take a long digression about statistical philosophy
 
 ----------------------------------------------------------------------
 
@@ -65,9 +67,9 @@ Do I have a good model?
 
 		Prediction
 
-		Extrapolation
-
 		Mechanistic understanding
+
+		Evaluating scenarios
 
 ----------------------------------------------------------------------
 
@@ -187,14 +189,19 @@ NOTES HFIG 0.3 webpix/SierraLeoneValidation.jpg
 
 Precision
 
-	You should aim to make your confidence intervals as narrow as
-	possible
+	A good model tries to provide a precise answer 
 
-		Provide as much information as possible
+		Confidence intervals should be narrow, if possible
+
+		But not at the price of overconfidence (invalidity)
 
 	As data increases, your precision should increase
 
 		CIs should approach zero width
+
+		\ldots as long as you have data about \emph{everything}
+
+	Conversely, CIs should reflect a variety of sources of uncertainty
 
 ----------------------------------------------------------------------
 
@@ -235,7 +242,9 @@ Bias and accuracy
 
 	Don't worry about ``unbiased estimators''
 
-		Your bias needs to be low, not theoretically zero
+		Your estimator doesn't need to be absolutely unbiased
+
+		Your reasonable estimator will be asymptotically unbiased
 
 ----------------------------------------------------------------------
 
@@ -294,6 +303,8 @@ EC
 
 Your model is false!
 
+SUBH \ldots or at least, incomplete
+
 	A goodness of fit test won't make it true
 
 	You can ``pass'' a goodness of fit test by:
@@ -310,6 +321,9 @@ Your model is false!
 
 	For that matter, why do we use P values at all in biology?
 
+----------------------------------------------------------------------
+
+SS Digression
 
 ----------------------------------------------------------------------
 
@@ -489,11 +503,11 @@ Goodness of fit test
 
 			But we may not need to
 
-	Reward and punishment
+	RESTING Reward and punishment (what did I mean by this?)
 
 ----------------------------------------------------------------------
 
-TSS Capturing patterns
+Capturing patterns
 
 	You can ask:
 
