@@ -36,6 +36,14 @@ Disease_data/% fitting_code/%:
 
 ######################################################################
 
+## Link to ICI3D materials (should this be a .mk?)
+
+materials: dir = ~/Dropbox/ICI3D_Materials
+materials:
+	$(linkdirname)
+
+######################################################################
+
 ## Exporting
 
 %.lecture: %.handouts.pdf.op %.draft.pdf.op %.handouts.pdf.tod %.draft.pdf.tod ;
@@ -125,6 +133,25 @@ clarity.handouts.pdf: clarity.txt
 viz.final.pdf: viz.txt
 viz.draft.pdf: viz.txt
 viz.handouts.pdf: viz.txt
+
+## Inference lecture Bellan ⇒ Pearson ⇒ Dushoff (given 2020)
+## materials/current/Bellan_inference.pdf
+
+inference2020.pdf: materials/current/Bellan_inference.pdf my_images/inference2020.title.pdf Makefile
+	pdfjam --landscape -o $@  \
+	$(word 2, $^) 1 \
+	$(word 1, $^) 2-52 \
+	$(word 1, $^) 56 \
+	$(word 1, $^) 58-64 \
+	;
+
+######################################################################
+
+my_images/with.small.png: my_images/with.png Makefile
+	convert -scale 10% $< $@
+
+%.image.pdf: my_images/%.png
+	$(convert)
 
 ######################################################################
 
