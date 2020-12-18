@@ -38,6 +38,7 @@ Disease_data/% fitting_code/%:
 
 ## Link to ICI3D materials (should this be a .mk?)
 
+Ignore += materials
 materials: dir = ~/Dropbox/ICI3D_Materials
 materials:
 	$(linkdirname)
@@ -137,6 +138,7 @@ viz.handouts.pdf: viz.txt
 ## Inference lecture Bellan ⇒ Pearson ⇒ Dushoff (given 2020)
 ## materials/current/Bellan_inference.pdf
 
+Ignore += inference2020.pdf
 inference2020.pdf: materials/current/Bellan_inference.pdf my_images/inference2020.title.pdf Makefile
 	pdfjam --landscape -o $@  \
 	$(word 2, $^) 1 \
