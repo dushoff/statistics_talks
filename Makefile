@@ -139,7 +139,7 @@ viz.handouts.pdf: viz.txt
 ## materials/current/Bellan_inference.pdf
 
 Ignore += inference2020.pdf
-inference2020.pdf: materials/current/Bellan_inference.pdf my_images/inference2020.title.pdf Makefile
+inference2020.pdf: materials/current/Bellan_inference.pdf my_images/inference2020.title.pdf 
 	pdfjam --landscape -o $@  \
 	$(word 2, $^) 1 \
 	$(word 1, $^) 2-52 \
@@ -149,7 +149,8 @@ inference2020.pdf: materials/current/Bellan_inference.pdf my_images/inference202
 
 ######################################################################
 
-my_images/with.small.png: my_images/with.png Makefile
+## Unused (using tablet to annotate!)
+my_images/with.small.png: my_images/with.png 
 	convert -scale 10% $< $@
 
 %.image.pdf: my_images/%.png
