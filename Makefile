@@ -184,10 +184,13 @@ distarrow.pdf: distarrow.tex
 ## rmd lectures
 ## Try to make it so other people can build
 ## Still need to work on rules for this (see QMEE?)
+## WHy are there two copies???
 
-Ignore += cleaning.html
+## cleaning is now in QMEE
 
-Sources += cleaning.rmd $(wildcard cleaning_data/*)
+## Ignore += cleaning.html
+
+## Sources += cleaning.rmd $(wildcard cleaning_data/*)
 
 ######################################################################
 
