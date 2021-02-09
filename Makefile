@@ -84,12 +84,19 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 ## Currently versions for DAIDD, MMED, QMEE …
 
 ## Talk
+## Merge stuff from clarity?
 philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 philosophy.push:
 
 philosophy.html: philosophy.step
+
+## Share qmee stuff
+qmee_phil.%.pdf: philosophy.%.pdf
+	$(copy)
+
+qmee_phil: qmee_phil.handouts.pdf.op  qmee_phil.draft.pdf.op 
 
 ## Talk
 birs_rant.outline.pdf: birs_rant.txt

@@ -234,16 +234,16 @@ EC
 
 ----------------------------------------------------------------------
 
-The meaning of P values
+What do P values measure?
 
 PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
 
-	More broadly, a P value measures whether we are seeing
-	\emph{something} clearly
+	ANS Clarity!
 
-		It's usually the sign ($\pm$) of some quantity, but doesn't need to be
+	ANS We should call it that
 
 ----------------------------------------------------------------------
+
 
 Types of Error
 
@@ -396,6 +396,50 @@ NC
 EC
 
 ----------------------------------------------------------------------
+
+Bad language
+
+	Null effects of boot camps
+
+		ANS Wrong!
+
+	Fat storage in vole populations is not correlated with elevation
+
+		ANS Yes, it is!
+
+	As expected, the placebo group did not differ significantly from the control
+	group
+
+		ANS Why would that be good?
+
+	B and B showed that there is no statistically significant
+	difference in sexual risk behaviour between men with and without clinic
+	access in Zambia
+
+		ANS No, they didn't
+
+		ANS Statistical significance is a property of the \emph{study} (and the
+		sample population), never of real groups (or the idealized population)
+
+----------------------------------------------------------------------
+
+Another way to talk
+
+	Unclear effects of boot camps
+
+	As expected, the sign of the difference between the placebo group and
+	controls was unclear
+
+	The direction of correlation between fat storage and elevation in
+	vole populations is unclear in this study
+
+	B and B showed that there is an unclear difference in sexual risk
+	behaviour between men with and without clinic access in Zambia
+
+		ANS Now obviously weird. So you have to say it better
+
+----------------------------------------------------------------------
+
 
 SS Statistics and science
 
