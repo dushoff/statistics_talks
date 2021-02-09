@@ -36,7 +36,7 @@ RESTING \url{http://lalashan.mcmaster.ca/DushoffLab}
 
 PRESENT \vfill
 
-RESTING 2019 QMEE version
+PRESENT 2021 QMEE version
 
 RESTING \vfill
 

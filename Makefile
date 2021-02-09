@@ -202,14 +202,18 @@ distarrow.pdf: distarrow.tex
 ## Oops, forgot about this. Redo.
 ## 2019 May 29 (Wed) That's an alarming note probably from long ago.
 
+## THEMES themes Themes
 ## Automatically change the format rules (but not the template)
 ## for different venues.
 ## mmed.set:
 ## daidd.set:
+## qmee.set:
 Sources += mmed.txt.format daidd.txt.format qmee.txt.format
 %.set: %.txt.format
 	touch $<
 	$(LNF) $< local.txt.format
+
+## Also look at beamer.tmp for ICI3D fancy stuff
 
 ######################################################################
 
