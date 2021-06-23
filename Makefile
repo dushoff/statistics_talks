@@ -1,4 +1,4 @@
-## This is statistics_talks, a rescued screens project directory
+## This is statistics_talks
 
 current: target
 
