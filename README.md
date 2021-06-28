@@ -1,6 +1,5 @@
 
-This is a directory for stats-y talks, mostly developed with ICI3D or the somewhat-related NTU course.
+This is a directory for stats-y talks, mostly developed for ICI3D or the NTU course.
 
-It is meant to find its own resources on github and link them, but it has not yet been set up in a systematic way.
+It uses LatexTemplates to make ICI3D happy, and has some sort of theme-switching rules (see LatexTemplates/README.md)
 
-For theme-switching, see (for now) ../disease_model_talks/README.md
