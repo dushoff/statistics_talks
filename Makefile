@@ -1,4 +1,5 @@
 ## This is statistics_talks
+## https://github.com/dushoff/statistics_talks/commit/f4a0884c0fe075ed998577310088b8f91779c507
 
 current: target
 
