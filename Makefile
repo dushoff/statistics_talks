@@ -117,7 +117,7 @@ fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
 
 ## This talk originated at DAIDD 2015, and contains elements from the philosophy talk, as well as DAIDD-specific stuff.
-## Called assessment now?
+## Called assessment now? At least at MMED.
 ## evaluation.final.pdf: evaluation.txt
 ## evaluation.slides.pdf: evaluation.txt
 ## evaluation.draft.pdf: evaluation.txt
@@ -204,13 +204,8 @@ distarrow.pdf: distarrow.tex
 
 
 ## Venues
-
-## Rules under development; need to look at beamer.tmp (manually, for now)
-
-## Oops, forgot about this. Redo.
-## 2019 May 29 (Wed) That's an alarming note probably from long ago.
-
 ## THEMES themes Themes
+## Look at beamer.tmp manually
 ## Automatically change the format rules (but not the template)
 ## for different venues.
 ## mmed.set:

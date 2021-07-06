@@ -12,6 +12,8 @@ Need to work on:
 	DAIDD vs. MMED ×
 
 	Note suppression -- um, what??
+R
+
 
 	Bias clarification
 
@@ -19,7 +21,9 @@ Need to work on:
 
 NOFRAME
 
-\newcommand{\jdtitle}{Model evaluation and comparison}
+\newcommand{\jdtitle}{Pick title}
+\renewcommand{\jdtitle}{Model evaluation and comparison}
+\renewcommand{\jdtitle}{Model assessment}
 \newcommand{\jdsub}{\mbox{}}
 \newcommand{\years}{2013--\thisyear} 
 
