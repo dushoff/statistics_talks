@@ -117,7 +117,7 @@ fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
 
 ## This talk originated at DAIDD 2015, and contains elements from the philosophy talk, as well as DAIDD-specific stuff.
-## Called assessment now? At least at MMED.
+## Called assessment at MMED.
 ## evaluation.final.pdf: evaluation.txt
 ## evaluation.slides.pdf: evaluation.txt
 ## evaluation.draft.pdf: evaluation.txt
