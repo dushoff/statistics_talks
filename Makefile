@@ -211,8 +211,7 @@ distarrow.pdf: distarrow.tex
 ## mmed.set:
 ## daidd.set:
 ## qmee.set:
-Sources += mmed.txt.format daidd.txt.format qmee.txt.format
-%.set: %.txt.format
+%.set: LatexTemplates/%.txt.format
 	touch $<
 	$(LNF) $< local.txt.format
 
