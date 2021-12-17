@@ -147,12 +147,13 @@ viz.handouts.pdf: viz.txt
 ## materials/current/Bellan_inference.pdf
 
 Ignore += inference2020.pdf
-inference2020.pdf: materials/current/Bellan_inference.pdf my_images/inference2020.title.pdf 
+## ncw materials/current/Bellan_inference.pdf 
+inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference2021.title.pdf 
 	pdfjam --landscape -o $@  \
 	$(word 2, $^) 1 \
 	$(word 1, $^) 2-52 \
 	$(word 1, $^) 56 \
-	$(word 1, $^) 58-64 \
+	$(word 1, $^) 58-63 \
 	;
 
 ######################################################################
