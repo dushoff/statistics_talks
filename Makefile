@@ -154,7 +154,6 @@ inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference202
 	$(word 1, $^) 2-52 \
 	$(word 1, $^) 56 \
 	$(word 1, $^) 58-63 \
-	;
 
 ######################################################################
 
