@@ -146,7 +146,7 @@ viz.handouts.pdf: viz.txt
 ## Inference lecture Bellan ⇒ Pearson ⇒ Dushoff (given 2020)
 ## materials/current/Bellan_inference.pdf
 
-Ignore += inference2020.pdf
+Ignore += inference????.pdf
 ## ncw materials/current/Bellan_inference.pdf 
 inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference2021.title.pdf 
 	pdfjam --landscape -o $@  \
