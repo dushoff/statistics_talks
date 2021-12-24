@@ -202,7 +202,6 @@ distarrow.pdf: distarrow.tex
 
 ######################################################################
 
-
 ## Venues
 ## THEMES themes Themes
 ## Look at beamer.tmp manually
