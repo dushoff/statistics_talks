@@ -52,7 +52,7 @@ materials:
 
 ## Content
 
-## Makefile: LatexTemplates
+Makefile: | LatexTemplates
 pardirs += LatexTemplates
 pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting
 subdirs += visualization
@@ -64,9 +64,7 @@ Ignore += $(pardirs)
 ######################################################################
 
 ## Local files (.tmp will be ephemeral unless you put it here)
-Sources += local.txt.format beamer.tmp notes.tmp
-
-Sources += local.txt.format
+Sources += beamer.tmp notes.tmp
 Sources += ici3d.tmp ICI3D_logo.png
 
 ## Copyright not integrated into make system yet
