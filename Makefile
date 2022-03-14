@@ -214,6 +214,7 @@ distarrow.pdf: distarrow.tex
 ## mmed.set:
 ## daidd.set:
 ## qmee.set:
+Ignore += local.txt.format
 %.set: LatexTemplates/%.txt.format
 	touch $<
 	$(LNF) $< local.txt.format
