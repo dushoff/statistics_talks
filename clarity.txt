@@ -16,11 +16,13 @@ Stats seminar abstract: I will discuss statistical philosophy for scientists, an
 
 EXTRA To-do
 
-* plainset
+* plain.set
 
 * front material
 
 * ideas (material from evaluation, article titles and text)
+
+* Choose stream (extra DEFHEADS, like STATS)
 
 ----------------------------------------------------------------------
 
@@ -29,10 +31,10 @@ NOFRAME
 \newcommand{\jdtitle}
 {Statistical philosophy and the language of significance}
 
-RESTING \newcommand{\jdsub}
 {Bridging between science and statistical theory}
 
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\jdsub}{}
 \newcommand{\years}{2012--2018} 
 \newcommand{\wdate}{U. Chicago, Oct 2018}
 

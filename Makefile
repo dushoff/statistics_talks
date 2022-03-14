@@ -97,6 +97,8 @@ qmee_phil.%.pdf: philosophy.%.pdf
 
 qmee_phil: qmee_phil.handouts.pdf.op  qmee_phil.draft.pdf.op 
 
+######################################################################
+
 ## Talk
 birs_rant.outline.pdf: birs_rant.txt
 birs_rant.final.pdf: birs_rant.txt
@@ -145,6 +147,7 @@ viz.handouts.pdf: viz.txt
 ## materials/current/Bellan_inference.pdf
 
 Ignore += inference????.pdf
+## Vaguely updated Bellan DAIDD slides
 ## ncw materials/current/Bellan_inference.pdf 
 inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference2021.title.pdf 
 	pdfjam --landscape -o $@  \
@@ -152,6 +155,10 @@ inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference202
 	$(word 1, $^) 2-52 \
 	$(word 1, $^) 56 \
 	$(word 1, $^) 58-63 \
+
+######################################################################
+
+effects.draft.pdf: effects.txt
 
 ######################################################################
 
@@ -202,8 +209,7 @@ distarrow.pdf: distarrow.tex
 
 ## Venues
 ## THEMES themes Themes
-## Look at beamer.tmp manually
-## Automatically change the format rules (but not the template)
+## Automatically change the format rules (but NOT the template (beamer.tmp))
 ## for different venues.
 ## mmed.set:
 ## daidd.set:
@@ -231,7 +237,7 @@ makestuff/Makefile:
 
 -include makestuff/wrapR.mk
 -include makestuff/newtalk.mk
--include makestuff/texdeps.mk
+-include makestuff/texi.mk
 -include makestuff/pandoc.mk
 -include makestuff/webpix.mk
 
