@@ -18,10 +18,21 @@ NOFRAME
 \newcommand{\wdate}
 	{McMaster Statistics Seminar, March 2022}
 
-
 ----------------------------------------------------------------------
 
 WORKSHOP
+
+----------------------------------------------------------------------
+
+Thanks
+
+	Bicko Cygu
+
+	Ben Bolker
+
+	Mike Li
+
+	Chyun Shi
 
 ----------------------------------------------------------------------
 
@@ -42,7 +53,6 @@ Visualizing results of complicated models
 HIGHFIG my_images/mc_condom.png
 
 ----------------------------------------------------------------------
-
 
 Types of variables
 
@@ -78,7 +88,11 @@ Coefficient plots
 
 		Effects on the same axis should have the same units!
 
+		Normalize predictor variables under most circumstances
+
 	They are not a good way to communicate about multi-parameter variables
+
+		Especially splines and polynomials
 
 ----------------------------------------------------------------------
 
@@ -96,68 +110,155 @@ Effects plots
 
 Predictions vs.~effects
 
-----------------------------------------------------------------------
-
-
-Borderline significance
+FIG effectPlots/alcohol.eduUni.eduPlot.pred.pdf
 
 ----------------------------------------------------------------------
 
+Predictions vs.~effects
 
-What are we controlling for?
+FIG effectPlots/alcohol.eduUni.eduPlot.predeff.pdf
 
 ----------------------------------------------------------------------
 
+Anchor
+
+FIG effectPlots/alcohol.eduUni.eduPlot.eff.pdf
+
+----------------------------------------------------------------------
+
+Anchor
+
+FIG effectPlots/alcohol.eduUni.eduzPlot.zero.pdf
+
+----------------------------------------------------------------------
+
+Anchor
+
+FIG effectPlots/alcohol.eduUni.eduzPlot.zeroonly.pdf
+
+----------------------------------------------------------------------
+
+No anchor
+
+FIG effectPlots/alcohol.eduUni.eduPlot.pred.pdf
+
+----------------------------------------------------------------------
+
+No anchor
+
+FIG effectPlots/alcohol.eduUni.eduzPlot.pzero.pdf
+
+----------------------------------------------------------------------
+
+Multi-parameter predictor
+
+SUBH Prediction
+
+FIG effectPlots/alcohol.eduQuad.eduPlot.pred.pdf
+
+----------------------------------------------------------------------
+
+Multi-parameter predictor
+
+SUBH Effect
+
+FIG effectPlots/alcohol.eduQuad.eduPlot.eff.pdf
+
+----------------------------------------------------------------------
+
+Univariate model
+
+FIG effectPlots/alcohol.eduUni.eduPlot.eff.pdf
+
+----------------------------------------------------------------------
+
+Multivariate model
+
+FIG effectPlots/alcohol.eduFull.eduPlot.eff.pdf
+
+----------------------------------------------------------------------
 
 The Model Center
 
-----------------------------------------------------------------------
+	We define ``model center'' as the point at the mean of the \emph{model}
+	variables
 
+		Columns of the model matrix
 
-Focal interactions
-
-----------------------------------------------------------------------
-
-
-Sum-to-zero contrasts
+	Centered columns are orthogonal to the intercept
 
 ----------------------------------------------------------------------
 
+Proxies
 
-Anchors
+	Some common tricks to stabilize models may be imperfect attempts to move
+	toward the model center:
 
-----------------------------------------------------------------------
+	Averaging input variables
 
+		Works perfectly for single-parameter variables
 
-Mediation
+	Sum-to-zero contrasts for categories
 
-----------------------------------------------------------------------
+		Works perfectly for balanced designs
 
-
-Non-focal interactions
-
-----------------------------------------------------------------------
-
-
-Multi-column input variables
-
-	Use the model center
+		Or if we use weights
 
 ----------------------------------------------------------------------
 
+Anchor
 
-Quadratic
+	To calculate confidence intervals for (narrow-sense) effect plots, we need
+	an \emph{anchor}
+
+		Values for the \emph{focal} statistical parameters defined as zero effect 
+
+	We argue that the model center should be the default
+
+		… but it's not the only sensible value
 
 ----------------------------------------------------------------------
 
+Center anchoring
 
-Categorical
+FIG effectPlots/alcohol.eduQuad.eduPlot.eff.pdf
+
+----------------------------------------------------------------------
+
+Reference point
+
+	In a multivariate model, to calculate any estimates for (any) effect plots,
+	we need a reference point
+
+		Values to use for the \emph{non-focal} statistical parameters
+
+	We again argue that the model center should be the default
+
+		Random effects can basically be neglected (we will center them by
+		accident)
+
+		… but it's going to turn out to be complicated for generalized models
 
 ----------------------------------------------------------------------
 
 Generalized models
 
+FIG effectPlots/glm_talk.uncorrected_band.pdf
 
+----------------------------------------------------------------------
+
+Non-linear averaging
+
+	The model center is not as beautiful here!
+
+		We need to generalize our idea of reference point
+
+		i.e., the values we consider for non-focal predictors
+
+	The prediction of the averaged population $\neq$ the average of the
+	predictions
+
+	More work needs to be done
 
 ----------------------------------------------------------------------
 
@@ -165,9 +266,68 @@ Bias correction
 
 	Which biases should be corrected?
 
+		Use the linear model as a guide
+
+	How to correct them?
+
+		Moment methods (Jensen)
+
+		Quantile-based methods
+
+		Population-based methods
+
+			Seem best; in some cases may be computationally demanding
+
+			Maybe solved by sampling
+
 ----------------------------------------------------------------------
 
-Univariate example
+Naive use of model center
+
+FIG effectPlots/glm_talk.uncorrected_band.pdf
 
 ----------------------------------------------------------------------
 
+Population-based correction
+
+FIG effectPlots/glm_talk.uncorrected.pdf
+
+----------------------------------------------------------------------
+
+Population-based correction
+
+FIG effectPlots/glm_talk.both.pdf
+
+----------------------------------------------------------------------
+
+Population-based correction
+
+FIG effectPlots/glm_talk.corrected.pdf
+
+----------------------------------------------------------------------
+
+Mixed models
+
+	Averaging over random effects turns out to be pretty similar to averaging
+	over fixed effects
+
+		In lm, you don't even need to think about it
+
+		In glm, you can correct using three methods discussed above
+
+----------------------------------------------------------------------
+
+Work in progress
+
+	Warning: alpha-level software!
+
+	\url{https://github.com/mac-theobio/effects}
+
+----------------------------------------------------------------------
+
+
+Thanks again
+
+	Organizers
+
+	Audience

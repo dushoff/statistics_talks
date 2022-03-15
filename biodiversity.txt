@@ -1,0 +1,101 @@
+
+EXTRA 
+
+First given to MacCSE 2022 March
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdtitle}
+	{Measuring, exploring and estimating biodiversity}
+\newcommand{\jdsub}
+	{}
+\newcommand{\jdauth}
+	{Jonathan Dushoff, McMaster University}
+\newcommand{\years}
+	{2022} 
+\newcommand{\wdate}
+	{McMaster CSE Seminar, March 2022}
+
+----------------------------------------------------------------------
+
+WORKSHOP
+
+----------------------------------------------------------------------
+
+How diverse is an ecosystem?
+
+	Why do we want to know?
+
+----------------------------------------------------------------------
+
+Richness
+
+	How many species?
+
+	Can we ever know?
+
+----------------------------------------------------------------------
+
+Simpson diversity
+
+	What is the probability that two different individuals are from different
+	species? 
+
+----------------------------------------------------------------------
+
+Shannon diversity
+
+	How much Shannon information is there in a particular observation?
+
+	How many distinct ways of combining individuals?
+
+----------------------------------------------------------------------
+
+The sampling problem
+
+----------------------------------------------------------------------
+
+Effective number of species
+
+----------------------------------------------------------------------
+
+Hill diversity and the continuum
+
+----------------------------------------------------------------------
+
+Rarity perspective
+
+----------------------------------------------------------------------
+
+Haegeman and duality?
+
+----------------------------------------------------------------------
+
+Rarefaction
+
+----------------------------------------------------------------------
+
+Effort
+
+----------------------------------------------------------------------
+
+Coverage
+
+----------------------------------------------------------------------
+
+Asymptotics
+
+	Mention Turing
+
+----------------------------------------------------------------------
+
+
+Thanks
+
+	Collaborators: Mike Roswell, Rae Winfree and others
+
+	Organizers
+
+	Audience

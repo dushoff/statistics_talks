@@ -158,7 +158,23 @@ inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference202
 
 ######################################################################
 
+colddirs += effectPlots
+effectPlots/%: | effectPlots
+effectPlots:
+	$(LNF) ../../research/effects/manuscript/ $@
+
 effects.draft.pdf: effects.txt
+effects.final.pdf: effects.txt
+
+######################################################################
+
+## Biodiversity
+
+Ignore += rarity_docs
+rarity_docs:
+	$(LN) ~/Dropbox/rarity $@
+
+biodiversity.draft.pdf: biodiversity.txt
 
 ######################################################################
 
@@ -241,6 +257,7 @@ makestuff/Makefile:
 -include makestuff/texi.mk
 -include makestuff/pandoc.mk
 -include makestuff/webpix.mk
+-include makestuff/hotcold.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
