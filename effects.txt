@@ -39,6 +39,11 @@ Visualizing results of complicated models
 
 ----------------------------------------------------------------------
 
+HIGHFIG my_images/mc_condom.png
+
+----------------------------------------------------------------------
+
+
 Types of variables
 
 	An ``input variable'' can be associated with one or more parameters
