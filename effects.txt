@@ -25,11 +25,69 @@ WORKSHOP
 
 ----------------------------------------------------------------------
 
+Visualizing results of complicated models
 
-Examples of topics
+	What are the factors that predict?:
+
+		HIV risk
+
+		Tendency to circumcise sons and daughters
+
+		Access to clean water
+
+	A variety of ``socio-demographic'' variables and complicated models
 
 ----------------------------------------------------------------------
 
+Types of variables
+
+	An ``input variable'' can be associated with one or more parameters
+
+		And therefore one or more ``model variables''
+
+	Gender typically has a single parameter (two categories)
+
+	Religion or ethnicity typically has multiple parameters (more than two
+	categories)
+
+	Wealth or education \emph{may} have a single parameter (linear response)
+
+	Age typically has multiple parameters (polynomial or spline response)
+
+----------------------------------------------------------------------
+
+Tables
+
+	Tables are generally bad for communicating model results
+
+	Hard to see patterns
+
+	Focus attention inappropriately on statistical ``significance''
+
+----------------------------------------------------------------------
+
+Coefficient plots 
+
+	Coefficient plots are a compact, effective way to communicate about
+	single-parameter variables
+
+		Effects on the same axis should have the same units!
+
+	They are not a good way to communicate about multi-parameter variables
+
+----------------------------------------------------------------------
+
+Effects plots
+
+	An appealing way to visualize the results of model inference
+
+	Particularly for multi-parameter variables
+
+	Or possibly to aid understanding of generalized models
+
+	Raise a number of interesting questions
+
+----------------------------------------------------------------------
 
 Predictions vs.~effects
 
