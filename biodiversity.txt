@@ -150,9 +150,9 @@ Effective number of species
 
 Hill diversity
 
-	$$H_q=\left( \sum p_{i}^{q} \right)^{1/1-q}$$
+$$H_q=\left( \sum p_{i}^{q} \right)^{1/1-q}$$
 
-		Take limits as necessary
+	Take limits as necessary
 
 	Spans from richness ($q=0$) to Hill-Shannon ($q=1$) to Hill-Simpson
 
@@ -164,7 +164,7 @@ Hill diversity
 
 Rarity perspective
 
-	$$D_\ell=\left( \sum p_{i}(r_{i})^{\ell} \right)^{1/\ell},$$
+$$D_\ell=\left( \sum p_{i}(r_{i})^{\ell} \right)^{1/\ell},$$
 
 	where $r_i = 1/p_i$ is the rarity
 
@@ -181,15 +181,58 @@ Rarity perspective
 Leverage of rare species
 
 	The higher values of $\ell$ are often described as giving more
-	$\emph{weight} to rare species
+	\emph{weight} to rare species
 
 	But this doesn't correspond to an actual weighting
 
 	We use ``leverage'' to describe the increasing importance of rare species
 
 	And illustrate with ``seesaw'' plots
+
 ----------------------------------------------------------------------
 
+DiversitySeesaw
+
+WIDEFIG my_images/guideBalance.png
+
+\url{https://github.com/mikeroswell/MeanRarity}
+
+----------------------------------------------------------------------
+
+Is Hill-Shannon just better?
+
+	Geometric mean corresponds to ratio-based distance: 1:5 as 5:25
+
+	E.g., The difference between 20% abundance (rarity of 5) and 10% abundance
+	
+		Hill-Simpson: the same as the difference between 10% and 0% ($\infty$
+		rarity)!
+
+		Richness: the same as the difference between 10% and 6.7%
+
+			or 2% and 1.8%
+
+		Hill-Shannon: the same as the difference between 10% and 5%
+
+----------------------------------------------------------------------
+
+Shannon equivalence
+
+DOUBLEFIG diversity/examples.Rout-4.pdf diversity/examples.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Simpson equivalence
+
+DOUBLEFIG diversity/examples.Rout-5.pdf diversity/examples.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Richness equivalence
+
+DOUBLEFIG diversity/examples.Rout-2.pdf diversity/examples.Rout-3.pdf
+
+----------------------------------------------------------------------
 
 How to compare \emph{sampled} communities?
 
@@ -214,6 +257,45 @@ FRAMEFIG my_images/guideRarefy.png
 
 ----------------------------------------------------------------------
 
+Ongoing work 
+
+	How \emph{biased} are different asymptotic or sample-based measures?
+
+	How \emph{variable} are different asymptotic or sample-based measures?
+
+	\url{https://github.com/mikeroswell/MeanRarity}
+
+----------------------------------------------------------------------
+
+Bias-variance tradeoff
+
+WIDEFIG my_images/using_bv.png
+
+----------------------------------------------------------------------
+
+Bias-variance tradeoff
+
+WIDEFIG my_images/using_prop_error.png
+
+----------------------------------------------------------------------
+
+Future work
+
+$$\hat D_\ell=\left( \sum p_{i}(\hat r_{i})^{\ell} \right)^{1/\ell},$$
+
+	Does the rarity perspective provide insight into estimation methods?
+
+	$p$ and $r$ are typically treated the same, but actually play different
+	roles:
+
+		if we had good estimates of $\hat r$, then $\hat D$ becomes an unbiased
+		estimator
+
+		not \emph{necessarily} a low-variance estimator
+
+	Does the rarity perspective allow us to expand our concept of coverage?
+
+----------------------------------------------------------------------
 
 Thanks
 
