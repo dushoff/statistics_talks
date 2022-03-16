@@ -22,6 +22,14 @@ examples.Rout: examples.R functions.rda
 
 ######################################################################
 
+## Pillaging
+
+estimating.Rout: estimating.R
+god.Rout: god.R
+using.Rout: using.R
+
+######################################################################
+
 ### Makestuff
 
 Sources += Makefile
