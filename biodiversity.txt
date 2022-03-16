@@ -92,6 +92,12 @@ Richness
 
 ----------------------------------------------------------------------
 
+PICSLIDE
+
+FIG webpix/rainforest.jpg
+
+----------------------------------------------------------------------
+
 Simpson diversity
 
 	What is the probability that two different individuals are from different
@@ -253,7 +259,35 @@ How to compare \emph{sampled} communities?
 
 Comparing observed diversity
 
+FRAMEFIG my_images/talkRarefy.png
+
+----------------------------------------------------------------------
+
+Comparing observed diversity
+
 FRAMEFIG my_images/guideRarefy.png
+
+----------------------------------------------------------------------
+
+Coverage
+
+BC
+
+CFIG my_images/guideRarefy.png
+
+NC
+
+	We can't estimate what proportion of species we've seen
+
+	But we can estimate what proportion of individuals those species ``cover''
+
+EC
+
+----------------------------------------------------------------------
+
+Coverage
+
+WIDEFIG my_images/coverageDiagram.png
 
 ----------------------------------------------------------------------
 
@@ -266,6 +300,19 @@ Ongoing work
 	\url{https://github.com/mikeroswell/MeanRarity}
 
 ----------------------------------------------------------------------
+
+Simulations
+
+	Species-abundance distribution
+
+		Power law?
+
+		Typically, lognormal or gamma
+
+		What about using rarity instead of abundance?
+
+----------------------------------------------------------------------
+
 
 Bias-variance tradeoff
 

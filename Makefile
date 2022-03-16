@@ -180,7 +180,12 @@ Ignore += rarity_docs
 rarity_docs:
 	$(LN) ~/Dropbox/rarity $@
 
+## rarity_docs/RoswellHakai.pdf
+
 biodiversity.draft.pdf: biodiversity.txt
+biodiversity.final.pdf: biodiversity.txt
+
+biodiversity.html: biodiversity.step
 
 ######################################################################
 
