@@ -158,6 +158,7 @@ inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference202
 
 ######################################################################
 
+Ignore += effectPlots
 colddirs += effectPlots
 effectPlots/%: | effectPlots
 effectPlots:
@@ -172,6 +173,7 @@ effects.final.pdf: effects.txt
 
 hotdirs += diversity
 alldirs += diversity
+Ignore += diversity
 
 ## https://mikeroswell.github.io/MeanRarity/articles/Using_MeanRarity.html
 Ignore += rarity_docs
