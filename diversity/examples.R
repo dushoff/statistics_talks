@@ -15,3 +15,5 @@ print(pieStats(powPop(7, 0.8)))
 
 print(pieStats(powPop(9,1.18)))
 
+print(pieStats(powPop(9,0.9)))
+
