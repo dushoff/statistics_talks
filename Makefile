@@ -170,6 +170,10 @@ effects.final.pdf: effects.txt
 
 ## Biodiversity
 
+hotdirs += diversity
+alldirs += diversity
+
+## https://mikeroswell.github.io/MeanRarity/articles/Using_MeanRarity.html
 Ignore += rarity_docs
 rarity_docs:
 	$(LN) ~/Dropbox/rarity $@

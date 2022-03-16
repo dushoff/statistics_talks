@@ -24,17 +24,71 @@ WORKSHOP
 
 ----------------------------------------------------------------------
 
-How diverse is an ecosystem?
+Why do we measure biodiversity?
 
-	Why do we want to know?
+	It seems practically important:
+
+		How does it correlate with ecosystem function?
+
+		What can we do to protect it?
+
+	It seems scientifically important
+
+		Maybe we can understand the world better even if we can't protect it
+
+	But there's no consensus on how best to measure it, or how to compare the
+	metrics themselves
+
+----------------------------------------------------------------------
+
+Community diversity
+
+	I am going to be talking about community diversity, often called
+	$\alpha$-diversity
+
+		How different are individuals in a given sampling unit?
+
+	I am not going to be talking about diversity of units themselves, often
+	called $\beta$-diversity
+
+		How different are two sampling units from each other?
+
+	When I compare two different sampling units, I will be asking which one is
+	more diverse, not how different they are
+
+----------------------------------------------------------------------
+
+Comparing diversity
+
+DOUBLEFIG diversity/examples.Rout-0.pdf diversity/examples.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Comparing diversity
+
+DOUBLEFIG diversity/examples.Rout-2.pdf diversity/examples.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Comparing diversity
+
+DOUBLEFIG diversity/examples.Rout-4.pdf diversity/examples.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
 Richness
 
-	How many species?
+	How many species are there?
+
+		This is apparently what aliens want to know
 
 	Can we ever know?
+
+		Other ``diversity'' measures combine diversity with relative abundance
+
+		\ldots\ but so does this one!
+
+		In practice
 
 ----------------------------------------------------------------------
 
@@ -42,6 +96,8 @@ Simpson diversity
 
 	What is the probability that two different individuals are from different
 	species? 
+
+	$$ 1 - \sum p_i^2$$
 
 ----------------------------------------------------------------------
 
@@ -51,43 +107,110 @@ Shannon diversity
 
 	How many distinct ways of combining individuals?
 
+	$$ \sum -p \log(p) $$
+
 ----------------------------------------------------------------------
 
-The sampling problem
+Richness is unstable
+
+	If we assume an effectively infinite population, it's impossible to get good
+	estimates of population richness
+
+		We don't know what we don't know
+
+----------------------------------------------------------------------
+
+Simpson diversity \emph{seems} stable
+
+	We can get an unbiased estimate of Simpson diversity from two individuals!
+
+	Recall: unbiased means that the expected value of the estimate is equal to
+	the true value of the estimand
+
+	This is equivalent to saying we get an ``unbiased'' estimate of an unfair
+	coin from a single flip
+
+	Of course, we'll always have more than 2 individuals, but we can always get
+	an unbiased estimate
 
 ----------------------------------------------------------------------
 
 Effective number of species
 
+	The value of Simpson or Shannon diversity is hard to interpret.
+
+		Or at least, easy to misinterpret.
+
+	We can ask how do they map to an effective number of species?
+
+		On a given scale, the observed diversity is equivalent to $E$ 
+		\emph{evenly distributed} species
+
 ----------------------------------------------------------------------
 
-Hill diversity and the continuum
+Hill diversity
+
+	$$H_q=\left( \sum p_{i}^{q} \right)^{1/1-q}$$
+
+		Take limits as necessary
+
+	Spans from richness ($q=0$) to Hill-Shannon ($q=1$) to Hill-Simpson
+
+	Gives an effective species number
+
+	Decreases with $q$
 
 ----------------------------------------------------------------------
 
 Rarity perspective
 
-----------------------------------------------------------------------
+	$$D_\ell=\left( \sum p_{i}(r_{i})^{\ell} \right)^{1/\ell},$$
 
-Haegeman and duality?
+	where $r_i = 1/p_i$ is the rarity
 
-----------------------------------------------------------------------
+	$\ell = 1-q$ has a natural interpretation in terms of power means:
 
-Rarefaction
+		$\ell=1$ is the arithmetic mean, corresponds to richness
 
-----------------------------------------------------------------------
+		$\ell=0$ is the geometric mean, corresponds to Hill-Shannon
 
-Effort
-
-----------------------------------------------------------------------
-
-Coverage
+		$\ell=-1$ is the harmonic mean, corresponds to Hill-Simpson
 
 ----------------------------------------------------------------------
 
-Asymptotics
+Leverage of rare species
 
-	Mention Turing
+	The higher values of $\ell$ are often described as giving more
+	$\emph{weight} to rare species
+
+	But this doesn't correspond to an actual weighting
+
+	We use ``leverage'' to describe the increasing importance of rare species
+
+	And illustrate with ``seesaw'' plots
+----------------------------------------------------------------------
+
+
+How to compare \emph{sampled} communities?
+
+	We don't know the true diversity
+
+	Rarefaction
+
+		Compare at equal number of individuals sampled
+
+		Or at equal ``coverage''
+
+	Asymptotic estimation
+
+	Much of this goes back to the work of Turing, who was interested
+	(effectively) in diversity metrics on coded messages and ciphertext
+
+----------------------------------------------------------------------
+
+Comparing observed diversity
+
+FRAMEFIG my_images/guideRarefy.png
 
 ----------------------------------------------------------------------
 
