@@ -249,9 +249,6 @@ Ignore += local.txt.format
 
 ## Reproducibility
 
-testsetup:
-	cd .. && cp $(pardirs) $(notdir $(CURDIR))
-
 ######################################################################
 
 ### Makestuff
