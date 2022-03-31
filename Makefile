@@ -48,6 +48,7 @@ materials:
 
 ## Exporting
 
+## effects.lecture:
 %.lecture: %.handouts.pdf.op %.draft.pdf.op %.handouts.pdf.tod %.draft.pdf.tod ;
 
 ## Content
