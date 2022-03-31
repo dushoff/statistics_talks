@@ -54,12 +54,14 @@ materials:
 
 Makefile: | LatexTemplates
 pardirs += LatexTemplates
-pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting
-subdirs += visualization
-
-Ignore += visualization/*
+pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting effectPlots
 
 Ignore += $(pardirs)
+colddirs += $(pardirs)
+
+## This is a repo subdir; not clear why
+subdirs += visualization
+Ignore += visualization/*
 
 ######################################################################
 
@@ -158,12 +160,6 @@ inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference202
 
 ######################################################################
 
-Ignore += effectPlots
-colddirs += effectPlots
-effectPlots/%: | effectPlots
-effectPlots:
-	$(LNF) ../../research/effects/manuscript/ $@
-
 effects.draft.pdf: effects.txt
 effects.final.pdf: effects.txt
 
@@ -247,6 +243,13 @@ Ignore += local.txt.format
 	$(LNF) $< local.txt.format
 
 ## Also look at beamer.tmp for ICI3D fancy stuff
+
+######################################################################
+
+## Reproducibility
+
+testsetup:
+	cd .. && cp $(pardirs) $(notdir $(CURDIR))
 
 ######################################################################
 
