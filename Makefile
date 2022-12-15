@@ -163,6 +163,7 @@ inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference202
 ## A summary presentation for DAIDD 2022: What is science ⇒ stats
 
 fitSummary.draft.pdf: fitSummary.txt
+fitSummary.final.pdf: fitSummary.txt
 
 ######################################################################
 

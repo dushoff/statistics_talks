@@ -70,6 +70,22 @@ Why new data?
 
 ----------------------------------------------------------------------
 
+Examples
+
+	Newton
+
+		You can't look at the planets and just tell how gravity works
+
+		You guess how gravity works, then check and see what it explains
+
+	Einstein
+
+		Relativity was \emph{designed} to be consistent with known observations
+
+		Needed to check by making weird new predictions
+
+----------------------------------------------------------------------
+
 Statistics
 
 	What
