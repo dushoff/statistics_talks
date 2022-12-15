@@ -1,4 +1,6 @@
 
+library(shellpipes)
+
 ci <- function(means, Pvals, alpha=0.05){
 	return(means*qnorm(alpha/2)/qnorm(Pvals/2))
 }
@@ -46,3 +48,5 @@ pcplot <- function(means, Pvals,crit=0,
 
 	return(data.frame(means, err, up, down))
 }
+
+saveEnvironment()

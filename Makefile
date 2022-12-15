@@ -161,6 +161,12 @@ inference2021.pdf: materials/current/Bellan_inference.pdf my_images/inference202
 
 ######################################################################
 
+## A summary presentation for DAIDD 2022: What is science ⇒ stats
+
+fitSummary.draft.pdf: fitSummary.txt
+
+######################################################################
+
 effects.draft.pdf: effects.txt
 effects.final.pdf: effects.txt
 
@@ -197,16 +203,17 @@ my_images/with.small.png: my_images/with.png
 
 # Simple R scripts moved from CI_diagrams and Philosophy Lecture
 
+autopipeR = defined
 Sources += $(wildcard *.R)
 
-flu.Rout: ciplots.Rout 
-masks.Rout: ciplots.Rout 
-vitamins.Rout: ciplots.Rout
+flu.Rout: ciplots.rda 
+masks.Rout: ciplots.rda 
+vitamins.Rout: ciplots.rda
 
 vitamins_data.Rout: vitamins_data.R
-vitamins_plot.Rout: vitamins_data.Rout vitamins_plot.R
+vitamins_plot.Rout: vitamins_data.rda vitamins_plot.R
 
-vitamins_scramble.Rout: permcount.Rout vitamins_data.Rout
+vitamins_scramble.Rout: permcount.rda vitamins_data.rda
 
 ##################################################################
 
@@ -264,7 +271,8 @@ makestuff/Makefile:
 
 -include makestuff/os.mk
 
--include makestuff/wrapR.mk
+-include makestuff/pipeR.mk
+-include makestuff/pdfpages.mk
 -include makestuff/newtalk.mk
 -include makestuff/texi.mk
 -include makestuff/pandoc.mk

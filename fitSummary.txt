@@ -1,0 +1,156 @@
+
+EXTRA
+
+Started DAIDD 2022
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdtitle}{Pick title}
+\renewcommand{\jdtitle}{Model fitting summary}
+\newcommand{\jdsub}{\mbox{}}
+\newcommand{\years}{2022} 
+
+----------------------------------------------------------------------
+
+ICI3DTHEME
+
+----------------------------------------------------------------------
+
+Science
+
+	What
+
+	Why
+
+	How
+
+		Why again?
+
+----------------------------------------------------------------------
+
+Science: What?
+
+	Infer the rules by which the universe works
+
+		Processes
+
+		Parameters
+
+----------------------------------------------------------------------
+
+Science: Why?
+
+	Understanding
+
+	Prediction
+
+	Strategizing
+
+----------------------------------------------------------------------
+
+Science: How?
+
+	We postulate possible rules and see how well they match:
+
+		Existing data
+
+		New data
+
+	Why do we do it sort of backwards?
+
+		Because directly inferring the rules is too hard
+
+----------------------------------------------------------------------
+
+Why new data?
+
+	ANS To check the theory after we develop it
+
+----------------------------------------------------------------------
+
+Statistics
+
+	What
+
+	Why
+
+	How
+
+		Why again?
+
+----------------------------------------------------------------------
+
+Statistics: What?
+
+	Infer the rules by which a particular model works
+
+		Mostly parameters
+
+----------------------------------------------------------------------
+
+Statistics: Why?
+
+	Understanding
+
+	Prediction
+
+	Strategizing
+
+----------------------------------------------------------------------
+
+Statistics: How?
+
+	We postulate possible parameters and see how well they match:
+
+		Existing data
+
+		New data
+
+	Why (again)?
+
+		Because directly inferring the parameters is too hard
+
+----------------------------------------------------------------------
+
+Why new data?
+
+	ANS To avoid over-fitting (and over-confidence)
+
+----------------------------------------------------------------------
+
+Statistics
+
+	A philosophy that allows us to make estimates and assess confidence based on
+	quantitative data
+
+		Frequentist
+
+		Bayesian
+
+----------------------------------------------------------------------
+
+Likelihood
+
+	How likely are data given parameters and assumptions?
+
+	The tool that allows flexible evaluation of how well assumptions match data
+
+	The foundation of both major statistical paradigms
+
+----------------------------------------------------------------------
+
+Summary
+
+	Why: We fit models to understand what they can and can't tell us about the
+	real world
+
+	How: We use likelihood to fit models to data
+
+		and to estimate uncertainty
+
+	What to consider:
+
+		Assumptions
+

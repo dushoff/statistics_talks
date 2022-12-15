@@ -1,4 +1,7 @@
 
+library(shellpipes)
+loadEnvironments()
+
 means=c(50, 19, 12)
 Pvals=c(0.018, 0.038, 0.882)
 xtags = c('Flu A', 'Flu B', 'Weather')
