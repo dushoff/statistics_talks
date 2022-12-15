@@ -53,7 +53,6 @@ materials:
 
 ## Content
 
-Makefile: | LatexTemplates
 pardirs += LatexTemplates
 pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting effectPlots
 
@@ -264,7 +263,7 @@ Sources += Makefile
 
 Ignore += makestuff
 msrepo = https://github.com/dushoff
-Makefile: makestuff/Makefile
+Makefile: makestuff/Makefile | LatexTemplates
 makestuff/Makefile:
 	git clone $(msrepo)/makestuff
 	ls $@

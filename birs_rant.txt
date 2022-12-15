@@ -57,7 +57,7 @@ Approaches
 
 	These are different approaches, and that's as it should be!
 
-	Those of us who are bridging should _modularize_ these functions
+	Those of us who are bridging should \emph{modularize} these functions
 
 ----------------------------------------------------------------------
 
@@ -215,7 +215,7 @@ One-sample mean
 
 SUBH 8 samples from a Cauchy
 
-FIG ~/Dropbox/Permutation_tests/cauchy.big.panels.Rout-0.pdf
+FIG ~/Dropbox/Permutations/Permutation_tests/cauchy.big.panels.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
@@ -223,13 +223,13 @@ RHEAD One-sample mean
 
 SUBH 8 samples from a Cauchy
 
-FIG ~/Dropbox/Permutation_tests/cauchy.big.panels.Rout-1.pdf
+FIG ~/Dropbox/Permutations/Permutation_tests/cauchy.big.panels.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
 Example from Talts et al.
 
-WIDEFIG ~/Dropbox/Permutation_tests/check.png
+WIDEFIG ~/Dropbox/Permutations/Permutation_tests/check.png
 
 ----------------------------------------------------------------------
 
@@ -346,7 +346,7 @@ Specific examples
 
 	Identifiability
 
-		Measure how _much_ the different priors are drawn together
+		Measure how \emph{much} the different priors are drawn together
 
 		You're already picking priors, pick a standard
 
@@ -464,11 +464,7 @@ Language
 
 	Consider abandoning the language of statistical ``significance''
 
-		\url{https://arxiv.org/abs/1810.06387}
-
-		\url{#StatisticalClarity}
-
-	_Definitely_ abandon the language of statistical ``equivalence''
+	Definitely abandon the language of statistical ``equivalence''
 
 ----------------------------------------------------------------------
 
@@ -485,7 +481,7 @@ Thanks
 ----------------------------------------------------------------------
 
 
-PICSLIDE WFIG 0.8 ../Generation_talks/notebook/pythagoras.Rout.pdf
+PICSLIDE WFIG 0.8 ../generations/notebook/pythagoras.Rout.pdf
 
 \vspace{-5ex} What is the pattern of Pythagorean triples of integers $a^2 + b^2 = c^2$?
 
