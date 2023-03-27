@@ -811,8 +811,8 @@ Summary
 
 	High P values should not be used as evidence for anything ever.
 
-		They can provide indirect evidence. Wonderful. Find the direct evidence
-		and use that instead.
+		They can provide indirect evidence. Wonderful. Find the direct
+		evidence and use that instead.
 
 	Use effect sizes and confidence intervals when you can
 
