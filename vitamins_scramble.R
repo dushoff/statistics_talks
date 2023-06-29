@@ -1,3 +1,6 @@
+library(shellpipes)
+loadEnvironments()
+
 reps <- 1999
 set.seed(0612)
 

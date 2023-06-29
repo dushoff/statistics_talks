@@ -1,3 +1,5 @@
+library(shellpipes)
+loadEnvironments()
 
 means=c(1.011, 1.018)
 Pvals=c(0.342, 0.025)

@@ -1,3 +1,5 @@
+library(shellpipes)
+
 permp <- function(l, v, test="two.tailed", Ptarget=0.05, warn=0.01, useObs=TRUE){
 	bigval <- length(which(l<=v))
 	smallval <- length(which(l>=v))
@@ -77,3 +79,5 @@ permhist <- function(l, v=NULL,
 		}
 	}
 }
+
+saveEnvironment()

@@ -3,6 +3,7 @@ theme_set(theme_bw())
 
 library(shellpipes)
 loadEnvironments()
+startGraphics()
 
 set.seed(411)
 
@@ -31,3 +32,5 @@ samPlot(TRUE)
 samPlot(TRUE)
 samPlot(TRUE)
 samPlot(TRUE)
+
+
