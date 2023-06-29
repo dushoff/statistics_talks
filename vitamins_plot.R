@@ -1,6 +1,9 @@
 library(ggplot2)
 theme_set(theme_bw())
 
+library(shellpipes)
+loadEnvironments()
+
 set.seed(411)
 
 vitamins <- data.frame(treat=treat, growth=growth)

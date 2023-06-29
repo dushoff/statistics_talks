@@ -1,3 +1,5 @@
+library(shellpipes)
+
 groupSize <- 20
 baseMean <- 0.03
 sd <- 0.012
@@ -12,3 +14,5 @@ length(growth)
 
 ranDiff <- mean(growth[treat=="A"]) - mean(growth[treat=="B"])
 growth[treat=="A"] <- growth[treat=="A"] - ranDiff + measDiff
+
+saveEnvironment()
