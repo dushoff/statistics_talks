@@ -149,7 +149,7 @@ TSS P values and confidence intervals
 
 	P values are \emph{over-rated}
 
-	\emph{Never} use a high P value as evidence for anything, e.g.:
+	\emph{Never} use a high P value as (direct) evidence for anything, e.g.:
 	
 		that an effect is small
 
@@ -166,12 +166,12 @@ Vitamin A example
 
 		How will we know height differences are due to our treatment?
 
-			We want the two groups to start from the same point --
+			ANS We want the two groups to start from the same point --
 			independent randomization of each individual
 
-			We may measure \emph{changes} in height
+			ANS We may measure \emph{changes} in height
 
-			Or \emph{control for} other factors
+			ANS Or \emph{control for} height (and maybe other factors)
 
 ----------------------------------------------------------------------
 
@@ -192,9 +192,9 @@ P values
 	What does it mean if I find a "significant P value" for some effect
 	in this experiment?
 
-	The difference is unlikely to be due to chance
+	ANS The difference is unlikely to be due to chance
 
-		So what!  I already know vitamin A has strong effects on
+		ANS So what!  I already know vitamin A has strong effects on
 		metabolism
 
 	If I'm certain that the true answer isn't exactly zero, why do I
@@ -290,9 +290,15 @@ Experimental design
 
 ----------------------------------------------------------------------
 
-A new view of error
+Doing Science
 
-BC
+	I never make a false-negative error:
+
+		ANS I never accept the null
+
+	I never make a false-positive error:
+
+		ANS I never believe the null is exactly true
 
 	\emph{Sign error:} if I think an effect is positive, when it's really
 	negative (or vice versa)
@@ -301,12 +307,6 @@ BC
 	really large (or vice versa)
 
 	Confidence intervals clarify all of this
-
-NC
-
-SIDEFIG webpix/error.jpg
-
-EC
 
 ----------------------------------------------------------------------
 
@@ -429,6 +429,9 @@ Another way to talk
 
 	As expected, the sign of the difference between the placebo group and
 	controls was unclear
+
+		ANS Is this convincing? Will it remind people to check the size of
+		difference?
 
 	The direction of correlation between fat storage and elevation in
 	vole populations is unclear in this study
@@ -580,13 +583,18 @@ TSS Frequentist paradigm
 
 	Test whether the effect you see could be due to chance
 
-		What is the probability of seeing a difference of exactly a 0.0048 in
+		What is the probability of seeing a difference of exactly 0.0048 in
 		proportional growth?
 
-	Test whether the effect you see {\em or a larger effect} could be
+			ANS Zero!
+
+	Test whether the effect you see {\em or a larger effect}** could be
 	due to chance
 
 		This probability is the P value
+
+	** It's actually better to calculate a one-sided P value. You would then
+	usually double this to get a standard P value
 
 ----------------------------------------------------------------------
 
@@ -755,6 +763,9 @@ MMED MMEV questions
 
 		What do you tell them? 
 
+			ANS You don't tell them \emph{anything} until you ask them some
+			questions!
+
 	This is what Bayesian philosophy is about: combining information from
 	different sources
 
@@ -786,10 +797,10 @@ Honesty
 		If you do this you will make a lot of mistakes
 
 	You may also keep analyzing until you find a result that you already
-	``know'' is true. 
+	believe is true. 
 
-		This is confirmation bias; you're probably right, but your project is not
-		advancing science
+		This is \emph{confirmation bias;} you're probably right, but your project
+		is not advancing science
 
 	Good practice
 
