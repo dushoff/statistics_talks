@@ -70,7 +70,7 @@ OTHER NSLIDE Statistical philosophy
 
 ----------------------------------------------------------------------
 
-PIPE Long pipe 
+PSLIDE Long pipe 
 
 PIC HFIG 0.5 webpix/pipe.jpg
 
@@ -810,7 +810,7 @@ Honesty
 
 ----------------------------------------------------------------------
 
-PIPE PSLIDE Summary
+PSLIDE Summary
 
 FIG webpix/pipe.jpg
 
