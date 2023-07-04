@@ -127,11 +127,11 @@ PSLIDE Ptolemy v.\ Copernicus
 
 BCC
 
-WFIG 0.89 webpix/heliocentric.jpg
+WFIG 0.94 webpix/epicycles.jpg
 
 NCC
 
-WFIG 0.94 webpix/epicycles.jpg
+WFIG 0.89 webpix/heliocentric.jpg
 
 EC
 
@@ -146,6 +146,20 @@ PIC WIDEFIG my_images/Farr.png
 PSLIDE Where will we see cholera cases?
 
 FIG webpix/choleraMap.jpg
+
+----------------------------------------------------------------------
+
+PSLIDE Where will we see cholera cases?
+
+BCC
+
+CFIG my_images/Farr.png
+
+NCC
+
+CFIG webpix/choleraMap.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -264,7 +278,11 @@ NC
 
 		ANS No!
 
-	How well does your model match the real world?
+	What should we ask instead?
+
+		ANS How close is it?
+
+		ANS Is it good enough to answer a particular question?
 
 EC
 
@@ -537,7 +555,7 @@ Out-of-sample validation
 		Predicting gravitational shifts in star positions from
 		measurements in Earth laboratories
 
-		Predicting cholera outbreaks in Bangladesh from a model calibrated
+		Matching cholera outbreaks in Bangladesh with a model calibrated
 		to Haiti
 
 		Predicting influenza patterns in 2010 from a model calibrated from
@@ -650,6 +668,33 @@ Hard questions
 PIC FIG webpix/QuestionAnswers.jpg
 
 Answers are not always easy
+
+----------------------------------------------------------------------
+
+TSS Inference
+
+	Do you have a specific question?
+
+		Should we close schools?
+
+		Do we need to investigate sexual transmission?
+
+		Are sub-clinical infections important?
+
+		Should we prepare for a disease surge?
+
+----------------------------------------------------------------------
+
+Validate the inference
+
+	Do different parameters (or different models) give different answers to
+	important questions?
+
+		Or show importantly different patterns?
+
+	What do I need to know (either now or in the future) to clarify these answers
+
+		That is, to make my model conclusions \emph{robust}?
 
 ----------------------------------------------------------------------
 
