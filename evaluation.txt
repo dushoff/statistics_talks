@@ -47,9 +47,7 @@ DAIDD Goals
 
 ----------------------------------------------------------------------
 
-MMED
-
-Goals
+MMED Goals
 
 	Discuss model types and model goals
 
@@ -73,7 +71,7 @@ Do I have a good model?
 
 		Mechanistic understanding
 
-		Evaluating scenarios
+		Evaluating scenarios (guiding choices)
 
 ----------------------------------------------------------------------
 
@@ -692,7 +690,8 @@ Validate the inference
 
 		Or show importantly different patterns?
 
-	What do I need to know (either now or in the future) to clarify these answers
+	What do I need to know (either now or in the future) to clarify these
+	answers?
 
 		That is, to make my model conclusions \emph{robust}?
 
@@ -742,5 +741,11 @@ SUBH Evaluation
 	Prediction (and other out-of-sample comparison)
 
 		Can my model predict things I haven't told it yet?
+
+	Inference
+
+		Does my model give me a good idea what to do next?
+
+		Does my model's \emph{failure} give me a good idea what to \emph{learn} next?
 
 	Generate and test mechanistic hypotheses
