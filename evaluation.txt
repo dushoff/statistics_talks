@@ -21,11 +21,11 @@ R
 
 NOFRAME
 
-\newcommand{\jdtitle}{Pick title}
+\newcommand{\jdtitle}{There are two titles}
 \renewcommand{\jdtitle}{Model evaluation and comparison}
 \renewcommand{\jdtitle}{Model assessment}
 \newcommand{\jdsub}{\mbox{}}
-\newcommand{\years}{2013--\thisyear} 
+\newcommand{\years}{2015--\thisyear} 
 
 ----------------------------------------------------------------------
 
