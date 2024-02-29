@@ -99,6 +99,8 @@ qmee_phil.%.pdf: philosophy.%.pdf
 
 qmee_phil: qmee_phil.handouts.pdf.op  qmee_phil.draft.pdf.op 
 
+## qmee_phil.final.pdf: philosophy.txt
+
 ######################################################################
 
 ## Talk
