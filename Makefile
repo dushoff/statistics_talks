@@ -16,7 +16,7 @@ vim_session:
 
 Sources += Makefile README.md 
 
-Drop = ~/Dropbox/Workshops/statistics_talks
+imageDrop = ~/Dropbox/Workshops/statistics_talks
 Ignore += local.mk
 -include local.mk
 
@@ -282,4 +282,3 @@ makestuff/Makefile:
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
--include makestuff/projdir.mk
