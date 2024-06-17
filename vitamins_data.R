@@ -15,4 +15,6 @@ length(growth)
 ranDiff <- mean(growth[treat=="A"]) - mean(growth[treat=="B"])
 growth[treat=="A"] <- growth[treat=="A"] - ranDiff + measDiff
 
+data.frame(treat,  growth) |> rdsSave()
+
 saveEnvironment()
