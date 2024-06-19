@@ -1,4 +1,29 @@
 
+EXTRA MMED multiple-choice questions
+
+Compared to frequentism, Bayesianism offers
+More power and more assumptions
+More power and fewer assumptions
+Less power and more assumptions
+Less power and fewer assumptions
+1
+
+A high P value for a given effect means that
+the effect is probably small
+the effect is probably unimportant
+the measurement is probably not repeatable
+the sign of the effect is not clear
+4
+
+Non-inferiority trials provide a statistical framework for showing that an effect is (choose one best answer)
+big
+small
+important
+unimportant
+2
+
+----------------------------------------------------------------------
+
 EXTRA 2017 notes
 
 * https://twitter.com/mlipsitch/status/838494026726789125. Dangers of under-powered studies. Outside the scope
@@ -155,6 +180,8 @@ TSS P values and confidence intervals
 
 		that two quantities are similar
 
+	What does a P value actually measure?
+
 ----------------------------------------------------------------------
 
 Vitamin A example
@@ -230,6 +257,8 @@ NC
 
 	A low P value means we can
 
+	What would happen if we could measure many more children?
+
 EC
 
 ----------------------------------------------------------------------
@@ -298,7 +327,8 @@ Doing Science
 
 	I never make a false-positive error:
 
-		ANS I never believe the null is exactly true
+		ANS I never believe the null is exactly true, so there really is
+		something going on
 
 	\emph{Sign error:} if I think an effect is positive, when it's really
 	negative (or vice versa)
@@ -591,7 +621,7 @@ TSS Frequentist paradigm
 	Test whether the effect you see {\em or a larger effect}** could be
 	due to chance
 
-		This probability is the P value
+		This probability is the (frequentist) P value
 
 	** It's actually better to calculate a one-sided P value. You would then
 	usually double this to get a standard P value
