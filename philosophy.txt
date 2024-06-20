@@ -1,4 +1,10 @@
 
+EXTRA Todo
+
+Road Map slide
+
+----------------------------------------------------------------------
+
 EXTRA MMED multiple-choice questions
 
 Compared to frequentism, Bayesianism offers
@@ -23,6 +29,7 @@ unimportant
 2
 
 ----------------------------------------------------------------------
+
 
 EXTRA 2017 notes
 
@@ -70,6 +77,12 @@ RESTING National Taiwan University
 PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
+
+Roadmap
+
+WIDEFIG my_images/road_map24.pdf
+
+----------------------------------------------------------------------
 
 GOALS
 
@@ -215,6 +228,8 @@ What do we hope to learn?
 ----------------------------------------------------------------------
 
 P values
+
+	Activity: What is a P value?
 
 	What does it mean if I find a "significant P value" for some effect
 	in this experiment?
@@ -783,7 +798,7 @@ MMED MMEV questions
 
 		What is the probability that they have MMEV?
 
-	This calculation is the core of Bayes theorem
+	This calculation is the core of Bayes \emph{theorem}
 
 ----------------------------------------------------------------------
 
@@ -796,8 +811,15 @@ MMED MMEV questions
 			ANS You don't tell them \emph{anything} until you ask them some
 			questions!
 
-	This is what Bayesian philosophy is about: combining information from
-	different sources
+	Bayesian inference:
+
+		Clear conclusions
+
+		based on clear (and often strong) assumptions
+
+		Need to be clear about the assumptions you are making
+
+	HREF https://www.youtube.com/watch?v=lG4VkPoG3ko Medical “paradox” video
 
 ----------------------------------------------------------------------
 
@@ -834,9 +856,11 @@ Honesty
 
 	Good practice
 
-		Keep a data-analysis journal
+		Make an analysis plan before you start
 
-		Start \emph{before} you look at the data
+		If flexibility is allowed in your context: 
+
+			keep an analysis journal as you go
 
 ----------------------------------------------------------------------
 
@@ -850,14 +874,16 @@ Summary
 
 	P values are over-rated
 
+		and often misunderstand
+
 	High P values should not be used as evidence for anything ever.
 
 		They can provide indirect evidence. Wonderful. Find the direct
 		evidence and use that instead.
 
-	Use effect sizes and confidence intervals when you can
+	Effect sizes and confidence intervals are almost always better
 
-	Otherwise, find ways to make significant P values do the work
+	Use the right P value (or confidence interval) for your question
 	
 		Non-inferiority tests, interactions
 
