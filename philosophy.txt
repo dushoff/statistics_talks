@@ -231,7 +231,7 @@ P values
 
 	Activity: What is a P value?
 
-	What does it mean if I find a "significant P value" for some effect
+	What does it mean if I find a “significant P value” for some effect
 	in this experiment?
 
 	ANS The difference is unlikely to be due to chance
@@ -569,7 +569,7 @@ Flu mask example
 	They would like to switch to simpler masks, if those will do the job
 
 	How can this be tested statistically?  We don't want the masks to be
-	"different".
+	“different”.
 
 		We need to decide what we mean by different in this case!
 
@@ -577,7 +577,7 @@ Flu mask example
 
 ----------------------------------------------------------------------
 
-Tradiitonal approach
+Traditional approach
 
 FIG masks.Rout-2.pdf
 
@@ -607,7 +607,7 @@ CFIG masks.Rout-1.pdf
 
 NC
 
-	We can even attach a P value by basing it on the ``right" statistic.
+	We can even attach a P value by basing it on the ``right” statistic.
 
 	The right statistic is the thing whose sign we want to know:
 
