@@ -264,6 +264,7 @@ Ignore += local.txt.format
 
 ## Horrible (MMED24)
 
+Sources += $(wildcard *.mm)
 Ignore += *.mm.tsv
 %.mm.tsv: %.mm $(wildcard)../*/mentimeter.pl
 	$(PUSH)
