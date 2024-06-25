@@ -127,6 +127,7 @@ fitting.handouts.pdf: fitting.txt
 ## evaluation.draft.pdf: evaluation.txt
 ## evaluation.handouts.pdf: evaluation.txt
 ## evaluation.lecture:
+## evaluation.mm.tsv: evaluation.mm
 
 garki.draft.pdf: garki.txt
 
@@ -258,6 +259,14 @@ Ignore += local.txt.format
 ######################################################################
 
 ## Reproducibility
+
+######################################################################
+
+## Horrible (MMED24)
+
+Ignore += *.mm.tsv
+%.mm.tsv: %.mm $(wildcard)../*/mentimeter.pl
+	$(PUSH)
 
 ######################################################################
 

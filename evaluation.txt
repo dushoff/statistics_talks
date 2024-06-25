@@ -1,5 +1,37 @@
+EXTRA Todo
 
-EXTRA
+Inference loop
+
+
+----------------------------------------------------------------------
+
+EXTRA Uncurated
+
+Might be a good idea to link back to the simulation-based validation that they’ve been doing in the labs at some point in this lecture; you came to SBV after I wrote this but still think linking it to what they’ve been doing would be pedagogically helpful
+A bit harsh (but hilarious) to claim Farr is known for getting COVID wrong
+The Ebola trial design example axes/etc are hard to read
+Some references would be useful for people who want to learn more about actually doing these things
+For all figures you’re showing from published studies, provide enough info on the slide that people could find the paper (eg a DOI)
+Session is done at 9:17, scheduled for 9:30; suggests to me that you should be interacting with the participants more throughout the session
+
+Abbott:
+
+Love the Ptolemy v. Copernicus example. Maybe let them shock themselves vs. telegraphing so much (i.e., start with it and then use it to motivate what you are saying). As they all jumped the wrong way it might be that it would help them pay attention.
+Getting a bit binary between models for understanding and prediction. 
+Might be nice to use words like prior prediction, simulation based calibration etc. in case people are reading the bayesian literature.
+Reference for the calibration study you are talking about.
+Have you defined bias (even loosely?).
+Maybe stress it can be an iterative process between simulation-based validation and model development when wrapping up.
+Say what some goodness of fit tests are and what they are trying to do. It took me a minute to realise what you were talking about. Do people still use these a lot as their metric for deciding if their model is good/bad.
+Ebola forecasting challenge is a nice example of a complex model being used for simulation and then simple models being used for fitting.
+WOW a 3d plot.
+I was expecting some more discussion about how to compare models in this lecture.
+We didn’t talk about cross-validation (and measures used to approximate it) and what role it plays in our models (where we nearly always have a time component). We kind of touched on it when talking about out of sample validation but not enough to make the link in peoples minds if they have heard of it in other contexts (for example statistical modelling, ML etc.). 
+
+----------------------------------------------------------------------
+
+
+EXTRA History
 
 Started at the second DAIDD, by request
 
@@ -32,6 +64,13 @@ NOFRAME
 ICI3DTHEME
 
 ----------------------------------------------------------------------
+
+Roadmap
+
+WIDEFIG my_images/road_map24a.pdf
+
+----------------------------------------------------------------------
+
 
 DAIDD Goals
 
@@ -190,14 +229,16 @@ PRESENT HFIG 0.5 webpix/SierraLeoneValidation.jpg
 
 NOTES HFIG 0.3 webpix/SierraLeoneValidation.jpg
 
-	The right answer should be inside your 95% confidence interval 95% of
-	the time
+	How often does your confidence interval \emph{cover} (include) the right
+	answer (when you know it)?
+
+	Your 95% confidence interval should have 95% coverage
 
 		If more, your model is \emph{too conservative}
 
 		If less, your model is \emph{invalid}
 
-	In many cases it's good to look at the two tails separately:
+	In most cases it's good to look at the two tails separately:
 
 		How often do you overestimate? Underestimate?
 
@@ -262,6 +303,12 @@ Bias and accuracy
 
 		Your reasonable estimator will be asymptotically unbiased
 
+	What is an estimator?
+
+		ANS An \emph{approach} for estimating a parameter (usually with confidence intervals)
+
+		ANS The thing that you find using your estimator is an estimate
+
 ----------------------------------------------------------------------
 
 TSEC Model Evaluation
@@ -293,6 +340,8 @@ TSS Goodness of fit
 
 	Goodness of fit \emph{tests} attempt to determine whether the observed
 	difference between model and data is statistically significant
+
+	Why don't I like goodness of fit tests?
 
 ----------------------------------------------------------------------
 
@@ -347,7 +396,7 @@ SS Digression
 
 ----------------------------------------------------------------------
 
-Passing goodness of fit tests
+OFFSLIDE Passing goodness of fit tests
 
 BC
 
@@ -396,7 +445,6 @@ DAIDD Vitamin study
 FIG vitamins.Rout-1.pdf
 
 ----------------------------------------------------------------------
-
 
 DAIDD Discussion
 
@@ -514,8 +562,10 @@ Goodness of fit test
 
 		If \emph{no}, model may be \emph{good} or \emph{bad}. 
 
-			We probably can't add any more complexity based on current
+			We probably can't add more complexity based on current
 			data
+
+			If we need to know more, we need more data
 
 		If \emph{yes}, model may be \emph{good} or \emph{bad}. 
 
@@ -548,7 +598,7 @@ SS Going beyond
 Out-of-sample validation
 
 	Does your model make predictions \emph{outside} the range on which you
-	calibrated it?
+	calibrated it? (that is, found the parameters)
 
 		Predicting gravitational shifts in star positions from
 		measurements in Earth laboratories
@@ -584,7 +634,7 @@ Test sets
 		In other words, test what would happen under various withholding
 		scenarios
 
-		This can get very elaborate, and we should probably do it more
+		Cross-validation!
 
 ----------------------------------------------------------------------
 
@@ -746,6 +796,7 @@ SUBH Evaluation
 
 		Does my model give me a good idea what to do next?
 
-		Does my model's \emph{failure} give me a good idea what to \emph{learn} next?
+		Does my model's \emph{failure} give me a good idea what to \emph{learn}
+		next?
 
 	Generate and test mechanistic hypotheses
