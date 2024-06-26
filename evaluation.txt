@@ -235,6 +235,8 @@ Estimators
 
 		ANS The thing that you find using your estimator is an estimate
 
+----------------------------------------------------------------------
+
 Coverage
 
 PRESENT HFIG 0.5 webpix/SierraLeoneValidation.jpg
