@@ -112,6 +112,8 @@ Do I have a good model?
 
 		Evaluating scenarios (guiding choices)
 
+	Many models try to do more than one of these things
+
 ----------------------------------------------------------------------
 
 DAIDD Statistical philosophy
@@ -209,6 +211,8 @@ PIC HFIG 0.4 my_images/modelWorld.png
 	If you use your fitting algorithm on simulations from your model
 	world, then you \emph{know the right answer}!
 
+	Simulation-based validation
+
 ----------------------------------------------------------------------
 
 Validation measures
@@ -222,6 +226,14 @@ Validation measures
 	Accuracy?
 
 ----------------------------------------------------------------------
+
+Estimators
+
+	What is an estimator?
+
+		ANS An \emph{approach} for estimating a parameter (usually with confidence intervals)
+
+		ANS The thing that you find using your estimator is an estimate
 
 Coverage
 
@@ -248,9 +260,9 @@ Precision
 
 	A good model tries to provide a precise answer 
 
-		Confidence intervals should be narrow, if possible
+		Precision means narrow confidence intervals
 
-		But not at the price of overconfidence (invalidity)
+		\ldots But not at the price of overconfidence (invalidity)
 
 	As data increases, your precision should increase
 
@@ -297,17 +309,14 @@ Bias and accuracy
 
 	Good coverage and high precision should ensure high accuracy and low bias
 
-	Don't worry about ``unbiased estimators''
+	Bias is the difference between the \emph{expected mean} of your estimator
+	and the truth
 
 		Your estimator doesn't need to be absolutely unbiased
 
 		Your reasonable estimator will be asymptotically unbiased
 
-	What is an estimator?
-
-		ANS An \emph{approach} for estimating a parameter (usually with confidence intervals)
-
-		ANS The thing that you find using your estimator is an estimate
+	Accuracy is a measure of the \emph{expected error} of your estimator
 
 ----------------------------------------------------------------------
 
