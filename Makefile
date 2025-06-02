@@ -15,6 +15,7 @@ vim_session:
 	bash -cl "vmt"
 
 Sources += Makefile README.md 
+Sources += $(wildcard *.md)
 
 imageDrop = ~/Dropbox/Workshops/statistics_talks
 Ignore += local.mk
@@ -86,6 +87,8 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 
 ## Talk
 ## Merge stuff from clarity?
+## mmed questions are called .mm as a legacy from Faikah's mentimeter
+## philosophy.mm
 philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
