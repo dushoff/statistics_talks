@@ -3,7 +3,6 @@ EXTRA Todo
 
 ----------------------------------------------------------------------
 
-
 EXTRA 2017 notes
 
 * https://twitter.com/mlipsitch/status/838494026726789125. Dangers of under-powered studies. Outside the scope
