@@ -1,27 +1,16 @@
 MMED multiple-choice questions 2024 (with rigid formatting for FB spreadsheet
-* Looks like these can be recycled for 2025
 
-Compared to frequentism, Bayesianism offers
-More power and more assumptions
-More power and fewer assumptions
-Less power and more assumptions
-Less power and fewer assumptions
-1
+https://docs.google.com/document/d/1efu4SbNDGIui5uo_WCcpmY_rHvUs6fEx/edit
 
-A high P value for a given effect means that
-the effect is probably small
-the effect is probably unimportant
-the measurement is probably not repeatable
-the sign of the effect is not clear
-4
+This one suppressed for 2025
 
 Non-inferiority trials provide a statistical framework for showing that an effect is (choose one best answer)
 big
-small
+small **
 important
 unimportant
-2
 
-----------------------------------------------------------------------
+Comment:
 
+Non-inferiority trials are often designed to try to show an effect is unimportant, but the framework is more directly related to showing it's small. A _scientific_ judgment about effect size is always needed.
 
