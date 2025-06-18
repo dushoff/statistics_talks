@@ -55,9 +55,11 @@ materials:
 ## Content
 
 pardirs += LatexTemplates
-pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting effectPlots
+pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting effectPlots notebook sandbox
 
 Ignore += $(pardirs)
+
+## Hot or cold??
 colddirs += $(pardirs)
 
 ## This is a repo subdir; not clear why
@@ -92,6 +94,9 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 philosophy.final.pdf: philosophy.txt
 philosophy.draft.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
+W1D3_Dushoff_StatPhil.pdf: | philosophy.draft.pdf
+	$(lnp)
+
 philosophy.push:
 
 philosophy.html: philosophy.step
@@ -197,6 +202,10 @@ biodiversity.final.pdf: biodiversity.txt
 biodiversity.html: biodiversity.step
 
 ######################################################################
+
+Ignore += road_map25.pdf
+road_map25.pdf: $(wildcard ../*/my_images/road_map25.pdf)
+	pdfjam $< 5 --landscape --outfile $@
 
 ## Unused (using tablet to annotate!)
 my_images/with.small.png: my_images/with.png 

@@ -1,5 +1,19 @@
 
+Announcements
+
+	There are lab and tutorial catch-up sessions this evening
+
+		You can just roll up this time
+
+		Or sign up for future ones
+
+	Remember to submit your assessment questions
+
+----------------------------------------------------------------------
+
 EXTRA Todo
+
+Road map
 
 ----------------------------------------------------------------------
 
@@ -50,9 +64,7 @@ PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
 
-Roadmap
-
-WIDEFIG my_images/road_map24.pdf
+WIDEFIG road_map25.pdf
 
 ----------------------------------------------------------------------
 
@@ -258,6 +270,8 @@ PIC DBFIG 0.8 webpix/fog.jpg 1 webpix/clear.jpg
 
 	ANS We should call it that
 
+		ANS Instead of significance
+
 ----------------------------------------------------------------------
 
 
@@ -278,7 +292,7 @@ Types of Error
 
 RHEAD Types of Error
 
-	Type III Error is the error of using numerical codes for things that have perfectly good simple names
+	Type Zero is the error of using numerical codes for things that have perfectly good simple names
 
 	Just say ``false positive'' or ``false negative'' when possible
 
@@ -286,9 +300,9 @@ RHEAD Types of Error
 
 Experimental design
 
-	\emph{False positive:} in the hypothetical case that the
+	\emph{False positive:} in the \emph{hypothetical} case that the
 	effect is exactly zero, what is the probability of falsely finding
-	an effect
+	an effect?
 
 		Should be less than or equal to my significance value
 
@@ -297,7 +311,7 @@ Experimental design
 
 		Requires you specify a hypothetical effect \emph{size}
 
-		This is a scientific judgment
+		This is a \emph{scientific} judgment
 
 	These are useful to analyze \textbf{power} and \textbf{validity} of a
 	statistical design
@@ -308,14 +322,16 @@ Experimental design
 
 Doing Science
 
-	I never make a false-negative error:
+	Once you collect data:
 
-		ANS I never accept the null
+	You should never make a false-negative error.
 
-	I never make a false-positive error:
+		ANS Never accept the null
 
-		ANS I never believe the null is exactly true, so there really is
-		something going on
+	Or a false-positive error
+
+		ANS If you never believe the null is exactly true, the idea of a false
+		positive doesnt make sense
 
 	\emph{Sign error:} if I think an effect is positive, when it's really
 	negative (or vice versa)
@@ -323,7 +339,7 @@ Doing Science
 	\emph{Magnitude error:} if I think an effect is small, when it's
 	really large (or vice versa)
 
-	Confidence intervals clarify all of this
+	Confidence intervals aid clear thinking
 
 ----------------------------------------------------------------------
 
@@ -460,6 +476,23 @@ Another way to talk
 
 ----------------------------------------------------------------------
 
+Confidence intervals
+
+FIG sandbox/oldsig.clarpix.Rout
+
+----------------------------------------------------------------------
+
+Confidence intervals
+
+FIG sandbox/clarity.clarpix.Rout
+
+----------------------------------------------------------------------
+
+Confidence intervals
+
+FIG sandbox/different.clarpix.Rout
+
+----------------------------------------------------------------------
 
 SS Statistics and science
 
@@ -703,6 +736,21 @@ Bayesian inference
 
 ----------------------------------------------------------------------
 
+Bayesian P value
+
+	Once you make strong-enough assumptions, the Bayesian framework allows you
+	to calculate true probabilities
+
+		Meaning, they are really probabilities; they are only as “true” as your
+		assumptions
+
+	A natural approach to Bayesian P values is simply the probability that your
+	estimate has the wrong sign
+
+		Often better to double this value, to align with frequentist tradition
+
+----------------------------------------------------------------------
+
 Vitamin A study
 
 BC
@@ -765,8 +813,8 @@ MMED MMEV questions
 
 	The population prevalence of MMEV is 1% 
 
-	You pick a person from this population at random, and test them, and
-	the test is positive.
+	You test a \emph{random} person from this population, and
+	the result is positive.
 
 		What is the probability that they have MMEV?
 
