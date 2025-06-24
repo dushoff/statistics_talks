@@ -71,7 +71,6 @@ WIDEFIG my_images/road_map24a.pdf
 
 ----------------------------------------------------------------------
 
-
 DAIDD Goals
 
 	Discuss model types and model goals
@@ -213,17 +212,20 @@ PIC HFIG 0.4 my_images/modelWorld.png
 
 	Simulation-based validation
 
+		You should validate your model in the model world before doing anything
+		else
+
 ----------------------------------------------------------------------
 
 Validation measures
 
-	Coverage
+	Coverage!
 
 	Precision
 
-	Bias?
+	Bias
 
-	Accuracy?
+	Accuracy
 
 ----------------------------------------------------------------------
 
@@ -381,7 +383,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Your model is false!
+Your model is wrong!
 
 SUBH \ldots or at least, incomplete
 
@@ -755,6 +757,8 @@ Validate the inference
 	answers?
 
 		That is, to make my model conclusions \emph{robust}?
+
+	Use model insights to guide data collection
 
 ----------------------------------------------------------------------
 
