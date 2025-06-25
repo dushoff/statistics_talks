@@ -65,9 +65,7 @@ ICI3DTHEME
 
 ----------------------------------------------------------------------
 
-Roadmap
-
-WIDEFIG my_images/road_map24a.pdf
+WIDEFIG my_images/road_map25.pdf
 
 ----------------------------------------------------------------------
 
@@ -321,6 +319,14 @@ Bias and accuracy
 		Your reasonable estimator will be asymptotically unbiased
 
 	Accuracy is a measure of the \emph{expected error} of your estimator
+
+----------------------------------------------------------------------
+
+Example
+
+PAUSE
+
+HIGHFIG my_images/fittingLab.png
 
 ----------------------------------------------------------------------
 

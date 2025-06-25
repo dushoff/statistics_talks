@@ -136,6 +136,8 @@ fitting.handouts.pdf: fitting.txt
 ## evaluation.handouts.pdf: evaluation.txt
 ## evaluation.lecture:
 ## evaluation.mm.tsv: evaluation.mm
+W2D3_Dushoff_Assessment.pdf: evaluation.draft.pdf
+	$(copy)
 
 garki.draft.pdf: garki.txt
 
@@ -204,8 +206,8 @@ biodiversity.html: biodiversity.step
 ######################################################################
 
 Ignore += road_map25.pdf
-road_map25.pdf: $(wildcard ../*/my_images/road_map25.pdf)
-	pdfjam $< 5 --landscape --outfile $@
+road_map25.pdf: $(wildcard my_images/road_map25.pdf)
+	pdfjam $< 1 --landscape --outfile $@
 
 ## Unused (using tablet to annotate!)
 my_images/with.small.png: my_images/with.png 
