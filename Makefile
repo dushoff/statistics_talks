@@ -91,7 +91,8 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 ## Merge stuff from clarity?
 ## mmed questions are called .mm as a legacy from Faikah's mentimeter
 ## philosophy.mm
-philosophy.final.pdf: philosophy.txt
+philosophy.final.pdf: philosophy.txt philosphy.md
+philosophy.slides.pdf: philosophy.txt philosphy.md
 philosophy.draft.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 W1D3_Dushoff_StatPhil.pdf: | philosophy.draft.pdf

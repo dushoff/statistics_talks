@@ -1,37 +1,4 @@
 
-Announcements
-
-	There are lab and tutorial catch-up sessions this evening
-
-		You can just roll up this time
-
-		Or sign up for future ones
-
-	Remember to submit your assessment questions
-
-----------------------------------------------------------------------
-
-EXTRA Todo
-
-Road map
-
-----------------------------------------------------------------------
-
-EXTRA 2017 notes
-
-* https://twitter.com/mlipsitch/status/838494026726789125. Dangers of under-powered studies. Outside the scope
-
-* https://twitter.com/ken_rothman/status/862016511724183553 Debates about a JAMA that accepted the null hypothesis. Fun but not necessary.
-
-* http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124 Why most published research findings are false. Good, but a null-hypothesis believer. Outside the scope.
-
-* Non-inferiority trial example’s great but probably went to fast for most of the audience
-* MMEV: Need to have 1 slide with all the relevant info (ie, add the Question you’ve posed to the Example slide!)
-
-* for pred value positive, give extreme where there’s 0% prevalence to make it clear
-
-----------------------------------------------------------------------
-
 NOFRAME
 
 \newcommand{\jdtitle}{Statistical philosophy}
@@ -50,11 +17,11 @@ PRESENT \vfill\begin{center}
 
 Jonathan Dushoff, McMaster University
 
-RESTING \url{http://lalashan.mcmaster.ca/DushoffLab}
-
 PRESENT \vfill
 
-PRESENT 2024 QMEE version
+PRESENT NCTS Infectious Disease Workshop \\ July 2025
+
+RESTING 2024 QMEE version
 
 RESTING \vfill
 
@@ -64,7 +31,7 @@ PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
 
-WIDEFIG road_map25.pdf
+ICI3D WIDEFIG road_map25.pdf
 
 ----------------------------------------------------------------------
 
@@ -92,7 +59,7 @@ OTHER NSLIDE Statistical philosophy
 
 ----------------------------------------------------------------------
 
-PSLIDE Long pipe 
+ICI3D PSLIDE Long pipe 
 
 PIC HFIG 0.5 webpix/pipe.jpg
 
@@ -408,6 +375,8 @@ NC
 
 	Why is weather not causing deaths at this time scale?
 
+	ANS Maybe those people would have died anyway later in the same winter
+
 EC
 
 ----------------------------------------------------------------------
@@ -459,6 +428,9 @@ Bad language
 Another way to talk
 
 	Unclear effects of boot camps
+
+		ANS They really want to say “small” effects, but that would require a
+		different test!
 
 	As expected, the sign of the difference between the placebo group and
 	controls was unclear
@@ -582,7 +554,7 @@ Flu mask example
 
 ----------------------------------------------------------------------
 
-Traditional approach
+Traditional statistics
 
 FIG masks.Rout-2.pdf
 
@@ -643,7 +615,7 @@ TSS Frequentist paradigm
 
 		This probability is the (frequentist) P value
 
-	** It's actually better to calculate a one-sided P value. You would then
+	It's actually better to calculate a one-sided P value. You would then
 	usually double this to get a standard P value
 
 ----------------------------------------------------------------------
@@ -840,6 +812,95 @@ MMED MMEV questions
 		Need to be clear about the assumptions you are making
 
 	HREF https://www.youtube.com/watch?v=lG4VkPoG3ko Medical “paradox” video
+
+----------------------------------------------------------------------
+
+TSEC Philosophy of fitting
+
+	Principled statistical fitting is hard
+
+	A big advantage of having good computers is that you can \emph{test} fitting
+	approaches on simple and complicated model worlds before applying them to
+	real data
+
+----------------------------------------------------------------------
+
+Approximating probabilities
+
+	In both paradigms, we want to calculate true probabilities to reinforce our
+	conclusions
+
+	In most complicated situations (e.g., dynamical model fits), these
+	probabilities cannot be calculated directly
+
+	We approximate the probabilities we want using likelihoods 
+
+----------------------------------------------------------------------
+
+Likelihoods
+
+	What we want to know is [frequentist or Bayesian] probabilities relating to our \emph{parameters} based on the data
+
+		Is $\Ro<2$; Is $\bar D < 6d$?
+
+	What we can easily calculate based on assumptions is the likelihood of our \emph{data} based on the parameters.
+
+		Proportional to probability of seeing the data
+
+		But probability of seeing these exact data is hard to define, and not
+		very interesting
+
+----------------------------------------------------------------------
+
+Algorithms
+
+	If we can calculate likelihoods, we have good algorithms to estimate the probabilities that we want
+
+		For frequentist tests, we use maximum likelihood estimation
+
+		For Bayesian tests, we use MCMC
+
+----------------------------------------------------------------------
+
+Normal likelihoods
+
+	Assume that the difference between the estimate $\hat y_i$ and the
+	data point $y_i$ is normally distributed.  What is the log
+	likelihood?
+
+	$$L = \prod_i{\frac{1}{\sigma\sqrt{2\pi}}\exp\left(\frac{-(
+	y_i-\hat y_i)^2}{2\sigma^2}\right)}$$
+
+	$$\ell = \sum_i{-\log(\sigma\sqrt{2\pi}) - \sum_i{\frac{(
+	y_i-\hat y_i)^2}{2\sigma^2}}}$$
+
+	\emph{We maximize the likelihood by minimizing the sum of squares}
+
+		and then solving for $\sigma$
+
+----------------------------------------------------------------------
+
+Least squares $\to$ likelihood
+
+	Attaching your least squares fit to a likelihood means:
+
+		You can \emph{use it} for statistical inference (LRT)
+
+		You can \emph{challenge} the assumptions
+
+----------------------------------------------------------------------
+
+Other distributions
+
+	Maybe we want a lognormal distribution of titres
+
+		Dr.~Rong did that: least squares on the log scale!
+
+	Maybe we want a Poisson (or negative binomial) distribution for counts
+
+	Maybe we want a binomial (or beta binomial) distribution for samples
+
+	It's better to be explicit about what distribution you are assuming!
 
 ----------------------------------------------------------------------
 

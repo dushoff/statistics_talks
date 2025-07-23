@@ -336,7 +336,6 @@ Least squares $\to$ likelihood
 
 		You can \emph{challenge} the assumptions
 
-
 ----------------------------------------------------------------------
 
 Mexican flu example
