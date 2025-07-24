@@ -1,6 +1,8 @@
 
 NOFRAME
 
+\useChinese
+
 \newcommand{\jdtitle}{Statistical philosophy}
 \newcommand{\jdsub}{}
 \newcommand{\years}{2012--\thisyear} 
@@ -219,7 +221,7 @@ PRESENT CFIG vitamins.Rout-1.pdf
 
 NC
 
-	A high P value means we can't see the sign of the effect clearly
+	A high P value means we can't see the \emph{sign} of the effect clearly
 
 	A low P value means we can
 
@@ -300,11 +302,11 @@ Doing Science
 		ANS If you never believe the null is exactly true, the idea of a false
 		positive doesnt make sense
 
-	\emph{Sign error:} if I think an effect is positive, when it's really
+	\emph{Sign ($\pm$) error:} if I think an effect is positive, when it's really
 	negative (or vice versa)
 
-	\emph{Magnitude error:} if I think an effect is small, when it's
-	really large (or vice versa)
+	\emph{Magnitude \chinese(大小) error:} if I think an effect is small, when
+	it's really large (or vice versa)
 
 	Confidence intervals aid clear thinking
 
@@ -365,13 +367,15 @@ What causes high P values?
 
 ----------------------------------------------------------------------
 
-Annualized flu deaths
+Annualized flu deaths \chinese{流感死亡率}
 
 BC
 
 CFIG flu.Rout-0.pdf
 
 NC
+
+	Look at deaths on an annual time scale \chinese{年度時間尺度}
 
 	Why is weather not causing deaths at this time scale?
 
@@ -466,6 +470,21 @@ FIG sandbox/different.clarpix.Rout
 
 ----------------------------------------------------------------------
 
+Cutoffs
+
+	How do I know what is a large effect?
+
+	This can't be done by statistics!
+
+		Must be scientific
+
+		It's often hard, and people avoid it
+
+		This leads to sloppy thinking
+
+----------------------------------------------------------------------
+
+
 SS Statistics and science
 
 ----------------------------------------------------------------------
@@ -528,7 +547,7 @@ Small effects
 
 	We must instead see clearly that it is small
 
-	This means we need a standard for what we mean by small
+	This means we need a standard (our cutoff) for what we mean by small
 
 ----------------------------------------------------------------------
 
@@ -570,7 +589,9 @@ NC
 
 	Are we confident the new mask is ``good enough''?
 
-	There is no substitute for picking a standard
+	There is no substitute for picking a cutoff
+
+	Can be controversial
 
 EC
 

@@ -1,5 +1,4 @@
 ## This is statistics_talks
-## https://github.com/dushoff/statistics_talks/commit/f4a0884c0fe075ed998577310088b8f91779c507
 
 current: target
 
@@ -10,6 +9,8 @@ target: $(target)
 -include makestuff/newtalk.def
 
 ##################################################################
+
+latexEngine = xelatex
 
 vim_session:
 	bash -cl "vmt"
@@ -69,6 +70,7 @@ Ignore += visualization/*
 ######################################################################
 
 ## Local files (.tmp will be ephemeral unless you put it here)
+## This is stupid: go upstream and make these into precious links
 Sources += beamer.tmp notes.tmp
 Sources += ici3d.tmp ICI3D_logo.png
 
@@ -94,6 +96,7 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 philosophy.final.pdf: philosophy.txt philosphy.md
 philosophy.slides.pdf: philosophy.txt philosphy.md
 philosophy.draft.pdf: philosophy.txt
+## philosophy.now.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 W1D3_Dushoff_StatPhil.pdf: | philosophy.draft.pdf
 	$(lnp)
@@ -302,7 +305,7 @@ makestuff/Makefile:
 -include makestuff/pipeR.mk
 -include makestuff/pdfpages.mk
 -include makestuff/newtalk.mk
--include makestuff/texi.mk
+-include makestuff/texj.mk
 -include makestuff/pandoc.mk
 -include makestuff/webpix.mk
 -include makestuff/hotcold.mk
