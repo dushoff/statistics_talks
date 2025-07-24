@@ -112,7 +112,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Vitamin A
+Vitamin A \chinese{登革熱}
 
 	We compare health indicators of children treated or not treated with
 	vitamin A supplements 

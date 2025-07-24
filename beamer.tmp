@@ -1,11 +1,21 @@
 \documentclass{beamer}
 
-%% ICI3D only (see also bottom)
+%% Put this in talkdir/chinese? Use scoping instead of $#@!ing around to deal with punctuation issues
+%% \usepackage{fontspec}
+%% \setmainfont{Noto Serif CJK TC}
+%% \setsansfont{Noto Sans CJK TC}
+
 %% \input{LatexTemplates/ici3dTemplate.tex}
 %% \input{LatexTemplates/ici3dCurrent.tex}
 
-\input{LatexTemplates/bulletspace.tex}
+%% \usepackage{talkdir/chinese}
+%% Seems baddish to control Chinese from talkdir?
+%% \renewcommand{\chinese}{\nochinese}
+%% \renewcommand{\chinese}{\yeschinese}
 
+\input{talkdir/bulletspace.tex}
+\input{talkdir/colors.tex}
+\input{localcomm.TEX}
 \usepackage{talkdir/slidecomm,talkdir/commands}
 \usepackage{graphicx,xspace}
 \usepackage{grffile}
@@ -14,13 +24,11 @@
 
 \input{talkdir/section.tex}
 \input{talkdir/lengths.tex}
-\input{talkdir/colors.tex}
 
 \begin{document}
 
 ----------------------------------------------------------------------
 
-%% ICI3D only
 %% \input{LatexTemplates/ici3dClose.tex}
 
 \end{document}
