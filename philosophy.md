@@ -1,4 +1,29 @@
 
+TODO
+
+Add confidence interval logic to paradigms!
+
+More about clarity when confidence intervals are difficult
+
+	What would be a good example?
+
+----------------------------------------------------------------------
+
+History
+
+Obviously developed for MMED and spread weirdly to DAIDD
+
+Been given in several other places, I guess.
+
+There was a clarity version given at Hamilton Hall which has maybe been largely merged in.
+
+Gave it at QMEE 2024 apparently!
+
+Suggested by Andrei for NCTS 2025. Student statistical engagement surprisingly weak.
+
+----------------------------------------------------------------------
+
+
 2017 notes
 
 * https://twitter.com/mlipsitch/status/838494026726789125. Dangers of under-powered studies. Outside the scope

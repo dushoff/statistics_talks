@@ -17,7 +17,7 @@ PLAIN Statistical philosophy
 
 PRESENT \vfill\begin{center} 
 
-Jonathan Dushoff, McMaster University
+Jonathan Dushoff \chinese{黃友森}, McMaster University
 
 PRESENT \vfill
 
@@ -45,7 +45,8 @@ GOALS
 
 		Effect sizes and confidence intervals are usually better
 
-	Explain the fundamentals of the two basic paradigms of statistical philosophy
+	Explain the fundamentals of the two basic paradigms of statistical
+	philosophy
 
 	Discuss the role of statistics in science
 
@@ -403,7 +404,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Bad language
+NONCTS
 
 	Null effects of boot camps
 
@@ -429,7 +430,7 @@ Bad language
 
 ----------------------------------------------------------------------
 
-Another way to talk
+NONCTS
 
 	Unclear effects of boot camps
 
@@ -631,7 +632,7 @@ TSS Frequentist paradigm
 
 			ANS Zero!
 
-	Test whether the effect you see {\em or a larger effect}** could be
+	Test whether the effect you see {\em or a larger effect} could be
 	due to chance
 
 		This probability is the (frequentist) P value
