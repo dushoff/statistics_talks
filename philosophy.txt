@@ -430,7 +430,7 @@ NONCTS
 
 ----------------------------------------------------------------------
 
-NONCTS
+NONCTS Another way to talk
 
 	Unclear effects of boot camps
 
@@ -859,7 +859,7 @@ Approximating probabilities
 
 ----------------------------------------------------------------------
 
-Likelihoods
+NEWLIKE Likelihoods
 
 	What we want to know is [frequentist or Bayesian] probabilities relating to our \emph{parameters} based on the data
 
@@ -874,7 +874,7 @@ Likelihoods
 
 ----------------------------------------------------------------------
 
-Algorithms
+NEWLIKE Algorithms
 
 	If we can calculate likelihoods, we have good algorithms to estimate the probabilities that we want
 
@@ -884,7 +884,7 @@ Algorithms
 
 ----------------------------------------------------------------------
 
-Normal likelihoods
+NEWLIKE Normal likelihoods
 
 	Assume that the difference between the estimate $\hat y_i$ and the
 	data point $y_i$ is normally distributed.  What is the log
@@ -902,7 +902,7 @@ Normal likelihoods
 
 ----------------------------------------------------------------------
 
-Least squares $\to$ likelihood
+NEWLIKE Least squares $\to$ likelihood
 
 	Attaching your least squares fit to a likelihood means:
 
@@ -912,7 +912,7 @@ Least squares $\to$ likelihood
 
 ----------------------------------------------------------------------
 
-Other distributions
+NEWLIKE Other distributions
 
 	Maybe we want a lognormal distribution of titres
 
