@@ -1,8 +1,6 @@
 
 NOFRAME
 
-\useChinese
-
 \newcommand{\jdtitle}{Statistical philosophy}
 \newcommand{\jdsub}{}
 \newcommand{\years}{2012--\thisyear} 
@@ -21,9 +19,9 @@ Jonathan Dushoff \chinese{黃友森}, McMaster University
 
 PRESENT \vfill
 
-PRESENT NCTS Infectious Disease Workshop \\ July 2025
+RESTING NCTS Infectious Disease Workshop \\ July 2025
 
-RESTING 2024 QMEE version
+PRESENT Bio 708 QMEE \\ Jan 2026
 
 RESTING \vfill
 
@@ -303,10 +301,11 @@ Doing Science
 		ANS If you never believe the null is exactly true, the idea of a false
 		positive doesnt make sense
 
-	\emph{Sign ($\pm$) error:} if I think an effect is positive, when it's really
+	\emph{Sign \chinese{($\pm$)} error:}
+	if I think an effect is positive, when it's really
 	negative (or vice versa)
 
-	\emph{Magnitude \chinese(大小) error:} if I think an effect is small, when
+	\emph{Magnitude \chinese{(大小)} error:} if I think an effect is small, when
 	it's really large (or vice versa)
 
 	Confidence intervals aid clear thinking
@@ -404,7 +403,7 @@ EC
 
 ----------------------------------------------------------------------
 
-NONCTS
+NONCTS Misleading language
 
 	Null effects of boot camps
 
@@ -637,7 +636,7 @@ TSS Frequentist paradigm
 
 		This probability is the (frequentist) P value
 
-	It's actually better to calculate a one-sided P value. You would then
+	JD: It's actually better to calculate a one-sided P value. You would then
 	usually double this to get a standard P value
 
 ----------------------------------------------------------------------
