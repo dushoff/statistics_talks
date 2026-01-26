@@ -99,7 +99,7 @@ BC
 
 	How we interpret data like this necessarily depends on assumptions:
 
-		Is it likely our observations occured by chance?
+		Is it likely our observations occurred by chance?
 
 		Is it likely they \emph{didn't}?
 
@@ -154,7 +154,7 @@ Vitamin A example
 	We want to know if vitamin A supplements improve the health of
 	village children
 
-		Is height is a good measure of general health?
+		Is height a good measure of general health?
 
 		How will we know height differences are due to our treatment?
 
@@ -299,7 +299,7 @@ Doing Science
 	Or a false-positive error
 
 		ANS If you never believe the null is exactly true, the idea of a false
-		positive doesnt make sense
+		positive doesn't make sense
 
 	\emph{Sign \chinese{($\pm$)} error:}
 	if I think an effect is positive, when it's really
@@ -905,7 +905,7 @@ NEWLIKE Least squares $\to$ likelihood
 
 	Attaching your least squares fit to a likelihood means:
 
-		You can \emph{use it} for statistical inference (LRT)
+		You can \emph{use it} for statistical inference (likelihood ratio test)
 
 		You can \emph{challenge} the assumptions
 
