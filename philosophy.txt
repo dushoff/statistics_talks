@@ -21,9 +21,9 @@ Jonathan Dushoff \chinese{黃友森}, McMaster University
 
 PRESENT \vfill
 
-PRESENT NCTS Infectious Disease Workshop \\ July 2025
+RESTING CTS Infectious Disease Workshop \\ July 2025
 
-RESTING 2024 QMEE version
+PRESENT 2026 QMEE version
 
 RESTING \vfill
 
@@ -303,10 +303,10 @@ Doing Science
 		ANS If you never believe the null is exactly true, the idea of a false
 		positive doesnt make sense
 
-	\emph{Sign ($\pm$) error:} if I think an effect is positive, when it's really
+	\emph{Sign \chinese{($\pm$)} error:} if I think an effect is positive, when it's really
 	negative (or vice versa)
 
-	\emph{Magnitude \chinese(大小) error:} if I think an effect is small, when
+	\emph{Magnitude \chinese{(大小)} error:} if I think an effect is small, when
 	it's really large (or vice versa)
 
 	Confidence intervals aid clear thinking
@@ -404,7 +404,7 @@ EC
 
 ----------------------------------------------------------------------
 
-NONCTS
+NONCTS Misleading language
 
 	Null effects of boot camps
 

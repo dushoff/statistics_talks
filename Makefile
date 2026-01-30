@@ -61,7 +61,8 @@ pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_c
 Ignore += $(pardirs)
 
 ## Hot or cold??
-colddirs += $(pardirs)
+## colddirs += $(pardirs)
+hotdirs += $(pardirs)
 
 ## This is a repo subdir; not clear why
 subdirs += visualization
@@ -96,7 +97,7 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 
 philosophy.final.pdf: philosophy.txt philosophy.md
 philosophy.slides.pdf: philosophy.txt philosophy.md
-philosophy.draft.pdf: philosophy.txt philosophy.md
+philosophy.draft.pdf: philosophy.txt philosophy.md philosophy.draft.tex
 ## philosophy.now.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 W1D3_Dushoff_StatPhil.pdf: | philosophy.draft.pdf
