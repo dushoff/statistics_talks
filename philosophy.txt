@@ -3,7 +3,7 @@ NOFRAME
 
 \newcommand{\jdtitle}{Statistical philosophy}
 \newcommand{\jdsub}{}
-\newcommand{\years}{2012--\thisyear} 
+\newcommand{\years}{2012--\the\year} 
 
 ----------------------------------------------------------------------
 
