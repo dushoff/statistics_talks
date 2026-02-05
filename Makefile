@@ -51,6 +51,7 @@ materials:
 ## Exporting
 
 ## effects.lecture:
+## This one is the Bicko stuff
 %.lecture: %.handouts.pdf.op %.draft.pdf.op %.handouts.pdf.tod %.draft.pdf.tod ;
 
 ## Content
@@ -187,8 +188,9 @@ fitSummary.final.pdf: fitSummary.txt
 
 ######################################################################
 
-effects.draft.pdf: effects.txt
-effects.final.pdf: effects.txt
+## 708 lecture
+effectSize.draft.pdf: effectSize.txt
+effectSize.final.pdf: effectSize.txt
 
 ######################################################################
 
@@ -239,6 +241,13 @@ vitamins_data.Rout: vitamins_data.R
 vitamins_plot.Rout: vitamins_plot.R vitamins_data.rda
 
 vitamins_scramble.Rout: permcount.rda vitamins_data.rda
+
+######################################################################
+
+## Mammal tail example inspired by Ian Dworkin
+tails.Rout: tails.R
+
+tailPlot.Rout: tailPlot.R tail.rds
 
 ##################################################################
 
