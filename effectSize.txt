@@ -1,4 +1,16 @@
 
+NOFRAME
+
+\newcommand{\jdtitle}{Measuring effects}
+\newcommand{\jdsub}{}
+\newcommand{\years}{2025--\the\year} 
+
+----------------------------------------------------------------------
+
+THEMETITLE
+
+----------------------------------------------------------------------
+
 Goals
 
 	Introduce some ways of measuring effects
