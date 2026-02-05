@@ -10,11 +10,6 @@ Goals
 
 ---------------------------------------------------------------------
 
-A story
-
-Vitellogenin
-
----------------------------------------------------------------------
 
 SEC Effects vs clarity
 
@@ -30,9 +25,36 @@ Standard deviation and standard error
 
 ---------------------------------------------------------------------
 
+A story
+
+	A very cool biology seminar speaker told us this 
+
+		Vitellogenin is a female hormone, male fish shouldn't have any
+
+		But we found that males in the disturbed site had \emph{significantly
+		more} vitellogenin
+
+		The picture showed about $4\times$ increase, but speaker did not emphasize
+		this
+
+	ANS Significance is a measure of clarity, not effect
+
+	ANS $4\times$ is a measure of effect, but is it one that we understand?
+
+---------------------------------------------------------------------
+
 A modest proposal
 
-We should never be looking at a lot of P values
+	One P value is sometimes useful as a summary of a substantive part of an
+	analysis
+
+		We should never be looking at a lot of P values
+
+	What could we do instead?
+
+		ANS Distribution of effect sizes
+
+		ANS Distribution of minimal effect sizes (based on confidence intervals)
 
 ---------------------------------------------------------------------
 
@@ -40,23 +62,70 @@ SEC Absolute effects
 
 ---------------------------------------------------------------------
 
+Summarizing effects
+
+	In most cases, statistical analysis is focused on a one-parameter effect
+
+		Difference Or interaction
+
+		Slope
+
+	Other cases are more complicated
+
+		Species distribution
+
+		Gene expression
+
+		Life-history tradeoffs
+
+---------------------------------------------------------------------
+
 Simple effects
 
-Difference
+	Difference
 
-Slope
+		Mice in the treatment group gained on average 25mg (-2mg, 41mg) more
+		weight than mice in the control group
 
----------------------------------------------------------------------
+		Male fish in the disturbed area had 7.2 ng/ml more vitellogenin than
+		those in the undisturbed area
 
-Units
+		Interaction: Scores in intervention group improved by 2.3 points (1.1pts,
+		5.0 pts) more than they improved in the control group
 
----------------------------------------------------------------------
+	Slope
 
-Advantages
+		We estimated an increase of 4000 annual deaths per fluA percent
+		positivity (2700d/fluAppos, 5500d/fluAppos)
 
----------------------------------------------------------------------
+		Soybean yield is estimated to increase 50kg/ha/°C in this temperature
+		range (I'm tired of the CIs now, you get the idea)
 
-Disadvantages
+----------------------------------------------------------------------
+
+Units \ldots
+
+	are critical to interpreting these effect sizes
+
+	Advantages
+
+		You need to engage with and understand these units
+
+			This drives biological understanding
+
+			And can force thoughtful choices about biological importance
+
+	Disadvantages
+
+		You need to engage with and understand these units
+
+			Can be difficult, not always relevant
+
+		You can't compare across different systems
+
+			Are mice more dimorphic than elephants?
+
+			Which natural characteristics are under strong directional selection?
 
 ---------------------------------------------------------------------
 
@@ -64,38 +133,146 @@ SEC Standardized effects
 
 ---------------------------------------------------------------------
 
-Standardizing variables
+Making unitless variables
 
-Need to cancel the units
+	Divide by something with the same units
+
+		Mean, standard deviation, difference
+
+	Take logs
+
+		ANS You're still dividing by something with the same units
+
+		ANS Once you log it, it doesn't matter what you chose
 
 ---------------------------------------------------------------------
 
 Example: correlation
 
----------------------------------------------------------------------
+	What is a correlation ($\rho$)?
 
-Ways to standardize
+		ANS It is the slope of the relationship between two variables
 
-standard deviation; overall mean; logs
+		ANS After both are divided by their sd
 
----------------------------------------------------------------------
+	What is $R^2$?
 
-How does log standardize?
+		ANS it is literally $\rho^2$ -- terrible nomenclature
 
----------------------------------------------------------------------
-
-Digression: logged ratios
-
----------------------------------------------------------------------
-
-SEC Standardized \emph{predictors}
+		ANS Reflects variation explained and ties to deep stuff about linear
+		modeling
 
 ---------------------------------------------------------------------
 
-Standard deviation
+Proportional change
+
+	If we divide a physical quantity (like tail length) by a group mean, we're
+	now talking about proportional change
+
+	Logs are a somewhat different (and generally more consistent) way to think
+	about proportional change
 
 ---------------------------------------------------------------------
 
-Mean
+Proportional change
 
+	Proportional change is a bit weird:
+
+		If the females are 40% lighter than the males:
+
+		ANS the males are 66.7% heavier than the females
+
+	Using (natural) logged ratios is a very appealing substitute
+
+		log(1.67)=0.511; log(0.6)=-0.511
+
+		JD would say this is a proportional change of 51%
+
+		But you might not want to try that
+
+---------------------------------------------------------------------
+
+Mix and match
+
+	Phenotypic evolution studies the effect of traits on measures of fitness
+
+	The field decided to construct standardized slopes by
+
+		Dividing trait measures by their sd
+
+		Dividing fitness measures by their mean
+
+	Why not?
+
+---------------------------------------------------------------------
+
+TSEC Scaling \emph{predictors}
+
+	Sort of split the difference between absolute and standardized
+
+	If we have many predictors for one outcome, it may make sense to keep the
+	units on the outcome only
+
+	If we had one predictor and many outcomes, it might make sense to do the
+	opposite
+
+		(e.g., CO2)
+
+---------------------------------------------------------------------
+
+Z scores
+
+	Subtracting the mean and dividing by the standard deviation is the
+	“standard” way of standardizing
+
+		You can also skip the subtraction step
+
+	This allows comparison of the (estimated) effects of different predictors
+	across the study
+
+		Related to their importance in predicting changes in outcome
+
+----------------------------------------------------------------------
+
+Mean standardization
+
+	If you instead divide by the mean you are looking at effects on the scale of
+	the average amount of the predictor
+
+		Comparing to the counter-factual than an effect is absent
+
+----------------------------------------------------------------------
+
+Influenza study
+
+	In the influenza study, we mean-standardized our predictors but kept our
+	outcome as deaths/year
+
+		ANS Effect size was deaths per year 
+
+		ANS In other words, compared to the counter-factual of no influenza
+
+	For weather variables, it might have made sense to use z-scores instead
+
+		ANS How much of the variation we \emph{saw} in Chicago was explained by
+		changes in winter temperatures
+
+		ANS As opposed to how much less death would we expect if there were no
+		cold days in Chicago winters
+
+---------------------------------------------------------------------
+
+TSEC Conclusions
+
+	Differentiate measures of effect from measures of clarity
+
+		Prefer the former when discussing scientific implications of your result
+
+	Think carefully about whether to standardize
+
+		Pay attention to units if you keep them
+
+	Think carefully about how to standardize 
+
+		Make sure your interpretations are consistent with your choices
 

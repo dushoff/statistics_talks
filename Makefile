@@ -189,6 +189,7 @@ fitSummary.final.pdf: fitSummary.txt
 ######################################################################
 
 ## 708 lecture
+effectSize.complete.pdf: effectSize.txt
 effectSize.draft.pdf: effectSize.txt
 effectSize.final.pdf: effectSize.txt
 
