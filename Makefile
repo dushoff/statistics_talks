@@ -100,6 +100,7 @@ philosophy.slides.pdf: philosophy.txt philosophy.md
 philosophy.draft.pdf: philosophy.txt philosophy.md philosophy.draft.tex
 ## philosophy.now.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
+philosophy.complete.pdf: philosophy.txt
 W1D3_Dushoff_StatPhil.pdf: | philosophy.draft.pdf
 	$(lnp)
 

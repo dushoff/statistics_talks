@@ -1,11 +1,9 @@
 
 NOFRAME
 
-\useChinese
-
 \newcommand{\jdtitle}{Statistical philosophy}
 \newcommand{\jdsub}{}
-\newcommand{\years}{2012--\thisyear} 
+\newcommand{\years}{2012--\the\year} 
 
 ----------------------------------------------------------------------
 
@@ -23,7 +21,9 @@ PRESENT \vfill
 
 RESTING CTS Infectious Disease Workshop \\ July 2025
 
-PRESENT 2026 QMEE version
+RESTING NCTS Infectious Disease Workshop \\ July 2025
+
+PRESENT Bio 708 QMEE \\ Jan 2026
 
 RESTING \vfill
 
@@ -101,7 +101,7 @@ BC
 
 	How we interpret data like this necessarily depends on assumptions:
 
-		Is it likely our observations occured by chance?
+		Is it likely our observations occurred by chance?
 
 		Is it likely they \emph{didn't}?
 
@@ -156,7 +156,7 @@ Vitamin A example
 	We want to know if vitamin A supplements improve the health of
 	village children
 
-		Is height is a good measure of general health?
+		Is height a good measure of general health?
 
 		How will we know height differences are due to our treatment?
 
@@ -301,9 +301,10 @@ Doing Science
 	Or a false-positive error
 
 		ANS If you never believe the null is exactly true, the idea of a false
-		positive doesnt make sense
+		positive doesn't make sense
 
-	\emph{Sign \chinese{($\pm$)} error:} if I think an effect is positive, when it's really
+	\emph{Sign \chinese{($\pm$)} error:}
+	if I think an effect is positive, when it's really
 	negative (or vice versa)
 
 	\emph{Magnitude \chinese{(大小)} error:} if I think an effect is small, when
@@ -637,7 +638,7 @@ TSS Frequentist paradigm
 
 		This probability is the (frequentist) P value
 
-	It's actually better to calculate a one-sided P value. You would then
+	JD: It's actually better to calculate a one-sided P value. You would then
 	usually double this to get a standard P value
 
 ----------------------------------------------------------------------
@@ -906,7 +907,7 @@ NEWLIKE Least squares $\to$ likelihood
 
 	Attaching your least squares fit to a likelihood means:
 
-		You can \emph{use it} for statistical inference (LRT)
+		You can \emph{use it} for statistical inference (likelihood ratio test)
 
 		You can \emph{challenge} the assumptions
 

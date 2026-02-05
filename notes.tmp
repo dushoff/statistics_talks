@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
-\input{LatexTemplates/ici3dCurrent.tex}
+% \input{LatexTemplates/ici3dCurrent.tex}
+\usepackage{talkdir/chinese}
 
 \usepackage{graphicx,grffile,xspace}
 \usepackage{amsmath}
