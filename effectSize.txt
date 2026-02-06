@@ -41,7 +41,7 @@ WIDEFIG tailPlot.Rout-1.pdf
 
 Model summary
 
-WIDEFIG my_images/tailModSummary.png
+WIDEFIG my_images/tailModSum.png
 
 ---------------------------------------------------------------------
 
@@ -59,10 +59,9 @@ WIDEFIG tailSpread.Rout-1.pdf
 
 REPSLIDE Model summary
 
-WIDEFIG my_images/tailModSummary.png
+WIDEFIG my_images/tailModSum.png
 
 ---------------------------------------------------------------------
-
 
 A story
 
@@ -79,24 +78,6 @@ A story
 	ANS Significance is a measure of clarity, not effect
 
 	ANS $4\times$ is a measure of effect, but is it one that we understand?
-
----------------------------------------------------------------------
-
-A modest proposal
-
-	One P value is sometimes useful as a summary of a substantive part of an
-	analysis
-
-		We should never be looking at a lot of P values
-
-	What could we do instead?
-
-		ANS Distribution of effect sizes
-
-		ANS Distribution of minimal effect sizes (based on confidence intervals)
-
-	Clarity is often used as a simplistic (and lazy) proxy for something about
-	effect size
 
 ---------------------------------------------------------------------
 
@@ -187,6 +168,8 @@ Making unitless variables
 
 		ANS Once you log it, it doesn't matter what you chose
 
+	What \emph{kind} of scale do you need for these?
+
 ---------------------------------------------------------------------
 
 Example: correlation
@@ -275,6 +258,26 @@ Other options
 
 ---------------------------------------------------------------------
 
+Comparing across contexts
+
+	Unitless effect sizes can be used to compare across contexts
+
+		Are mice more dimorphic than elephants?
+
+		Is natural selection for size stronger in trees than giraffes?
+
+	Needs to be done with care
+
+		Is your difference driven by changes in the denominator?
+
+			e.g., g tends to be larger in lab populations because variation is
+			less
+
+		What is a good cutoff of large/medium/small for your particular context
+		and question?
+
+----------------------------------------------------------------------
+
 REPSLIDE Tail-length data
 
 WIDEFIG tailPlot.Rout-0.pdf
@@ -297,7 +300,10 @@ TSEC Scaling \emph{predictors}
 	If we had one predictor and many outcomes, it might make sense to do the
 	opposite
 
-		(e.g., CO2)
+		e.g., we might measure the effect on a number of plant traits in units of
+		[1/ppmCO2]
+
+		Could standardize by mean or sd
 
 ---------------------------------------------------------------------
 
@@ -356,4 +362,28 @@ TSEC Conclusions
 	Think carefully about how to standardize 
 
 		Make sure your interpretations are consistent with your choices
+
+---------------------------------------------------------------------
+
+A modest proposal
+
+	One P value is sometimes useful as a summary of a substantive part of an
+	analysis
+
+		We should never be looking at a lot of P values
+
+	What could we do instead?
+
+		ANS Distribution of effect sizes
+
+		ANS Distribution of minimal effect sizes (based on confidence intervals)
+
+	Clarity is often used as a simplistic (and lazy) proxy for something about
+	effect size
+
+	What if I can't avoid this in my field?
+
+		ANS Do the best you can to move in a good direction
+
+		ANS Or to reason around it
 
