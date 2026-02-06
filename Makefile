@@ -308,12 +308,18 @@ Ignore += *.mm.tsv
 
 Sources += Makefile
 
+## ln -s ../makestuff . ## Do this first if you want a linked makestuff
+Makefile: makestuff/00.stamp
+makestuff/%.stamp: | makestuff
+	- $(RM) makestuff/*.stamp
+	cd makestuff && $(MAKE) pull
+	touch $@
+makestuff:
+	git clone --depth 1 $(msrepo)/makestuff
+
 Ignore += makestuff
 msrepo = https://github.com/dushoff
-Makefile: makestuff/Makefile | LatexTemplates
-makestuff/Makefile:
-	git clone $(msrepo)/makestuff
-	ls $@
+Makefile: | LatexTemplates
 
 -include makestuff/os.mk
 
@@ -323,6 +329,7 @@ makestuff/Makefile:
 -include makestuff/texj.mk
 -include makestuff/pandoc.mk
 -include makestuff/webpix.mk
+-include makestuff/mirrors.mk
 -include makestuff/hotcold.mk
 
 -include makestuff/git.mk
