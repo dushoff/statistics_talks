@@ -329,7 +329,7 @@ Makefile: | LatexTemplates
 -include makestuff/texj.mk
 -include makestuff/pandoc.mk
 -include makestuff/webpix.mk
--include makestuff/mirrors.mk
+-include makestuff/mirror.mk
 -include makestuff/hotcold.mk
 
 -include makestuff/git.mk
