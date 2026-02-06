@@ -27,15 +27,42 @@ SEC Effects vs clarity
 
 ---------------------------------------------------------------------
 
+Tail-length data
+
+WIDEFIG tailPlot.Rout-0.pdf
+
+---------------------------------------------------------------------
+
+Tail-length data
+
+WIDEFIG tailPlot.Rout-1.pdf
+
+---------------------------------------------------------------------
+
 Model summary
 
----------------------------------------------------------------------
-
-An analogy
-
-Standard deviation and standard error
+WIDEFIG my_images/tailModSummary.png
 
 ---------------------------------------------------------------------
+
+Small sample
+
+WIDEFIG tailSpread.Rout-0.pdf
+
+---------------------------------------------------------------------
+
+Large sample
+
+WIDEFIG tailSpread.Rout-1.pdf
+
+---------------------------------------------------------------------
+
+REPSLIDE Model summary
+
+WIDEFIG my_images/tailModSummary.png
+
+---------------------------------------------------------------------
+
 
 A story
 
@@ -68,6 +95,9 @@ A modest proposal
 
 		ANS Distribution of minimal effect sizes (based on confidence intervals)
 
+	Clarity is often used as a simplistic (and lazy) proxy for something about
+	effect size
+
 ---------------------------------------------------------------------
 
 SEC Absolute effects
@@ -78,7 +108,7 @@ Summarizing effects
 
 	In most cases, statistical analysis is focused on a one-parameter effect
 
-		Difference Or interaction
+		Difference (or interaction)
 
 		Slope
 
@@ -171,10 +201,24 @@ Example: correlation
 
 		ANS it is literally $\rho^2$ -- terrible nomenclature
 
-		ANS Reflects variation explained and ties to deep stuff about linear
-		modeling
+	$R^2$ reflects variation explained and ties to deep stuff about linear
+	modeling
+
+		e.g., you can add $R^2$ values from independent predictors
 
 ---------------------------------------------------------------------
+
+Example: Cohen and Hedges
+
+	$\rho$ is a unitless slope based on standard deviations
+
+	Cohen's d and Hedges g are unitless differences based on standard deviations
+
+		They calculate pooled sd differently
+
+		You should prefer Hedges
+
+----------------------------------------------------------------------
 
 Proportional change
 
@@ -198,9 +242,9 @@ Proportional change
 
 		log(1.67)=0.511; log(0.6)=-0.511
 
-		JD would say this is a proportional change of 51%
+		JD: log ratios are generally more sensible than proportional change
 
-		But you might not want to try that
+	Both methods can be used for either differences or slopes
 
 ---------------------------------------------------------------------
 
@@ -215,6 +259,31 @@ Mix and match
 		Dividing fitness measures by their mean
 
 	Why not?
+
+---------------------------------------------------------------------
+
+Other options
+
+	You may have a biological reason for scaling one difference by another
+	difference with the same units
+
+		e.g., how big is the difference between males and females compared to the
+		difference between different species in a genus?
+
+		Vitellogenin: how much is the increase in male levels compared to the
+		average female level?
+
+---------------------------------------------------------------------
+
+REPSLIDE Tail-length data
+
+WIDEFIG tailPlot.Rout-0.pdf
+
+---------------------------------------------------------------------
+
+REPSLIDE Tail-length data
+
+WIDEFIG tailPlot.Rout-1.pdf
 
 ---------------------------------------------------------------------
 

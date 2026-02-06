@@ -247,8 +247,10 @@ vitamins_scramble.Rout: permcount.rda vitamins_data.rda
 
 ## Mammal tail example inspired by Ian Dworkin
 tails.Rout: tails.R
+tailPlot.Rout: tailPlot.R tails.rds
+tailSpread.Rout: tailSpread.R tails.rds
 
-tailPlot.Rout: tailPlot.R tail.rds
+tailModels.Rout: tailModels.R tails.rds
 
 ##################################################################
 

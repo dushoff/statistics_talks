@@ -1,6 +1,7 @@
 library(shellpipes); manageConflicts()
 
 library(readr)
+library(dplyr)
 library(tibble)
 
 set.seed(2121)
@@ -21,7 +22,7 @@ tail_lengths <- function(params_tbl, n) {
         tibble(
             species=params_tbl$species[i]
             , sex=params_tbl$sex[i]
-				, id=i
+				, id=1:n[[i]]
             , tailLength=rlnorm(
                 n[i]
                 , meanlog=params_tbl$Ml[i]
@@ -32,8 +33,15 @@ tail_lengths <- function(params_tbl, n) {
 
     do.call(rbind, out) |> tibble::as_tibble()
 }
-tails <- tail_lengths(params_tbl, n=20)
+tails <- tail_lengths(params_tbl, n=100)
 
-summary(tails)
-print(tails, n=Inf)
+tails <- (tails
+	|> mutate(
+	    tLz = as.numeric(scale(tailLength))
+		, by = species
+	)
+)
+
+summary(tails |> mutate(across(where(is.character), factor)))
+## print(tails, n=Inf)
 rdsSave(tails)
