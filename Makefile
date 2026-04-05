@@ -13,7 +13,7 @@ target: $(target)
 latexEngine = xelatex
 
 vim_session:
-	bash -cl "vmt"
+	bash -ic "vmt"
 
 Sources += Makefile README.md 
 Sources += $(wildcard *.md)
