@@ -127,6 +127,8 @@ birs_rant.draft.tex: birs_rant.txt
 birs_rant.handouts.pdf: birs_rant.txt
 birs_rant.push:
 
+######################################################################
+
 #### Fitting
 ## Still needs more cleaning; and I need to have an alternative to recloning
 ## Likelihood fitting and dynamic models II; a long history at MMED, I guess
@@ -135,6 +137,9 @@ birs_rant.push:
 fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
+
+
+######################################################################
 
 ## This talk originated at DAIDD 2015, and contains elements from the philosophy talk, as well as DAIDD-specific stuff.
 ## Called assessment at MMED.
