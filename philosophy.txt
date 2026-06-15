@@ -4,6 +4,7 @@ NOFRAME
 \newcommand{\jdtitle}{Statistical philosophy}
 \newcommand{\jdsub}{}
 \newcommand{\years}{2012--\the\year} 
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 
 ----------------------------------------------------------------------
 
@@ -33,7 +34,7 @@ PRESENT \vfill\end{center}
 
 ----------------------------------------------------------------
 
-ICI3D WIDEFIG road_map25.pdf
+WIDEFIG road_map25.pdf
 
 ----------------------------------------------------------------------
 
@@ -62,7 +63,7 @@ OTHER NSLIDE Statistical philosophy
 
 ----------------------------------------------------------------------
 
-ICI3D PSLIDE Long pipe 
+PSLIDE Long pipe 
 
 PIC HFIG 0.5 webpix/pipe.jpg
 

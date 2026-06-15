@@ -58,6 +58,7 @@ NOFRAME
 \renewcommand{\jdtitle}{Model assessment}
 \newcommand{\jdsub}{\mbox{}}
 \newcommand{\years}{2015--\thisyear} 
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 
 ----------------------------------------------------------------------
 
@@ -323,8 +324,6 @@ Bias and accuracy
 ----------------------------------------------------------------------
 
 Example
-
-PAUSE
 
 HIGHFIG my_images/fittingLab.png
 

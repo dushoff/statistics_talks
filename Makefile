@@ -99,6 +99,7 @@ Sources += $(wildcard *.txt) $(wildcard *.step)
 philosophy.final.pdf: philosophy.txt philosophy.md
 philosophy.slides.pdf: philosophy.txt philosophy.md
 philosophy.draft.pdf: philosophy.txt philosophy.md philosophy.draft.tex
+## philosophy.draft.log: philosophy.txt philosophy.md philosophy.draft.tex
 ## philosophy.now.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 philosophy.complete.pdf: philosophy.txt
@@ -137,6 +138,8 @@ birs_rant.push:
 fitting.final.pdf: fitting.txt
 fitting.draft.pdf: fitting.txt
 fitting.handouts.pdf: fitting.txt
+
+## There is a Blumberg pptx version that I tried to start rescuing but I don't know where!!
 
 
 ######################################################################
