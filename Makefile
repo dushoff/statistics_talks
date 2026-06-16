@@ -103,7 +103,7 @@ philosophy.draft.pdf: philosophy.txt philosophy.md philosophy.draft.tex
 ## philosophy.now.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 philosophy.complete.pdf: philosophy.txt
-W1D3_Dushoff_StatPhil.pdf: | philosophy.draft.pdf
+W1D3_Dushoff_StatPhil.pdf: | philosophy.slides.pdf
 	$(lnp)
 
 philosophy.push:
@@ -117,6 +117,10 @@ qmee_phil.%.pdf: philosophy.%.pdf
 qmee_phil: qmee_phil.handouts.pdf.op  qmee_phil.draft.pdf.op 
 
 ## qmee_phil.final.pdf: philosophy.txt
+
+Ignore += *.roadmap.pdf
+philosophy.roadmap.pdf: LatexTemplates/resources/roadMaps26.pdf
+	pdfjam --papersize '{10in,7in}' $< 19 --outfile $@
 
 ######################################################################
 
