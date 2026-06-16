@@ -1,0 +1,22 @@
+NOFRAME
+
+\newcommand{\jdtitle}{Lab}
+\newcommand{\jdsub}{Introduction to likelihood}
+\newcommand{\years}{\the\year} 
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+
+----------------------------------------------------------------------
+
+THEMETITLE
+
+----------------------------------------------------------------------
+
+GOALS
+
+	Visualize how likelihood profiles are constructed
+
+	Explore maximum likelihood and classic confidence intervals for binomial draws
+
+	Discuss the relative advantages and disadvantages of each
+
+	Review and extend the Bayesian logic calculation from the statistical philosophy lecture

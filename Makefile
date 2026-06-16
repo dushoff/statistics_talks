@@ -133,6 +133,13 @@ birs_rant.handouts.pdf: birs_rant.txt
 birs_rant.push:
 
 ######################################################################
+## Likelihood/fitting module section? Not clear
+
+## Likelihood I Lab inherited badly 2026
+likeLab.final.pdf: likeLab.txt
+likeLab.draft.pdf: likeLab.txt
+likeLab.draft.tex: likeLab.txt
+likeLab.handouts.pdf: likeLab.txt
 
 #### Fitting
 ## Still needs more cleaning; and I need to have an alternative to recloning
