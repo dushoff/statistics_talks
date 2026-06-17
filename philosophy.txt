@@ -341,7 +341,8 @@ BC
 
 	It \emph{may be} because this effect is small
 
-	High P values should \emph{not} be used to advance \emph{any} conclusion
+	High P values should \emph{not} be used to advance \emph{any}
+	scientific conclusion
 
 NC
 
@@ -410,25 +411,26 @@ NONCTS Misleading language
 
 	Null effects of boot camps
 
-		ANS Wrong!
+		ANS Not really a thing.
 
 	Fat storage in vole populations is not correlated with elevation
 
 		ANS Yes, it is!
 
-	As expected, the placebo group did not differ significantly from the control
-	group
+	As expected, the placebo group did not differ significantly from the
+	control group
 
 		ANS Why would that be good?
 
-	B and B showed that there is no statistically significant
-	difference in sexual risk behaviour between men with and without clinic
+	B and B showed that there is no statistically significant difference
+	in sexual risk behaviour between men with and without clinic
 	access in Zambia
 
 		ANS No, they didn't
 
-		ANS Statistical significance is a property of the \emph{study} (and the
-		sample population), never of real groups (or the idealized population)
+		ANS Statistical significance is a property of the \emph{study}
+		(and the sample population), never of real groups (or the
+		idealized population)
 
 ----------------------------------------------------------------------
 

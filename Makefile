@@ -56,7 +56,7 @@ materials:
 
 ## Content
 
-pardirs += LatexTemplates
+pardirs += LatexTemplates RTutorials
 pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting effectPlots notebook sandbox
 
 Ignore += $(pardirs)
@@ -138,8 +138,13 @@ birs_rant.push:
 ## Likelihood I Lab inherited badly 2026
 likeLab.final.pdf: likeLab.txt
 likeLab.draft.pdf: likeLab.txt
-likeLab.draft.tex: likeLab.txt
 likeLab.handouts.pdf: likeLab.txt
+
+likeLab.pdf: RTutorials/outputs/ICI3D_Lab_introLikelihood.batch.Rout.pdf
+	$(copy)
+
+introLikelihoodLabOverview.pdf: likeLab.draft.pdf
+	$(copy)
 
 #### Fitting
 ## Still needs more cleaning; and I need to have an alternative to recloning

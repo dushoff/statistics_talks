@@ -20,3 +20,73 @@ GOALS
 	Discuss the relative advantages and disadvantages of each
 
 	Review and extend the Bayesian logic calculation from the statistical philosophy lecture
+
+----------------------------------------------------------------------
+
+Distribution or profile?
+
+FIG likeLab-0.pdf
+
+----------------------------------------------------------------------
+
+Distribution or profile?
+
+FIG likeLab-1.pdf
+
+----------------------------------------------------------------------
+
+Distribution or profile?
+
+FIG likeLab-2.pdf
+
+----------------------------------------------------------------------
+
+Frequentist confidence intervals
+
+	What do we learn from confidence intervals?
+
+	How do exact CIs compare to MLE CIs?
+
+----------------------------------------------------------------------
+
+Frequentist confidence intervals
+
+FIG likeLab-7.pdf
+
+----------------------------------------------------------------------
+
+Frequentist confidence intervals
+
+	What happens when we increase sample size?
+
+----------------------------------------------------------------------
+
+Frequentist confidence intervals
+
+FIG likeLab-4.pdf
+
+----------------------------------------------------------------------
+
+Frequentist confidence intervals
+
+FIG likeLab-6.pdf
+
+----------------------------------------------------------------------
+
+Testing rates
+
+	Sensitivity is the probability that a positive will test positive
+
+		ANS 1 minus the false negative rate
+
+	Specificity is the probability that a negative will test negative
+
+		ANS 1 minus the false positive rate
+
+----------------------------------------------------------------------
+
+Bayesian calculations
+
+	What is the basic idea of the Bayesian calculation?
+
+	Why is high sensitivity important?
