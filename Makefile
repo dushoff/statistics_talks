@@ -103,6 +103,8 @@ philosophy.draft.pdf: philosophy.txt philosophy.md philosophy.draft.tex
 ## philosophy.now.pdf: philosophy.txt
 philosophy.handouts.pdf: philosophy.txt
 philosophy.complete.pdf: philosophy.txt
+
+Ignore += W1D3_Dushoff_StatPhil.pdf
 W1D3_Dushoff_StatPhil.pdf: | philosophy.slides.pdf
 	$(lnp)
 
@@ -144,6 +146,7 @@ Ignore += likeLab.pdf
 likeLab.pdf: RTutorials/outputs/ICI3D_Lab_introLikelihood.batch.Rout.pdf
 	$(copy)
 
+Ignore += introLikelihoodLabOverview.pdf
 introLikelihoodLabOverview.pdf: likeLab.draft.pdf
 	$(copy)
 
