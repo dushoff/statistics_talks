@@ -611,39 +611,21 @@ Multi-parameter inference
 
 ----------------------------------------------------------------------
 
-PSLIDE Assessing and reporting uncertainty
-
-NOFIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-0.pdf
-
-----------------------------------------------------------------------
-
-PSLIDE Assessing and reporting uncertainty
-
-NOFIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-1.pdf
-
-----------------------------------------------------------------------
-
 Assessing and reporting uncertainty
 
-NOFIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-2.pdf
+FIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
 PSLIDE Assessing and reporting uncertainty
 
-NOFIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-3.pdf
-
-----------------------------------------------------------------------
-
-PSLIDE Assessing and reporting uncertainty
-
-NOFIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-4.pdf
+FIG my_images/sierraLeone.hybrid.compare.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
 RHEAD Assessing and reporting uncertainty
 
-NOFIG hybrid_fitting/sierraLeone.hybrid.compare.Rout-5.pdf
+FIG my_images/sierraLeone.hybrid.compare.Rout-5.pdf
 
 ----------------------------------------------------------------------
 
