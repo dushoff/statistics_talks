@@ -35,7 +35,7 @@ Ignore += local.mk
 ## Why don't I use makethere more? Are there supposed to be aliases for it? I shouldn't be so deep
 
 Disease_data/% fitting_code/%:
-	$(makethere)
+	$(justmakethere)
 
 ######################################################################
 
@@ -61,9 +61,14 @@ pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_c
 
 Ignore += $(pardirs)
 
+## 2026 Jun 18 (Thu)
+## Seems insanely broken now, maybe only on old directories or maybe not
+## It is doing double directory changes and making .pdf directories
+## whether set to hot or cold. So maybe it's a whole nother problem
+## Yes, problem is persisting with these both out
 ## Hot or cold??
 ## colddirs += $(pardirs)
-hotdirs += $(pardirs)
+## hotdirs += $(pardirs)
 
 ## This is a repo subdir; not clear why
 subdirs += visualization
