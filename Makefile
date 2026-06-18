@@ -140,6 +140,7 @@ likeLab.final.pdf: likeLab.txt
 likeLab.draft.pdf: likeLab.txt
 likeLab.handouts.pdf: likeLab.txt
 
+Ignore += likeLab.pdf
 likeLab.pdf: RTutorials/outputs/ICI3D_Lab_introLikelihood.batch.Rout.pdf
 	$(copy)
 
