@@ -32,11 +32,6 @@ Ignore += local.mk
 
 ######################################################################
 
-## Why don't I use makethere more? Are there supposed to be aliases for it? I shouldn't be so deep
-
-Disease_data/% fitting_code/%:
-	$(justmakethere)
-
 ######################################################################
 
 ## Link to ICI3D materials (should this be a .mk?)
@@ -56,19 +51,23 @@ materials:
 
 ## Content
 
+## Clean this up maybe?
 pardirs += LatexTemplates RTutorials
-pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting effectPlots notebook sandbox
+pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting effectPlots notebook sandbox talkBox SIR_model_family
+
 
 Ignore += $(pardirs)
 
 ## 2026 Jun 18 (Thu)
-## Seems insanely broken now, maybe only on old directories or maybe not
-## It is doing double directory changes and making .pdf directories
-## whether set to hot or cold. So maybe it's a whole nother problem
-## Yes, problem is persisting with these both out
-## Hot or cold??
+## Thrashing a bit with other directories; 
+## main problem was unix.mk/makethere; now disabled
+## justmakethere seems fine (but is very cold).
 ## colddirs += $(pardirs)
-## hotdirs += $(pardirs)
+hotdirs += $(pardirs)
+
+## Disease_data/% fitting_code/%: ; $(justmakethere)
+
+######################################################################
 
 ## This is a repo subdir; not clear why
 subdirs += visualization
@@ -156,16 +155,19 @@ introLikelihoodLabOverview.pdf: likeLab.draft.pdf
 	$(copy)
 
 #### Fitting
-## Still needs more cleaning; and I need to have an alternative to recloning
-## Likelihood fitting and dynamic models II; a long history at MMED, I guess
-## Taught by Pearson (verbatim slides) 2018
-## Not rescued yet. Check NOFIG problems *******************
-fitting.final.pdf: fitting.txt
-fitting.draft.pdf: fitting.txt
-fitting.handouts.pdf: fitting.txt
 
-## There is a Blumberg pptx version that I tried to start rescuing but I don't know where!!
+## fitting.final.pdf: fitting.txt fitting.md
+## fitting.draft.pdf: fitting.txt
+## fitting.slides.pdf: fitting.txt
+## fitting.handouts.pdf: fitting.txt
 
+fitting.roadmap.pdf: LatexTemplates/resources/roadMaps26.pdf
+	pdfjam --papersize '{10in,7in}' $< 28 --outfile $@
+
+W1D5_Dushoff_Fitting_II.pdf: fitting.slides.pdf
+	$(ln)
+
+## There is a Blumberg pptx version in talkBox
 
 ######################################################################
 
@@ -290,8 +292,9 @@ tailModels.Rout: tailModels.R tails.rds
 
 ## Diagrams
 
+## Mine (opacity suggested by Claude)
 Ignore += distarrow*.pdf
-Sources += distarrow.tex
+Sources += distarrow.tex tikzHead.tex
 distarrow.pdf: distarrow.tex
 
 ##################################################################

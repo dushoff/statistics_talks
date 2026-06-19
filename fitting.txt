@@ -1,68 +1,40 @@
 
 EXTRA
 
-Use HIV stuff for shooting
-
-Use Mike's diagram
-
-Git clean
+see fitting.md
 
 ----------------------------------------------------------------------
 
 NOFRAME
 
-\title{Likelihood fitting and dynamic models II}
-\subtitle{Approaches to fitting}
-\author{Jonathan Dushoff, McMaster University}
-\date{MMED 2017} 
-\newcommand{\years}{2014--2017} 
+\newcommand{\jdtitle}{Fitting dynamical models II}
+\newcommand{\jdsub}{Approaches to fitting}
+\newcommand{\years}{2017--\the\year} 
+
+\newcommand{\jdauth}{\textbf{Jonathan Dushoff}, Bobby Reiner, Seth Blumberg}
 
 ----------------------------------------------------------------------
 
-PSLIDE NOFRAME
-
-{\topBar\maketitle}
+THEMETITLE
 
 ----------------------------------------------------------------------
 
-NSLIDE NOFRAME
-
-{\let\newpage\relax\maketitle}
+WIDEFIG fitting.roadmap.pdf
 
 ----------------------------------------------------------------------
 
-EXTRA
-
-PRESENT \vfill\begin{center} 
-
-Fitting dynamic models to data
-
-PRESENT \vfill
-
-Jonathan Dushoff, McMaster University
-
-\url{http://lalashan.mcmaster.ca/DushoffLab}
-
-PRESENT \vfill
-
-PRESENT 2016 Summer Course on Mathematical Modeling and Analysis of 
-Infectious Diseases
-
-PRESENT \vfill
-
-PRESENT National Taiwan University
-
-PRESENT \vfill\end{center}
-
-----------------------------------------------------------------
-
-Summary
+Goals
 
 	Discuss theories and approaches behind fitting models to data
 
-	Explain relationship between least squares and likelihood
+	Discuss distributions and likelihood assumptions
 
-	Discuss approaches to dealing with process error and observation error
+		How does least squares fit in?
+
+	Discuss approaches to dealing with dynamical noise and observation
+	noise
+
+	Prepare for MCMC lecture
 
 ----------------------------------------------------------------------
 
@@ -102,7 +74,7 @@ Why did I get the wrong answer?
 
 	Stochasticity in transmission
 
-	Multi-parameter estimation
+	Parameter estimation
 
 		There may be different parameter combinations that work equally well
 
@@ -110,33 +82,109 @@ Why did I get the wrong answer?
 
 ----------------------------------------------------------------------
 
-TSEC Conceptual framework
-
-	How do we assume our data relate to our model world?
-
-		\textbf{No error:} We could attempt to model everything we see, in
-		exact detail
-
-			Impractical
-
-		\textbf{Observation error:} we could assume that the world is
-		perfectly deterministic, but our \emph{observations} are imperfect
-
-			Shooting
-
-		\textbf{Process error:} we could assume that we observe perfectly,
-		but that the world is stochastic
-
-			Stepping
-
-		\textbf{Both kinds of error:} the world is stochastic, and our
-		observations are imperfect
-
-			Modern methods
+SEC Conceptual framework
 
 ----------------------------------------------------------------------
 
-Observation error only
+Model structure
+
+	Our model structure is never “right”
+
+		ANS Never as complicated as the real world
+
+	How do we judge?
+
+		ANS Is the structure good enough to address our question?
+
+----------------------------------------------------------------------
+
+HIV structure
+
+HIGHFIG talkBox/img/hardFit_23.png
+
+----------------------------------------------------------------------
+
+HIV structure
+
+WIDEFIG talkBox/img/hardFit_24.png
+
+----------------------------------------------------------------------
+
+Measles
+
+WIDEFIG SIR_model_family/sir.four.pdf
+
+----------------------------------------------------------------------
+
+Measles
+
+WIDEFIG SIR_model_family/seir.four.pdf
+
+----------------------------------------------------------------------
+
+Population structure
+
+	What details do we need in our model world?
+
+	Measles
+
+		ANS Age structure
+
+	HIV 
+
+		ANS Sexual activity
+
+	Tuberculosis
+
+		ANS Access to resources
+
+----------------------------------------------------------------------
+
+Observation noise
+
+	Classically called observation error
+
+		People don't feel sick
+
+		Diseases get mis-diagnosed
+
+		Doctors don't report
+
+		Samples are imperfect
+
+	This is what we estimated in our Harare and likelihood labs
+
+----------------------------------------------------------------------
+
+Dynamical noise
+
+	Classically called process error
+
+	Even if we know all the parameters in a simple model, we expect variation
+
+		Random changes in the environment (environmental stochasticity)
+
+		Random interactions between individuals
+
+	This is what we modeled in our stochastic labs
+
+		But we haven't tried to fit it yet
+
+----------------------------------------------------------------------
+
+Fitting different sources of noise is hard
+
+	We can write a likelihood in the presence of observation noise
+
+		By assuming dynamics are deterministic
+
+	Or in the presence of dynamical noise
+
+		By assuming observations are perfect
+
+----------------------------------------------------------------------
+
+Fitting observation noise
 
 BC
 
@@ -160,17 +208,25 @@ EC
 
 Shooting
 
+FIG RTutorials/ICI3D_Lab_MLE_HIVmodel.batch.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+OTHER Shooting
+
+Probably don't need this slide
+
 FIG SIR_simulations/hiv_plot.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-RSLIDE Shooting
+REPSLIDE Shooting
 
 FIG Disease_data/ewmeas.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Process error only
+Fitting dynamical noise
 
 BC
 
@@ -190,12 +246,11 @@ EC
 
 ----------------------------------------------------------------------
 
-RSLIDE Stepping
+REPSLIDE Stepping
 
 FIG Disease_data/ewmeas.Rout-1.pdf
 
 ----------------------------------------------------------------------
-
 
 PSLIDE Stepping
 
@@ -223,16 +278,16 @@ DOUBLEFIG Disease_data/cards.Rout-2.pdf Disease_data/cards.Rout-5.pdf
 
 Modern methods
 
-	Is it better to ignore process error, or observation error?
+	Is it better to ignore dynamical noise, or observation noise?
 
 	What if we have a small number of cases, and good reporting (Ebola in small
 	villages)
 
-		ANS Ignore observation error?
+		ANS Ignore observation noise?
 
 	What if we have a large number of cases, and poor reporting (HIV in Harare)?
 
-		ANS Ignore process error?
+		ANS Ignore dynamical noise?
 
 	What if we have a new epidemic and poor reporting (West African Ebola)?
 
@@ -432,7 +487,7 @@ A more realistic error distribution
 
 		ANS \emph{Sorry:}
 
-			ANS OK, technically it's right, but you shouldn't do it.
+			ANS OK, technically not wrong, but you usually shouldn't do it.
 
 ----------------------------------------------------------------------
 
@@ -456,19 +511,19 @@ EC
 
 ----------------------------------------------------------------------
 
-RSLIDE Distribution diagram
+PSLIDE Distribution diagram
 
 HFIG 1.3 distarrow-0.pdf
 
 ----------------------------------------------------------------------
 
-RSLIDE Distribution diagram
+PSLIDE Distribution diagram
 
 HFIG 1.3 distarrow-1.pdf
 
 ----------------------------------------------------------------------
 
-RSLIDE Distribution diagram
+PSLIDE Distribution diagram
 
 HFIG 1.3 distarrow-2.pdf
 
@@ -492,7 +547,9 @@ Discrete distributions
 
 		Good when denominator is clear and important
 
-		For exampling, when sampling
+		For example, when you have a discrete sample
+
+			ANS Antenatal HIV prevalence
 
 ----------------------------------------------------------------------
 
@@ -540,11 +597,17 @@ TSEC Modern approaches
 
 	Why are people using model worlds with no observation error?
 
-		or no process error?
+		or no dynamical noise?
 
 	Sometimes they are good enough (model validation)
 
 	Combining both is \emph{hard}
+
+----------------------------------------------------------------------
+
+Combining error types
+
+WIDEFIG talkBox/img/hardFit_20.png
 
 ----------------------------------------------------------------------
 
@@ -561,7 +624,7 @@ Filtering
 
 ----------------------------------------------------------------------
 
-RSLIDE Filtering
+REPSLIDE Filtering
 
 FIG Disease_data/ewmeas.Rout-1.pdf
 
@@ -571,15 +634,15 @@ Latent variable methods
 
 	Latent variable methods are a little like stepping
 
-		But we step to and from unknown values (our latent variables), so we need
-		a way of exploring many possibilities
+		But we step to and from unknown values (our latent variables), so we
+		need a way of exploring many possibilities
 
 	Popular, state-of-the-art methods are available in the R packages rjags and
 	rstan
 
 ----------------------------------------------------------------------
 
-RSLIDE Latent-variable methods
+REPSLIDE Latent-variable methods
 
 FIG Disease_data/ewmeas.Rout-1.pdf
 
@@ -595,7 +658,11 @@ Latent variables
 
 		true cases, true prevalence, true number of susceptibles
 
-Reauires a framework that can address the fact that our latent variables have many possible values
+Requires a framework that can address the fact that our latent variables have many possible values
+
+	Bayesian prior (stan)
+
+	Integration (usually approximate) (tmb)
 
 ----------------------------------------------------------------------
 
@@ -603,11 +670,15 @@ Multi-parameter inference
 
 	Modern methods are already hard, and when you consider various sources of uncertainty, you're really on the bleeding edge
 
-	Many high-profile models for Ebola, for example failed to consider process error.
+	Many high-profile models for Ebola (WA 2014), failed to consider dynamical
+	noise.
 
-	The biggest paper talking about process error neglected uncertainty in generation intervals
+	The biggest paper talking about dynamical noise neglected uncertainty in
+	generation intervals
 
-	Once you do multi-parameter inference, you may find that confidence intervals are very large -- this may reflect the reality of knowledge, but may not make you look good
+	Once you do multi-parameter inference, you may find that confidence
+	intervals are very large -- this may reflect the reality of knowledge, but
+	may not make you look good
 
 ----------------------------------------------------------------------
 
@@ -617,7 +688,7 @@ FIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-PSLIDE Assessing and reporting uncertainty
+REPSLIDE Assessing and reporting uncertainty
 
 FIG my_images/sierraLeone.hybrid.compare.Rout-3.pdf
 
@@ -635,13 +706,25 @@ SEC Paradigms
 
 Likelihood
 
-	Maximum likelihood and likelihood are not the same thing
+	A powerful tool for evaluating models
 
-	Bayesian approaches and frequentist approaches (including maximum likelihood) \emph{both} depend on calculating (or approximating) likelihood
+	Need to question your assumptions
+
+		Your likelihood isn't perfect, are you relying on it too heavily?
+
+	Frequentist approaches (including maximum likelihood) almost always depend
+	on calculating (or approximating) likelihood
+
+	Bayesian approaches including MCMC always depend on calculating (or
+	approximating) likelihood
+
+		Generally more powerful
+
+		ANS Price is more assumptions
 
 ----------------------------------------------------------------------
 
-Frequentist inference
+OTHER Frequentist inference
 
 	To do frequentist inference on these complicated likelihoods, we need to:
 
@@ -655,7 +738,7 @@ Frequentist inference
 
 ----------------------------------------------------------------------
 
-Bayesian inference
+OTHER Bayesian inference
 
 	To do Bayesian inference on these complicated likelihoods, we need to:
 
@@ -667,7 +750,7 @@ Bayesian inference
 
 	Usually \emph{a little} less hard
 
-		But still requires more assumptions
+		ANS The price is more assumptions
 
 ----------------------------------------------------------------------
 
@@ -690,14 +773,15 @@ Summary
 	Making your fit into a likelihood clarifies assumptions and creates a
 	foundation for statistical inference
 
-	Accounting for both process and observation error is hard
+	Accounting for both dynamical and observation noise is hard
 
 		and not always necessary
 
-	Stepping methods don't allow for observation error
+	Stepping methods don't allow for observation noise
+
+		latent variable methods can address this
+
+	Shooting methods don't allow for dynamical noise
 
 		filtering methods can address this
 
-	Shooting methods don't allow for process error
-
-		latent variable methods can address this
