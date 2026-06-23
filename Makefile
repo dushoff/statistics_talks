@@ -56,7 +56,7 @@ pardirs += LatexTemplates RTutorials
 pardirs += Disease_data fitting_code SIR_simulations WA_Ebola_Outbreak Endemic_curves Malaria hybrid_fitting effectPlots notebook sandbox talkBox SIR_model_family
 
 
-Ignore += $(pardirs)
+Ignore += $(pardirs) tmp/
 
 ## 2026 Jun 18 (Thu)
 ## Thrashing a bit with other directories; 
@@ -164,6 +164,7 @@ introLikelihoodLabOverview.pdf: likeLab.draft.pdf
 fitting.roadmap.pdf: LatexTemplates/resources/roadMaps26.pdf
 	pdfjam --papersize '{10in,7in}' $< 28 --outfile $@
 
+Ignore += W1D5_Dushoff_Fitting_II.pdf
 W1D5_Dushoff_Fitting_II.pdf: fitting.slides.pdf
 	$(ln)
 
