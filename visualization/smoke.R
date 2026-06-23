@@ -1,4 +1,8 @@
+library(shellpipes)
+
 library(readr)
 library(dplyr)
 
-smoke <- read_csv("fev.csv", comment="#") %>% rename(smoking=smoke)
+rdsSave(read_csv("git_push/fev.csv", comment="#") %>% rename(smoking=smoke))
+
+

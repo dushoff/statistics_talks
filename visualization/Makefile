@@ -56,22 +56,24 @@ Sources += bike_weather.csv
 
 ######################################################################
 
+autopipeR = defined
+
 ## Smoking example
 
 ## Read in data
 ## smoke.Rout: smoke.R
 
 ## Conflation plots (no unconflation, just capacity and then age)
-## smoke_ques.Rout: smoke_ques.R
+smoke_ques.Rout: smoke_ques.R smoke.rds
 
 ## fits (with area example)
-## smoke_plots.Rout: smoke_plots.R
+smoke_plots.Rout: smoke_plots.R smoke.rds
 
 ## Level plots (example of color choices)
 ## smoke_levels.Rout: smoke_levels.R
 
 ### Makestuff
--include makestuff/stepR.mk
+-include makestuff/pipeR.mk
 ## -include makestuff/cache.mk
 
 -include makestuff/git.mk

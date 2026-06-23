@@ -27,7 +27,6 @@ SS Anchors
 
 ----------------------------------------------------------------------
 
-
 Golem bait call
 
 FIG visualization/temppix.Rout-3.pdf

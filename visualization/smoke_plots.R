@@ -1,5 +1,9 @@
+library(shellpipes)
+
 library(ggplot2)
 theme_set(theme_bw(base_size=18))
+
+smoke <- rdsRead()
 
 point_alpha <- 0.4
 

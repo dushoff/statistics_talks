@@ -1,0 +1,214 @@
+
+EXTRA
+
+see design.md
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdtitle}{Recap}
+\newcommand{\jdsub}{Study design, bias, variability}
+\newcommand{\years}{\the\year} 
+
+\newcommand{\jdauth}{Jonathan Dushoff}
+
+----------------------------------------------------------------------
+
+THEMETITLE
+
+----------------------------------------------------------------------
+
+OFFLINE WIDEFIG design.roadmap.pdf
+
+ONLINE WIDEFIG my_images/design.roadmap.png
+
+----------------------------------------------------------------------
+
+Goals
+
+	Go through some basic ideas from the preparatory study-design lectures
+
+		These are highly recommended
+
+	Discuss the role of simulation in study design
+
+	Introduce study-design coding session
+
+----------------------------------------------------------------------
+
+Study design and data materials
+
+FIG my_images/epiPrep.png
+
+----------------------------------------------------------------------
+
+TSEC Study approaches
+
+\vspace{-3ex}
+
+FIG my_images/biasBeast.png
+
+CREDIT R.~Kassanjee
+
+----------------------------------------------------------------------
+
+SS Experimental design
+
+----------------------------------------------------------------------
+
+Example: weight-loss drug
+
+	I enroll 60 people in an experiment to test a new weight-loss drug
+
+	They all take the drug for six months, and I weigh them before and after
+
+	Do you have any concerns?
+
+----------------------------------------------------------------------
+
+SS Observational data
+
+----------------------------------------------------------------------
+
+Example: smoking is good for you
+
+FIG visualization/smoke_ques.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Smoking data
+
+FIG visualization/smoke_ques.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Smoking data
+
+FIG visualization/smoke_plots.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+Why do observational studies?
+
+	Time
+
+	Money
+
+	Ethics
+
+----------------------------------------------------------------------
+
+Confounders
+
+	You can never remove all the bias from an observational study
+
+		ANS There will always be some difference between your groups that's out of your control
+
+	But you can use statistical techniques to take some of the differences into account
+
+----------------------------------------------------------------------
+
+Confounders again
+
+	Confounders don't bias a properly randomized controlled study
+
+	But we still often want to take them into account
+
+		ANS Otherwise, they can increase variability
+
+	Best practice is to plan in advance to control for confounders
+	expected to be important
+
+----------------------------------------------------------------------
+
+Variability
+
+	The best way to reduce variability is \ldots
+
+		ANS Have a bigger sample size
+
+	Unfortunately, controlling for confounders can also increase
+	variability
+
+		A type of overfitting
+
+----------------------------------------------------------------------
+
+Summary
+
+BC
+
+	Seek truth by asking good questions
+
+	Reduce variability by
+
+		increasing sample size
+
+		careful planning (avoid overfitting)
+
+	Reduce bias by
+
+		control and randomization when possible
+
+		accounting for key confounders otherwise
+
+NC
+
+CFIG my_images/biasBeast.png
+
+EC
+
+----------------------------------------------------------------------
+
+SEC Coding intro
+
+----------------------------------------------------------------------
+
+Planning
+
+	Always a good idea to test your study approach in the computer
+
+	Do you expect your study to work?
+
+	Could you design it more efficiently
+
+----------------------------------------------------------------------
+
+Validity
+
+	Test by simulated experiments
+
+	Bottom line: in the counter-factual case where nothing is going on,
+	you want to find nothing clear (no statistical significance) $1-\alpha$ of the time (typically 95%)
+
+	Better: true effect should be inside the confidence interval 95% of
+	the time
+
+	Best: the P-value histogram for the true effect should be flat
+
+----------------------------------------------------------------------
+
+Power
+
+	Also test by simulated experiments
+
+	If your hypothesis is right, what proportion of the time will your
+	experiment work?
+
+		Show a clear result with the right sign
+
+		Or, show a clear “important” result with the right sign
+
+	The first requires hypothesizing an effect size (or range of them)
+
+	The second requires setting a second effect size as well!
+
+----------------------------------------------------------------------
+
+TSS Whooping cough
+
+	A bacterial disease which is re-emerging due to vaccine coverage
+	problems and immune waning
+
+	Cebile (and other people) want to know if adding a maternal vaccine to the schedule will help protect small children

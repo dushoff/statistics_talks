@@ -1,5 +1,9 @@
+library(shellpipes)
+
 library(ggplot2)
 theme_set(theme_bw(base_size=18))
+
+smoke <- rdsRead()
 
 ## What is the relationship between smoking and lung capacity
 ## Why doesn't varwidth play nicely with dodge?

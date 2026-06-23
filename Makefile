@@ -171,6 +171,17 @@ W1D5_Dushoff_Fitting_II.pdf: fitting.slides.pdf
 
 ######################################################################
 
+## Study design bridge lecture
+
+design.roadmap.pdf: LatexTemplates/resources/roadMaps26.pdf
+	pdfjam --papersize '{10in,7in}' $< 38 --outfile $@
+## design.final.pdf: design.txt
+## design.draft.pdf: design.txt design.md
+## design.slides.pdf: design.txt
+## design.handouts.pdf: design.txt
+
+######################################################################
+
 ## This talk originated at DAIDD 2015, and contains elements from the philosophy talk, as well as DAIDD-specific stuff.
 ## Called assessment at MMED.
 ## evaluation.final.pdf: evaluation.txt
