@@ -67,6 +67,28 @@ Example: weight-loss drug
 
 ----------------------------------------------------------------------
 
+Controlled experiment
+
+	Need to compare two or more groups 
+
+		These groups should be as similar as possible \ldots
+
+		ANS Except for the difference that you want to study
+
+		ANS For example, …
+
+			ANS Control group should take a placebo pill
+
+----------------------------------------------------------------------
+
+Randomization
+
+	Experimenter bias can leak in anywhere
+
+	The gold standard for controlled experiment always includes a randomization step
+
+----------------------------------------------------------------------
+
 SS Observational data
 
 ----------------------------------------------------------------------
@@ -214,3 +236,7 @@ TSS Whooping cough
 	Cebile (and other people) want to know if adding a maternal vaccine to the schedule will help protect small children
 
 	Could this be tested with a trial?
+
+		How should we do it?
+
+		What are key confounders?
