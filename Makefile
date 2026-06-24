@@ -73,6 +73,8 @@ hotdirs += $(pardirs)
 subdirs += visualization
 Ignore += visualization/*
 
+alldirs += visualization
+
 ######################################################################
 
 ## Local files (.tmp will be ephemeral unless you put it here)
