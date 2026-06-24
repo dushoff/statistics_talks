@@ -79,6 +79,8 @@ Controlled experiment
 
 			ANS Control group should take a placebo pill
 
+			ANS \ldots
+
 ----------------------------------------------------------------------
 
 Randomization
@@ -107,17 +109,23 @@ FIG visualization/smoke_ques.Rout-2.pdf
 
 Smoking data
 
-FIG visualization/smoke_plots.Rout-4.pdf
+FIG visualization/smoke_plots.Rout-8.pdf
 
 ----------------------------------------------------------------------
 
 Why do observational studies?
 
-	Time
+	Concerns
 
-	Money
+		Comparison is not controlled
 
-	Ethics
+	Advantages
+
+		Time
+
+		Money
+
+		ANS Ethics
 
 ----------------------------------------------------------------------
 
@@ -193,7 +201,7 @@ Planning
 
 	Do you expect your study to work?
 
-	Could you design it more efficiently
+	Could you design it more efficiently?
 
 ----------------------------------------------------------------------
 
@@ -201,8 +209,9 @@ Validity
 
 	Test by simulated experiments
 
-	Bottom line: in the counter-factual case where nothing is going on,
-	you want to find nothing clear (no statistical significance) $1-\alpha$ of the time (typically 95%)
+	Baseline: in the counter-factual case where nothing is going on, you
+	want to find nothing clear (no statistical significance) $1-\alpha$
+	of the time (typically 95%)
 
 	Better: true effect should be inside the confidence interval 95% of
 	the time

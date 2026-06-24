@@ -168,7 +168,7 @@ Ignore += W1D5_Dushoff_Fitting_II.pdf
 W1D5_Dushoff_Fitting_II.pdf: fitting.slides.pdf
 	$(ln)
 
-## There is a Blumberg pptx version in talkBox
+## There is a Blumberg pptx version in ../talkBox (dirs/)
 
 ######################################################################
 
