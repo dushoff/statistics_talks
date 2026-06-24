@@ -21,7 +21,5 @@ print(ggplot(smoke, aes(x=smoking, y=fev))
 ## Who are the smoke people?
 print(ggplot(smoke, aes(x=smoking, y=age))
 	+ geom_boxplot(varwidth=TRUE)
-	+ ylab("Lung capacity")
+	+ ylab("Age")
 )
-
-
