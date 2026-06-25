@@ -249,3 +249,9 @@ TSS Whooping cough
 		How should we do it?
 
 		What are key confounders?
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\renewcommand{\jdtitle}{Recap: Study design, bias, variability}

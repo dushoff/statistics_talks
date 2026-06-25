@@ -183,6 +183,10 @@ design.roadmap.pdf: LatexTemplates/resources/roadMaps26.pdf
 ## design.slides.pdf: design.txt
 ## design.handouts.pdf: design.txt
 
+Ignore += W2D3_Dushoff_Design.pdf
+W2D3_Dushoff_Design.pdf: | design.slides.pdf
+	$(lnp)
+
 ######################################################################
 
 ## This talk originated at DAIDD 2015, and contains elements from the philosophy talk, as well as DAIDD-specific stuff.
