@@ -283,6 +283,7 @@ my_images/with.small.png: my_images/with.png
 ######################################################################
 
 # Simple R scripts moved from CI_diagrams and Philosophy Lecture
+## Now moving to jdStats repo
 
 autopipeR = defined
 Sources += $(wildcard *.R)
