@@ -301,6 +301,7 @@ vitamins_scramble.Rout: permcount.rda vitamins_data.rda
 ######################################################################
 
 ## Mammal tail example inspired by Ian Dworkin
+## Moving a copy to jdStats for now? 2026 Oct 16 (Fri)
 tails.Rout: tails.R
 tailPlot.Rout: tailPlot.R tails.rds
 tailSpread.Rout: tailSpread.R tails.rds
