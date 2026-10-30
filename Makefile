@@ -49,6 +49,14 @@ materials:
 ## This one is the Bicko stuff
 %.lecture: %.handouts.pdf.op %.draft.pdf.op %.handouts.pdf.tod %.draft.pdf.tod ;
 
+## Human-friendly exports (pptx, qmd, Rmd, typst); see talkexport.py
+## Makes evaluation.slides_export/ and evaluation.slides_export.zip
+## evaluation.slides.export:
+Sources += talkexport.py
+Ignore += *_export/ *_export.zip
+%.export: %.tex %.pdf talkexport.py
+	python3 talkexport.py $< --pdf $*.pdf --render --zip
+
 ## Content
 
 ## Clean this up maybe?
