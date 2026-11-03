@@ -13,7 +13,7 @@ target: $(target)
 latexEngine = xelatex
 
 vim_session:
-	bash -ic "vmt"
+	bash -ic "vmt todo.md"
 
 Sources += Makefile README.md 
 Sources += $(wildcard *.md)
@@ -49,13 +49,9 @@ materials:
 ## This one is the Bicko stuff
 %.lecture: %.handouts.pdf.op %.draft.pdf.op %.handouts.pdf.tod %.draft.pdf.tod ;
 
-## Human-friendly exports (pptx, qmd, Rmd, typst); see talkexport.py
-## Makes evaluation.slides_export/ and evaluation.slides_export.zip
+## Human-friendly exports (pptx, qmd, Rmd, typst); see makestuff/workshops.md
 ## evaluation.slides.export:
-Sources += talkexport.py
-Ignore += *_export/ *_export.zip
-%.export: %.tex %.pdf talkexport.py
-	python3 talkexport.py $< --pdf $*.pdf --render --zip
+## evaluation.slides.pptx: evaluation.txt
 
 ## Content
 
@@ -374,7 +370,7 @@ Ignore += *.mm.tsv
 Sources += Makefile
 
 ## ln -s ../makestuff . ## Do this first if you want a linked makestuff
-Makefile: makestuff/00.stamp
+Makefile: makestuff/01.stamp
 makestuff/%.stamp: | makestuff
 	- $(RM) makestuff/*.stamp
 	cd makestuff && $(MAKE) pull
@@ -391,6 +387,7 @@ Makefile: | LatexTemplates
 -include makestuff/pipeR.mk
 -include makestuff/pdfpages.mk
 -include makestuff/newtalk.mk
+-include makestuff/workshops.mk
 -include makestuff/texj.mk
 -include makestuff/pandoc.mk
 -include makestuff/webpix.mk
